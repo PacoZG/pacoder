@@ -3,7 +3,7 @@ import { FacebookShareButton, FacebookShareCount, FacebookIcon, LinkedinIcon } f
 
 const Footer = () => {
   return (
-    <div className="relative inset-x-0 bottom-0 z-30 p-4 pt-3 pb-3 bg-gray-600">
+    <div className="relative inset-x-0 bottom-0 z-30 p-4 pt-3 pb-3 bg-gray-800">
       <div className="text-center">
         <FacebookShareCount url={window.location.href}>
           {shareCount => <span className="text-2xl text-black">{console.log('SHARE COUNT: ', shareCount)}</span>}

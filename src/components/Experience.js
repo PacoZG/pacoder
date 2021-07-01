@@ -2,7 +2,7 @@ import React from 'react'
 
 const Experience = () => {
   return (
-    <div className="bg-gradient-to-tr from-green-400 via-gray-50 to-green-400 flex flex-col items-center p-4">
+    <div className="bg-green-100 flex flex-col items-center p-4">
       <div className="">
         <div className="border-2 border-gray-800 rounded-lg p-4 mb-2">
           <h1 className=" pb-1 font-bold">
