@@ -17,11 +17,11 @@ const Presentation = () => {
         </h1>
         <p className="text-gray-50 text-right">Junior Full Stack Developer</p>
         <p className="text-lg text-gray-50 text-right">
-          I am Mexican, I have been living in Finland since september of 2014
+          I am Mexican, I have been living in Finland since September of 2014
         </p>
         <p className="text-lg text-gray-50 text-right">
-          I started studies in Communication Engineering in Spain, then some master courses taken in Aalto University as
-          an exchanged Erasmus student in 2014
+          I started my studies in Communication Engineering in Spain, then some master courses taken in Aalto University
+          as an exchanged Erasmus student in 2014
         </p>
       </div>
     </div>

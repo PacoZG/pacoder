@@ -35,7 +35,7 @@ const Strenghts = () => {
             leaveTo="opacity-0"
           >
             <div className="border-t-2 border-yellow-700 pt-2">
-              strengths that were certainly the key to be able finish the{' '}
+              Strengths that were certainly the key to be able finish the{' '}
               <a
                 className="text-indigo-600 hover:text-red-800 hover:underline"
                 href="https://fullstackopen.com/en/"
@@ -72,7 +72,7 @@ const Strenghts = () => {
             leaveTo="opacity-0"
           >
             <p className="border-t-2 border-black pt-2">
-              I am certain I can use my extensive experience in field to easily communicate to the clients in a more
+              I am certain I can use my extensive experience in the field to easily communicate to the clients in a more
               empathetic and approachable way.
             </p>
           </Transition>
@@ -102,7 +102,7 @@ const Strenghts = () => {
             leaveTo="opacity-0"
           >
             <p className="text-black border-t-2 border-black pt-2">
-              As drums teacher I learned to place myself on my student's perspective, finding ways to introduce new
+              As a drum teacher, I learned to place myself on my student's perspective, finding ways to introduce new
               concepts and technics. Skill that I can use in this industry to introduce our customers to the services
               and explain their functionality in a very understandable way.
             </p>

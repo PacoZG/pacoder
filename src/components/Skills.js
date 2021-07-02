@@ -80,7 +80,7 @@ const Skills = () => {
         </p>
         <p className="relative px-4 text-lg uppercase flex-shrink-0">
           <span className="spinner"></span>
-          Stay focused
+          Engaged and focused
         </p>
         <p className="relative px-4 text-lg uppercase flex-shrink-0">
           <span className="spinner"></span>
