@@ -1,22 +1,10 @@
 import React from 'react'
-import { FacebookShareButton, FacebookShareCount, FacebookIcon, LinkedinIcon } from 'react-share'
+import { FacebookShareButton, FacebookIcon, LinkedinIcon, LinkedinShareButton } from 'react-share'
 
 const Footer = () => {
   return (
     <div className="relative inset-x-0 bottom-0 z-30 p-4 pt-3 pb-3 bg-gray-800">
-      <div className="text-center">
-        <FacebookShareCount url={window.location.href}>
-          {shareCount => <span className="text-2xl text-black">{console.log('SHARE COUNT: ', shareCount)}</span>}
-        </FacebookShareCount>
-        <FacebookShareButton
-          url={window.location.href}
-          className="inline-flex justify-center py-1 px-3 -ml-4 font-medium focus-within:outline-none "
-        >
-          <FacebookIcon size={20} round={true} />
-          <span className="text-gray-200 text-xs font-semibold pt-0.5 pl-1">Share My CV</span>
-        </FacebookShareButton>
-      </div>
-      <div className="flex flex-col md:flex-row justify-between items-center md:items-start space-y-2 md:space-y-0 md:p-2">
+      <div className="flex flex-col md:flex-row justify-around items-center md:items-start space-y-2 md:space-y-0 md:p-2">
         <div className="flex flex-col items-center  md:items-start space-y-2">
           <div className="flex flex-col items-center md:items-start space-y-2 md:space-y-0 ">
             <div className="flex items-center space-x-1">
@@ -71,6 +59,27 @@ const Footer = () => {
             <p className="text-gray-200 text-sm space-y-2 md:space-y-0 ">pako.zavala@gmail.com</p>
           </div>
         </div>
+        <div>
+          <div className="text-center">
+            <p className="text-gray-200 text-xs font-semibold pt-0.5">SHARE MY CV IN</p>
+            <div className="flex items-center justify-between">
+              <div>
+                <FacebookShareButton url={window.location.href} className=" font-medium focus-within:outline-none ">
+                  <FacebookIcon size={24} round={true} />
+                </FacebookShareButton>
+              </div>
+              <div>
+                <p className="text-white text-base pb-1">{' & '}</p>
+              </div>
+              <div>
+                <LinkedinShareButton url={window.location.href} className=" font-medium focus-within:outline-none ">
+                  <LinkedinIcon size={24} round={true} />
+                </LinkedinShareButton>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="flex flex-col items-center md:items-start space-y-1">
           <p className="text-sm text-gray-200">Developed by: </p>
           <a
