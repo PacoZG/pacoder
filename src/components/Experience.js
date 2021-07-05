@@ -7,7 +7,7 @@ const Experience = () => {
         <h1 className=" pb-1 font-bold">
           Hotel Kämp - <span className="font-normal">SEPT 2015 - AUG 2020</span>
         </h1>
-        <p className=" border-t-2 border-gray-700 pt-1">
+        <p className=" border-t-2 border-gray-700 pt-1 text-justify">
           Responsible for the duties and maintenance of the room service department along with the guests wishes and
           needs at the restaurant and guests rooms
         </p>
@@ -15,7 +15,7 @@ const Experience = () => {
       <div className="border-2 border-gray-800 rounded-lg p-4 mb-2 md:w-2/3">
         <h1 className="pb-1 font-bold">
           Customer service{' '}
-          <span className="font-normal">in several positions and departments - JAN 2007 - AUG 2020 </span>
+          <span className="font-normal  text-justify">in several positions and departments - JAN 2007 - AUG 2020 </span>
         </h1>
         <p className="border-t-2 border-gray-700 pt-1">Waiter supervisor, cook, dish washer</p>
       </div>
@@ -23,7 +23,7 @@ const Experience = () => {
         <h1 className="pb-1 font-bold">
           Professional drummer <span className="font-normal">as a group leader and teacher - JAN 2010 - AUG 2010 </span>
         </h1>
-        <p className="border-t-2 border-gray-700 pt-1">
+        <p className="border-t-2 border-gray-700 pt-1  text-justify">
           Worked as a drummer and group leader in several bands and teaching drums as a side job
         </p>
       </div>
