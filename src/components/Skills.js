@@ -158,7 +158,7 @@ const Skills = () => {
                 src="https://pics.freeicons.io/uploads/icons/png/3556671901536211770-512.png"
                 alt="Cypress.io"
               />
-              <p className="text-blue-300">Cypress.io</p>
+              <p className="text-gray-700">Cypress.io</p>
             </div>
           </div>
         </div>
