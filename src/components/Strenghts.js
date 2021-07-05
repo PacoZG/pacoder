@@ -108,7 +108,7 @@ const Strenghts = () => {
             </p>
           </Transition>
         </div>
-        <div className="p-4 border-2 border-black rounded-md bg-yellow-100">
+        <div className="p-4 border-2 border-black rounded-md bg-yellow-100 ">
           <div className="flex items-center justify-between">
             <p
               className="text-2xl text-black cursor-pointer pt-1 pb-3 text-left font-bold"

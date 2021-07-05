@@ -2,10 +2,10 @@ import React from 'react'
 
 const Presentation = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-center bg-gradient-to-l from-yellow-900 to-gray-500 p-10">
-      <div className="md:pl-20">
+    <div className="flex flex-col items-center md:flex-row md:justify-center bg-gradient-to-l from-yellow-900 to-gray-500 p-10 w-screen">
+      <div className="flex flex-col items-center md:pl-20">
         <img
-          className="h-max w-max border-4 border-black rounded-xl"
+          className=" w-2/3 h-2/3 md:h-max md:w-max border-4 border-black rounded-xl"
           src="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1625155266/CV%20Pics/kxcpai1mniycdxszmgbq.jpg"
           alt="profile"
         />
