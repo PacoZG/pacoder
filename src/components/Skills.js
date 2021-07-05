@@ -72,6 +72,14 @@ const Skills = () => {
               />
               <p className="text-blue-300">Tailwindcss</p>
             </div>
+            <div className="flex flex-col items-center">
+              <img
+                className="skill-logo"
+                src="https://pics.freeicons.io/uploads/icons/png/3556671901536211770-512.png"
+                alt="Cypress.io"
+              />
+              <p className="text-gray-700">Cypress.io</p>
+            </div>
           </div>
         </div>
         <div className="md:hidden flex flex-col space-y-8">
@@ -143,6 +151,14 @@ const Skills = () => {
                 alt="React"
               />
               <p className="text-blue-300">Tailwindcss</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <img
+                className="skill-logo"
+                src="https://pics.freeicons.io/uploads/icons/png/3556671901536211770-512.png"
+                alt="Cypress.io"
+              />
+              <p className="text-blue-300">Cypress.io</p>
             </div>
           </div>
         </div>
