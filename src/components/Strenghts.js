@@ -8,10 +8,10 @@ const Strenghts = () => {
   const [stgr4, setStgr4] = useState(false)
   return (
     <div className="bg-green-100 flex flex-col items-center">
-      <div className="p-6 w-2/3 text-center">
+      <div className="p-8 md:w-2/3 text-center">
         <div className="p-4 border-2 border-yellow-600 rounded-md bg-green-300 mb-3">
           <div className="flex items-center justify-between">
-            <p className="text-2xl cursor-pointer pb-2 text-left" onClick={() => setStgr1(!stgr1)}>
+            <p className="text-2xl cursor-pointer pb-2 text-left font-bold" onClick={() => setStgr1(!stgr1)}>
               Committed and perseverance
             </p>
             <div className={stgr1 ? 'transition duration-500 transform rotate-90 ' : 'transition duration-500'}>
@@ -49,7 +49,7 @@ const Strenghts = () => {
         </div>
         <div className="p-4 border-2 border-black rounded-md bg-yellow-400 mb-3">
           <div className="flex items-center justify-between">
-            <p className="text-2xl cursor-pointer pb-2 text-left" onClick={() => setStgr2(!stgr2)}>
+            <p className="text-2xl cursor-pointer pb-2 text-left font-bold" onClick={() => setStgr2(!stgr2)}>
               Customer Service oriented
             </p>
             <div className={stgr2 ? 'transition duration-500 transform rotate-90 ' : 'transition duration-500'}>
@@ -79,7 +79,7 @@ const Strenghts = () => {
         </div>
         <div className="p-4 border-2 border-black rounded-md bg-blue-400 mb-3">
           <div className="flex items-center justify-between">
-            <p className="text-2xl text-black cursor-pointer pb-2 text-left" onClick={() => setStgr3(!stgr3)}>
+            <p className="text-2xl text-black cursor-pointer pb-2 text-left font-bold" onClick={() => setStgr3(!stgr3)}>
               Academic experience
             </p>
             <div className={stgr3 ? 'transition duration-500 transform rotate-90 ' : 'transition duration-500'}>
