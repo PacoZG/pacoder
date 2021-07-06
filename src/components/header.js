@@ -1,11 +1,19 @@
 import React from 'react'
+import i18n from 'i18next'
 import { EmailIcon, LinkedinIcon, WhatsappIcon } from 'react-share'
 
 const Header = () => {
   return (
     <div className="bg-red-300">
-      <div className="flex flex-col items-center">
-        <div className="flex items-center space-x-6 p-2">
+      <div className="flex flex-row items-center justify-evenly">
+        <button
+          className="text-green-700 text-2xl font-bold transition transform hover:-translate-y-1 hover:scale-110 hover:text-indigo-700 duration-700 ease-in-out"
+          onClick={() => i18n.changeLanguage('EN')}
+        >
+          ENG
+        </button>
+
+        <div className="flex items-center space-x-1 md:space-x-6 p-2">
           <a href="https://www.linkedin.com/in/francisco-zavala/" target="blank">
             <LinkedinIcon />
           </a>
@@ -24,6 +32,12 @@ const Header = () => {
             <EmailIcon size={64} />
           </a>
         </div>
+        <button
+          className="text-green-700 text-2xl font-bold transition transform hover:-translate-y-1 hover:scale-110 hover:text-indigo-700 duration-700 ease-in-out"
+          onClick={() => i18n.changeLanguage('ES')}
+        >
+          ESP
+        </button>
       </div>
     </div>
   )

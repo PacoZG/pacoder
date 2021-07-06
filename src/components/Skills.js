@@ -1,6 +1,8 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const Skills = () => {
+  const { t } = useTranslation()
   return (
     <div className="p-8 md:p-16 bg-green-100">
       <div className="flex flex-col justify-center md:space-x-28 border-double border-b-8 border-gray-300 pb-12">
@@ -163,23 +165,27 @@ const Skills = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col space-y-6 text-center md:space-y-0 md:flex-row md:items-center md:justify-evenly pt-8 md:pt-16 pl-10 md:pl-0 ">
-        <p className="relative px-5 text-lg uppercase flex-shrink-0">
-          <span className="spinner"></span>
-          Ability to multitask
-        </p>
-        <p className="relative px-5 text-lg uppercase flex-shrink-0">
-          <span className="spinner"></span>
-          Engaged and focused
-        </p>
-        <p className="relative px-5 text-lg uppercase flex-shrink-0">
-          <span className="spinner"></span>
-          Mother tongue: Spanish
-        </p>
-        <p className="relative px-5 text-lg uppercase flex-shrink-0">
-          <span className="spinner"></span>
-          Proficiency in English
-        </p>
+      <div className="flex flex-col space-y-0 text-center md:space-y-5 md:items-center md:justify-evenly pt-8 pl-4 md:pl-0 ">
+        <div className="md:flex md:items-center space-x-4">
+          <p className="relative md:px-5 my-2 text-sm uppercase flex-shrink-0 p-3">
+            <span className="spinner"></span>
+            {t('skills.multitask')}
+          </p>
+          <p className="relative md:px-5 my-2 text-sm uppercase flex-shrink-0 p-3">
+            <span className="spinner"></span>
+            {t('skills.engaged')}
+          </p>
+        </div>
+        <div className="md:flex md:items-center space-x-4">
+          <p className="relative md:px-5 my-2 text-sm uppercase flex-shrink-0 p-3">
+            <span className="spinner"></span>
+            {t('skills.lang1')}
+          </p>
+          <p className="relative md:px-5 my-2 text-sm uppercase flex-shrink-0 p-3">
+            <span className="spinner"></span>
+            {t('skills.lang2')}
+          </p>
+        </div>
       </div>
     </div>
   )

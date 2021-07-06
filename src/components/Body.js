@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import Presentation from './Presentation'
 import StickyHeader from './StickyHeader'
 import Skills from './Skills'
@@ -7,17 +8,18 @@ import Education from './Education'
 import Experience from './Experience'
 
 const Body = () => {
+  const { t } = useTranslation()
   return (
     <div className="relative">
-      <StickyHeader text="Who I am" />
+      <StickyHeader text={t('stickers.who')} />
       <Presentation />
-      <StickyHeader text="My Skills" />
+      <StickyHeader text={t('stickers.skills')} />
       <Skills />
-      <StickyHeader text="My Strenghts" />
+      <StickyHeader text={t('stickers.strengths')} />
       <Strenghts />
-      <StickyHeader text="Education" />
+      <StickyHeader text={t('stickers.education')} />
       <Education />
-      <StickyHeader text="Work Experience" />
+      <StickyHeader text={t('stickers.experience')} />
       <Experience />
     </div>
   )

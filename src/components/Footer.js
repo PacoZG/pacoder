@@ -1,7 +1,9 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import { FacebookShareButton, FacebookIcon, LinkedinIcon, LinkedinShareButton } from 'react-share'
 
 const Footer = () => {
+  const { t } = useTranslation()
   return (
     <div className="relative inset-x-0 bottom-0 z-30 p-4 pt-3 pb-3 bg-gray-800">
       <div className="flex flex-col md:flex-row justify-around items-center md:items-start space-y-2 md:space-y-0 md:p-2">
@@ -60,9 +62,9 @@ const Footer = () => {
           </div>
         </div>
         <div>
-          <div className="text-center">
-            <p className="text-gray-200 text-xs font-semibold pt-0.5">SHARE MY CV IN</p>
-            <div className="flex items-center justify-between">
+          <div className="flex flex-col items-center space-y-2">
+            <p className="text-center text-gray-200 text-xs font-semibold">{t('Footer.share-cv')}</p>
+            <div className="flex items-center justify-between space-x-4">
               <div>
                 <FacebookShareButton url={window.location.href} className=" font-medium focus-within:outline-none ">
                   <FacebookIcon size={24} round={true} />
@@ -81,7 +83,7 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col items-center md:items-start space-y-1">
-          <p className="text-sm text-gray-200">Developed by: </p>
+          <p className="text-sm text-gray-200">{t('Footer.developed-by')}</p>
           <a
             href="https://www.linkedin.com/in/francisco-zavala"
             target="blank"

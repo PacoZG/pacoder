@@ -1,6 +1,8 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const Presentation = () => {
+  const { t } = useTranslation()
   return (
     <div className="flex flex-col items-center md:flex-row md:justify-center bg-gradient-to-l from-yellow-900 to-gray-500 p-10 w-screen">
       <div className="flex flex-col items-center md:pl-20">
@@ -12,17 +14,12 @@ const Presentation = () => {
       </div>
       <div className="p-10 md:pt-16">
         <h1 className="text-2xl text-gray-50 text-right">
-          {"I'M "}
+          {t('Presentation.line0')}
           <span className="text-green-500 text-right">FRANCISCO ZAVALA GONZALEZ</span>
         </h1>
         <p className="text-gray-50 text-right">Junior Full Stack Developer</p>
-        <p className="text-lg text-gray-50 text-right">
-          I am Mexican, I have been living in Finland since September 2014
-        </p>
-        <p className="text-lg text-gray-50 text-right">
-          I started my studies in Communication Engineering in Spain, then some master courses taken in Aalto University
-          as an exchanged Erasmus student in 2014
-        </p>
+        <p className="text-lg text-gray-50 text-right">{t('Presentation.line1')}</p>
+        <p className="text-lg text-gray-50 text-right">{t('Presentation.line2')}</p>
       </div>
     </div>
   )

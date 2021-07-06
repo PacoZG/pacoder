@@ -1,0 +1,54 @@
+{
+  "stickers":{
+    "who": "QUIEN SOY",
+    "skills": "MIS HABILIDADES",
+    "strengths": "MIS PUNTOS FUERTES",
+    "education": "EDUCACIÓN",
+    "experience": "EXPERIENCIA LABORAL"
+  },
+  "Footer": {
+    "developed-by": "Desarrollado por:",
+    "share-cv": "COMPARTE MI CV EN"
+  },
+  "Presentation": {
+    "line0": "¡HOLA!, YO SOY ",
+    "line1": "Soy mexicano, vivo en Finlandia desde septiembre de 2014",
+    "line2": "Empecé mis estudios de Ingeniería de la Comunicación en España, en 2014 me trasladé a Finlandia para estudiar unos másteres en la Universidad Aalto como estudiante Erasmus."
+  },
+  "skills": {
+    "multitask": "Habilitdad multitarea",
+    "engaged": "Comprometido, persistente y enfocado",
+    "lang1": "Lengua materna: español",
+    "lang2": "Dominio del inglés"
+  },
+  "strengths":{
+    "strength1": "Comprometido y perseverante",
+    "line1_1": "Fortalezas que sin duda fueron la clave para poder terminar el ",
+    "line1_2": "Curso Full Stack",
+    "line1_3": "que me dio las habilidades necesarias para hacer la transición a la carrera en el desarrollo web/software.",
+    "strength2": "Servicio orientado al cliente",
+    "line2": "Estoy seguro de que puedo utilizar mi amplia experiencia en el campo para comunicarme fácilmente con los clientes de una manera más empática y accesible..",
+    "strength3": "Experiencia academica",
+    "line3": "Como profesora de batería, aprendí a colocarme en la perspectiva de mi alumno, encontrando formas de introducir nuevos conceptos y técnicas. Una habilidad que puedo usar en esta industria para presentarles a nuestros clientes los servicios y explicar su funcionalidad de una manera muy comprensible.",
+    "line4_1": "Has clic",
+    "line4_2": " aquí ",
+    "line4_3": "y descubre el resultado de mi prueba"
+  },
+  "education": {
+    "line1": "Curso Full Stack (en línea) ",
+    "line2": "Material del curso",
+    "line3": "Completado entre AGOSTO 2020 - JULIO 2021, escrito e impartido por profesores de la Universidad de Helsinki. El curso es una introducción al desarrollo web moderno con servicios web JavaScript, React, RESTful y GraphQL implementados con Node.js y también tiene partes sobre TypeScript, React Native e integración continua.",
+    "line4": "Ingeniería en comunicación",
+    "line5": "Cursos de maestría como estudiante de intercambio Erasmus 2014-2015 @Aalto University - Escuela de Ingeniería Eléctrica",
+    "line6": "4o Curso de Ingeniería de Telecomunicación"
+  },
+  "experience": {
+    "line1":"Responsable de los deberes y mantenimiento del departamento de servicio de habitaciones junto con los deseos y necesidades de los huéspedes en el restaurante y las habitaciones de los huéspedes.",
+    "line2":"Servicio al Cliente",
+    "line3":"en varios puestos y departamentos - ENE 2007 - AGOSTO 2020",
+    "line4":"Supervisor de camarero, cocinero, lavaplatos",
+    "line5":"Baterista profesional",
+    "line6":"Como líder de grupo y profesor de batería - ENE 2010 - AGOSTO 2010",
+    "line7":"Trabajé como baterista y líder de grupo en varias bandas y enseñó batería como un trabajo secundario."
+  }
+}

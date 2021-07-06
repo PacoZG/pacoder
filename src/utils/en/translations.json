@@ -1,0 +1,54 @@
+{
+  "stickers":{
+    "who": "WHO I AM",
+    "skills": "MY SKILLS",
+    "strengths": "MY STRENGTHS",
+    "education": "EDUCATION",
+    "experience": "WORK EXPERIENCE"
+  },
+  "Footer": {
+    "developed-by": "Developed by:",
+    "share-cv": "SHARE MY CV IN"
+  },
+  "Presentation": {
+    "line0": "Hi!, I AM ",
+    "line1": "I am Mexican, I have been living in Finland since September 2014",
+    "line2": "I started my studies in Communication Engineering in Spain, in 2014 I moved to Finland to study some master courses at Aalto University as an Erasmus student."
+  },
+  "skills": {
+    "multitask": "Ability to multitask",
+    "engaged": "Engaged, persistent and focused",
+    "lang1": "Mother tongue: Spanish",
+    "lang2": "Proficiency in English"
+  },
+  "strengths":{
+    "strength1": "Committed and perseverant",
+    "line1_1": "Strengths that were certainly the key to be able to finish the ",
+    "line1_2": "Full Stack Course",
+    "line1_3": "that gave me the necessary skills to transition into the web/software development career.",
+    "strength2": "Customer Service oriented",
+    "line2": "I am certain I can use my extensive experience in the field to easily communicate to the clients in a more empathetic and approachable way.",
+    "strength3": "Academic experience",
+    "line3": "As a drum teacher, I learned to place myself on my student's perspective, finding ways to introduce new concepts and technics. A skill that I can use in this industry to introduce our customers to the services and explain their functionality in a very understandable way.",
+    "line4_1": "Click",
+    "line4_2": " here ",
+    "line4_3": "and discover the result of my test"
+  },
+  "education": {
+    "line1": "Full Stack Open Course (online) ",
+    "line2": "Course Material",
+    "line3": "Completed between AUG 2020 - JULY 2021, written and taught by professors from the University of Helsinki. The course is an introduction to modern web development with JavaScript, React, RESTful and GraphQL web services implemented with Node.js and also has parts on TypeScript, React Native and Continuous integration.",
+    "line4": "Communication Engineering",
+    "line5": "Master Courses as a Erasmus Exchange Student 2014-2015 @Aalto University – School of Electrical Engineering",
+    "line6": "4th Course of Telecommunications Engineering"
+  },
+  "experience": {
+    "line1":"Responsible for the duties and maintenance of the room service department along with the guest's wishes and needs at the restaurant and guests rooms",
+    "line2":"Customer service",
+    "line3":"in several positions and departments - JAN 2007 - AUG 2020",
+    "line4":"Waiter supervisor, cook, dishwasher",
+    "line5":"Professional drummer",
+    "line6":"as a group leader and drum teacher - JAN 2010 - AUG 2010",
+    "line7":"Worked as a drummer and group leader in several bands and teaching drums as a side job"
+  }
+}
