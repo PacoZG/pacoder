@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Transition } from '@headlessui/react'
-import { ReactComponent as Arrow } from '../assets/arrow.svg'
+import { ReactComponent as Arrow } from '../utils/assets/arrow.svg'
 
 const Strenghts = () => {
   const { t } = useTranslation()

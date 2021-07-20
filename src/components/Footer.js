@@ -1,9 +1,9 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { FacebookShareButton, FacebookIcon, LinkedinIcon, LinkedinShareButton } from 'react-share'
-import { ReactComponent as Address } from '../assets/address.svg'
-import { ReactComponent as Mobile } from '../assets/mobile.svg'
-import { ReactComponent as Email } from '../assets/email.svg'
+import { ReactComponent as Address } from '../utils/assets/address.svg'
+import { ReactComponent as Mobile } from '../utils/assets/mobile.svg'
+import { ReactComponent as Email } from '../utils/assets/email.svg'
 
 const Footer = () => {
   const { t } = useTranslation()

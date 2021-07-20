@@ -1,7 +1,7 @@
 import React from 'react'
 import i18n from 'i18next'
 import { EmailIcon, LinkedinIcon, WhatsappIcon } from 'react-share'
-import { ReactComponent as GitHub } from '../assets/github.svg'
+import { ReactComponent as GitHub } from '../utils/assets/github.svg'
 
 const Header = () => {
   return (
