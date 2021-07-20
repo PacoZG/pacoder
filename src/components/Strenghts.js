@@ -11,10 +11,13 @@ const Strenghts = () => {
   const [stgr4, setStgr4] = useState(false)
   return (
     <div className="bg-gray-900 flex flex-col items-center p-4">
-      <div className="md:w-2/3 text-center">
+      <div className="w-full md:w-2/3 text-center">
         <div className="p-4 border-2 border-gray-300 rounded-md bg-gray-500 mb-3">
           <div className="flex items-center justify-between">
-            <p className="text-2xl text-gray-900 text-left cursor-pointer pb-2" onClick={() => setStgr1(!stgr1)}>
+            <p
+              className="text-2xl text-gray-900 text-left cursor-pointer pb-2 w-full "
+              onClick={() => setStgr1(!stgr1)}
+            >
               {t('strengths.strength1')}
             </p>
             <div className={stgr1 ? 'transition duration-500 transform rotate-90 ' : 'transition duration-500'}>
@@ -45,7 +48,10 @@ const Strenghts = () => {
         </div>
         <div className="p-4 border-2 border-gray-300 rounded-md bg-gray-500 mb-3">
           <div className="flex items-center justify-between">
-            <p className="text-2xl text-gray-900 text-left cursor-pointer pb-2" onClick={() => setStgr2(!stgr2)}>
+            <p
+              className="text-2xl text-gray-900 text-left cursor-pointer pb-2 w-full "
+              onClick={() => setStgr2(!stgr2)}
+            >
               {t('strengths.strength2')}
             </p>
             <div className={stgr2 ? 'transition duration-500 transform rotate-90 ' : 'transition duration-500'}>
@@ -61,7 +67,7 @@ const Strenghts = () => {
             leaveFrom="opacity-700"
             leaveTo="opacity-0"
           >
-            <p className=" text-gray-900 text-left border-t-2 border-gray-300 pt-2">{t('strengths.line2')}</p>
+            <p className=" text-gray-900 text-left border-t-2 border-gray-300 pt-2 w-full ">{t('strengths.line2')}</p>
           </Transition>
         </div>
         <div className="p-4 border-2 border-gray-300 rounded-md bg-gray-500 mb-3">
@@ -82,7 +88,7 @@ const Strenghts = () => {
             leaveFrom="opacity-700"
             leaveTo="opacity-0"
           >
-            <p className="text-gray-900 text-left border-t-2 border-gray-300 pt-2">{t('strengths.line3')}</p>
+            <p className="text-gray-900 text-left border-t-2 border-gray-300 pt-2 w-full ">{t('strengths.line3')}</p>
           </Transition>
         </div>
         <div className="p-4 border-2 border-gray-300 rounded-md bg-gray-500 mb-3">

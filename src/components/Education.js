@@ -5,7 +5,7 @@ const Education = () => {
   const { t } = useTranslation()
   return (
     <div className="bg-gray-900 flex flex-col items-center p-4 ">
-      <div className="bg-gray-500 border-2 border-gray-300 rounded-lg p-4 mb-2 md:w-2/3">
+      <div className="bg-gray-500 border-2 border-gray-300 rounded-lg p-4 mb-2 w-full md:w-2/3">
         <h1 className="text-gray-900 pb-1 font-bold border-b-2 border-gray-300">
           {t('education.line1')}
           <a
