@@ -176,13 +176,13 @@ const Skills = () => {
         <div className="flex flex-col md:flex-row items-center space-y-5 md:space-y-0 w-full">
           <div className="relative flex items-center justify-evenly space-x-7 w-full md:w-1/2">
             <span className="spinner"></span>
-            <p className="md:px-5 my-2 text-gray-300 text-center text-sm  uppercase p-2 w-full">
+            <p className="md:px-5 my-2 text-gray-300 text-center text-xs sm:text-sm uppercase p-2 w-full">
               {t('skills.multitask')}
             </p>
           </div>
           <div className="relative flex items-center justify-evenly space-x-7 w-full md:w-1/2">
             <span className="spinner"></span>
-            <p className="md:px-5 my-2 text-gray-300 text-center text-sm  uppercase p-2 w-full">
+            <p className="md:px-5 my-2 text-gray-300 text-center text-xs sm:text-sm uppercase p-2 w-full">
               {t('skills.engaged')}
             </p>
           </div>
@@ -190,11 +190,15 @@ const Skills = () => {
         <div className="flex flex-col md:flex-row items-center space-y-5 md:space-y-0 w-full">
           <div className="relative flex items-center justify-evenly space-x-7 w-full md:w-1/2">
             <span className="spinner"></span>
-            <p className="md:px-5 my-2 text-gray-300 text-center text-sm  uppercase p-2">{t('skills.lang1')}</p>
+            <p className="md:px-5 my-2 text-gray-300 text-center text-xs sm:text-sm uppercase p-2">
+              {t('skills.lang1')}
+            </p>
           </div>
           <div className="relative flex items-center justify-evenly space-x-7 w-full md:w-1/2">
             <span className="spinner"></span>
-            <p className="md:px-5 my-2 text-gray-300 text-center text-sm uppercase p-2">{t('skills.lang2')}</p>
+            <p className="md:px-5 my-2 text-gray-300 text-center text-xs sm:text-sm uppercase p-2">
+              {t('skills.lang2')}
+            </p>
           </div>
         </div>
       </div>
