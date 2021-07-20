@@ -172,26 +172,30 @@ const Skills = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col space-y-0 text-center md:space-y-5 md:items-center md:justify-evenly pt-8 pl-4 md:pl-0 ">
-        <div className="md:flex md:items-center space-x-4">
-          <p className="relative md:px-5 my-2 text-gray-300 text-base uppercase flex-shrink-0 p-3">
+      <div className="flex flex-col xl:flex-row items-center space-y-5 xl:space-y-0 p-6 pl-12">
+        <div className="flex flex-col md:flex-row items-center space-y-5 md:space-y-0 w-full">
+          <div className="relative flex items-center justify-evenly space-x-7 w-full md:w-1/2">
             <span className="spinner"></span>
-            {t('skills.multitask')}
-          </p>
-          <p className="relative md:px-5 my-2 text-gray-300 text-base uppercase flex-shrink-0 p-3">
+            <p className="md:px-5 my-2 text-gray-300 text-center text-sm  uppercase p-2 w-full">
+              {t('skills.multitask')}
+            </p>
+          </div>
+          <div className="relative flex items-center justify-evenly space-x-7 w-full md:w-1/2">
             <span className="spinner"></span>
-            {t('skills.engaged')}
-          </p>
+            <p className="md:px-5 my-2 text-gray-300 text-center text-sm  uppercase p-2 w-full">
+              {t('skills.engaged')}
+            </p>
+          </div>
         </div>
-        <div className="md:flex md:items-center space-x-4">
-          <p className="relative md:px-5 my-2 text-gray-300 text-base uppercase flex-shrink-0 p-3">
+        <div className="flex flex-col md:flex-row items-center space-y-5 md:space-y-0 w-full">
+          <div className="relative flex items-center justify-evenly space-x-7 w-full md:w-1/2">
             <span className="spinner"></span>
-            {t('skills.lang1')}
-          </p>
-          <p className="relative md:px-5 my-2 text-gray-300 text-base uppercase flex-shrink-0 p-3">
+            <p className="md:px-5 my-2 text-gray-300 text-center text-sm  uppercase p-2">{t('skills.lang1')}</p>
+          </div>
+          <div className="relative flex items-center justify-evenly space-x-7 w-full md:w-1/2">
             <span className="spinner"></span>
-            {t('skills.lang2')}
-          </p>
+            <p className="md:px-5 my-2 text-gray-300 text-center text-sm uppercase p-2">{t('skills.lang2')}</p>
+          </div>
         </div>
       </div>
     </div>
