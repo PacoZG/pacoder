@@ -1,18 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import i18n from 'i18next'
+import localdb from '../utils/localdb'
 import { EmailIcon, LinkedinIcon, WhatsappIcon } from 'react-share'
 import { ReactComponent as GitHub } from '../utils/assets/github.svg'
+import Toggle from './Toggle'
 
 const Header = () => {
+  const usersLanguage = localdb.getLanguage() ? localdb.getLanguage() : 'EN'
+  const [language, setLanguage] = useState(usersLanguage)
+
+  const handleLanguage = lang => {
+    setLanguage(lang)
+    i18n.changeLanguage(lang)
+    localdb.setLanguage(lang)
+  }
   return (
-    <div className="bg-gray-900">
+    <div className="bg-gray-300 dark:bg-gray-900 transition duration-300">
       <div className="flex flex-row items-center justify-evenly">
-        <button
-          className="text-white text-2xl font-bold transition transform hover:-translate-y-1 hover:scale-110 hover:text-blue-300 duration-700 ease-in-out"
-          onClick={() => i18n.changeLanguage('EN')}
-        >
-          ENG
-        </button>
+        <Toggle />
 
         <div className="flex items-center space-x-1 md:space-x-6 p-2">
           <a href="https://www.linkedin.com/in/francisco-zavala/" target="blank">
@@ -31,12 +36,23 @@ const Header = () => {
             <EmailIcon size={64} />
           </a>
         </div>
-        <button
-          className="text-white text-2xl font-bold transition transform hover:-translate-y-1 hover:scale-110 hover:text-blue-300 duration-700 ease-in-out"
-          onClick={() => i18n.changeLanguage('ES')}
-        >
-          ESP
-        </button>
+        <div>
+          {language === 'ES' ? (
+            <button
+              className="text-gray-700 dark:text-gray-300 text-2xl font-bold transition transform hover:-translate-y-1 hover:scale-110 hover:text-blue-300 duration-700 ease-in-out"
+              onClick={() => handleLanguage('EN')}
+            >
+              ENG
+            </button>
+          ) : (
+            <button
+              className="text-gray-700 dark:text-gray-300 text-2xl font-bold transition transform hover:-translate-y-1 hover:scale-110 hover:text-blue-300 duration-700 ease-in-out"
+              onClick={() => handleLanguage('ES')}
+            >
+              ESP
+            </button>
+          )}
+        </div>
       </div>
     </div>
   )

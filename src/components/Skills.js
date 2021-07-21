@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next'
 const Skills = () => {
   const { t } = useTranslation()
   return (
-    <div className="p-8 md:p-16 bg-gray-900">
+    <div className="p-8 md:p-16 bg-gray-300 dark:bg-gray-900 transition duration-300">
       <div className="flex flex-col justify-center lg:space-x-28 border-double border-b-8 border-gray-400 pb-12">
         <div className="hidden lg:flex flex-col space-y-9">
           <div className="flex items-center justify-center space-x-28">
@@ -14,7 +14,7 @@ const Skills = () => {
                 src="https://img.icons8.com/nolan/96/javascript.png"
                 alt="JS"
               />
-              <p className="text-yellow-500">Javascript</p>
+              <p className="text-black dark:text-yellow-500 transition duration-300">Javascript</p>
             </div>
             <div className="flex flex-col items-center">
               <img
@@ -22,7 +22,7 @@ const Skills = () => {
                 src="https://img.icons8.com/officel/80/000000/react.png"
                 alt="React"
               />
-              <p className="text-blue-300">React</p>
+              <p className="text-black dark:text-blue-300 transition duration-300">React</p>
             </div>
             <div className="flex flex-col items-center">
               <img
@@ -30,7 +30,7 @@ const Skills = () => {
                 src="https://img.icons8.com/color/96/000000/redux.png"
                 alt="React"
               />
-              <p className="text-purple-800">Redux</p>
+              <p className="text-black dark:text-purple-800 transition duration-300">Redux</p>
             </div>
             <div className="flex flex-col items-center">
               <img
@@ -38,7 +38,7 @@ const Skills = () => {
                 src="https://img.icons8.com/nolan/96/react-native.png"
                 alt="React"
               />
-              <p className="text-pink-800">React-Native</p>
+              <p className="text-black dark:text-pink-800 transition duration-300">React-Native</p>
             </div>
           </div>
           <div className="flex items-center justify-center space-x-24">
@@ -48,7 +48,7 @@ const Skills = () => {
                 src="https://img.icons8.com/color/96/000000/mongodb.png"
                 alt="React"
               />
-              <p className="text-green-400">MongoDB</p>
+              <p className="text-black dark:text-green-400 transition duration-300">MongoDB</p>
             </div>
             <div className="flex flex-col items-center">
               <img
@@ -56,7 +56,7 @@ const Skills = () => {
                 src="https://img.icons8.com/color/48/000000/graphql.png"
                 alt="React"
               />
-              <p className="text-pink-500">GraphQL</p>
+              <p className="text-black dark:text-pink-500 transition duration-300">GraphQL</p>
             </div>
             <div className="flex flex-col items-center">
               <img
@@ -64,7 +64,7 @@ const Skills = () => {
                 src="https://img.icons8.com/color/96/000000/nodejs.png"
                 alt="React"
               />
-              <p className="text-green-400">Node</p>
+              <p className="text-black dark:text-green-400 transition duration-300">Node</p>
             </div>
           </div>
           <div className="flex items-center justify-center space-x-24">
@@ -74,7 +74,7 @@ const Skills = () => {
                 src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.cb8046c163f77190406dfbf4dec89848.svg"
                 alt="React"
               />
-              <p className="text-blue-300">Tailwindcss</p>
+              <p className="text-black dark:text-blue-300 transition duration-300">Tailwindcss</p>
             </div>
             <div className="flex flex-col items-center">
               <img
@@ -82,7 +82,7 @@ const Skills = () => {
                 src="https://pics.freeicons.io/uploads/icons/png/3556671901536211770-512.png"
                 alt="Cypress.io"
               />
-              <p className="text-gray-50">Cypress.io</p>
+              <p className="text-black dark:text-gray-50 transition duration-300">Cypress.io</p>
             </div>
           </div>
         </div>
@@ -96,7 +96,7 @@ const Skills = () => {
                   src="https://img.icons8.com/nolan/96/javascript.png"
                   alt="JS"
                 />
-                <p className="text-sm text-yellow-500">Javascript</p>
+                <p className="text-sm text-black dark:text-yellow-500 transition duration-300">Javascript</p>
               </div>
               <div className="flex flex-col items-center">
                 <img
@@ -104,7 +104,7 @@ const Skills = () => {
                   src="https://img.icons8.com/officel/80/000000/react.png"
                   alt="React"
                 />
-                <p className="text-sm text-blue-300">React</p>
+                <p className="text-sm text-black dark:text-blue-300 transition duration-300">React</p>
               </div>
               <div className="flex flex-col items-center">
                 <img
@@ -112,7 +112,7 @@ const Skills = () => {
                   src="https://img.icons8.com/color/96/000000/redux.png"
                   alt="Redux"
                 />
-                <p className="text-sm text-purple-800">Redux</p>
+                <p className="text-sm text-black dark:text-purple-800 transition duration-300">Redux</p>
               </div>
             </div>
 
@@ -123,7 +123,7 @@ const Skills = () => {
                   src="https://img.icons8.com/nolan/96/react-native.png"
                   alt="React"
                 />
-                <p className="text-sm text-pink-800">React-Native</p>
+                <p className="text-sm text-black dark:text-pink-800 transition duration-300">React-Native</p>
               </div>
               <div className="flex flex-col items-center">
                 <img
@@ -131,7 +131,7 @@ const Skills = () => {
                   src="https://img.icons8.com/color/96/000000/mongodb.png"
                   alt="React"
                 />
-                <p className="text-sm text-green-400">MongoDB</p>
+                <p className="text-sm text-black dark:text-green-400 transition duration-300">MongoDB</p>
               </div>
               <div className="flex flex-col items-center">
                 <img
@@ -139,7 +139,7 @@ const Skills = () => {
                   src="https://img.icons8.com/color/48/000000/graphql.png"
                   alt="React"
                 />
-                <p className="text-sm text-pink-500">GraphQL</p>
+                <p className="text-sm text-black dark:text-pink-500 transition duration-300">GraphQL</p>
               </div>
             </div>
 
@@ -150,7 +150,7 @@ const Skills = () => {
                   src="https://img.icons8.com/color/96/000000/nodejs.png"
                   alt="React"
                 />
-                <p className="text-sm text-green-400">Node</p>
+                <p className="text-sm text-black dark:text-green-400 transition duration-300">Node</p>
               </div>
               <div className="flex flex-col items-center">
                 <img
@@ -158,7 +158,7 @@ const Skills = () => {
                   src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.cb8046c163f77190406dfbf4dec89848.svg"
                   alt="React"
                 />
-                <p className="text-sm text-blue-300">Tailwindcss</p>
+                <p className="text-sm text-black dark:text-blue-300 transition duration-300">Tailwindcss</p>
               </div>
               <div className="flex flex-col items-center">
                 <img
@@ -166,7 +166,7 @@ const Skills = () => {
                   src="https://pics.freeicons.io/uploads/icons/png/3556671901536211770-512.png"
                   alt="Cypress.io"
                 />
-                <p className="text-sm text-gray-300">Cypress.io</p>
+                <p className="text-sm text-black dark:text-gray-300 transition duration-300">Cypress.io</p>
               </div>
             </div>
           </div>
@@ -176,13 +176,13 @@ const Skills = () => {
         <div className="flex flex-col md:flex-row items-center space-y-5 md:space-y-0 w-full">
           <div className="relative flex items-center justify-evenly space-x-7 w-full md:w-1/2">
             <span className="spinner"></span>
-            <p className="md:px-5 my-2 text-gray-300 text-center text-xs sm:text-sm uppercase p-2 w-full">
+            <p className="md:px-5 my-2 text-black dark:text-gray-300 text-center text-xs sm:text-sm uppercase p-2 w-full transition duration-300">
               {t('skills.multitask')}
             </p>
           </div>
           <div className="relative flex items-center justify-evenly space-x-7 w-full md:w-1/2">
             <span className="spinner"></span>
-            <p className="md:px-5 my-2 text-gray-300 text-center text-xs sm:text-sm uppercase p-2 w-full">
+            <p className="md:px-5 my-2 text-black dark:text-gray-300 text-center text-xs sm:text-sm uppercase p-2 w-full transition duration-300">
               {t('skills.engaged')}
             </p>
           </div>
@@ -190,13 +190,13 @@ const Skills = () => {
         <div className="flex flex-col md:flex-row items-center space-y-5 md:space-y-0 w-full">
           <div className="relative flex items-center justify-evenly space-x-7 w-full md:w-1/2">
             <span className="spinner"></span>
-            <p className="md:px-5 my-2 text-gray-300 text-center text-xs sm:text-sm uppercase p-2">
+            <p className="md:px-5 my-2 text-black dark:text-gray-300 text-center text-xs sm:text-sm uppercase p-2 transition duration-300">
               {t('skills.lang1')}
             </p>
           </div>
           <div className="relative flex items-center justify-evenly space-x-7 w-full md:w-1/2">
             <span className="spinner"></span>
-            <p className="md:px-5 my-2 text-gray-300 text-center text-xs sm:text-sm uppercase p-2">
+            <p className="md:px-5 my-2 text-black dark:text-gray-300 text-center text-xs sm:text-sm uppercase p-2 transition duration-300">
               {t('skills.lang2')}
             </p>
           </div>
