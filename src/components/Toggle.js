@@ -14,7 +14,7 @@ const Toggle = () => {
     <div>
       <div className="block md:hidden">
         <span
-          className="bg-indigo-400 rounded-full block p-1 shadow-lg cursor-pointer text-white transition duration-300 "
+          className="bg-indigo-400 rounded-full block p-1 shadow-lg cursor-pointer text-white transition duration-300 focus-within:outline-none"
           onClick={() => handleTheme()}
         >
           {colorTheme === 'light' ? (
