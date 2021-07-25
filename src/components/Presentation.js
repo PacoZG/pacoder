@@ -12,14 +12,15 @@ const Presentation = () => {
           alt="profile"
         />
       </div>
-      <div className="p-10 md:pt-10 w-full md:w-3/4">
+      <div className="p-10 md:pt-8 w-full md:w-3/4">
         <h1 className="text-2xl text-gray-700 dark:text-gray-300 text-right transition duration-300">
           {t('Presentation.line0')}
           <span className="text-blue-700 text-right">FRANCISCO ZAVALA GONZALEZ</span>
         </h1>
-        <p className="text-gray-700 dark:text-gray-300 text-right transition duration-300">
+        <p className="text-gray-700 dark:text-gray-300 text-right text-lg transition duration-300">
           Junior Full Stack Developer
-        </p>
+        </p>{' '}
+        <br />
         <p className="text-lg text-gray-700 dark:text-gray-300 text-right transition duration-300">
           {t('Presentation.line1')}
         </p>

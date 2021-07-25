@@ -1,5 +1,6 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
+import { ReactComponent as Cypress } from '../utils/assets/cypress.svg'
 
 const Skills = () => {
   const { t } = useTranslation()
@@ -77,11 +78,7 @@ const Skills = () => {
               <p className="text-black dark:text-blue-300 transition duration-300">Tailwindcss</p>
             </div>
             <div className="flex flex-col items-center">
-              <img
-                className="skill-logo"
-                src="https://pics.freeicons.io/uploads/icons/png/3556671901536211770-512.png"
-                alt="Cypress.io"
-              />
+              <Cypress className="skill-logo h-16 sm:h-20 md:h-24" />
               <p className="text-black dark:text-gray-50 transition duration-300">Cypress.io</p>
             </div>
           </div>
@@ -161,11 +158,7 @@ const Skills = () => {
                 <p className="text-sm text-black dark:text-blue-300 transition duration-300">Tailwindcss</p>
               </div>
               <div className="flex flex-col items-center">
-                <img
-                  className="skill-logo"
-                  src="https://pics.freeicons.io/uploads/icons/png/3556671901536211770-512.png"
-                  alt="Cypress.io"
-                />
+                <Cypress className="skill-logo h-20 sm:h-24 md:h-28" />
                 <p className="text-sm text-black dark:text-gray-300 transition duration-300">Cypress.io</p>
               </div>
             </div>
