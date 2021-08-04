@@ -33,10 +33,10 @@ const Strenghts = () => {
             leaveFrom="opacity-700"
             leaveTo="opacity-0"
           >
-            <div className="text-gray-900 text-left border-t-2 border-gray-300 pt-2">
+            <div className="text-gray-300 text-left border-t-2 border-gray-300 pt-2">
               {t('strengths.line1_1')}{' '}
               <a
-                className="text-gray-900 underline transition duration-200 hover:text-indigo-600"
+                className="text-gray-300 underline transition duration-200 hover:text-indigo-600"
                 href="https://fullstackopen.com/en/"
                 alt="course"
               >
@@ -67,7 +67,7 @@ const Strenghts = () => {
             leaveFrom="opacity-700"
             leaveTo="opacity-0"
           >
-            <p className=" text-gray-900 text-left border-t-2 border-gray-300 pt-2 w-full ">{t('strengths.line2')}</p>
+            <p className=" text-gray-300 text-left border-t-2 border-gray-300 pt-2 w-full ">{t('strengths.line2')}</p>
           </Transition>
         </div>
         <div className="p-4 border-2 border-gray-300 rounded-md bg-gray-500 mb-3">
@@ -88,7 +88,7 @@ const Strenghts = () => {
             leaveFrom="opacity-700"
             leaveTo="opacity-0"
           >
-            <p className="text-gray-900 text-left border-t-2 border-gray-300 pt-2 w-full ">{t('strengths.line3')}</p>
+            <p className="text-gray-300 text-left border-t-2 border-gray-300 pt-2 w-full ">{t('strengths.line3')}</p>
           </Transition>
         </div>
         <div className="p-4 border-2 border-gray-300 rounded-md bg-gray-500 mb-3">
@@ -109,10 +109,10 @@ const Strenghts = () => {
             leaveFrom="opacity-700"
             leaveTo="opacity-0"
           >
-            <p className="text-gray-900 text-left border-t-2 border-gray-300 pt-2">
+            <p className="text-gray-300 text-left border-t-2 border-gray-300 pt-2">
               {t('strengths.line4_1')}
               <a
-                className="text-gray-900 underline transition duration-200 hover:text-indigo-600"
+                className="text-gray-300 underline transition duration-200 hover:text-indigo-600"
                 href="https://high5test.com/test/result-your-friend/MTUwMTU5Mg==/"
                 target="blank"
               >

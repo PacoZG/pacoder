@@ -16,17 +16,17 @@ const Education = () => {
             {t('education.line2')}
           </a>
         </h1>
-        <p className="text-gray-900 pt-1 text-justify">{t('education.line3')}</p>
+        <p className="text-gray-300 pt-1 text-justify">{t('education.line3')}</p>
       </div>
       <div className="bg-gray-500 border-2 border-gray-300 rounded-lg p-4 mb-2 w-full md:w-2/3 text-justify">
         <h1 className="text-gray-900 pb-1 font-bold border-b-2 border-gray-300">{t('education.line4')}</h1>
-        <p className="text-gray-900  pt-1">{t('education.line5')}</p>
-        <p className="text-gray-900  pt-1">{t('education.line6')}</p>
+        <p className="text-gray-300  pt-1">{t('education.line5')}</p>
+        <p className="text-gray-300  pt-1">{t('education.line6')}</p>
       </div>
       <div className="bg-gray-500 text-gray-900 border-2 border-gray-300 rounded-lg p-4 w-full md:w-2/3">
         <h1 className="text-gray-900 pb-1 font-bold border-b-2 border-gray-300">{t('education.line7')}</h1>
-        <p className="pt-1">{t('education.line8')}</p>
-        <p className="text-gray-900 pt-1">{t('education.line9')}</p>
+        <p className="text-gray-300 pt-1">{t('education.line8')}</p>
+        <p className="text-gray-300 pt-1">{t('education.line9')}</p>
       </div>
     </div>
   )
