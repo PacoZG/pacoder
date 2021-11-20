@@ -1,5 +1,5 @@
 {
-  "stickers":{
+  "stickers": {
     "who": "QUIEN SOY",
     "skills": "MIS HABILIDADES",
     "strengths": "MIS PUNTOS FUERTES",
@@ -46,12 +46,21 @@
     "line9": "@Universidad Politecnica de Cartagena - Escuela Técnica Superior de Ingenieria de Telecomunicación"
   },
   "experience": {
-    "line1":"Responsable de los deberes y mantenimiento del departamento de servicio de habitaciones junto con los deseos y necesidades de los huéspedes en el restaurante y las habitaciones de los huéspedes.",
-    "line2":"Servicio al Cliente",
-    "line3":"en varios puestos y departamentos - ENE 2007 - AGOSTO 2020",
-    "line4":"Supervisor de camarero, cocinero, lavaplatos. Experiencia que me ayuda a escuchar y comprender realmente las necesidades del cliente.",
-    "line5":"Baterista profesional",
-    "line6":"Líder de grupo y profesor de batería - ENE 2010 - AGOSTO 2010",
-    "line7":"Trabajé como baterista y líder de grupo en varias bandas y enseñó batería como un trabajo secundario."
+    "company4": "Houston Inc",
+    "period4": "SEPT 2021 - Present",
+    "position4": "Consultor junior",
+    "responsabilities4": "Soporte para escalar, depurar y mantener la funcionalidad del código según las necesidades de nuestros clientes.",
+    "company3": "Hotel Kämp",
+    "period3": "SEPT 2015 - AUG 2020",
+    "position3": "Camarero de servicio a la habitación y restaurant",
+    "responsabilities3": "Responsable de los deberes y mantenimiento del departamento de servicio de habitaciones junto con los deseos y necesidades de los huéspedes en el restaurante y las habitaciones de los huéspedes.",
+    "company2": "Numerosos restaurantes y hoteles",
+    "period2": "ENE 2007 - AGOSTO 2020",
+    "position2": "Camarero, Recepción y Personal de cocina",
+    "responsabilities2": "Supervisor de camarero, cocinero, lavaplatos. Experiencia que me ayuda a escuchar y comprender realmente las necesidades del cliente.",
+    "company1": "Numerosos bares, restaurantes, conciertos y tiendas musicales",
+    "period1": "ENE 1998 - AGOSTO 2011",
+    "position1": "Baterista profesional/Profesor de batería",
+    "responsabilities1": "Trabajé como baterista y líder de grupo en numerosas bandas y enseñé batería como un trabajo secundario."
   }
 }

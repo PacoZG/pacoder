@@ -1,10 +1,10 @@
-import Header from './components/header'
+import Header from './components/Header'
 import Body from './components/Body'
 import Footer from './components/Footer'
 
 const App = () => {
   return (
-    <div className=" w-screen">
+    <div className="w-screen">
       <Header />
       <Body />
       <Footer />

@@ -5,7 +5,7 @@ import StickyHeader from './StickyHeader'
 import Skills from './Skills'
 import Strenghts from './Strenghts'
 import Education from './Education'
-import Experience from './Experience'
+import WorkingExperience from './Experience/WorkingExperience'
 
 const Body = () => {
   const { t } = useTranslation()
@@ -20,7 +20,7 @@ const Body = () => {
       <StickyHeader text={t('stickers.education')} />
       <Education />
       <StickyHeader text={t('stickers.experience')} />
-      <Experience />
+      <WorkingExperience />
     </div>
   )
 }

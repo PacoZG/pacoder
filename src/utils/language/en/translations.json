@@ -1,5 +1,5 @@
 {
-  "stickers":{
+  "stickers": {
     "who": "WHO I AM",
     "skills": "MY SKILLS",
     "strengths": "MY STRENGTHS",
@@ -46,12 +46,21 @@
     "line9": "@Universidad Politecnica de Cartagena - Technical School of Telecommunications Engineering"
   },
   "experience": {
-    "line1":"Responsible for the duties and maintenance of the room service department along with the guest's wishes and needs at the restaurant and guests rooms",
-    "line2":"Customer service",
-    "line3":"in several positions and departments / JAN 2007 - AUG 2020",
-    "line4":"Waiter supervisor, cook, dishwasher. Experience that helps me to really listen and understand the customer's needs",
-    "line5":"Professional drummer",
-    "line6":"as a group leader and drum teacher / JAN 2010 - AUG 2010",
-    "line7":"Worked as a drummer and group leader in several bands and teaching drums as a side job"
+    "company4": "Houston Inc",
+    "period4": "SEPT 2021 - Present",
+    "position4": "Junior Consultant",
+    "responsabilities4": "Support to further scale, debug and maintain the code's functionality to our customers needs",
+    "company3": "Hotel Kämp",
+    "period3": "SEPT 2015 - AUG 2020",
+    "position3": "Room service and restaurant waiter",
+    "responsabilities3":"Responsible for the duties and maintenance of the room service department along with the guest's wishes and needs at the restaurant and guests rooms",
+    "company2": "Numerous restaurants and hotels", 
+    "position2":"Waiter, Front Desk and kitchen staff",
+    "period2":"JAN 2007 - AUG 2020",
+    "responsabilities2":"Waiter supervisor, cook, dishwasher. Experience that helps me to really listen and understand the customer's needs",
+    "company1": "Numerous bars, restaurants, concerts and music shops",
+    "period1": "JAN 1998 - AUGUST 2011",
+    "position1":"Professional drummer/Drum teacher",
+    "responsabilities1":"Worked as a drummer and group leader in several bands and teaching drums as a side job"
   }
 }

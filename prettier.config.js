@@ -7,4 +7,5 @@ module.exports = {
   'arrowParens': 'avoid',
   'printWidth': 120,
   'parser': 'flow',
+  'endOfLine': 'lf',
 }

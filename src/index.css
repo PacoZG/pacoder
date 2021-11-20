@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer components {
+  body {
+    font-family: 'Dosis', sans-serif;
+  }
   .skill-logo {
     @apply transition transform hover:-translate-y-1 hover:scale-150 duration-700 ease-in-out h-20 sm:h-24 md:h-28 rounded-full;
   }
