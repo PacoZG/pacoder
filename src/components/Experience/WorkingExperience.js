@@ -16,7 +16,7 @@ const WorkingExperience = () => {
   }
 
   return (
-    <div className="bg-gray-300 dark:bg-gray-900  flex flex-col items-center p-4 transition duration-300">
+    <div className="bg-gray-300 dark:bg-gray-900 flex flex-col items-center p-4 transition duration-300">
       <WorkingCompany experience={getWorkingCompany(4)} />
       <WorkingCompany experience={getWorkingCompany(3)} />
       <WorkingCompany experience={getWorkingCompany(2)} />
