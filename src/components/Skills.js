@@ -167,6 +167,13 @@ const Skills = () => {
                 <p className="text-sm text-black dark:text-gray-300 transition duration-300">Cypress.io</p>
               </div>
             </div>
+
+            <div className="flex items-center justify-evenly space-x-5 sm:space-x-11 md:space-x-14">
+              <div className="flex flex-col items-center">
+                <Typescript className="skill-logo" />
+                <p className="text-sm text-black dark:text-green-400 transition duration-300">Typescript</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
