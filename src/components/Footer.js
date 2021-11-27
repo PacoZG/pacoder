@@ -2,7 +2,6 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { FacebookShareButton, FacebookIcon, LinkedinIcon, LinkedinShareButton } from 'react-share'
 import { ReactComponent as Address } from '../utils/assets/address.svg'
-import { ReactComponent as Mobile } from '../utils/assets/mobile.svg'
 import { ReactComponent as Email } from '../utils/assets/email.svg'
 
 const Footer = () => {
@@ -16,10 +15,6 @@ const Footer = () => {
               <Address className="h-3 w-3 text-gray-300" />
               <p className="text-gray-300 text-sm md:pl-1">00920, Helsinki</p>
             </div>
-          </div>
-          <div className="flex space-x-1 items-center">
-            <Mobile className="h-4 w-4 text-gray-300" />
-            <p className="text-gray-300 text-sm space-y-2 md:space-y-0 ">0449 888032</p>
           </div>
           <div className="flex space-x-1 items-center">
             <Email className="h-4 w-4 text-gray-300" />

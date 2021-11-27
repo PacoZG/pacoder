@@ -1,6 +1,7 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { ReactComponent as Cypress } from '../utils/assets/cypress.svg'
+import { ReactComponent as Typescript } from '../utils/assets/typescript.svg'
 
 const Skills = () => {
   const { t } = useTranslation()
@@ -43,6 +44,10 @@ const Skills = () => {
             </div>
           </div>
           <div className="flex items-center justify-center space-x-24">
+            <div className="flex flex-col items-center ">
+              <Typescript className=" skill-logo w-20 rounded-none  " />
+              <p className="text-black dark:text-yellow-500 transition duration-300">Typescript</p>
+            </div>
             <div className="flex flex-col items-center">
               <img
                 className="skill-logo bg-gray-300 p-2 "
@@ -68,7 +73,7 @@ const Skills = () => {
               <p className="text-black dark:text-green-400 transition duration-300">Node</p>
             </div>
           </div>
-          <div className="flex items-center justify-center space-x-24">
+          <div className="flex items-center justify-center gap-20">
             <div className="flex flex-col items-center">
               <img
                 className="skill-logo p-3 "
