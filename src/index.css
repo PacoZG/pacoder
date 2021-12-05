@@ -29,12 +29,12 @@
   }
   
   .link-group {
-    @apply flex flex-row items-center justify-start gap-3 md:gap-4 scale-0 w-full ;
+    @apply flex flex-row items-center gap-2 md:gap-4 w-full ;
   }
   /* mobile view */
 
   .link-menu {
-    @apply absolute flex flex-row items-center justify-start top-14 left-0 h-9 w-full pl-1.5 cursor-pointer ;
+    @apply absolute flex flex-row items-center top-14 left-0 h-9 w-full pl-1.5 cursor-pointer ;
   }
 
   .mobile-link {

@@ -53,7 +53,7 @@ const Header = () => {
           )}
         </div>
         <div className="header-style link-menu">
-          <div className="flex items-center h-12 w-12 ">
+          <div className="flex items-center h-12 w-9 ">
             <MobileMenu className="menu-icon border-r  border-gray-300 p-1" />
           </div>
           <div className="link-group">
