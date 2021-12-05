@@ -11,6 +11,7 @@ module.exports = {
           1000: '#000552',
         },
       },
+      scale: ['active', 'group-hover'],
     },
     screens: {
       sm: '640px',

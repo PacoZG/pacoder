@@ -6,6 +6,11 @@
     "education": "EDUCATION",
     "experience": "WORK EXPERIENCE"
   },
+  "Header": {
+    "presentation": "Presentation",
+    "skills": "My Skills & Strenghts",
+    "experience": "Working Experience"
+  },
   "Footer": {
     "developed-by": "Developed by:",
     "share-cv": "SHARE MY CV IN"

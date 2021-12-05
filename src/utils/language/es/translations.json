@@ -6,6 +6,11 @@
     "education": "EDUCACIÓN",
     "experience": "EXPERIENCIA LABORAL"
   },
+  "Header": {
+    "presentation": "Presentación",
+    "skills": "Habilidades y Puntos Fuertes",
+    "experience": "Experiencia Laboral"
+  },
   "Footer": {
     "developed-by": "Desarrollado por:",
     "share-cv": "COMPARTE MI CV EN"

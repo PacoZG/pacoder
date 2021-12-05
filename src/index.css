@@ -6,10 +6,56 @@
   body {
     font-family: 'Dosis', sans-serif;
   }
+  .page-layout {
+    @apply min-h-screen pt-28 p-1 md:pt-24 md:p-8 bg-blue-300 dark:bg-blue-1000 dark:bg-opacity-80 transform duration-500;
+  }
   .skill-logo {
     @apply transition transform hover:-translate-y-1 hover:scale-150 duration-700 ease-in-out h-20 sm:h-24 md:h-28 rounded-full;
   }
   .spinner {
     @apply absolute top-0 left-0 w-2 h-full bg-red-900 transform -skew-x-20 transition hover:-rotate-180 hover:scale-125;
   }
+  .sticky-header {
+    @apply text-gray-300 text-4xl text-center p-3 bg-blue-1000 border-t-2 border-b-2 border-black dark:border-gray-300 transition duration-500;
+  }
+  .mobile-lang-text-style {
+    @apply text-gray-900 dark:text-gray-300 text-2xl font-bold transition transform hover:text-blue-300 duration-500 ease-in-out;
+  }
+  .pc-lang-text-style {
+    @apply text-gray-700 dark:text-gray-300 text-2xl font-bold transition transform hover:-translate-y-1 hover:scale-110 hover:text-blue-300 duration-500 ease-in-out;
+  }
+  .header-style {
+    @apply bg-gray-600 bg-opacity-80 dark:bg-gray-900 dark:bg-opacity-80 transform duration-500 rounded-3xl shadow-2xl border border-gray-100 ;
+  }
+  
+  .link-group {
+    @apply flex flex-row items-center justify-start gap-3 md:gap-4 scale-0 w-full ;
+  }
+  /* mobile view */
+
+  .link-menu {
+    @apply absolute flex flex-row items-center justify-start top-14 left-0 h-9 w-full pl-1.5 cursor-pointer ;
+  }
+
+  .mobile-link {
+    @apply text-gray-300 text-sm italic w-max transform transition duration-300;
+  }
+
+  /* pc view */
+  .link {
+    @apply text-gray-300 text-sm italic w-max transform opacity-0 scale-x-0 -translate-x-40 transition duration-150 ;
+  }
+  .web-link-menu {
+    @apply absolute flex flex-row items-center justify-start top-24 left-0 h-10 w-10 pl-2 cursor-pointer ;
+  }
+  .web-link-menu:hover {
+    @apply w-1/4 ;
+  }
+
+  .web-link-menu:hover .link {
+    @apply transform transition duration-1000 opacity-100 scale-x-100 hover:underline translate-x-0 ;
+  }
+  .menu-icon {
+    @apply h-6 w-6 text-gray-300 ;
+  }  
 }

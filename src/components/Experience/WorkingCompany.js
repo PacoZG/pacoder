@@ -1,6 +1,6 @@
 import React from 'react'
 
-const WorkingCompany = ({ experience }) => {
+const WorkingCompany = ({ experience, link }) => {
   return (
     <div
       key={experience.company}
@@ -8,7 +8,14 @@ const WorkingCompany = ({ experience }) => {
     >
       <div className="">
         <div className="flex flex-col ">
-          <h1 className="text-2xl">{experience.company}</h1>
+          <h1 className="text-2xl">
+            {link && (
+              <a className="underline md:no-underline md:hover:underline" alt="company" href={link} target="blank">
+                {experience.company}
+              </a>
+            )}
+            {!link && experience.company}
+          </h1>
           <div className="text-md">{experience.period}</div>
         </div>
         <div className="text-gray-900 pb-1 font-bold">{experience.position}</div>

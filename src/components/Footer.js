@@ -7,7 +7,7 @@ import { ReactComponent as Email } from '../utils/assets/email.svg'
 const Footer = () => {
   const { t } = useTranslation()
   return (
-    <div className="relative inset-x-0 bottom-0 z-30 p-4 pt-3 pb-3 bg-blue-1000 border-t border-black dark:border-gray-200 transition duration-300">
+    <div className="relative inset-x-0 bottom-0 p-4 pt-3 pb-3 bg-blue-1000 border-t border-black dark:border-gray-200 transition duration-500">
       <div className="flex flex-col md:flex-row justify-around items-center md:items-start space-y-2 md:space-y-0 md:p-2">
         <div className="flex flex-col items-center md:items-start space-y-2">
           <div className="flex flex-col items-center md:items-start space-y-2 md:space-y-0 ">
