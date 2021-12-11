@@ -5,7 +5,7 @@ import localdb from '../utils/localdb'
 import { Link } from 'react-router-dom'
 import { EmailIcon, LinkedinIcon, WhatsappIcon } from 'react-share'
 import { ReactComponent as GitHub } from '../utils/assets/github.svg'
-import { ReactComponent as MobileMenu } from '../utils/assets/mobile-menu.svg'
+import { ReactComponent as MenuIcon } from '../utils/assets/menu-icon.svg'
 import Toggle from './Toggle'
 
 const Header = () => {
@@ -54,7 +54,7 @@ const Header = () => {
         </div>
         <div className="header-style link-menu">
           <div className="flex items-center h-12 w-9 ">
-            <MobileMenu className="menu-icon border-r  border-gray-300 p-1" />
+            <MenuIcon className="menu-icon border-r border-gray-300 p-1" />
           </div>
           <div className="link-group">
             <Link className="mobile-link" to="/intro">
@@ -102,7 +102,7 @@ const Header = () => {
           </div>
           <div className="header-style web-link-menu">
             <div className="flex items-center h-9 w-9">
-              <MobileMenu className="menu-icon" />
+              <MenuIcon className="menu-icon transform transition duration-500 hover:rotate-180 border-l border-transparent hover:border-gray-300" />
             </div>
             <div className="link-group">
               <Link className="link" to="/intro">
