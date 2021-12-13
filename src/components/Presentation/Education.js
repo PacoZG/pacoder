@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next'
 const Education = () => {
   const { t } = useTranslation()
   return (
-    <div className="bg-gray-300 dark:bg-gray-900 flex flex-col items-center p-4 md:py-20 transition duration-500 rounded-b-xl">
+    <div className="bg-gray-300 dark:bg-gray-900 flex flex-col items-center p-4 md:py-10 lg:py-20 transition duration-500 rounded-b-xl">
       <div className="bg-gray-500 border-2 border-gray-300 rounded-lg p-4 mb-2 w-full sm:w-11/12 lg:w-2/3">
         <h1 className="text-gray-900 pb-1 font-bold border-b-2 border-gray-300">
           {t('education.line1')}

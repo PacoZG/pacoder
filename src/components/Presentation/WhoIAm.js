@@ -5,9 +5,9 @@ const WhoIAm = () => {
   const { t } = useTranslation()
   return (
     <div className=" flex flex-col items-center md:flex-row md:justify-center bg-gray-300 dark:bg-gray-900 p-3 md:p-10 w-full transition duration-500">
-      <div className="flex flex-col items-center md:pl-20">
+      <div className="flex flex-col items-center md:pl-5 lg:pl-20">
         <img
-          className=" w-10/12 h-10/12 md:h-96 md:w-80 border-4 border-black dark:border-gray-300 rounded-xl transition duration-500 "
+          className=" w-10/12 h-10/12 md:h-96 md:w-full lg:w-80 border-4 border-black dark:border-gray-300 rounded-xl transition duration-500 "
           src="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1625155266/CV%20Pics/kxcpai1mniycdxszmgbq.jpg"
           alt="profile"
         />
