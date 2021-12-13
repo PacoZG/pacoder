@@ -1,4 +1,4 @@
-import Header from './components/header'
+import Header from './components/Header'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Footer from './components/Footer'
 import Presentation from './components/Presentation'

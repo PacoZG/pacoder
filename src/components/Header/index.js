@@ -1,26 +1,32 @@
 import React, { useState } from 'react'
 import i18n from 'i18next'
+import './header-style.css'
 import { useTranslation } from 'react-i18next'
-import localdb from '../utils/localdb'
+import localdb from '../../utils/localdb'
 import { Link } from 'react-router-dom'
 import { EmailIcon, LinkedinIcon, WhatsappIcon } from 'react-share'
-import { ReactComponent as GitHub } from '../utils/assets/github.svg'
-import { ReactComponent as MenuIcon } from '../utils/assets/menu-icon.svg'
-import Toggle from './Toggle'
+import { ReactComponent as GitHub } from '../../utils/assets/github.svg'
+import { ReactComponent as MenuIcon } from '../../utils/assets/menu-icon.svg'
+import { ReactComponent as XIcon } from '../../utils/assets/x-icon.svg'
+import Toggle from '../Toggle'
 
 const Header = () => {
   const usersLanguage = localdb.getLanguage() ? localdb.getLanguage() : 'EN'
   const [language, setLanguage] = useState(usersLanguage)
   const { t } = useTranslation()
 
-  const handleLanguage = lang => {
-    setLanguage(lang)
-    i18n.changeLanguage(lang)
-    localdb.setLanguage(lang)
+  const handleLanguage = () => {
+    if (language === 'EN') {
+      setLanguage('ES')
+    } else {
+      setLanguage('EN')
+    }
+    i18n.changeLanguage(language)
+    localdb.setLanguage(language)
   }
   return (
     <div className="fixed z-10 w-screen bg-transparent transition duration-500">
-      <div className="header-style relative md:hidden flex flex-row items-center justify-center mx-3 m-2">
+      <div className="header-style relative lg:hidden flex flex-row items-center justify-center mx-3 m-2">
         <div className="flex justify-center w-full">
           <Toggle />
         </div>
@@ -42,21 +48,15 @@ const Header = () => {
           </a>
         </div>
         <div className="flex justify-center w-full">
-          {language === 'ES' ? (
-            <button className="mobile-lang-text-style" onClick={() => handleLanguage('EN')}>
-              ENG
-            </button>
-          ) : (
-            <button className="mobile-lang-text-style" onClick={() => handleLanguage('ES')}>
-              ESP
-            </button>
-          )}
+          <button className="mobile-lang-text-style" onClick={() => handleLanguage()}>
+            {language === 'EN' ? 'ENG' : 'ESP'}
+          </button>
         </div>
         <div className="header-style link-menu">
           <div className="flex items-center h-12 w-9 ">
-            <MenuIcon className="menu-icon border-r border-gray-300 p-1" />
+            <MenuIcon className=" text-gray-300 border-r border-gray-300 p-1 h-7 w-7" />
           </div>
-          <div className="link-group">
+          <div className="mobile-link-group">
             <Link className="mobile-link" to="/intro">
               {t('Header.presentation')}
             </Link>
@@ -69,7 +69,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <div className="header-style flex flex-row items-center justify-evenly p-1 shadow-2xl  mr-14 ml-10 m-2">
           <Toggle />
           <div className="flex items-center space-x-1 md:space-x-6 p-2">
@@ -89,20 +89,13 @@ const Header = () => {
               <EmailIcon size={46} borderRadius={10} />
             </a>
           </div>
-          <div>
-            {language === 'ES' ? (
-              <button className="pc-lang-text-style" onClick={() => handleLanguage('EN')}>
-                ENG
-              </button>
-            ) : (
-              <button className="pc-lang-text-style" onClick={() => handleLanguage('ES')}>
-                ESP
-              </button>
-            )}
-          </div>
+          <button className="pc-lang-text-style" onClick={() => handleLanguage()}>
+            {language === 'EN' ? 'ENG' : 'ESP'}
+          </button>
           <div className="header-style web-link-menu">
-            <div className="flex items-center h-9 w-9">
-              <MenuIcon className="menu-icon transform transition duration-500 hover:rotate-180 border-l border-transparent hover:border-gray-300" />
+            <div className="icon-container">
+              <MenuIcon className="menu-icon" />
+              <XIcon className="x-icon" />
             </div>
             <div className="link-group">
               <Link className="link" to="/intro">

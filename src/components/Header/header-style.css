@@ -1,0 +1,116 @@
+.icon-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: rgba(209, 213, 219);
+  transition: ease-out;
+  transition-duration: 500ms;
+  height: 34px;
+  width: 34px;
+  border-left: 1px;
+  border-right-color: transparent;
+  cursor: pointer;
+}
+
+.icon-container:hover {
+  border-left-width: 1px;
+  border-right-color: rgba(209, 213, 219);
+}
+
+
+.header-style {
+  @apply bg-gray-600 bg-opacity-80 dark:bg-gray-900 dark:bg-opacity-80 transform duration-500 rounded-3xl shadow-2xl border border-gray-100 ;
+}
+
+.web-link-menu {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  top: 96px;
+  left: 0px;
+  height: 40px;
+  width: 40px;
+  padding-left: 8px;
+}
+
+.web-link-menu:hover {
+  width: max-content;
+  padding-right: 20px;
+}
+
+.link-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 24px;
+  width: 0px;
+  cursor: pointer;
+  transition: ease-out;
+  transition-duration: 500ms;
+}
+
+.web-link-menu:hover .link-group {
+  gap: 8px;
+  width: fit-content;
+  padding-left: 4px;
+  padding-right: 4px;
+  transform: scaleX(1);
+}
+
+.link {
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(209, 213, 219);
+  font-style: italic;
+  height: 20px;
+  width: max-content;
+  transform: scale(0);
+  bottom: 0%;
+  translate: -50px;
+  transition: ease-in;
+  cursor: pointer;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.web-link-menu:hover .link {
+  transform: scale(1);
+  translate: 0px;
+  transition: ease-in;
+  transition-duration: 500ms;
+  bottom: 100%;
+}
+
+.menu-icon {
+  position: absolute;
+  transform: scale(1);
+  transition: ease-out;
+  transition-duration: 500ms;
+  height: 24px;
+  width: 24px;
+}
+
+.web-link-menu:hover .menu-icon {
+  transform: scale(0) rotate(720deg);
+  transition-duration: 150ms;
+  opacity: 0;
+}
+
+.x-icon {
+  position: absolute;
+  transform: scale(0) rotate(-720deg);
+  transition: ease-out;
+  transition-duration: 150ms;
+  height: 24px;
+  width: 24px;
+  
+}
+
+.web-link-menu:hover .x-icon {
+  transform: scale(1);
+  transition-duration: 500ms;
+}
