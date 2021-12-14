@@ -10,7 +10,7 @@
     @apply min-h-screen pt-28 md:pt-32 p-1 lg:pt-24 md:p-8 bg-blue-300 dark:bg-blue-1000 dark:bg-opacity-80 transform duration-500;
   }
   .skill-logo {
-    @apply transition transform hover:-translate-y-1 hover:scale-150 duration-700 ease-in-out h-20 sm:h-24 md:h-28 rounded-full;
+    @apply transition transform hover:-translate-y-1 hover:scale-110 duration-700 ease-in-out h-20 sm:h-24 md:h-28 rounded-full;
   }
   .spinner {
     @apply absolute top-0 left-0 w-2 h-full bg-red-900 transform -skew-x-20 transition hover:-rotate-180 hover:scale-125;
@@ -22,7 +22,7 @@
     @apply text-gray-900 dark:text-gray-300 text-2xl font-bold transition transform duration-500 ease-in-out;
   }
   .pc-lang-text-style {
-    @apply text-gray-700 dark:text-gray-300 text-2xl font-bold transition transform hover:-translate-y-1 hover:scale-110 hover:text-blue-300 duration-500 ease-in-out;
+    @apply text-gray-700 dark:text-gray-300 text-2xl font-bold transition transform hover:-translate-y-1 hover:scale-125 hover:text-blue-300 duration-500 ease-in-out;
   }
   
   /* mobile view */

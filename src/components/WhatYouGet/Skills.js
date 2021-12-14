@@ -2,6 +2,7 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { ReactComponent as Cypress } from '../../utils/assets/cypress.svg'
 import { ReactComponent as Typescript } from '../../utils/assets/typescript.svg'
+import { ReactComponent as Tailwind } from '../../utils/assets/tailwind-css.svg'
 
 const Skills = () => {
   const { t } = useTranslation()
@@ -75,11 +76,7 @@ const Skills = () => {
           </div>
           <div className="flex items-center justify-center gap-20">
             <div className="flex flex-col items-center">
-              <img
-                className="skill-logo p-3 "
-                src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.cb8046c163f77190406dfbf4dec89848.svg"
-                alt="React"
-              />
+              <Tailwind className="skill-logo h-12 sm:h-16 md:h-20" />
               <p className="text-black dark:text-blue-300 transition duration-500">Tailwindcss</p>
             </div>
             <div className="flex flex-col items-center">
