@@ -2,15 +2,15 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { ReactComponent as Cypress } from '../../utils/assets/cypress.svg'
 import { ReactComponent as Typescript } from '../../utils/assets/typescript.svg'
-import { ReactComponent as Tailwind } from '../../utils/assets/tailwind-css.svg'
-
+// import { ReactComponent as Tailwind } from '../../utils/assets/tailwind-css.svg'
+import Tailwind from '../../utils/assets/tailwind-css.png'
 const Skills = () => {
   const { t } = useTranslation()
   return (
     <div className="p-8 md:p-16 bg-gray-300 dark:bg-gray-900 transition duration-500">
       <div className="flex flex-col justify-center lg:space-x-28 border-double border-b-8 border-gray-400 pb-12">
         <div className="hidden lg:flex flex-col space-y-9">
-          <div className="flex items-center justify-center space-x-28">
+          <div className="flex items-center justify-center gap-24">
             <div className="flex flex-col items-center ">
               <img
                 className="skill-logo bg-yellow-200 p-2 "
@@ -44,7 +44,7 @@ const Skills = () => {
               <p className="text-black dark:text-pink-800 transition duration-500">React-Native</p>
             </div>
           </div>
-          <div className="flex items-center justify-center space-x-24">
+          <div className="flex items-center justify-center gap-24">
             <div className="flex flex-col items-center ">
               <Typescript className=" skill-logo w-20 rounded-none  " />
               <p className="text-black dark:text-yellow-500 transition duration-500">Typescript</p>
@@ -74,9 +74,9 @@ const Skills = () => {
               <p className="text-black dark:text-green-400 transition duration-500">Node</p>
             </div>
           </div>
-          <div className="flex items-center justify-center gap-20">
+          <div className="flex items-center justify-center gap-24">
             <div className="flex flex-col items-center">
-              <Tailwind className="skill-logo h-12 sm:h-16 md:h-20" />
+              <img alt="tailwind-logo" src={Tailwind} className="skill-logo mb-4 h-20 w-32" />
               <p className="text-black dark:text-blue-300 transition duration-500">Tailwindcss</p>
             </div>
             <div className="flex flex-col items-center">
@@ -152,15 +152,11 @@ const Skills = () => {
                 <p className="text-sm text-black dark:text-green-400 transition duration-500">Node</p>
               </div>
               <div className="flex flex-col items-center">
-                <img
-                  className="skill-logo p-3 "
-                  src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.cb8046c163f77190406dfbf4dec89848.svg"
-                  alt="React"
-                />
+                <img alt="tailwind-logo" src={Tailwind} className="skill-logo h-16 w-20 mb-4 pt-3" />
                 <p className="text-sm text-black dark:text-blue-300 transition duration-500">Tailwindcss</p>
               </div>
               <div className="flex flex-col items-center">
-                <Cypress className="skill-logo h-20 sm:h-24 md:h-28" />
+                <Cypress className="skill-logo h-20 w-20" />
                 <p className="text-sm text-black dark:text-gray-300 transition duration-500">Cypress.io</p>
               </div>
             </div>
