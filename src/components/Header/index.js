@@ -15,14 +15,10 @@ const Header = () => {
   const [language, setLanguage] = useState(usersLanguage)
   const { t } = useTranslation()
 
-  const handleLanguage = () => {
-    if (language === 'EN') {
-      setLanguage('ES')
-    } else {
-      setLanguage('EN')
-    }
-    i18n.changeLanguage(language)
-    localdb.setLanguage(language)
+  const handleLanguage = lang => {
+    setLanguage(lang)
+    i18n.changeLanguage(lang)
+    localdb.setLanguage(lang)
   }
   return (
     <div className="fixed z-10 w-screen bg-transparent transition duration-500">
@@ -48,9 +44,15 @@ const Header = () => {
           </a>
         </div>
         <div className="flex justify-center w-full">
-          <button className="mobile-lang-text-style" onClick={() => handleLanguage()}>
-            {language === 'EN' ? 'ENG' : 'ESP'}
-          </button>
+          {language === 'ES' ? (
+            <button className="mobile-lang-text-style" onClick={() => handleLanguage('EN')}>
+              ENG
+            </button>
+          ) : (
+            <button className="mobile-lang-text-style" onClick={() => handleLanguage('ES')}>
+              ESP
+            </button>
+          )}
         </div>
         <div className="header-style link-menu">
           <div className="flex items-center h-12 w-9 ">
@@ -89,9 +91,15 @@ const Header = () => {
               <EmailIcon size={46} borderRadius={10} />
             </a>
           </div>
-          <button className="pc-lang-text-style" onClick={() => handleLanguage()}>
-            {language === 'EN' ? 'ENG' : 'ESP'}
-          </button>
+          {language === 'ES' ? (
+            <button className="pc-lang-text-style" onClick={() => handleLanguage('EN')}>
+              ENG
+            </button>
+          ) : (
+            <button className="pc-lang-text-style" onClick={() => handleLanguage('ES')}>
+              ESP
+            </button>
+          )}
           <div className="header-style web-link-menu">
             <div className="icon-container">
               <MenuIcon className="menu-icon" />

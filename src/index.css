@@ -7,7 +7,7 @@
     font-family: 'Dosis', sans-serif;
   }
   .page-layout {
-    @apply min-h-screen pt-28 md:pt-32 p-1 lg:pt-24 md:p-8 bg-blue-300 dark:bg-blue-1000 dark:bg-opacity-80 transform duration-500;
+    @apply min-h-screen p-2 md:p-4 lg:p-8 pt-28 md:pt-28 lg:pt-24  bg-blue-300 dark:bg-blue-1000 dark:bg-opacity-80 transform duration-500;
   }
   .skill-logo {
     @apply transition transform hover:-translate-y-1 hover:scale-110 duration-700 ease-in-out h-20 sm:h-24 md:h-28 rounded-full;
@@ -30,9 +30,9 @@
     @apply absolute flex flex-row items-center top-14 left-0 h-9 w-full pl-1.5 cursor-pointer ;
   }
   .mobile-link-group {
-    @apply flex items-center justify-center gap-2;
+    @apply flex items-center justify-center gap-2 md:gap-6 w-full;
   }
   .mobile-link {
-    @apply text-gray-300 text-sm italic w-max transform transition duration-300;
+    @apply text-gray-300 text-xs md:text-sm italic w-max transform transition duration-300 tracking-wide md:tracking-widest;
   }
 }
