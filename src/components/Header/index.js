@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import i18n from 'i18next'
 import './header-style.css'
 import { useTranslation } from 'react-i18next'
@@ -12,13 +12,16 @@ import Toggle from '../Toggle'
 
 const Header = () => {
   const usersLanguage = localdb.getLanguage() ? localdb.getLanguage() : 'EN'
-  const [language, setLanguage] = useState(usersLanguage)
   const { t } = useTranslation()
 
-  const handleLanguage = lang => {
-    setLanguage(lang)
-    i18n.changeLanguage(lang)
-    localdb.setLanguage(lang)
+  const handleLanguage = () => {
+    if (usersLanguage === 'EN') {
+      i18n.changeLanguage('ES')
+      localdb.setLanguage('ES')
+    } else {
+      i18n.changeLanguage('EN')
+      localdb.setLanguage('EN')
+    }
   }
   return (
     <div className="fixed z-10 w-screen bg-transparent transition duration-500">
@@ -44,19 +47,13 @@ const Header = () => {
           </a>
         </div>
         <div className="flex justify-center w-full">
-          {language === 'ES' ? (
-            <button className="mobile-lang-text-style" onClick={() => handleLanguage('EN')}>
-              ENG
-            </button>
-          ) : (
-            <button className="mobile-lang-text-style" onClick={() => handleLanguage('ES')}>
-              ESP
-            </button>
-          )}
+          <button className="mobile-lang-text-style" onClick={() => handleLanguage()}>
+            {usersLanguage === 'EN' ? 'ENG' : 'ESP'}
+          </button>
         </div>
         <div className="header-style link-menu">
           <div className="flex items-center h-12 w-9 ">
-            <MenuIcon className=" text-gray-300 border-r border-gray-300 p-1 h-7 w-7" />
+            <MenuIcon className=" text-gray-200 border-r border-gray-300 p-1 h-7 w-7" />
           </div>
           <div className="mobile-link-group">
             <Link className="mobile-link" to="/intro">
@@ -91,15 +88,9 @@ const Header = () => {
               <EmailIcon size={46} borderRadius={10} />
             </a>
           </div>
-          {language === 'ES' ? (
-            <button className="pc-lang-text-style" onClick={() => handleLanguage('EN')}>
-              ENG
-            </button>
-          ) : (
-            <button className="pc-lang-text-style" onClick={() => handleLanguage('ES')}>
-              ESP
-            </button>
-          )}
+          <button className="pc-lang-text-style" onClick={() => handleLanguage()}>
+            {usersLanguage === 'EN' ? 'ENG' : 'ESP'}
+          </button>
           <div className="header-style web-link-menu">
             <div className="icon-container">
               <MenuIcon className="menu-icon" />
