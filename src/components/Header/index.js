@@ -13,8 +13,6 @@ import Toggle from '../Toggle'
 const Header = () => {
   const usersLanguage = localdb.getLanguage()
   const { t } = useTranslation()
-  console.log(localStorage.getItem('i18nextLng'))
-
   useEffect(() => {
     var language = window.navigator.userLanguage || window.navigator.language
     if (!usersLanguage && language === 'es-ES') {
