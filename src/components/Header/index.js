@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import i18n from 'i18next'
 import './header-style.css'
 import { useTranslation } from 'react-i18next'
@@ -11,8 +11,15 @@ import { ReactComponent as XIcon } from '../../utils/assets/x-icon.svg'
 import Toggle from '../Toggle'
 
 const Header = () => {
-  const usersLanguage = localdb.getLanguage() ? localdb.getLanguage() : 'EN'
+  const usersLanguage = localdb.getLanguage()
   const { t } = useTranslation()
+  useEffect(() => {
+    var language = window.navigator.userLanguage || window.navigator.language
+    if (!usersLanguage && language === 'es-ES') {
+      i18n.changeLanguage('ES')
+      localdb.setLanguage('ES')
+    }
+  }, [usersLanguage])
 
   const handleLanguage = () => {
     if (usersLanguage === 'EN') {

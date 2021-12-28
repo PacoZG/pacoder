@@ -3,6 +3,7 @@ const path = require('path')
 const Dotenv = require('dotenv-webpack')
 const { InjectManifest } = require('workbox-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
+const webpack = require('webpack')
 
 const webpackPlugins = [
   new HtmlWebpackPlugin({
@@ -59,5 +60,10 @@ module.exports = {
       },
     ],
   },
-  plugins: webpackPlugins,
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify('development'),
+    }),
+    webpackPlugins,
+  ],
 }
