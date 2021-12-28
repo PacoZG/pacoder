@@ -48,7 +48,7 @@ const Header = () => {
         </div>
         <div className="flex justify-center w-full">
           <button className="mobile-lang-text-style" onClick={() => handleLanguage()}>
-            {usersLanguage === 'EN' ? 'ENG' : 'ESP'}
+            {usersLanguage === 'EN' ? 'ESP' : 'ENG'}
           </button>
         </div>
         <div className="header-style link-menu">
@@ -89,7 +89,7 @@ const Header = () => {
             </a>
           </div>
           <button className="pc-lang-text-style" onClick={() => handleLanguage()}>
-            {usersLanguage === 'EN' ? 'ENG' : 'ESP'}
+            {usersLanguage === 'EN' ? 'ESP' : 'ENG'}
           </button>
           <div className="header-style web-link-menu">
             <div className="icon-container">

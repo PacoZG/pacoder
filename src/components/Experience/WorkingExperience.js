@@ -16,7 +16,7 @@ const WorkingExperience = () => {
   }
 
   return (
-    <div className="bg-gray-300 dark:bg-gray-900 flex flex-col items-center p-4 md:py-10 lg:py-20 transition duration-500">
+    <div className=" flex flex-col items-center justify-center bg-gray-300 dark:bg-gray-900 rounded-b-xl p-4 md:py-10 lg:py-20 transition duration-500 bg-opacity-70 dark:bg-opacity-70 min-h-screen">
       <WorkingCompany experience={getWorkingCompany(4)} link="https://houston-inc.com/" />
       <WorkingCompany experience={getWorkingCompany(3)} link="https://www.hotelkamp.com/en/" />
       <WorkingCompany experience={getWorkingCompany(2)} />

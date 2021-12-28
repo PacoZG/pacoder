@@ -10,7 +10,7 @@ const Strenghts = () => {
   const [stgr3, setStgr3] = useState(false)
   const [stgr4, setStgr4] = useState(false)
   return (
-    <div className="bg-gray-300 dark:bg-gray-900 flex flex-col items-center p-4 md:py-10 lg:py-20 transition duration-500 rounded-b-xl">
+    <div className="bg-gray-300 dark:bg-gray-900 flex flex-col items-center p-4 md:py-10 lg:py-20 transition duration-500 rounded-b-xl bg-opacity-70 dark:bg-opacity-70">
       <div className="w-full sm:w-11/12 lg:w-2/3 text-center">
         <div className="p-4 border-2 border-gray-300 rounded-md bg-gray-500 mb-3">
           <button className="flex items-center justify-between w-full" onClick={() => setStgr1(!stgr1)}>

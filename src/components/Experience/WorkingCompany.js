@@ -4,7 +4,7 @@ const WorkingCompany = ({ experience, link }) => {
   return (
     <div
       key={experience.company}
-      className="bg-gray-500 border-2 border-gray-300 rounded-lg p-4 mb-2 w-full sm:w-11/12 lg:w-2/3"
+      className="flex flex-col justify-center gap-4 bg-gray-500 border-2 border-gray-300 rounded-lg p-4 mb-2 w-full sm:w-11/12 lg:w-2/3 md:h-48"
     >
       <div className="">
         <div className="flex flex-col ">
