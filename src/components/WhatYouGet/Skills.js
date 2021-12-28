@@ -7,8 +7,8 @@ import Tailwind from '../../utils/assets/tailwind-css.png'
 const Skills = () => {
   const { t } = useTranslation()
   return (
-    <div className="p-8 md:p-16 bg-gray-300 dark:bg-gray-900 transition duration-500">
-      <div className="flex flex-col justify-center lg:space-x-28 border-double border-b-8 border-gray-400 pb-12">
+    <div className="flex flex-col items-center lg:gap-8 justify-center p-8 md:p-16 bg-gray-300 dark:bg-gray-900 transition duration-500 bg-opacity-70 dark:bg-opacity-70">
+      <div className="flex flex-col justify-center lg:space-x-28 border-double border-b-8 border-gray-700 dark:border-gray-500  pb-12 lg:w-10/12">
         <div className="hidden lg:flex flex-col space-y-9">
           <div className="flex items-center justify-center gap-24">
             <div className="flex flex-col items-center ">
@@ -172,13 +172,13 @@ const Skills = () => {
       </div>
       <div className="flex flex-col xl:flex-row items-center space-y-5 xl:space-y-0 p-6 pl-12">
         <div className="flex flex-col md:flex-row items-center space-y-5 md:space-y-0 w-full">
-          <div className="relative flex items-center justify-evenly space-x-7 w-full md:w-1/2">
+          <div className="relative flex items-center justify-evenly space-x-7 w-full md:w-max">
             <span className="spinner"></span>
             <p className="md:px-5 my-2 text-black dark:text-gray-300 text-center text-xs sm:text-sm uppercase p-2 w-full transition duration-500">
               {t('skills.multitask')}
             </p>
           </div>
-          <div className="relative flex items-center justify-evenly space-x-7 w-full md:w-1/2">
+          <div className="relative flex items-center justify-evenly space-x-7 w-full md:w-max">
             <span className="spinner"></span>
             <p className="md:px-5 my-2 text-black dark:text-gray-300 text-center text-xs sm:text-sm uppercase p-2 w-full transition duration-500">
               {t('skills.engaged')}
@@ -186,13 +186,13 @@ const Skills = () => {
           </div>
         </div>
         <div className="flex flex-col md:flex-row items-center space-y-5 md:space-y-0 w-full">
-          <div className="relative flex items-center justify-evenly space-x-7 w-full md:w-1/2">
+          <div className="relative flex items-center justify-evenly space-x-7 w-full md:w-max">
             <span className="spinner"></span>
             <p className="md:px-5 my-2 text-black dark:text-gray-300 text-center text-xs sm:text-sm uppercase p-2 transition duration-500">
               {t('skills.lang1')}
             </p>
           </div>
-          <div className="relative flex items-center justify-evenly space-x-7 w-full md:w-1/2">
+          <div className="relative flex items-center justify-evenly space-x-7 w-full md:w-max">
             <span className="spinner"></span>
             <p className="md:px-5 my-2 text-black dark:text-gray-300 text-center text-xs sm:text-sm uppercase p-2 transition duration-500">
               {t('skills.lang2')}

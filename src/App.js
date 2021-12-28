@@ -7,7 +7,12 @@ import Experience from './components/Experience'
 
 const App = () => {
   return (
-    <div className="">
+    <div
+      className=" h-full w-full bg-no-repeat bg-cover"
+      style={{
+        background: `url(https://res.cloudinary.com/dbn5gpgi5/image/upload/v1640678894/fcecx1i2xc2d9vumxyjj.jpg)`,
+      }}
+    >
       <BrowserRouter>
         <Header />
         <Routes>
