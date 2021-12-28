@@ -8,9 +8,9 @@ import Experience from './components/Experience'
 const App = () => {
   return (
     <div
-      className=" h-full w-full bg-no-repeat bg-cover"
+      className="bg-contain bg-center"
       style={{
-        background: `url(https://res.cloudinary.com/dbn5gpgi5/image/upload/v1640678894/fcecx1i2xc2d9vumxyjj.jpg)`,
+        background: `url(https://res.cloudinary.com/dbn5gpgi5/image/upload/c_scale,h_1080/v1640678894/fcecx1i2xc2d9vumxyjj.jpg)`,
       }}
     >
       <BrowserRouter>

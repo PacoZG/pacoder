@@ -12,18 +12,20 @@ const WhoIAm = () => {
           alt="profile"
         />
         <div className="p-10 md:p-12 md:pr-0 md:pt-8 w-full lg:w-3/4">
-          <h1 className="text-2xl text-gray-700 dark:text-gray-300 text-right transition duration-500">
+          <h1 className="text-2xl text-black dark:text-gray-300 text-right transition duration-500">
             {t('Presentation.line0')}
-            <span className="text-blue-800 dark:text-blue-300 text-right text-2xl">FRANCISCO ZAVALA GONZALEZ</span>
+            <span className="text-blue-800 dark:text-blue-300 text-right text-2xl transition duration-500">
+              FRANCISCO ZAVALA GONZALEZ
+            </span>
           </h1>
-          <p className="text-gray-700 dark:text-gray-300 text-right text-xl transition duration-500">
+          <p className="text-black dark:text-gray-300 text-right text-xl transition duration-500">
             Junior Full Stack Developer
           </p>{' '}
           <br />
-          <p className="text-lg text-gray-700 dark:text-gray-300 text-right transition duration-500">
+          <p className="text-lg text-black dark:text-gray-300 text-right transition duration-500">
             {t('Presentation.line1')}
           </p>
-          <p className="text-lg text-gray-700 dark:text-gray-300 text-right transition duration-500">
+          <p className="text-lg text-black dark:text-gray-300 text-right transition duration-500">
             {t('Presentation.line2')}
           </p>
         </div>

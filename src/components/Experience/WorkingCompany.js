@@ -20,7 +20,7 @@ const WorkingCompany = ({ experience, link }) => {
         </div>
         <div className="text-gray-900 pb-1 font-bold">{experience.position}</div>
       </div>
-      <p className="text-gray-300 border-t-2 border-gray-300 pt-1 text-justify">{experience.responsabilities}</p>
+      <p className="text-gray-300 border-t-2 border-gray-300 pt-3 text-justify">{experience.responsabilities}</p>
     </div>
   )
 }
