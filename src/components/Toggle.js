@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import localdb from '../utils/localdb'
 import { ReactComponent as Sun } from '../utils/assets/sun.svg'
 import { ReactComponent as Moon } from '../utils/assets/moon.svg'
@@ -6,10 +6,21 @@ import useDarkMode from '../hooks/useDarkMode'
 
 const Toggle = () => {
   const [colorTheme, setTheme] = useDarkMode()
+  const timeNow = new Date()
+  const hours = timeNow.getHours()
+  useEffect(() => {
+    if (!localdb.getTheme() && hours >= '17') {
+      setTheme('dark')
+    }
+    if (!localdb.getTheme() && hours < '17') {
+      setTheme('light')
+    }
+  }, [setTheme, hours])
   const handleTheme = () => {
     setTheme(colorTheme)
     localdb.setTheme(colorTheme)
   }
+
   return (
     <div>
       <div className="block md:hidden">
