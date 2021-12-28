@@ -1,0 +1,29 @@
+.App {
+  background-image: url("https://res.cloudinary.com/dbn5gpgi5/image/upload/c_scale,h_720,w_140/v1640678894/fcecx1i2xc2d9vumxyjj.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .App {
+    background-image: url("https://res.cloudinary.com/dbn5gpgi5/image/upload/c_scale,h_1560,w_768/v1640678894/fcecx1i2xc2d9vumxyjj.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1040px) {
+  .App {
+    background-image: url("https://res.cloudinary.com/dbn5gpgi5/image/upload/c_scale,h_900,w_980/v1640678894/fcecx1i2xc2d9vumxyjj.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 2560px) {
+  .App {
+    background-image: url("https://res.cloudinary.com/dbn5gpgi5/image/upload/c_scale,h_1280,w_1920/v1640678894/fcecx1i2xc2d9vumxyjj.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

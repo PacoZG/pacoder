@@ -1,18 +1,14 @@
-import Header from './components/Header'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
-import Footer from './components/Footer'
-import Presentation from './components/Presentation'
-import WhatYouGet from './components/WhatYouGet'
-import Experience from './components/Experience'
+import './App.css'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+import Presentation from '../components/Presentation'
+import WhatYouGet from '../components/WhatYouGet'
+import Experience from '../components/Experience'
 
 const App = () => {
   return (
-    <div
-      className="bg-contain bg-center"
-      style={{
-        background: `url(https://res.cloudinary.com/dbn5gpgi5/image/upload/c_scale,h_1080/v1640678894/fcecx1i2xc2d9vumxyjj.jpg)`,
-      }}
-    >
+    <div className="App">
       <BrowserRouter>
         <Header />
         <Routes>
