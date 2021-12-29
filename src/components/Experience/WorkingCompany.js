@@ -8,14 +8,13 @@ const WorkingCompany = ({ experience, link }) => {
   return (
     <div
       key={experience.company}
-      className="flex flex-col justify-center gap-4 bg-gray-500 border-2 border-gray-300 rounded-lg p-4 mb-2 w-full sm:w-11/12 lg:w-2/3 md:h-48"
+      className="flex flex-col justify-center gap-4 bg-gray-500 border-2 border-gray-300 rounded-lg p-4 mb-2 w-full sm:w-11/12 xl:w-2/3 md:h-56"
     >
       <div className="">
         <div className="flex flex-col ">
           <h1 className="text-2xl">
             {link && (
               <div className="relative">
-                {/* <p className="tool-tip">Click here to visit company's website</p> */}
                 <a tool-tip-msg={t('experience.tool-tip-msg')} alt="company" href={link} target="blank">
                   {experience.company}
                 </a>
