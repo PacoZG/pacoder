@@ -66,6 +66,7 @@
     "company1": "Numerous bars, restaurants, concerts and music shops",
     "period1": "JANUARY 1998 - AUGUST 2011",
     "position1":"Professional drummer/Drum teacher",
-    "responsabilities1":"Worked as a drummer and group leader in several bands and teaching drums as a side job"
+    "responsabilities1":"Worked as a drummer and group leader in several bands and teaching drums as a side job",
+    "tool-tip-msg":"Click here to visit the company's website"
   }
 }

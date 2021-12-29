@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import i18n from 'i18next'
 import './header-style.css'
 import { useTranslation } from 'react-i18next'
@@ -11,23 +11,26 @@ import { ReactComponent as XIcon } from '../../utils/assets/x-icon.svg'
 import Toggle from '../Toggle'
 
 const Header = () => {
-  const usersLanguage = localdb.getLanguage()
+  const [usersLanguage, setUsersLanguage] = useState(localdb.getLanguage() ? localdb.getLanguage() : 'EN')
   const { t } = useTranslation()
   useEffect(() => {
-    var language = window.navigator.userLanguage || window.navigator.language
-    if (!usersLanguage && language === 'es-ES') {
+    var defaultLanguage = window.navigator.userLanguage || window.navigator.language
+    if (!localdb.getLanguage() && defaultLanguage === 'es-ES') {
       i18n.changeLanguage('ES')
       localdb.setLanguage('ES')
+      setUsersLanguage('EN')
     }
-  }, [usersLanguage])
+  }, [])
 
-  const handleLanguage = () => {
+  const handleUsersLanguage = () => {
     if (usersLanguage === 'EN') {
       i18n.changeLanguage('ES')
       localdb.setLanguage('ES')
+      setUsersLanguage('ES')
     } else {
       i18n.changeLanguage('EN')
       localdb.setLanguage('EN')
+      setUsersLanguage('EN')
     }
   }
   return (
@@ -54,7 +57,7 @@ const Header = () => {
           </a>
         </div>
         <div className="flex justify-center w-full">
-          <button className="mobile-lang-text-style" onClick={() => handleLanguage()}>
+          <button className="mobile-lang-text-style" onClick={() => handleUsersLanguage()}>
             {usersLanguage === 'EN' ? 'ESP' : 'ENG'}
           </button>
         </div>
@@ -95,7 +98,7 @@ const Header = () => {
               <EmailIcon size={46} borderRadius={10} />
             </a>
           </div>
-          <button className="pc-lang-text-style" onClick={() => handleLanguage()}>
+          <button className="pc-lang-text-style" onClick={() => handleUsersLanguage()}>
             {usersLanguage === 'EN' ? 'ESP' : 'ENG'}
           </button>
           <div className="header-style web-link-menu">

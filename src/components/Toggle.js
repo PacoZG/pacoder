@@ -1,3 +1,4 @@
+/* eslint-disable no-extend-native */
 import React, { useEffect } from 'react'
 import localdb from '../utils/localdb'
 import { ReactComponent as Sun } from '../utils/assets/sun.svg'
@@ -8,12 +9,26 @@ const Toggle = () => {
   const [colorTheme, setTheme] = useDarkMode()
   const timeNow = new Date()
   const hours = timeNow.getHours()
+
+  // console.log({ timeNow })
+  // Date.prototype.stdTimezoneOffset = function () {
+  //   var apr = new Date(this.getFullYear(), 4, 1)
+  //   var oct = new Date(this.getFullYear(), 10, 1)
+  //   return Math.max(apr.getTimezoneOffset(), oct.getTimezoneOffset())
+  // }
+  // Date.prototype.isDstObserved = function () {
+  //   return this.getTimezoneOffset() < this.stdTimezoneOffset()
+  // }
+  // console.log(timeNow.isDstObserved())
+
   useEffect(() => {
-    if (!localdb.getTheme() && hours >= '17') {
-      setTheme('dark')
-    }
-    if (!localdb.getTheme() && hours < '17') {
-      setTheme('light')
+    if (!localdb.getTheme()) {
+      if (hours >= 10 && hours < 17) {
+        setTheme('light')
+      }
+      if (hours < 10 || hours >= 17) {
+        setTheme('dark')
+      }
     }
   }, [setTheme, hours])
   const handleTheme = () => {
