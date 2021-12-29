@@ -23,7 +23,7 @@
     "start": "craco start",
     "build": "craco build",
     "test": "react-scripts test",
-    "prettier": "prettier --write .",
+    "prettier": "npx prettier --write .",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

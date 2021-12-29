@@ -1,3 +1,10 @@
+# Ignore artifacts:
 build
 coverage
-node_modules
+
+# Ignore all HTML files:
+*.html
+*.json
+*.yml
+*.md
+*.css

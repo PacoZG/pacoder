@@ -1,6 +1,10 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
+import './experience-style.css'
 
 const WorkingCompany = ({ experience, link }) => {
+  const { t } = useTranslation()
+
   return (
     <div
       key={experience.company}
@@ -10,9 +14,12 @@ const WorkingCompany = ({ experience, link }) => {
         <div className="flex flex-col ">
           <h1 className="text-2xl">
             {link && (
-              <a className="underline md:no-underline md:hover:underline" alt="company" href={link} target="blank">
-                {experience.company}
-              </a>
+              <div className="relative">
+                {/* <p className="tool-tip">Click here to visit company's website</p> */}
+                <a tool-tip-msg={t('experience.tool-tip-msg')} alt="company" href={link} target="blank">
+                  {experience.company}
+                </a>
+              </div>
             )}
             {!link && experience.company}
           </h1>
