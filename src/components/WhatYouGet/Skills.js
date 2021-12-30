@@ -2,7 +2,7 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { ReactComponent as Cypress } from '../../utils/assets/cypress.svg'
 import { ReactComponent as Typescript } from '../../utils/assets/typescript.svg'
-// import { ReactComponent as Tailwind } from '../../utils/assets/tailwind-css.svg'
+import { ReactComponent as AWSLogo } from '../../utils/assets/aws-logo.svg'
 import Tailwind from '../../utils/assets/tailwind-css.png'
 const Skills = () => {
   const { t } = useTranslation()
@@ -82,6 +82,10 @@ const Skills = () => {
             <div className="flex flex-col items-center">
               <Cypress className="skill-logo h-16 sm:h-20 md:h-24" />
               <p className="text-black dark:text-gray-50 transition duration-500">Cypress.io</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <AWSLogo className="skill-logo p-3 w-16 sm:w-24 sm:h-24 bg-white" />
+              <p className=" text-yellow-400 transition duration-500">AWS Junior Developer Use</p>
             </div>
           </div>
         </div>

@@ -66,13 +66,13 @@ const Header = () => {
             <MenuIcon className=" text-gray-200 border-r border-gray-300 p-1 h-7 w-7" />
           </div>
           <div className="mobile-link-group">
-            <Link className="mobile-link" to="/intro">
+            <Link className="mobile-link" to="/cv/presentation">
               {t('Header.presentation')}
             </Link>
-            <Link className="mobile-link" to="/skills_strenghts">
+            <Link className="mobile-link" to="/cv/skills_strenghts">
               {t('Header.skills')}
             </Link>
-            <Link className="mobile-link" to="/experience">
+            <Link className="mobile-link" to="/cv/experience">
               {t('Header.experience')}
             </Link>
           </div>
@@ -107,13 +107,13 @@ const Header = () => {
               <XIcon className="x-icon" />
             </div>
             <div className="link-group">
-              <Link className="link" to="/intro">
+              <Link className="link" to="/cv/presentation">
                 {t('Header.presentation')}
               </Link>
-              <Link className="link" to="/skills_strenghts">
+              <Link className="link" to="/cv/skills_strenghts">
                 {t('Header.skills')}
               </Link>
-              <Link className="link" to="/experience">
+              <Link className="link" to="/cv/experience">
                 {t('Header.experience')}
               </Link>
             </div>
