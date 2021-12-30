@@ -13,10 +13,10 @@ const App = () => {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={<Navigate to="/intro" />} />
-          <Route path="/intro" element={<Presentation />} />
-          <Route path="/skills_strenghts" element={<WhatYouGet />} />
-          <Route path="/experience" element={<Experience />} />
+          <Route path="/" element={<Navigate to="/cv/intro" />} />
+          <Route path="/cv/presentation" element={<Presentation />} />
+          <Route path="/cv/skills_strenghts" element={<WhatYouGet />} />
+          <Route path="/cv/experience" element={<Experience />} />
         </Routes>
       </BrowserRouter>
       <Footer />
