@@ -5,10 +5,10 @@ webpage name: [pacoderzavala.com](https://pacoderzavala.com)
 In the project directory, you can run:
 
 If you run WSL (Ubuntu subsystem terminal) you are also able to run a shell script by typing
-### `npm run install-dep`
-This will give you the option of either install dependencies or they are already install update them.
+### `$ npm run install-dep`
+This will give you the option of either install dependencies or if they are already install update them.
 
-### `npm start`
+### `$ npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -20,7 +20,7 @@ You will also see any lint errors in the console.
 I used [`tailwind v2`](https://v2.tailwindcss.com/) for most of the components but for few others, due to the limitations of tailwind package or complexity of the task I used raw `CSS`
 
 ### For formatting
-In the case of formatting I turned to `Prettier`, I set the format rules inside the `.prettierrc.json` and by running the `npm run prettier` script one can fix the code's format.
+In the case of formatting I turned to `Prettier`, I set the format rules inside the `.prettierrc.json` and by running the `$ npm run prettier` script one can fix the code's format.
 
 ### For routing
 For endpoint routing [React router](https://v5.reactrouter.com/web/guides/quick-start) has been my dependency of choice since I started my developer journey.
