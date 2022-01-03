@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing header Snapshot of the Education component 1`] = `
+<div
+  className="bg-gray-300 dark:bg-gray-900 flex flex-col items-center p-4 md:py-10 lg:py-20 transition duration-500 rounded-b-xl bg-opacity-70 dark:bg-opacity-70"
+>
+  <div
+    className="flex flex-col justify-center bg-gray-500 border-2 border-gray-300 rounded-lg p-4 mb-2 w-full sm:w-11/12 lg:w-2/3 md:h-48"
+  >
+    <h1
+      className=" md:text-xl text-gray-900 pb-1 font-bold border-b-2 border-gray-300"
+    >
+      Full Stack Open Course (online) 
+      <a
+        className="text-gray-900 underline transition duration-200 hover:text-indigo-600"
+        href="https://fullstackopen.com/en/"
+        target="blank"
+      >
+        Course Material
+      </a>
+    </h1>
+    <p
+      className="text-gray-300 pt-3 text-justify"
+    >
+      Completed between AUG 2020 - JULY 2021, written and taught by professors from the University of Helsinki. The course is an introduction to modern web development with JavaScript, React, RESTful and GraphQL web services implemented with Node.js and also has parts on TypeScript, React Native and Continuous integration.
+    </p>
+  </div>
+  <div
+    className="flex flex-col justify-center bg-gray-500 border-2 border-gray-300 rounded-lg p-4 mb-2 w-full sm:w-11/12 lg:w-2/3 md:h-36 text-justify"
+  >
+    <h1
+      className=" md:text-xl text-gray-900 pb-1 font-bold border-b-2 border-gray-300"
+    >
+      Communication Engineering
+    </h1>
+    <p
+      className="text-gray-300  pt-3"
+    >
+      Master Courses as an Erasmus Exchange Student 2014-2015
+    </p>
+    <p
+      className="text-gray-300  pt-1"
+    >
+      @Aalto University – School of Electrical Engineering
+    </p>
+  </div>
+  <div
+    className="flex flex-col justify-center bg-gray-500 text-gray-900 border-2 border-gray-300 rounded-lg p-4 w-full sm:w-11/12 lg:w-2/3 md:h-36"
+  >
+    <h1
+      className=" md:text-xl text-gray-900 pb-1 font-bold border-b-2 border-gray-300"
+    >
+      Bachelor in Telecommunications Engineering
+    </h1>
+    <p
+      className="text-gray-300 pt-3"
+    >
+      I reached the 4th academic year with 78% of the studies completed
+    </p>
+    <p
+      className="text-gray-300 pt-1"
+    >
+      @Universidad Politecnica de Cartagena - Technical School of Telecommunications Engineering
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Testing header Snapshot of the WhoIAm component 1`] = `
+<div
+  className="flex justify-center bg-gray-300 dark:bg-gray-900 p-3 md:p-10 w-full transition duration-500 bg-opacity-70 dark:bg-opacity-70"
+>
+  <div
+    className="flex flex-col items-center md:flex-row justify-center md:w-11/12 lg:w-9/12 "
+  >
+    <img
+      alt="profile"
+      className=" w-10/12 h-10/12 md:h-96 lg:w-80 border-4 border-black dark:border-gray-300 rounded-xl transition duration-500 "
+      src="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1625155266/CV%20Pics/kxcpai1mniycdxszmgbq.jpg"
+    />
+    <div
+      className="p-10 md:p-12 md:pr-0 md:pt-8 w-full lg:w-3/4"
+    >
+      <h1
+        className="text-2xl text-black dark:text-gray-300 text-right transition duration-500"
+      >
+        HI! I AM 
+        <span
+          className="text-blue-800 dark:text-blue-300 text-right text-2xl transition duration-500"
+        >
+          FRANCISCO ZAVALA GONZALEZ
+        </span>
+      </h1>
+      <p
+        className="text-black dark:text-gray-300 text-right text-xl transition duration-500"
+      >
+        Junior Full Stack Developer
+      </p>
+       
+      <br />
+      <p
+        className="text-lg text-black dark:text-gray-300 text-right transition duration-500"
+      >
+        I am Mexican, I have been living in Finland since September 2014
+      </p>
+      <p
+        className="text-lg text-black dark:text-gray-300 text-right transition duration-500"
+      >
+        I started my studies in Communication Engineering in Spain. In the year 2014 I moved to Finland to study some master courses at Aalto University as an Erasmus student.
+      </p>
+    </div>
+  </div>
+</div>
+`;
