@@ -16,7 +16,8 @@
     "react-icons": "^4.2.0",
     "react-router-dom": "^6.2.1",
     "react-scripts": "4.0.3",
-    "react-share": "^4.4.0"
+    "react-share": "^4.4.0",
+    "react-test-renderer": "^16.13.1"
   },
   "scripts": {
     "install-dep": "./npm-scripts/install-dependencies.sh",
