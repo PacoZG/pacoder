@@ -106,7 +106,7 @@ const Header = () => {
               <MenuIcon className="menu-icon" />
               <XIcon className="x-icon" />
             </div>
-            <div className="link-group">
+            <div className="pc-link-group">
               <Link className="link" to="/cv/presentation">
                 {t('Header.presentation')}
               </Link>
@@ -116,6 +116,9 @@ const Header = () => {
               <Link className="link" to="/cv/experience">
                 {t('Header.experience')}
               </Link>
+              {/* <Link className="link" to="/forum">
+                {'Forum'}
+              </Link> */}
             </div>
           </div>
         </div>

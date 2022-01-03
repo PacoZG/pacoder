@@ -29,14 +29,14 @@ const Strenghts = () => {
             leaveTo="opacity-0"
           >
             <div className="text-gray-300 text-left border-t-2 border-gray-300 pt-2">
-              {t('strengths.line1_1')}{' '}
+              {t('strengths.line1_1')}
               <a
                 className="text-gray-300 underline transition duration-200 hover:text-indigo-600"
                 href="https://fullstackopen.com/en/"
                 alt="course"
               >
                 {t('strengths.line1_2')}
-              </a>{' '}
+              </a>
               {t('strengths.line1_3')}
             </div>
           </Transition>

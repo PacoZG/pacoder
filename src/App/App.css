@@ -12,9 +12,9 @@
   }
 }
 
-@media (min-width: 1040px) {
+@media (min-width: 1440px) {
   .App {
-    background-image: url("https://res.cloudinary.com/dbn5gpgi5/image/upload/c_scale,h_900,w_980/v1640678894/fcecx1i2xc2d9vumxyjj.jpg");
+    background-image: url("https://res.cloudinary.com/dbn5gpgi5/image/upload/c_scale,h_900,w_768/v1640678894/fcecx1i2xc2d9vumxyjj.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }

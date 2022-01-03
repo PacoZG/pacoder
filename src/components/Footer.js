@@ -51,7 +51,7 @@ const Footer = () => {
           >
             <div className="flex items-center space-x-1">
               <LinkedinIcon size={28} round={true} />
-              <p>{' Francisco Zavala'}</p>
+              <p>{'Francisco Zavala'}</p>
             </div>
           </a>
         </div>

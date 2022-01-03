@@ -84,7 +84,7 @@ const Skills = () => {
               <p className="text-black dark:text-gray-50 transition duration-500">Cypress.io</p>
             </div>
             <div className="flex flex-col items-center">
-              <AWSLogo className="skill-logo p-3 w-16 sm:w-24 sm:h-24 bg-white" />
+              <AWSLogo className="skill-logo p-3 w-24 h-24 bg-white" />
               <p className=" text-yellow-400 transition duration-500">AWS Junior Developer Use</p>
             </div>
           </div>
@@ -169,6 +169,10 @@ const Skills = () => {
               <div className="flex flex-col items-center">
                 <Typescript className="skill-logo w-16 rounded-none" />
                 <p className="text-sm text-black dark:text-green-400 transition duration-500">Typescript</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <AWSLogo className="skill-logo p-2 my-2 h-16 w-16 bg-white" />
+                <p className=" text-yellow-400 transition duration-500">Junior Dev Use</p>
               </div>
             </div>
           </div>

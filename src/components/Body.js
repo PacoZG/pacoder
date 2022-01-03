@@ -10,7 +10,7 @@ import React from 'react'
 const Body = () => {
   // const { t } = useTranslation()
   return (
-    <div className="relative">
+    <div className="page-layout">
       {/* <StickyHeader text={t('stickers.who')} />
       <Presentation />
       <StickyHeader text={t('stickers.skills')} />
@@ -21,6 +21,7 @@ const Body = () => {
       <Education />
       <StickyHeader text={t('stickers.experience')} />
       <WorkingExperience /> */}
+      <h1 className="text-gray-300 text-3xl text-center">This should be something else</h1>
     </div>
   )
 }
