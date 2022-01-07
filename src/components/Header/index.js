@@ -6,8 +6,7 @@ import localdb from '../../utils/localdb'
 import { Link } from 'react-router-dom'
 import { EmailIcon, LinkedinIcon, WhatsappIcon } from 'react-share'
 import { ReactComponent as GitHub } from '../../utils/assets/github.svg'
-import { ReactComponent as MenuIcon } from '../../utils/assets/menu-icon.svg'
-import { ReactComponent as XIcon } from '../../utils/assets/x-icon.svg'
+import { XIcon, MenuIcon } from '@heroicons/react/solid'
 import Toggle from '../Toggle'
 
 const Header = () => {
@@ -63,7 +62,7 @@ const Header = () => {
         </div>
         <div className="header-style link-menu">
           <div className="flex items-center h-12 w-9 ">
-            <MenuIcon className=" text-gray-200 border-r border-gray-300 p-1 h-7 w-7" />
+            <MenuIcon className=" text-gray-200 border-r border-gray-300 p-1 h-6 w-6" />
           </div>
           <div className="mobile-link-group">
             <Link className="mobile-link" to="/cv/presentation">
