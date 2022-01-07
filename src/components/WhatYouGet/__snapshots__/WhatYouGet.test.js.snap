@@ -441,8 +441,20 @@ exports[`Testing header Snapshot of the Strenghts component 1`] = `
         <div
           className="transition duration-300"
         >
-          <svg>
-            arrow.svg
+          <svg
+            aria-hidden="true"
+            className="h-6 w-6 text-gray-200"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9 5l7 7-7 7"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+            />
           </svg>
         </div>
       </button>
@@ -462,8 +474,20 @@ exports[`Testing header Snapshot of the Strenghts component 1`] = `
         <div
           className="transition duration-300"
         >
-          <svg>
-            arrow.svg
+          <svg
+            aria-hidden="true"
+            className="h-6 w-6 text-gray-200"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9 5l7 7-7 7"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+            />
           </svg>
         </div>
       </button>
@@ -483,8 +507,20 @@ exports[`Testing header Snapshot of the Strenghts component 1`] = `
         <div
           className="transition duration-300"
         >
-          <svg>
-            arrow.svg
+          <svg
+            aria-hidden="true"
+            className="h-6 w-6 text-gray-200"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9 5l7 7-7 7"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+            />
           </svg>
         </div>
       </button>
@@ -510,8 +546,20 @@ exports[`Testing header Snapshot of the Strenghts component 1`] = `
         <div
           className="transition duration-300"
         >
-          <svg>
-            arrow.svg
+          <svg
+            aria-hidden="true"
+            className="h-6 w-6 text-gray-200"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9 5l7 7-7 7"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+            />
           </svg>
         </div>
       </button>
