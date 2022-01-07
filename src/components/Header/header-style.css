@@ -96,8 +96,8 @@
   transform: scale(1);
   transition: ease-out;
   transition-duration: 500ms;
-  height: 24px;
-  width: 24px;
+  height: 23px;
+  width: 23px;
 }
 
 .web-link-menu:hover .menu-icon {
@@ -111,8 +111,8 @@
   transform: scale(0) rotate(-720deg);
   transition: ease-out;
   transition-duration: 150ms;
-  height: 24px;
-  width: 24px;
+  height: 23px;
+  width: 23px;
   
 }
 

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Transition } from '@headlessui/react'
-import { ReactComponent as Arrow } from '../../utils/assets/arrow.svg'
+import { ChevronRightIcon } from '@heroicons/react/outline'
 
 const Strenghts = () => {
   const { t } = useTranslation()
@@ -16,7 +16,7 @@ const Strenghts = () => {
           <button className="flex items-center justify-between w-full" onClick={() => setStgr1(!stgr1)}>
             <p className="text-2xl text-gray-900 text-left cursor-pointer pb-2 w-full ">{t('strengths.strength1')}</p>
             <div className={stgr1 ? 'transition duration-300 transform rotate-90 ' : 'transition duration-300'}>
-              <Arrow />
+              <ChevronRightIcon className="h-6 w-6 text-gray-200" />
             </div>
           </button>
           <Transition
@@ -45,7 +45,7 @@ const Strenghts = () => {
           <button className="flex items-center justify-between w-full" onClick={() => setStgr2(!stgr2)}>
             <p className="text-2xl text-gray-900 text-left cursor-pointer pb-2 w-full ">{t('strengths.strength2')}</p>
             <div className={stgr2 ? 'transition duration-300 transform rotate-90 ' : 'transition duration-300'}>
-              <Arrow />
+              <ChevronRightIcon className="h-6 w-6 text-gray-200" />
             </div>
           </button>
           <Transition
@@ -64,7 +64,7 @@ const Strenghts = () => {
           <button className="flex items-center justify-between w-full" onClick={() => setStgr3(!stgr3)}>
             <p className="text-2xl text-gray-900 text-left cursor-pointer pb-2">{t('strengths.strength3')}</p>
             <div className={stgr3 ? 'transition duration-300 transform rotate-90 ' : 'transition duration-300'}>
-              <Arrow />
+              <ChevronRightIcon className="h-6 w-6 text-gray-200" />
             </div>
           </button>
           <Transition
@@ -85,7 +85,7 @@ const Strenghts = () => {
               HIGH <span className="border-2 border-yellow-300 p-1">5</span> TEST
             </p>
             <div className={stgr4 ? 'transition duration-300 transform rotate-90 ' : 'transition duration-300'}>
-              <Arrow />
+              <ChevronRightIcon className="h-6 w-6 text-gray-200" />
             </div>
           </button>
           <Transition

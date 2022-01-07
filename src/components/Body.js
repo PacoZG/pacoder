@@ -9,6 +9,7 @@ import React from 'react'
 
 const Body = () => {
   // const { t } = useTranslation()
+
   return (
     <div className="page-layout">
       {/* <StickyHeader text={t('stickers.who')} />
