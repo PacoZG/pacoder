@@ -9,7 +9,7 @@ on:
     types: [ opened, synchronize ]
 
 jobs:
-  Janes_Total_Wellness_Deployment:
+  Pacoder_Zavala_app:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
