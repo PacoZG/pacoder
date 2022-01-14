@@ -40,6 +40,6 @@ jobs:
           heroku_email: 'sirpaquillo1@yahoo.com.mx'
           dontuseforce: false
           healthcheck: 'https://pacoderzavala.herokuapp.com/health'
-          checkstring: 'ok'
+          checkstring: 'OK'
           delay: 5
           rollbackonhealthcheckfailed: true
