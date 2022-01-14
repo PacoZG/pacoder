@@ -39,7 +39,5 @@ jobs:
           heroku_app_name: 'pacoderzavala' # Must be unique in Heroku
           heroku_email: 'sirpaquillo1@yahoo.com.mx'
           dontuseforce: false
-          healthcheck: 'https://pacoderzavala.herokuapp.com/health'
-          checkstring: 'OK'
           delay: 5
           rollbackonhealthcheckfailed: true
