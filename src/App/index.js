@@ -6,7 +6,6 @@ import Footer from '../components/Footer'
 import Presentation from '../components/Presentation'
 import WhatYouGet from '../components/WhatYouGet'
 import Experience from '../components/Experience'
-import Health from '../components/Health'
 // import Body from '../components/Body'
 
 const App = () => {
@@ -19,7 +18,6 @@ const App = () => {
           <Route path="/cv/presentation" element={<Presentation />} />
           <Route path="/cv/skills_strenghts" element={<WhatYouGet />} />
           <Route path="/cv/experience" element={<Experience />} />
-          <Route path="/health" element={<Health />} />
           {/* <Route path="/forum" element={<Body />} /> */}
         </Routes>
       </BrowserRouter>
