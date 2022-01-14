@@ -17,10 +17,10 @@ The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
 ### For styling
-I used [`tailwind v2`](https://v2.tailwindcss.com/) for most of the components but for few others, due to the limitations of tailwind package or complexity of the task I used raw `CSS`
+I used [`tailwind v3`](https://tailwindcss.com/blog/tailwindcss-v3) for most of the components but for few others, due to the limitations of tailwind package or complexity of the task I used raw `CSS`
 
 ### For formatting
-In the case of formatting I turned to `Prettier`, I set the format rules inside the `.prettierrc.json` and by running the `$ npm run prettier` script one can fix the code's format.
+In the case of formatting I turned to `Prettier`, I set the format rules inside the `.prettierrc.json` and by running the `$ npm run fix-code-style` script one can fix the code's format.
 
 ### For routing
 For endpoint routing [React router](https://v5.reactrouter.com/web/guides/quick-start) has been my dependency of choice since I started my developer journey.
