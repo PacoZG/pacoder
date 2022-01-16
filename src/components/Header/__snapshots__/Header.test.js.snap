@@ -141,7 +141,7 @@ exports[`Testing header Snapshot of the Header component 1`] = `
         </svg>
       </a>
       <a
-        href="mailto:pako.zavala@gmail.com"
+        href="mailto:contact@pacoderzavala.com"
         target="blank"
       >
         <svg
@@ -357,7 +357,7 @@ exports[`Testing header Snapshot of the Header component 1`] = `
           </svg>
         </a>
         <a
-          href="mailto:pako.zavala@gmail.com"
+          href="mailto:contact@pacoderzavala.com"
           target="blank"
         >
           <svg

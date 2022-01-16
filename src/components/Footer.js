@@ -13,25 +13,22 @@ const Footer = () => {
           <div className="flex flex-col items-center md:items-start space-y-2 md:space-y-0 ">
             <div className="flex items-center space-x-1">
               <Address className="h-3 w-3 text-gray-300" />
-              <p className="text-gray-300 text-sm md:pl-1">00920, Helsinki</p>
+              <p className="text-gray-300 text-sm md:pl-1">Helsinki, Finland</p>
             </div>
           </div>
           <div className="flex space-x-1 items-center">
             <Email className="h-4 w-4 text-gray-300" />
-            <p className="text-gray-300 text-sm space-y-2 md:space-y-0 ">pako.zavala@gmail.com</p>
+            <p className="text-gray-300 text-sm space-y-2 md:space-y-0 ">contact@pacoderzavala.com</p>
           </div>
         </div>
         <div>
           <div className="flex flex-col items-center space-y-2">
             <p className="text-center text-gray-300 text-xs font-semibold">{t('Footer.share-cv')}</p>
-            <div className="flex items-center justify-between space-x-4">
+            <div className="flex items-center justify-between gap-4">
               <div>
                 <FacebookShareButton url={window.location.href} className=" font-medium focus-within:outline-none ">
                   <FacebookIcon size={24} round={true} />
                 </FacebookShareButton>
-              </div>
-              <div>
-                <p className="text-white text-base pb-1">{' & '}</p>
               </div>
               <div>
                 <LinkedinShareButton url={window.location.href} className=" font-medium focus-within:outline-none ">
