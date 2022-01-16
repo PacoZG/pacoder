@@ -51,7 +51,7 @@ const Header = () => {
           >
             <WhatsappIcon size={31} borderRadius={10} />
           </a>
-          <a href="mailto:pako.zavala@gmail.com" target="blank">
+          <a href="mailto:contact@pacoderzavala.com" target="blank">
             <EmailIcon size={31} borderRadius={10} />
           </a>
         </div>
@@ -93,7 +93,7 @@ const Header = () => {
             >
               <WhatsappIcon size={46} borderRadius={10} />
             </a>
-            <a href="mailto:pako.zavala@gmail.com" target="blank">
+            <a href="mailto:contact@pacoderzavala.com" target="blank">
               <EmailIcon size={46} borderRadius={10} />
             </a>
           </div>
