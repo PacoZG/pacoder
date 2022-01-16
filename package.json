@@ -2,14 +2,45 @@
   "name": "sirpacoder_v2",
   "version": "0.1.0",
   "private": true,
+  "description": "Website design to present my CV",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PacoZG/SIRPACODER"
+  },
+  "keywords": [
+    "fullstack-open-project"
+  ],
+  "author": "Francisco Zavala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PacoZG/SIRPACODER/issues"
+  },
+  "homepage": "https://pacoderzavala.herokuapp.com",
+  "proxy": "http://localhost:3001",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "production": "node index.js",
+    "dev-server": "nodemon index.js",
+    "check-code-style": "npx prettier --c .",
+    "fix-code-style": "npx prettier --write ."
+  },
   "dependencies": {
     "@headlessui/react": "^1.4.2",
     "@heroicons/react": "^1.0.5",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.24.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "express-async-errors": "^3.1.1",
     "i18next": "^21.6.5",
     "i18next-browser-languagedetector": "^6.1.2",
+    "nodemon": "^2.0.15",
     "prettier": "^2.5.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -19,14 +50,6 @@
     "react-share": "^4.4.0",
     "react-test-renderer": "^17.0.2",
     "web-vitals": "^2.1.2"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "check-code-style": "npx prettier --c .",
-    "fix-code-style": "npx prettier --write ."
   },
   "eslintConfig": {
     "extends": [
