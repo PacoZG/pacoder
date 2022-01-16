@@ -24,7 +24,7 @@ exports[`Testing header Snapshot of the Footer component 1`] = `
           <p
             className="text-gray-300 text-sm md:pl-1"
           >
-            00920, Helsinki
+            Helsinki, Finland
           </p>
         </div>
       </div>
@@ -39,7 +39,7 @@ exports[`Testing header Snapshot of the Footer component 1`] = `
         <p
           className="text-gray-300 text-sm space-y-2 md:space-y-0 "
         >
-          pako.zavala@gmail.com
+          contact@pacoderzavala.com
         </p>
       </div>
     </div>
@@ -50,10 +50,10 @@ exports[`Testing header Snapshot of the Footer component 1`] = `
         <p
           className="text-center text-gray-300 text-xs font-semibold"
         >
-          SHARE MY CV IN
+          SHARE MY WEBSITE
         </p>
         <div
-          className="flex items-center justify-between space-x-4"
+          className="flex items-center justify-between gap-4"
         >
           <div>
             <button
@@ -89,13 +89,6 @@ exports[`Testing header Snapshot of the Footer component 1`] = `
                 />
               </svg>
             </button>
-          </div>
-          <div>
-            <p
-              className="text-white text-base pb-1"
-            >
-               & 
-            </p>
           </div>
           <div>
             <button
