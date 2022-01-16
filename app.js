@@ -14,7 +14,7 @@ app.use(middleware.tokenExtractor)
 app.use(middleware.requestLogger)
 
 app.get('/health', (req, res) => {
-  res.status('201').send('ok')
+  res.send('ok')
 })
 
 app.get('/*', function (req, res) {
