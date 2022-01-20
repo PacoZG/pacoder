@@ -19,6 +19,7 @@
   "homepage": "https://pacoderzavala.herokuapp.com",
   "proxy": "http://localhost:3001",
   "scripts": {
+    "install-dep": "./npm-scripts/install-dependencies.sh",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
