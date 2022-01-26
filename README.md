@@ -1,7 +1,4 @@
 ### Hi! I'm Paco - self called [Sirpacoder][website] 👋 
-<br/>
-[![Website](https://img.shields.io/badge/pacoderzavala.com-visit-green)](https://pacoderzavala.com)
-
 
 ## I'm a developer, father, !!
 <!-- - 👯🤣 -->
