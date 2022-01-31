@@ -6,11 +6,12 @@ import Footer from '../components/Footer'
 import Presentation from '../components/Presentation'
 import WhatYouGet from '../components/WhatYouGet'
 import Experience from '../components/Experience'
+import Div from '../components/private/Div'
 // import Body from '../components/Body'
 
 const App = () => {
   return (
-    <div className="App">
+    <Div className="App">
       <BrowserRouter>
         <Header />
         <Routes>
@@ -22,7 +23,7 @@ const App = () => {
         </Routes>
       </BrowserRouter>
       <Footer />
-    </div>
+    </Div>
   )
 }
 

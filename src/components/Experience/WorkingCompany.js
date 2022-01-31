@@ -1,33 +1,37 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
+import Div from '../private/Div'
+import H from '../private/H'
+import P from '../private/P'
+import A from '../private/A'
 import './experience-style.css'
 
 const WorkingCompany = ({ experience, link }) => {
   const { t } = useTranslation()
 
   return (
-    <div
+    <Div
       key={experience.company}
       className="flex flex-col justify-center gap-4 bg-gray-500 border-2 border-gray-300 rounded-lg p-4 mb-2 w-full sm:w-11/12 xl:w-2/3 md:h-56"
     >
-      <div className="">
-        <div className="flex flex-col ">
-          <h1 className="text-2xl">
+      <Div className="">
+        <Div className="flex flex-col ">
+          <H className="text-2xl">
             {link && (
-              <div className="relative">
-                <a tool-tip-msg={t('experience.tool-tip-msg')} alt="company" href={link} target="blank">
+              <Div className="relative">
+                <A tool-tip-msg={t('experience.tool-tip-msg')} alt="company" href={link} target="blank">
                   {experience.company}
-                </a>
-              </div>
+                </A>
+              </Div>
             )}
             {!link && experience.company}
-          </h1>
-          <div className="text-md">{experience.period}</div>
-        </div>
-        <div className="text-gray-900 pb-1 font-bold">{experience.position}</div>
-      </div>
-      <p className="text-gray-300 border-t-2 border-gray-300 pt-3 text-justify">{experience.responsabilities}</p>
-    </div>
+          </H>
+          <Div className="text-md">{experience.period}</Div>
+        </Div>
+        <Div className="text-gray-900 pb-1 font-bold">{experience.position}</Div>
+      </Div>
+      <P className="text-gray-300 border-t-2 border-gray-300 pt-3 text-justify">{experience.responsabilities}</P>
+    </Div>
   )
 }
 
