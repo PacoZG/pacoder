@@ -1,8 +1,7 @@
 /* eslint-disable no-extend-native */
 import React, { useEffect } from 'react'
 import localdb from '../utils/localdb'
-import { ReactComponent as Sun } from '../utils/assets/sun.svg'
-import { ReactComponent as Moon } from '../utils/assets/moon.svg'
+import { MoonIcon, SunIcon } from '@heroicons/react/solid'
 import useDarkMode from '../hooks/useDarkMode'
 import Div from './private/Div'
 import Input from './private/Input'
@@ -49,7 +48,7 @@ const Toggle = () => {
               className="relative w-14 h-7 flex items-center shadow-lg bg-gray-300 dark:bg-gray-300 rounded-full p-1 cursor-pointer"
               onClick={() => handleTheme()}
             >
-              <Sun className="absolute left-1 h-6 w-6 transition duration-500 text-gray-800 text-opacity-0 dark:text-opacity-100" />
+              <SunIcon className="absolute left-1 h-6 w-6 transition duration-500 text-gray-800 text-opacity-0 dark:text-opacity-100" />
               <Div
                 className={
                   colorTheme === 'light'
@@ -57,14 +56,14 @@ const Toggle = () => {
                     : 'w-6 h-6 bg-blue-800 rounded-full shadow-md transition duration-500'
                 }
               ></Div>
-              <Moon className="absolute right-1 h-5 w-5 transition duration-500 text-gray-800 text-opacity-100 dark:text-opacity-0" />
+              <MoonIcon className="absolute right-1 h-5 w-5 transition duration-500 text-gray-800 text-opacity-100 dark:text-opacity-0" />
             </Span>
           </Div>
         </Div>
       </Div>
       <Div className="hidden md:block">
         <Div className="flex justify-end items-center space-x-2">
-          <Sun className="h-6 w-6 transition duration-500 dark:text-gray-300" />
+          <SunIcon className="h-6 w-6 transition duration-500 dark:text-gray-300" />
           <Div>
             <Input type="checkbox" name="" id="toggle" className="hidden" />
             <Span
@@ -80,7 +79,7 @@ const Toggle = () => {
               ></Div>
             </Span>
           </Div>
-          <Moon className="h-5 w-5 transition duration-500 dark:text-gray-300 " />
+          <MoonIcon className="h-5 w-5 transition duration-500 dark:text-gray-300 " />
         </Div>
       </Div>
     </Div>

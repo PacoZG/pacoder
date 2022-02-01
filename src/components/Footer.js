@@ -1,8 +1,7 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { FacebookShareButton, FacebookIcon, LinkedinIcon, LinkedinShareButton } from 'react-share'
-import { ReactComponent as Address } from '../utils/assets/address.svg'
-import { ReactComponent as Email } from '../utils/assets/email.svg'
+import { LocationMarkerIcon, AtSymbolIcon } from '@heroicons/react/solid'
 import Div from './private/Div'
 import A from './private/A'
 import P from './private/P'
@@ -15,12 +14,12 @@ const Footer = () => {
         <Div className="flex flex-col items-center md:items-start space-y-2">
           <Div className="flex flex-col items-center md:items-start space-y-2 md:space-y-0 ">
             <Div className="flex items-center space-x-1">
-              <Address className="h-3 w-3 text-gray-300" />
+              <LocationMarkerIcon className="h-3 w-3 text-gray-300" />
               <P className="text-gray-300 text-sm md:pl-1">Helsinki, Finland</P>
             </Div>
           </Div>
           <Div className="flex space-x-1 items-center">
-            <Email className="h-4 w-4 text-gray-300" />
+            <AtSymbolIcon className="h-4 w-4 text-gray-300" />
             <P className="text-gray-300 text-sm space-y-2 md:space-y-0 ">contact@pacoderzavala.com</P>
           </Div>
         </Div>
