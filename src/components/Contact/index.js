@@ -9,7 +9,6 @@ import Form from '../private/Form'
 import Input from '../private/Input'
 import P from '../private/P'
 import TextArea from '../private/TextArea'
-require('dotenv').config()
 
 const Contact = () => {
   const { t } = useTranslation()
@@ -64,7 +63,7 @@ const Contact = () => {
             {t('contact.send')}
           </Button>
           <Div className={'flex flex-col gap-3 md:flex-row'}>
-            <ReCAPTCHA sitekey={process.env.SITE_KEY} onChange={handleVerifyCaptcha} />
+            <ReCAPTCHA sitekey={'6LfTJ6QeAAAAADIe7PrBtATqlyB9VTlA2GVSd6Wd'} onChange={handleVerifyCaptcha} />
             <P
               className={
                 showModal
