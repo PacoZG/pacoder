@@ -12,16 +12,14 @@ import TextArea from '../private/TextArea'
 
 const Contact = () => {
   const { t } = useTranslation()
-  const [verified, setVerified] = useState(false)
+  const [disabled, setDisabled] = useState(true)
   const [showModal, setShowModal] = useState(false)
   const fullName = useField('text')
   const email = useField('email')
   const message = useField('text')
 
-  const handleChangeCaptcha = e => {
-    e.preventDefault()
-    setVerified(!verified)
-    console.log(verified)
+  const handleVerifyCaptcha = () => {
+    setDisabled(!disabled)
   }
 
   const handleSendEmail = e => {
@@ -56,17 +54,16 @@ const Contact = () => {
             name="message"
           />
           <Button
-            disabled={verified}
+            disabled={disabled}
             className={
               'transition duration-500 inline-flex justify-center py-2 px-4 border shadow-sm font-medium rounded-md bg-black bg-opacity-50 text-sm text-white hover:bg-gray-700 focus-within:outline-none'
             }
             type="submit"
-            // onClick={handleSendEmail}
           >
             {t('contact.send')}
           </Button>
           <Div className={'flex flex-col gap-3 md:flex-row'}>
-            <ReCAPTCHA sitekey={'6LfTJ6QeAAAAADIe7PrBtATqlyB9VTlA2GVSd6Wd'} onChange={handleChangeCaptcha} />
+            <ReCAPTCHA sitekey={process.env.SITE_KEY} onChange={handleVerifyCaptcha} />
             <P
               className={
                 showModal
