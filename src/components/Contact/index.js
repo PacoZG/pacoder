@@ -63,7 +63,7 @@ const Contact = () => {
             {t('contact.send')}
           </Button>
           <Div className={'flex flex-col gap-3 md:flex-row'}>
-            <ReCAPTCHA sitekey={'6LfTJ6QeAAAAADIe7PrBtATqlyB9VTlA2GVSd6Wd'} onChange={handleVerifyCaptcha} />
+            <ReCAPTCHA sitekey={'6Ld6fKYeAAAAAG4F6BreaLvyHeUL-tVtib6oU1Ej'} onChange={handleVerifyCaptcha} />
             <P
               className={
                 showModal
