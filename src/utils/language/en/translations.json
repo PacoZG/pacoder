@@ -6,10 +6,17 @@
     "education": "EDUCATION",
     "experience": "WORK EXPERIENCE"
   },
+  "contact": {
+    "name": "Full Name",
+    "message": "Message",
+    "message-sent": "Message sent!, I'll get back to you as soon as possible.\nThank you for contacting!",
+    "send": "Send"
+  },
   "Header": {
     "presentation": "Presentation",
     "skills": "Skills & Strenghts",
-    "experience": "Working Experience"
+    "experience": "Working Experience",
+    "contact": "Contact"
   },
   "Footer": {
     "developed-by": "Developed by:",

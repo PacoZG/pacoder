@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing header Snapshot of the Skills component 1`] = `
+exports[`Testing Working skill and experience page Snapshot of the Skills component 1`] = `
 <div
   className="flex flex-col items-center lg:gap-8 justify-center p-8 md:p-16 bg-gray-300 dark:bg-gray-900 transition duration-500 bg-opacity-70 dark:bg-opacity-70"
 >
@@ -419,7 +419,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
 </div>
 `;
 
-exports[`Testing header Snapshot of the Strenghts component 1`] = `
+exports[`Testing Working skill and experience page Snapshot of the Strenghts component 1`] = `
 <div
   className="bg-gray-300 dark:bg-gray-900 flex flex-col items-center p-4 md:py-10 lg:py-20 transition duration-500 rounded-b-xl bg-opacity-70 dark:bg-opacity-70"
 >

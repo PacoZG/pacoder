@@ -172,8 +172,8 @@ exports[`Testing header Snapshot of the Main App component 1`] = `
           </svg>
         </a>
         <a
-          href="mailto:contact@pacoderzavala.com"
-          target="blank"
+          href="/cv/contact"
+          onClick={[Function]}
         >
           <svg
             height={31}
@@ -384,7 +384,6 @@ exports[`Testing header Snapshot of the Main App component 1`] = `
           </a>
           <a
             href="https://github.com/PacoZG"
-            target="blank"
           >
             <svg
               className="bg-gray-300  h-11 w-11 rounded-md"
@@ -416,8 +415,8 @@ exports[`Testing header Snapshot of the Main App component 1`] = `
             </svg>
           </a>
           <a
-            href="mailto:contact@pacoderzavala.com"
-            target="blank"
+            href="/cv/contact"
+            onClick={[Function]}
           >
             <svg
               height={46}
@@ -501,6 +500,13 @@ exports[`Testing header Snapshot of the Main App component 1`] = `
               onClick={[Function]}
             >
               Working Experience
+            </a>
+            <a
+              className="link"
+              href="/cv/contact"
+              onClick={[Function]}
+            >
+              Contact
             </a>
           </div>
         </div>

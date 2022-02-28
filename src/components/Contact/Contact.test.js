@@ -2,16 +2,16 @@ import React from 'react'
 import { I18nextProvider } from 'react-i18next'
 import { BrowserRouter } from 'react-router-dom'
 import renderer from 'react-test-renderer'
-import Experience from '.'
+import Contact from '.'
 import i18n from '../../utils/language/i18nextForTest'
 
-describe('Testing header', () => {
-  test('Snapshot of the Experience component', () => {
+describe('Testing Contact page', () => {
+  test('Snapshot of the contact component', () => {
     const rederedHeader = renderer
       .create(
         <BrowserRouter>
           <I18nextProvider i18n={i18n}>
-            <Experience />
+            <Contact />
           </I18nextProvider>
         </BrowserRouter>
       )
