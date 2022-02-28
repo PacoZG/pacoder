@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing header Snapshot of the Experience component 1`] = `
+exports[`Testing Snapshot of the Experience component 1`] = `
 <div
   className="page-layout"
 >

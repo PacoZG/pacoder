@@ -6,7 +6,7 @@ import i18n from '../../utils/language/i18nextForTest'
 import Education from './Education'
 import WhoIAm from './WhoIAm'
 
-describe('Testing Presentation page', () => {
+describe('Testing', () => {
   test('Snapshot of the Education component', () => {
     const redered = renderer
       .create(

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing Contact page Snapshot of the contact component 1`] = `
+exports[`Testing Snapshot of the Contact component 1`] = `
 <div
   className="page-layout"
 >
