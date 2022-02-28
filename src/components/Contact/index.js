@@ -9,6 +9,7 @@ import Form from '../private/Form'
 import Input from '../private/Input'
 import P from '../private/P'
 import TextArea from '../private/TextArea'
+require('dotenv').config()
 
 const Contact = () => {
   const { t } = useTranslation()
