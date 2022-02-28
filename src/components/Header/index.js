@@ -1,40 +1,19 @@
-import React, { useEffect, useState } from 'react'
-import i18n from 'i18next'
-import './header-style.css'
+import { MenuIcon, XIcon } from '@heroicons/react/solid'
+import React from 'react'
 import { useTranslation } from 'react-i18next'
-import localdb from '../../utils/localdb'
 import { Link } from 'react-router-dom'
 import { EmailIcon, LinkedinIcon, WhatsappIcon } from 'react-share'
 import { ReactComponent as GitHub } from '../../utils/assets/github.svg'
-import { XIcon, MenuIcon } from '@heroicons/react/solid'
-import Toggle from '../Toggle'
-import Div from '../private/Div'
+import { handleUsersLanguage, usersLanguage } from '../../utils/language/LanguageModel'
 import A from '../private/A'
 import Button from '../private/Button'
+import Div from '../private/Div'
+import Toggle from '../Toggle'
+import './header-style.css'
 
 const Header = () => {
-  const [usersLanguage, setUsersLanguage] = useState(localdb.getLanguage() ? localdb.getLanguage() : 'EN')
   const { t } = useTranslation()
-  useEffect(() => {
-    var defaultLanguage = window.navigator.userLanguage || window.navigator.language
-    if (!localdb.getLanguage() && defaultLanguage === 'es-ES') {
-      i18n.changeLanguage('ES')
-      localdb.setLanguage('ES')
-      setUsersLanguage('EN')
-    }
-  }, [])
 
-  const handleUsersLanguage = () => {
-    if (usersLanguage === 'EN') {
-      i18n.changeLanguage('ES')
-      localdb.setLanguage('ES')
-      setUsersLanguage('ES')
-    } else {
-      i18n.changeLanguage('EN')
-      localdb.setLanguage('EN')
-      setUsersLanguage('EN')
-    }
-  }
   return (
     <Div className="fixed z-10 w-screen bg-transparent transition duration-500">
       <Div className="header-style relative lg:hidden flex flex-row items-center justify-center mx-3 m-2">
@@ -54,9 +33,9 @@ const Header = () => {
           >
             <WhatsappIcon size={31} borderRadius={10} />
           </A>
-          <A href="mailto:contact@pacoderzavala.com" target="blank">
+          <Link to="/cv/contact">
             <EmailIcon size={31} borderRadius={10} />
-          </A>
+          </Link>
         </Div>
         <Div className="flex justify-center w-full">
           <Button className="mobile-lang-text-style" onClick={() => handleUsersLanguage()}>
@@ -87,7 +66,7 @@ const Header = () => {
             <A href="https://www.linkedin.com/in/francisco-zavala/" target="blank">
               <LinkedinIcon size={46} round={false} borderRadius={10} />
             </A>
-            <A href="https://github.com/PacoZG" target="blank">
+            <A href="https://github.com/PacoZG">
               <GitHub className="bg-gray-300  h-11 w-11 rounded-md" />
             </A>
             <A
@@ -96,9 +75,9 @@ const Header = () => {
             >
               <WhatsappIcon size={46} borderRadius={10} />
             </A>
-            <A href="mailto:contact@pacoderzavala.com" target="blank">
+            <Link to="/cv/contact">
               <EmailIcon size={46} borderRadius={10} />
-            </A>
+            </Link>
           </Div>
           <Button className="pc-lang-text-style" onClick={() => handleUsersLanguage()}>
             {usersLanguage === 'EN' ? 'ESP' : 'ENG'}
@@ -118,9 +97,9 @@ const Header = () => {
               <Link className="link" to="/cv/experience">
                 {t('Header.experience')}
               </Link>
-              {/* <Link className="link" to="/forum">
-                {'Forum'}
-              </Link> */}
+              <Link className="link" to="/cv/contact">
+                {t('Header.contact')}
+              </Link>
             </Div>
           </Div>
         </Div>

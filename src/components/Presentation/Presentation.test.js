@@ -1,12 +1,12 @@
 import React from 'react'
-import { BrowserRouter } from 'react-router-dom'
 import { I18nextProvider } from 'react-i18next'
-import i18n from '../../utils/language/i18nextForTest'
+import { BrowserRouter } from 'react-router-dom'
 import renderer from 'react-test-renderer'
+import i18n from '../../utils/language/i18nextForTest'
 import Education from './Education'
 import WhoIAm from './WhoIAm'
 
-describe('Testing header', () => {
+describe('Testing Presentation page', () => {
   test('Snapshot of the Education component', () => {
     const redered = renderer
       .create(
