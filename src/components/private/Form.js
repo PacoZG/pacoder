@@ -1,7 +1,7 @@
 import React from 'react'
 import Element from './Element'
 
-const H = ({ className, children, ...props }) => {
+const Form = ({ className, children, ...props }) => {
   return (
     <Element tagName="form" className={className} {...props}>
       {children}
@@ -9,4 +9,4 @@ const H = ({ className, children, ...props }) => {
   )
 }
 
-export default H
+export default Form

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing header Snapshot of the Header component 1`] = `
+exports[`Testing Snapshot of the Header component 1`] = `
 <div
   className="fixed z-10 w-screen bg-transparent transition duration-500"
 >

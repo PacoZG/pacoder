@@ -1,7 +1,7 @@
 import React from 'react'
 import Element from './Element'
 
-const A = ({ className, children, ...props }) => {
+const TextArea = ({ className, children, ...props }) => {
   return (
     <Element tagName="textarea" className={className} {...props}>
       {children}
@@ -9,4 +9,4 @@ const A = ({ className, children, ...props }) => {
   )
 }
 
-export default A
+export default TextArea

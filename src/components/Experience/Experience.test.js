@@ -5,7 +5,7 @@ import renderer from 'react-test-renderer'
 import Experience from '.'
 import i18n from '../../utils/language/i18nextForTest'
 
-describe('Testing header', () => {
+describe('Testing', () => {
   test('Snapshot of the Experience component', () => {
     const rederedHeader = renderer
       .create(

@@ -5,8 +5,8 @@ import renderer from 'react-test-renderer'
 import Contact from '.'
 import i18n from '../../utils/language/i18nextForTest'
 
-describe('Testing Contact page', () => {
-  test('Snapshot of the contact component', () => {
+describe('Testing', () => {
+  test('Snapshot of the Contact component', () => {
     const rederedHeader = renderer
       .create(
         <BrowserRouter>

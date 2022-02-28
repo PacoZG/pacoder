@@ -6,7 +6,7 @@ import i18n from '../utils/language/i18nextForTest'
 import Footer from './Footer'
 import StickyHeader from './StickyHeader'
 
-describe('Testing Footer', () => {
+describe('Testing', () => {
   test('Snapshot of the Footer component', () => {
     const redered = renderer
       .create(
