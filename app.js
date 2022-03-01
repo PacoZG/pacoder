@@ -12,6 +12,7 @@ const middleware = require('./utils/middleware')
 const variablesRouter = require('./controllers/variables')
 
 const url = config.MONGODB_URI
+console.log('Connected to ', { url })
 
 mongoose
   .connect(url, {
