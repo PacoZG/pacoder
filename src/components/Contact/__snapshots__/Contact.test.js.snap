@@ -1,3 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing Snapshot of the Contact component 1`] = `null`;
+exports[`Testing Snapshot of the Contact component 1`] = `
+<div
+  className="justify-center items-center flex outline-none bg-gray-400 min-h-screen"
+>
+  <div
+    className="flex flex-row space-x-1"
+  >
+    <svg>
+      spiner.svg
+    </svg>
+    <p
+      className="pr-2 font-semibold text-gray-200"
+    >
+      loading
+    </p>
+  </div>
+</div>
+`;
