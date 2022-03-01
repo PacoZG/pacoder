@@ -10,11 +10,6 @@ exports[`Testing Snapshot of the Contact component 1`] = `
     <svg>
       spiner.svg
     </svg>
-    <p
-      className="pr-2 font-semibold text-gray-200"
-    >
-      loading
-    </p>
   </div>
 </div>
 `;
