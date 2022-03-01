@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import ReCAPTCHA from 'react-google-recaptcha'
 import { useTranslation } from 'react-i18next'
 import { useField } from '../../hooks/InputHooks'
+import variableService from '../../services/variables'
 import Button from '../private/Button'
 import Div from '../private/Div'
 import Form from '../private/Form'
@@ -14,10 +15,17 @@ const Contact = () => {
   const { t } = useTranslation()
   const [disabled, setDisabled] = useState(true)
   const [showModal, setShowModal] = useState(false)
+  const [siteKey, setSiteKey] = useState('')
   const fullName = useField('text')
   const email = useField('email')
   const message = useField('text')
 
+  const getKey = async () => {
+    const key = await variableService.getSiteKey()
+    setSiteKey(key)
+  }
+
+  getKey()
   const handleVerifyCaptcha = () => {
     setDisabled(!disabled)
   }
@@ -38,6 +46,10 @@ const Contact = () => {
       email.reset()
       message.reset()
     }
+  }
+
+  if (!siteKey) {
+    return null
   }
 
   return (
@@ -63,7 +75,7 @@ const Contact = () => {
             {t('contact.send')}
           </Button>
           <Div className={'flex flex-col gap-3 md:flex-row'}>
-            <ReCAPTCHA sitekey={'6Ld6fKYeAAAAAG4F6BreaLvyHeUL-tVtib6oU1Ej'} onChange={handleVerifyCaptcha} />
+            <ReCAPTCHA sitekey={'6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'} onChange={handleVerifyCaptcha} />
             <P
               className={
                 showModal

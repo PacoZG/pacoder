@@ -6,15 +6,15 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PacoZG/SIRPACODER"
+    "url": "git+https://github.com/PacoZG/pacoder"
   },
   "keywords": [
-    "fullstack-open-project"
+    "Francisco-Zavala-CV"
   ],
   "author": "Francisco Zavala",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/PacoZG/SIRPACODER/issues"
+    "url": "https://github.com/PacoZG/pacoder/issues"
   },
   "homepage": "https://pacoderzavala.herokuapp.com",
   "proxy": "http://localhost:3001",
