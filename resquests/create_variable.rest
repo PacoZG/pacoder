@@ -1,0 +1,7 @@
+POST http://localhost:3001/api/variables
+Content-Type: application/json
+
+{
+    "name": "SITE_KEY",
+    "value": "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI",
+}
