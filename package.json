@@ -20,14 +20,14 @@
   "proxy": "http://localhost:3001",
   "scripts": {
     "install-dep": "./npm-scripts/install-dependencies.sh",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "start": "PORT=3000 react-scripts start",
     "production": "node index.js",
     "dev-server": "cross-env NODE_ENV=dev nodemon index.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
     "check-code-style": "npx prettier --c .",
-    "fix-code-style": "npx prettier --write ."
+    "fix-code-style": "npx prettier --write .",
+    "eject": "react-scripts eject"
   },
   "dependencies": {
     "@emailjs/browser": "^3.4.0",

@@ -44,6 +44,10 @@ app.get('/health', (req, res) => {
   res.send('ok')
 })
 
+app.get('/*', function (req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'))
+})
+
 app.use(middleware.unknownEndpoint)
 app.use(middleware.errorHandler)
 
