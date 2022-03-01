@@ -53,14 +53,14 @@ const Contact = () => {
   }
 
   return (
-    <Div className="page-layout lg:pt-44">
+    <Div className="page-layout lg:pt-40">
       <Form onSubmit={handleSendEmail}>
         <Div className={'flex flex-col p-5 md:p-28 gap-5'}>
           <Input placeholder={t('contact.name')} className={'email-input'} {...fullName.params} required name="name" />
           <Input placeholder="Email" className={'email-input'} {...email.params} required name="email" />
           <TextArea
             placeholder={t('contact.message')}
-            className={'email-input'}
+            className={'email-input h-52'}
             {...message.params}
             required
             name="message"
