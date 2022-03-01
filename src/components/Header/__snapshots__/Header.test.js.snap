@@ -246,6 +246,13 @@ exports[`Testing Snapshot of the Header component 1`] = `
         >
           Working Experience
         </a>
+        <a
+          className="mobile-link"
+          href="/cv/contact"
+          onClick={[Function]}
+        >
+          Contact
+        </a>
       </div>
     </div>
   </div>

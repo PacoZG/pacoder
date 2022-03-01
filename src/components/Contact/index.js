@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import ReCAPTCHA from 'react-google-recaptcha'
 import { useTranslation } from 'react-i18next'
 import { useField } from '../../hooks/InputHooks'
+import variableService from '../../services/variables'
 import Button from '../private/Button'
 import Div from '../private/Div'
 import Form from '../private/Form'
@@ -14,10 +15,17 @@ const Contact = () => {
   const { t } = useTranslation()
   const [disabled, setDisabled] = useState(true)
   const [showModal, setShowModal] = useState(false)
+  const [siteKey, setSiteKey] = useState('')
   const fullName = useField('text')
   const email = useField('email')
   const message = useField('text')
 
+  const getKey = async () => {
+    const key = await variableService.getSiteKey()
+    setSiteKey(key)
+  }
+
+  getKey()
   const handleVerifyCaptcha = () => {
     setDisabled(!disabled)
   }
@@ -40,15 +48,19 @@ const Contact = () => {
     }
   }
 
+  if (!siteKey) {
+    return null
+  }
+
   return (
-    <Div className="page-layout">
+    <Div className="page-layout lg:pt-40">
       <Form onSubmit={handleSendEmail}>
         <Div className={'flex flex-col p-5 md:p-28 gap-5'}>
           <Input placeholder={t('contact.name')} className={'email-input'} {...fullName.params} required name="name" />
           <Input placeholder="Email" className={'email-input'} {...email.params} required name="email" />
           <TextArea
             placeholder={t('contact.message')}
-            className={'email-input'}
+            className={'email-input h-52'}
             {...message.params}
             required
             name="message"
@@ -56,14 +68,16 @@ const Contact = () => {
           <Button
             disabled={disabled}
             className={
-              'transition duration-500 inline-flex justify-center py-2 px-4 border shadow-sm font-medium rounded-md bg-black bg-opacity-50 text-sm text-white hover:bg-gray-700 focus-within:outline-none'
+              disabled
+                ? 'transition duration-700 inline-flex justify-center py-2 px-4 border-0 shadow-sm font-extralight rounded-md bg-black opacity-20 text-lg text-red-400'
+                : 'transition duration-700 inline-flex justify-center py-2 px-4 border shadow-sm font-semibold rounded-md bg-black opacity-75 text-lg text-white hover:bg-gray-700 focus-within:outline-none'
             }
             type="submit"
           >
             {t('contact.send')}
           </Button>
           <Div className={'flex flex-col gap-3 md:flex-row'}>
-            <ReCAPTCHA sitekey={'6Ld6fKYeAAAAAG4F6BreaLvyHeUL-tVtib6oU1Ej'} onChange={handleVerifyCaptcha} />
+            <ReCAPTCHA sitekey={siteKey} onChange={handleVerifyCaptcha} />
             <P
               className={
                 showModal

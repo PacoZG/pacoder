@@ -49,6 +49,7 @@
 .pc-link-group {
   display: flex;
   flex-direction: column;
+  gap: 2px;
   align-items: left;
   height: 24px;
   width: 0px;
@@ -61,21 +62,19 @@
   gap: 8px;
   width: fit-content;
   height: fit-content;
-  padding: 8px 8px 8px 30px;
+  padding: 20px 20px 20px 30px;
   transform: scaleX(1);
 }
 
 .link {
-  font-size: 14px;
+  font-size: 20px;
   line-height: 20px;
   color: rgba(209, 213, 219);
   font-style: italic;
   height: 20px;
   width: max-content;
   transform: scale(0);
-  /* bottom: 0%; */
   translate: -50px;
-  /* transition: ease-out; */
   cursor: pointer;
 }
 
@@ -86,9 +85,7 @@
 .web-link-menu:hover .link {
   transform: scale(1);
   translate: 0px;
-  /* transition: ease-in; */
   transition-duration: 500ms;
-  /* bottom: 100%; */
 }
 
 .menu-icon {
