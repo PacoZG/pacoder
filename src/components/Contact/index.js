@@ -59,7 +59,7 @@ const Contact = () => {
     return (
       <Div className="justify-center items-center flex outline-none bg-gray-400 min-h-screen">
         <Div className="flex flex-row space-x-1">
-          <Spiner />
+          <Spiner className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" />
         </Div>
       </Div>
     )
