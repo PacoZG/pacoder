@@ -1,5 +1,5 @@
 import emailjs from '@emailjs/browser'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import ReCAPTCHA from 'react-google-recaptcha'
 import { useTranslation } from 'react-i18next'
 import { useField } from '../../hooks/InputHooks'
@@ -22,10 +22,13 @@ const Contact = () => {
 
   const getKey = async () => {
     const key = await variableService.getSiteKey()
-    setSiteKey(key)
+    setSiteKey(key.value)
   }
 
-  getKey()
+  useEffect(() => {
+    getKey()
+  }, [setSiteKey])
+
   const handleVerifyCaptcha = () => {
     setDisabled(!disabled)
   }
