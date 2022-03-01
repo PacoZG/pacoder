@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import ReCAPTCHA from 'react-google-recaptcha'
 import { useTranslation } from 'react-i18next'
 import { useField } from '../../hooks/InputHooks'
-import variableService from '../../services/variables'
+// import variableService from '../../services/variables'
 import { ReactComponent as Spiner } from '../../utils/assets/spiner.svg'
 import Button from '../private/Button'
 import Div from '../private/Div'
@@ -22,7 +22,7 @@ const Contact = () => {
   const message = useField('text')
 
   const getKey = async () => {
-    const key = await variableService.getSiteKey()
+    // const key = await variableService.getSiteKey()
     setSiteKey('6Ld6fKYeAAAAAG4F6BreaLvyHeUL-tVtib6oU1Ej')
   }
 
