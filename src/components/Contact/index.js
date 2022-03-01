@@ -4,6 +4,7 @@ import ReCAPTCHA from 'react-google-recaptcha'
 import { useTranslation } from 'react-i18next'
 import { useField } from '../../hooks/InputHooks'
 import variableService from '../../services/variables'
+import { ReactComponent as Spiner } from '../../utils/assets/spiner.svg'
 import Button from '../private/Button'
 import Div from '../private/Div'
 import Form from '../private/Form'
@@ -15,7 +16,7 @@ const Contact = () => {
   const { t } = useTranslation()
   const [disabled, setDisabled] = useState(true)
   const [showModal, setShowModal] = useState(false)
-  const [siteKey, setSiteKey] = useState('')
+  const [siteKey, setSiteKey] = useState(null)
   const fullName = useField('text')
   const email = useField('email')
   const message = useField('text')
@@ -32,6 +33,8 @@ const Contact = () => {
   const handleVerifyCaptcha = () => {
     setDisabled(!disabled)
   }
+
+  console.log({ siteKey })
 
   const handleSendEmail = e => {
     e.preventDefault()
@@ -52,7 +55,14 @@ const Contact = () => {
   }
 
   if (!siteKey) {
-    return null
+    return (
+      <Div className="justify-center items-center flex outline-none bg-gray-400 min-h-screen">
+        <Div className="flex flex-row space-x-1">
+          <Spiner />
+          <P className="pr-2 font-semibold text-gray-200">{t('loading')}</P>
+        </Div>
+      </Div>
+    )
   }
 
   return (
@@ -80,7 +90,7 @@ const Contact = () => {
             {t('contact.send')}
           </Button>
           <Div className={'flex flex-col gap-3 md:flex-row'}>
-            <ReCAPTCHA sitekey={siteKey} onChange={handleVerifyCaptcha} />
+            {siteKey && <ReCAPTCHA sitekey={siteKey} onChange={handleVerifyCaptcha} />}
             <P
               className={
                 showModal
