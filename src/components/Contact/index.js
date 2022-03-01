@@ -23,7 +23,7 @@ const Contact = () => {
 
   const getKey = async () => {
     const key = await variableService.getSiteKey()
-    setSiteKey(key.value)
+    setSiteKey('6Ld6fKYeAAAAAG4F6BreaLvyHeUL-tVtib6oU1Ej')
   }
 
   useEffect(() => {
