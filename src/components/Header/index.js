@@ -56,6 +56,9 @@ const Header = () => {
             <Link className="mobile-link" to="/cv/experience">
               {t('Header.experience')}
             </Link>
+            <Link className="mobile-link" to="/cv/contact">
+              {t('Header.contact')}
+            </Link>
           </Div>
         </Div>
       </Div>

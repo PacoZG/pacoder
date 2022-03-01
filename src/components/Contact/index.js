@@ -53,7 +53,7 @@ const Contact = () => {
   }
 
   return (
-    <Div className="page-layout">
+    <Div className="page-layout lg:pt-44">
       <Form onSubmit={handleSendEmail}>
         <Div className={'flex flex-col p-5 md:p-28 gap-5'}>
           <Input placeholder={t('contact.name')} className={'email-input'} {...fullName.params} required name="name" />
@@ -68,14 +68,16 @@ const Contact = () => {
           <Button
             disabled={disabled}
             className={
-              'transition duration-500 inline-flex justify-center py-2 px-4 border shadow-sm font-medium rounded-md bg-black bg-opacity-50 text-sm text-white hover:bg-gray-700 focus-within:outline-none'
+              disabled
+                ? 'transition duration-700 inline-flex justify-center py-2 px-4 border-0 shadow-sm font-extralight rounded-md bg-black opacity-20 text-lg text-red-400'
+                : 'transition duration-700 inline-flex justify-center py-2 px-4 border shadow-sm font-semibold rounded-md bg-black opacity-75 text-lg text-white hover:bg-gray-700 focus-within:outline-none'
             }
             type="submit"
           >
             {t('contact.send')}
           </Button>
           <Div className={'flex flex-col gap-3 md:flex-row'}>
-            <ReCAPTCHA sitekey={'6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'} onChange={handleVerifyCaptcha} />
+            <ReCAPTCHA sitekey={siteKey} onChange={handleVerifyCaptcha} />
             <P
               className={
                 showModal
