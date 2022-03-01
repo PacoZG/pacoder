@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import ReCAPTCHA from 'react-google-recaptcha'
 import { useTranslation } from 'react-i18next'
 import { useField } from '../../hooks/InputHooks'
-// import variableService from '../../services/variables'
+import variableService from '../../services/variables'
 import { ReactComponent as Spiner } from '../../utils/assets/spiner.svg'
 import Button from '../private/Button'
 import Div from '../private/Div'
@@ -22,8 +22,9 @@ const Contact = () => {
   const message = useField('text')
 
   const getKey = async () => {
-    // const key = await variableService.getSiteKey()
-    setSiteKey('6Ld6fKYeAAAAAG4F6BreaLvyHeUL-tVtib6oU1Ej')
+    const key = await variableService.getSiteKey()
+    // setSiteKey('6Ld6fKYeAAAAAG4F6BreaLvyHeUL-tVtib6oU1Ej')
+    setSiteKey(key.value)
   }
 
   useEffect(() => {
@@ -58,15 +59,14 @@ const Contact = () => {
     return (
       <Div className="justify-center items-center flex outline-none bg-gray-400 min-h-screen">
         <Div className="flex flex-row space-x-1">
-          <Spiner />
-          <P className="pr-2 font-semibold text-gray-200">{t('loading')}</P>
+          <Spiner className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" />
         </Div>
       </Div>
     )
   }
 
   return (
-    <Div className="page-layout lg:pt-40">
+    <Div className="page-layout lg:pt-40 transform duration-75">
       <Form onSubmit={handleSendEmail}>
         <Div className={'flex flex-col p-5 md:p-28 gap-5'}>
           <Input placeholder={t('contact.name')} className={'email-input'} {...fullName.params} required name="name" />
