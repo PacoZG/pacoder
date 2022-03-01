@@ -2,16 +2,20 @@
 
 exports[`Testing Snapshot of the Contact component 1`] = `
 <div
-  className="justify-center items-center flex outline-none bg-gray-400 min-h-screen"
+  className="page-layout lg:pt-40 transform duration-75"
 >
   <div
-    className="flex flex-row space-x-1"
+    className="justify-center items-center flex outline-none bg-gray-400 min-h-screen"
   >
-    <svg
-      className="animate-spin -ml-1 mr-3 h-5 w-5 text-gray-300"
+    <div
+      className="flex flex-row space-x-1"
     >
-      spiner.svg
-    </svg>
+      <svg
+        className="animate-spin -ml-1 mr-3 h-5 w-5 text-gray-300"
+      >
+        spiner.svg
+      </svg>
+    </div>
   </div>
 </div>
 `;
