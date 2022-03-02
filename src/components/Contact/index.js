@@ -1,10 +1,8 @@
 import emailjs from '@emailjs/browser'
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import ReCAPTCHA from 'react-google-recaptcha'
 import { useTranslation } from 'react-i18next'
 import { useField } from '../../hooks/InputHooks'
-// import variableService from '../../services/variables'
-import { ReactComponent as Spiner } from '../../utils/assets/spiner.svg'
 import Button from '../private/Button'
 import Div from '../private/Div'
 import Form from '../private/Form'
@@ -17,26 +15,13 @@ const Contact = () => {
   const { t } = useTranslation()
   const [disabled, setDisabled] = useState(true)
   const [showModal, setShowModal] = useState(false)
-  const [siteKey, setSiteKey] = useState(null)
   const fullName = useField('text')
   const email = useField('email')
   const message = useField('text')
 
-  const getKey = async () => {
-    // const key = await variableService.getSiteKey()
-    setSiteKey('6Ld6fKYeAAAAAG4F6BreaLvyHeUL-tVtib6oU1Ej')
-    // setSiteKey(key.value)
-  }
-
-  useEffect(() => {
-    getKey()
-  }, [setSiteKey])
-
   const handleVerifyCaptcha = () => {
     setDisabled(!disabled)
   }
-
-  console.log({ siteKey })
 
   const handleSendEmail = e => {
     e.preventDefault()
@@ -56,18 +41,6 @@ const Contact = () => {
     }
   }
 
-  if (!siteKey) {
-    return (
-      <Div className="page-layout lg:pt-40 duration-75">
-        <Div className="justify-center items-center flex outline-none bg-gray-400 min-h-screen">
-          <Div className="flex flex-row space-x-1">
-            <Spiner className="animate-spin -ml-1 mr-3 h-5 w-5 text-gray-300" />
-          </Div>
-        </Div>
-      </Div>
-    )
-  }
-
   return (
     <Div className="page-layout lg:pt-40 transform duration-75">
       <Form onSubmit={handleSendEmail}>
@@ -82,14 +55,14 @@ const Contact = () => {
             name="email"
           />
           <Label className="text-gray-300">
-            {message.params.value.length > 99 ? (
+            {message.params.value.length > 49 ? (
               <span className="text-lg text-gray-300 pl-2 transform duration-150">{`${t('contact.characters')}${
                 message.params.value.length
               }/500 max`}</span>
             ) : (
               <span className="text-lg text-red-400 pl-2 transform duration-150">{`${t('contact.characters')} ${
                 message.params.value.length
-              }/100`}</span>
+              }/50 min`}</span>
             )}
           </Label>
           <TextArea
@@ -111,7 +84,7 @@ const Contact = () => {
             {t('contact.send')}
           </Button>
           <Div className={'flex flex-col gap-3 md:flex-row'}>
-            {siteKey && <ReCAPTCHA sitekey={siteKey} onChange={handleVerifyCaptcha} />}
+            <ReCAPTCHA sitekey={'6Ld6fKYeAAAAAG4F6BreaLvyHeUL-tVtib6oU1Ej'} onChange={handleVerifyCaptcha} />
             <P
               className={
                 showModal
