@@ -10,7 +10,8 @@
     "name": "Full Name",
     "message": "Message",
     "message-sent": "Message sent!, I'll get back to you as soon as possible.\nThank you for contacting!",
-    "send": "Send"
+    "send": "Send",
+    "characters": "Characters "
   },
   "Header": {
     "presentation": "Presentation",
