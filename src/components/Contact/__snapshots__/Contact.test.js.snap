@@ -2,7 +2,7 @@
 
 exports[`Testing Snapshot of the Contact component 1`] = `
 <div
-  className="page-layout lg:pt-40 transform duration-75"
+  className="page-layout lg:pt-40 duration-75"
 >
   <div
     className="justify-center items-center flex outline-none bg-gray-400 min-h-screen"
