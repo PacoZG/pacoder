@@ -9,6 +9,7 @@ import Button from '../private/Button'
 import Div from '../private/Div'
 import Form from '../private/Form'
 import Input from '../private/Input'
+import Label from '../private/Label'
 import P from '../private/P'
 import TextArea from '../private/TextArea'
 
@@ -57,7 +58,7 @@ const Contact = () => {
 
   if (!siteKey) {
     return (
-      <Div className="page-layout lg:pt-40 transform duration-75">
+      <Div className="page-layout lg:pt-40 duration-75">
         <Div className="justify-center items-center flex outline-none bg-gray-400 min-h-screen">
           <Div className="flex flex-row space-x-1">
             <Spiner className="animate-spin -ml-1 mr-3 h-5 w-5 text-gray-300" />
@@ -71,11 +72,29 @@ const Contact = () => {
     <Div className="page-layout lg:pt-40 transform duration-75">
       <Form onSubmit={handleSendEmail}>
         <Div className={'flex flex-col p-5 md:p-28 gap-5'}>
-          <Input placeholder={t('contact.name')} className={'email-input'} {...fullName.params} required name="name" />
-          <Input placeholder="Email" className={'email-input'} {...email.params} required name="email" />
+          <Input className={'email-input'} placeholder={t('contact.name')} {...fullName.params} required name="name" />
+          <Input
+            className={'email-input'}
+            placeholder="Email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$"
+            {...email.params}
+            required
+            name="email"
+          />
+          <Label className="text-gray-300">
+            {message.params.value.length > 99 ? (
+              <span className="text-lg text-gray-300 pl-2 transform duration-150">{`${t('contact.characters')}${
+                message.params.value.length
+              }/500 max`}</span>
+            ) : (
+              <span className="text-lg text-red-400 pl-2 transform duration-150">{`${t('contact.characters')} ${
+                message.params.value.length
+              }/100`}</span>
+            )}
+          </Label>
           <TextArea
-            placeholder={t('contact.message')}
             className={'email-input h-52'}
+            placeholder={t('contact.message')}
             {...message.params}
             required
             name="message"
@@ -96,7 +115,7 @@ const Contact = () => {
             <P
               className={
                 showModal
-                  ? 'transition duration-900 inline-flex justify-center p-2 border shadow-sm rounded-md bg-black bg-opacity-50 text-xxl text-white hover:bg-gray-700 focus-within:outline-none w-full'
+                  ? 'transition duration-900 inline-flex justify-center p-2 border shadow-sm rounded-md bg-black bg-opacity-50 text-center text-xxl text-white hover:bg-gray-700 focus-within:outline-none w-full'
                   : 'hidden '
               }
             >
