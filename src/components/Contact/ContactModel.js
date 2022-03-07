@@ -18,22 +18,16 @@ export const ContactModel = () => {
   const handleSendEmail = event => {
     event.preventDefault()
     debugger
-    if (
-      fullName.params.value.length >= 4 &&
-      email.params.value.length > 11 &&
-      message.params.value.length >= 50
-    ) {
-      emailjs
-        .sendForm('service_3y9qqi9', 'template_rruy7ci', event.target, 'ayNQSJVuw3mKwJnpn')
-        .then(
-          result => {
-            console.log(result.text)
-            setShowModal(true)
-          },
-          error => {
-            console.log(error.text)
-          }
-        )
+    if (fullName.params.value.length >= 4 && email.params.value.length > 11 && message.params.value.length >= 50) {
+      emailjs.sendForm('service_3y9qqi9', 'template_rruy7ci', event.target, 'ayNQSJVuw3mKwJnpn').then(
+        result => {
+          console.log(result.text)
+          setShowModal(true)
+        },
+        error => {
+          console.log(error.text)
+        }
+      )
       fullName.reset()
       email.reset()
       message.reset()

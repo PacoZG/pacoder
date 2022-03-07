@@ -28,13 +28,7 @@ const Contact = () => {
     <Div className="page-layout lg:pt-40 transform duration-75">
       <Form onSubmit={handleSendEmail}>
         <Div className={'flex flex-col p-5 md:p-28 gap-5'}>
-          <Input
-            className={'email-input'}
-            placeholder={t('contact.name')}
-            {...fullName.params}
-            required
-            name="name"
-          />
+          <Input className={'email-input'} placeholder={t('contact.name')} {...fullName.params} required name="name" />
           <Input
             className={'email-input'}
             placeholder="Email"
@@ -45,13 +39,13 @@ const Contact = () => {
           />
           <Label className="text-gray-300">
             {message.params.value.length > 49 ? (
-              <span className="text-lg text-gray-300 pl-2 transform duration-150">{`${t(
-                'contact.characters'
-              )}${message.params.value.length}/500 max`}</span>
+              <span className="text-lg text-gray-300 pl-2 transform duration-150">{`${t('contact.characters')}${
+                message.params.value.length
+              }/500 max`}</span>
             ) : (
-              <span className="text-lg text-red-400 pl-2 transform duration-150">{`${t(
-                'contact.characters'
-              )} ${message.params.value.length}/50 min`}</span>
+              <span className="text-lg text-red-400 pl-2 transform duration-150">{`${t('contact.characters')} ${
+                message.params.value.length
+              }/50 min`}</span>
             )}
           </Label>
           <TextArea
