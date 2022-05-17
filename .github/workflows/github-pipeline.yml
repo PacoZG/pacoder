@@ -49,7 +49,6 @@ jobs:
           checkstring: 'ok'
           delay: 5
           rollbackonhealthcheckfailed: true
-          usedocker: true
   
   push_to_docker_hub:
     name: Push Docker image to Docker Hub
