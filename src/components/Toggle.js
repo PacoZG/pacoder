@@ -1,5 +1,6 @@
 /* eslint-disable no-extend-native */
 import React, { useEffect } from 'react'
+import moment from 'moment'
 import localdb from '../utils/localdb'
 import { MoonIcon, SunIcon } from '@heroicons/react/solid'
 import useDarkMode from '../hooks/useDarkMode'
@@ -9,30 +10,29 @@ import Span from './private/Span'
 
 const Toggle = () => {
   const [colorTheme, setTheme] = useDarkMode()
-  const timeNow = new Date()
-  const hours = timeNow.getHours()
-
-  // console.log({ timeNow })
-  // Date.prototype.stdTimezoneOffset = function () {
-  //   var apr = new Date(this.getFullYear(), 4, 1)
-  //   var oct = new Date(this.getFullYear(), 10, 1)
-  //   return Math.max(apr.getTimezoneOffset(), oct.getTimezoneOffset())
-  // }
-  // Date.prototype.isDstObserved = function () {
-  //   return this.getTimezoneOffset() < this.stdTimezoneOffset()
-  // }
-  // console.log(timeNow.isDstObserved())
+  const timeNow = moment()
+  const hours = timeNow.format('HH')
 
   useEffect(() => {
     if (!localdb.getTheme()) {
-      if (hours >= 8 && hours < 20) {
-        setTheme('light')
-      }
-      if (hours < 8 || hours >= 20) {
-        setTheme('dark')
+      if (timeNow.isDST()) {
+        if (hours >= '08' && hours < '20') {
+          setTheme('light')
+        }
+        if (hours < '08' || hours >= '20') {
+          setTheme('dark')
+        }
+      } else {
+        if (hours >= '10' && hours < '17') {
+          setTheme('light')
+        }
+        if (hours < '10' || hours >= '17') {
+          setTheme('dark')
+        }
       }
     }
   }, [setTheme, hours])
+
   const handleTheme = () => {
     setTheme(colorTheme)
     localdb.setTheme(colorTheme)

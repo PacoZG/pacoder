@@ -186,5 +186,3 @@ exports[`Testing Snapshot of the Footer component 1`] = `
   </div>
 </div>
 `;
-
-exports[`Testing Snapshot of the Sticky Sticker component 1`] = `<div />`;
