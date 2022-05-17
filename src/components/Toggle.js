@@ -25,10 +25,10 @@ const Toggle = () => {
 
   useEffect(() => {
     if (!localdb.getTheme()) {
-      if (hours >= 10 && hours < 17) {
+      if (hours >= 8 && hours < 20) {
         setTheme('light')
       }
-      if (hours < 10 || hours >= 17) {
+      if (hours < 8 || hours >= 20) {
         setTheme('dark')
       }
     }
