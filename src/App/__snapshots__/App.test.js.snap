@@ -571,11 +571,13 @@ exports[`Testing header Snapshot of the Main App component 1`] = `
               fillRule="evenodd"
             />
           </svg>
-          <p
+          <a
             className="text-gray-300 text-sm space-y-2 md:space-y-0 "
+            href="/cv/contact"
+            onClick={[Function]}
           >
             contact@pacoderzavala.com
-          </p>
+          </a>
         </div>
       </div>
       <div>
