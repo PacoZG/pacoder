@@ -23,8 +23,8 @@ const App = () => {
           <Route path={'/cv/contact'} element={<Contact />} />
           {/* <Route path="/forum" element={<Body />} /> */}
         </Routes>
+        <Footer />
       </BrowserRouter>
-      <Footer />
     </Div>
   )
 }

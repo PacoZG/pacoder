@@ -2,6 +2,7 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { FacebookShareButton, FacebookIcon, LinkedinIcon, LinkedinShareButton } from 'react-share'
 import { LocationMarkerIcon, AtSymbolIcon } from '@heroicons/react/solid'
+import { Link } from 'react-router-dom'
 import Div from './private/Div'
 import A from './private/A'
 import P from './private/P'
@@ -20,7 +21,9 @@ const Footer = () => {
           </Div>
           <Div className="flex space-x-1 items-center">
             <AtSymbolIcon className="h-4 w-4 text-gray-300" />
-            <P className="text-gray-300 text-sm space-y-2 md:space-y-0 ">contact@pacoderzavala.com</P>
+            <Link className="text-gray-300 text-sm space-y-2 md:space-y-0 " to="/cv/contact">
+              contact@pacoderzavala.com
+            </Link>
           </Div>
         </Div>
         <Div>
