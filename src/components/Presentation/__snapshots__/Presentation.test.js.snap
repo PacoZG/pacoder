@@ -5,12 +5,33 @@ exports[`Testing Snapshot of the Education component 1`] = `
   className="bg-gray-300 dark:bg-gray-900 flex flex-col items-center p-4 md:py-10 lg:py-20 transition duration-500 rounded-b-xl bg-opacity-70 dark:bg-opacity-70"
 >
   <div
-    className="flex flex-col justify-center bg-gray-500 border-2 border-gray-300 rounded-lg p-4 mb-2 w-full sm:w-11/12 lg:w-2/3 md:h-48"
+    className="flex flex-col justify-center bg-gray-500 border-2 border-gray-300 rounded-lg p-4 mb-2 w-full sm:w-11/12 lg:w-2/3 sm:h-44 md:h-40 xl:h-36"
   >
     <h1
       className=" md:text-xl text-gray-900 pb-1 font-bold border-b-2 border-gray-300"
     >
-      Full Stack Open Course (online) 
+      DevOps with Docker  -  
+      <a
+        className="text-gray-900 underline transition duration-200 hover:text-indigo-600"
+        href="https://devopswithdocker.com/"
+        target="blank"
+      >
+        Course Material
+      </a>
+    </h1>
+    <p
+      className="text-gray-300 pt-3 text-justify"
+    >
+      Introductory course to Docker and docker-compose lectured on-line in MOOC.fi and developed by the University of Helsinki in partnership with Eficode
+    </p>
+  </div>
+  <div
+    className="flex flex-col justify-center bg-gray-500 border-2 border-gray-300 rounded-lg p-4 mb-2 w-full sm:w-11/12 lg:w-2/3 sm:h-60 md:h-56 xl:h-48"
+  >
+    <h1
+      className=" md:text-xl text-gray-900 pb-1 font-bold border-b-2 border-gray-300"
+    >
+      Full Stack Open Course (online)  -  
       <a
         className="text-gray-900 underline transition duration-200 hover:text-indigo-600"
         href="https://fullstackopen.com/en/"
@@ -22,7 +43,7 @@ exports[`Testing Snapshot of the Education component 1`] = `
     <p
       className="text-gray-300 pt-3 text-justify"
     >
-      Completed between AUG 2020 - JULY 2021, written and taught by professors from the University of Helsinki. The course is an introduction to modern web development with JavaScript, React, RESTful and GraphQL web services implemented with Node.js and also has parts on TypeScript, React Native and Continuous integration.
+      Course lectured online in MOOC.fi and developed by the University of Helsinki in cooperation with Partners and affiliates of the course which include Houston Inc, Terveystalo, Elisa, K-ryhmä, Unity Technologies and Konecranes. Completed between AUG 2020 - JULY 2021, written and taught by professors from the University of Helsinki. The course is an introduction to modern web development with JavaScript, React, RESTful and GraphQL web services implemented with Node.js and also have parts on TypeScript, React Native and Continuous integration.
     </p>
   </div>
   <div

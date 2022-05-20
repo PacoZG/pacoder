@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { ReactComponent as Cypress } from '../../utils/assets/cypress.svg'
 import { ReactComponent as Typescript } from '../../utils/assets/typescript.svg'
 import { ReactComponent as AWSLogo } from '../../utils/assets/aws-logo.svg'
+import { ReactComponent as DockerLogo } from '../../utils/assets/docker.svg'
 import Tailwind from '../../utils/assets/tailwind-css.png'
 import Div from '../private/Div'
 import Img from '../private/Img'
@@ -38,7 +39,7 @@ const Skills = () => {
                 src="https://img.icons8.com/color/96/000000/redux.png"
                 alt="React"
               />
-              <P className="text-black dark:text-purple-800 transition duration-500">Redux</P>
+              <P className="text-black dark:text-purple-400 transition duration-500">Redux</P>
             </Div>
             <Div className="flex flex-col items-center">
               <Img
@@ -46,7 +47,7 @@ const Skills = () => {
                 src="https://img.icons8.com/nolan/96/react-native.png"
                 alt="React"
               />
-              <P className="text-black dark:text-pink-800 transition duration-500">React-Native</P>
+              <P className="text-black dark:text-pink-700 transition duration-500">React-Native</P>
             </Div>
           </Div>
           <Div className="flex items-center justify-center gap-24">
@@ -81,7 +82,7 @@ const Skills = () => {
           </Div>
           <Div className="flex items-center justify-center gap-24">
             <Div className="flex flex-col items-center">
-              <Img alt="tailwind-logo" src={Tailwind} className="skill-logo mb-4 h-20 w-32" />
+              <Img alt="tailwind-logo" src={Tailwind} className="skill-logo mb-4 h-20 w-36" />
               <P className="text-black dark:text-blue-300 transition duration-500">Tailwindcss</P>
             </Div>
             <Div className="flex flex-col items-center">
@@ -90,7 +91,11 @@ const Skills = () => {
             </Div>
             <Div className="flex flex-col items-center">
               <AWSLogo className="skill-logo p-3 w-24 h-24 bg-white" />
-              <P className=" text-yellow-400 transition duration-500">AWS Junior Developer Use</P>
+              <P className=" text-center text-yellow-400 transition duration-500">AWS Junior Developer Use</P>
+            </Div>
+            <Div className="flex flex-col items-center">
+              <DockerLogo className="skill-logo p-3 w-24 h-24 bg-gray-50 bg-opacity-10" />
+              <P className=" text-center text-blue-700 transition duration-500">DevOps with Docker</P>
             </Div>
           </Div>
         </Div>

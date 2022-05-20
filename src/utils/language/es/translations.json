@@ -49,15 +49,18 @@
     "line4_3": " y descubre el resultado de mi prueba"
   },
   "education": {
-    "line1": "Curso Full Stack (en línea) ",
-    "line2": "Material del curso",
-    "line3": "Completado entre AGOSTO 2020 - JULIO 2021, escrito e impartido por profesores de la Universidad de Helsinki. El curso es una introducción al desarrollo web moderno con servicios web JavaScript, React, RESTful y GraphQL implementados con Node.js y también tiene partes sobre TypeScript, React Native e integración continua.",
-    "line4": "Ingeniería en comunicación",
+    "line12": "DevOps con Docker (en línea) -  ",
+    "line11": "Material del curso",
+    "line10": "Curso de introducción a Docker y docker-compose dictado en línea en MOOC.fi y desarrollado por la Universidad de Helsinki en asociación con Eficode",
+    "line9": "Curso Full Stack (en línea)  -  ",
+    "line8": "Material del curso",
+    "line7": "Curso impartido en línea en MOOC.fi y desarrollado por la Universidad de Helsinki en cooperación con socios y afiliados del curso que incluyen Houston Inc, Terveystalo, Elisa, K-ryhmä, Unity Technologies y Konecranes. Completado entre AGOSTO 2020 - JULIO 2021, escrito e impartido por profesores de la Universidad de Helsinki. El curso es una introducción al desarrollo web moderno con servicios web JavaScript, React, RESTful y GraphQL implementados con Node.js y también tiene partes sobre TypeScript, React Native e integración continua.",
+    "line6": "Ingeniería en comunicación",
     "line5": "Cursos de maestría como estudiante de intercambio Erasmus 2014-2015",
-    "line6": "@Aalto University - Escuela de Ingeniería Eléctrica",
-    "line7": "Licenciatura en Ingeniería de Telecomunicación",
-    "line8": "Llegué al 4to año académico con el 78% de los estudios completados",
-    "line9": "@Universidad Politecnica de Cartagena - Escuela Técnica Superior de Ingenieria de Telecomunicación"
+    "line4": "@Aalto University - Escuela de Ingeniería Eléctrica",
+    "line3": "Licenciatura en Ingeniería de Telecomunicación",
+    "line2": "Llegué al 4to año académico con el 78% de los estudios completados",
+    "line1": "@Universidad Politecnica de Cartagena - Escuela Técnica Superior de Ingenieria de Telecomunicación"
   },
   "experience": {
     "company4": "Houston Inc",

@@ -48,15 +48,18 @@
     "line4_3": " and discover the result of my test"
   },
   "education": {
-    "line1": "Full Stack Open Course (online) ",
-    "line2": "Course Material",
-    "line3": "Completed between AUG 2020 - JULY 2021, written and taught by professors from the University of Helsinki. The course is an introduction to modern web development with JavaScript, React, RESTful and GraphQL web services implemented with Node.js and also has parts on TypeScript, React Native and Continuous integration.",
-    "line4": "Communication Engineering",
+    "line12": "DevOps with Docker  -  ",
+    "line11": "Course Material",
+    "line10": "Introductory course to Docker and docker-compose lectured on-line in MOOC.fi and developed by the University of Helsinki in partnership with Eficode",
+    "line9": "Full Stack Open Course (online)  -  ",
+    "line8": "Course Material",
+    "line7": "Course lectured online in MOOC.fi and developed by the University of Helsinki in cooperation with Partners and affiliates of the course which include Houston Inc, Terveystalo, Elisa, K-ryhmä, Unity Technologies and Konecranes. Completed between AUG 2020 - JULY 2021, written and taught by professors from the University of Helsinki. The course is an introduction to modern web development with JavaScript, React, RESTful and GraphQL web services implemented with Node.js and also have parts on TypeScript, React Native and Continuous integration.",
+    "line6": "Communication Engineering",
     "line5": "Master Courses as an Erasmus Exchange Student 2014-2015",
-    "line6": "@Aalto University – School of Electrical Engineering",
-    "line7": "Bachelor in Telecommunications Engineering",
-    "line8": "I reached the 4th academic year with 78% of the studies completed",
-    "line9": "@Universidad Politecnica de Cartagena - Technical School of Telecommunications Engineering"
+    "line4": "@Aalto University – School of Electrical Engineering",
+    "line3": "Bachelor in Telecommunications Engineering",
+    "line2": "I reached the 4th academic year with 78% of the studies completed",
+    "line1": "@Universidad Politecnica de Cartagena - Technical School of Telecommunications Engineering"
   },
   "experience": {
     "company4": "Houston Inc",
