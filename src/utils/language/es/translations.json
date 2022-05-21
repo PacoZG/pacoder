@@ -16,12 +16,12 @@
   },
   "Header": {
     "presentation": "Presentación",
-    "skills": "Habilidades y Puntos Fuertes",
-    "experience": "Experiencia Laboral",
+    "skills": "Habilidades",
+    "experience": "Experiencia",
     "contact": "Contacto"
   },
   "Footer": {
-    "developed-by": "Desarrollado por:",
+    "developed-by": "DESARROLLADO POR",
     "share-cv": "COMPARTE MI SITIO WEB"
   },
   "Presentation": {

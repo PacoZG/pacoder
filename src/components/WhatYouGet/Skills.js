@@ -4,6 +4,9 @@ import { ReactComponent as Cypress } from '../../utils/assets/cypress.svg'
 import { ReactComponent as Typescript } from '../../utils/assets/typescript.svg'
 import { ReactComponent as AWSLogo } from '../../utils/assets/aws-logo.svg'
 import { ReactComponent as DockerLogo } from '../../utils/assets/docker.svg'
+import { ReactComponent as CSSLogo } from '../../utils/assets/css.svg'
+import { ReactComponent as ReduxLogo } from '../../utils/assets/redux.svg'
+import { ReactComponent as JavaLogo } from '../../utils/assets/java.svg'
 import Tailwind from '../../utils/assets/tailwind-css.png'
 import Div from '../private/Div'
 import Img from '../private/Img'
@@ -14,7 +17,7 @@ const Skills = () => {
   const { t } = useTranslation()
   return (
     <Div className="flex flex-col items-center lg:gap-8 justify-center p-8 md:p-16 bg-gray-300 dark:bg-gray-900 transition duration-500 bg-opacity-70 dark:bg-opacity-70">
-      <Div className="flex flex-col justify-center lg:space-x-28 border-double border-b-8 border-gray-700 dark:border-gray-500  pb-12 lg:w-10/12">
+      <Div className="flex flex-col justify-center  border-double border-b-8 border-gray-700 dark:border-gray-500  pb-12 lg:w-10/12">
         <Div className="hidden lg:flex flex-col space-y-9">
           <Div className="flex items-center justify-evenly gap-24">
             <Div className="flex flex-col items-center ">
@@ -34,11 +37,11 @@ const Skills = () => {
               <P className="text-black dark:text-blue-300 transition duration-500">React</P>
             </Div>
             <Div className="flex flex-col items-center">
-              <Img
-                className="skill-logo bg-white p-2 "
-                src="https://img.icons8.com/color/96/000000/redux.png"
-                alt="React"
-              />
+              <Img className="skill-logo " src="https://img.icons8.com/color/48/000000/graphql.png" alt="React" />
+              <P className="text-black dark:text-pink-500 transition duration-500">GraphQL</P>
+            </Div>
+            <Div className="flex flex-col items-center">
+              <ReduxLogo className="skill-logo h-28 w-40 " />
               <P className="text-black dark:text-purple-400 transition duration-500">Redux</P>
             </Div>
             <Div className="flex flex-col items-center">
@@ -52,24 +55,20 @@ const Skills = () => {
           </Div>
           <Div className="flex items-center justify-evenly gap-24">
             <Div className="flex flex-col items-center ">
-              <Typescript className=" skill-logo w-24 rounded-none  " />
-              <P className="text-black dark:text-yellow-500 transition duration-500">Typescript</P>
+              <Typescript className=" skill-logo h-24 w-24 rounded-none  " />
+              <P className="text-black dark:text-yellow-500 transition duration-500 mt-3">Typescript</P>
             </Div>
             <Div className="flex flex-col items-center">
-              <Img
-                className="skill-logo bg-gray-300 p-2  "
-                src="https://img.icons8.com/color/96/000000/mongodb.png"
-                alt="React"
-              />
+              <Img className="skill-logo h-36 w-32 " src="https://img.icons8.com/color/344/html-5--v1.png" alt="HTML" />
+              <P className="text-black dark:text-purple-400 transition duration-500">HTML</P>
+            </Div>
+            <Div className="flex flex-col items-center">
+              <CSSLogo className="skill-logo h-36 w-24 " />
+              <P className="text-black dark:text-purple-400 transition duration-500">CSS</P>
+            </Div>
+            <Div className="flex flex-col items-center">
+              <Img className="skill-logo  p-2  " src="https://img.icons8.com/color/96/000000/mongodb.png" alt="React" />
               <P className="text-black dark:text-green-400 transition duration-500">MongoDB</P>
-            </Div>
-            <Div className="flex flex-col items-center">
-              <Img
-                className="skill-logo bg-gray-200 p-2 "
-                src="https://img.icons8.com/color/48/000000/graphql.png"
-                alt="React"
-              />
-              <P className="text-black dark:text-pink-500 transition duration-500">GraphQL</P>
             </Div>
             <Div className="flex flex-col items-center">
               <Img
@@ -81,6 +80,8 @@ const Skills = () => {
             </Div>
           </Div>
           <Div className="flex items-center justify-evenly gap-24">
+            <JavaLogo className="skill-logo bg-gray-600 dark:bg-transparent p-2 h-36 w-32 sm:w-36" />
+
             <Div className="flex flex-col items-center">
               <Img alt="tailwind-logo" src={Tailwind} className="skill-logo mb-4 h-20 w-28" />
               <P className="text-black dark:text-blue-300 transition duration-500">Tailwindcss</P>
@@ -91,7 +92,7 @@ const Skills = () => {
             </Div>
             <Div className="flex flex-col items-center">
               <AWSLogo className="skill-logo p-3 w-24 h-24 bg-white" />
-              <P className=" text-center text-yellow-400 transition duration-500">Junior</P>
+              <P className=" text-center text-yellow-800 dark:text-yellow-500 transition duration-500">Junior</P>
             </Div>
             <Div className="flex flex-col items-center">
               <DockerLogo className="skill-logo p-3 w-24 h-24 bg-gray-50 bg-opacity-10" />
@@ -120,38 +121,22 @@ const Skills = () => {
                 <P className="text-sm text-black dark:text-blue-300 transition duration-500">React</P>
               </Div>
               <Div className="flex flex-col items-center">
-                <Img
-                  className="skill-logo bg-white p-3 "
-                  src="https://img.icons8.com/color/96/000000/redux.png"
-                  alt="Redux"
-                />
+                <ReduxLogo className="skill-logo h-20 w-16 " />
                 <P className="text-sm text-black dark:text-purple-800 transition duration-500">Redux</P>
               </Div>
             </Div>
 
             <Div className="flex items-center justify-evenly space-x-9 sm:space-x-16 md:space-x-20">
               <Div className="flex flex-col items-center">
-                <Img
-                  className="skill-logo bg-white p-2 "
-                  src="https://img.icons8.com/nolan/96/react-native.png"
-                  alt="React"
-                />
+                <Img className="skill-logo  " src="https://img.icons8.com/nolan/96/react-native.png" alt="React" />
                 <P className="text-sm text-black dark:text-pink-800 transition duration-500">React-Native</P>
               </Div>
               <Div className="flex flex-col items-center">
-                <Img
-                  className="skill-logo bg-gray-300 p-2 "
-                  src="https://img.icons8.com/color/96/000000/mongodb.png"
-                  alt="React"
-                />
+                <Img className="skill-logo " src="https://img.icons8.com/color/96/000000/mongodb.png" alt="React" />
                 <P className="text-sm text-black dark:text-green-400 transition duration-500">MongoDB</P>
               </Div>
               <Div className="flex flex-col items-center">
-                <Img
-                  className="skill-logo bg-gray-200 p-2 "
-                  src="https://img.icons8.com/color/48/000000/graphql.png"
-                  alt="React"
-                />
+                <Img className="skill-logo " src="https://img.icons8.com/color/48/000000/graphql.png" alt="React" />
                 <P className="text-sm text-black dark:text-pink-500 transition duration-500">GraphQL</P>
               </Div>
             </Div>
@@ -187,6 +172,24 @@ const Skills = () => {
               <Div className="flex flex-col items-center">
                 <DockerLogo className="skill-logo p-2 my-2 h-20 w-20 md:h-24 md:w-24 bg-gray-50 bg-opacity-10" />
                 <P className=" text-center text-blue-700 transition duration-500 w-16">Docker</P>
+              </Div>
+            </Div>
+
+            <Div className="flex items-center justify-evenly space-x-9 sm:space-x-16 md:space-x-24">
+              <JavaLogo className="skill-logo bg-gray-600 dark:bg-transparent h-28 w-24 md:h-28 md:w-24 lg:w-32" />
+
+              <Div className="flex flex-col items-center">
+                <Img
+                  className="skill-logo h-20 w-28 "
+                  src="https://img.icons8.com/color/344/html-5--v1.png"
+                  alt="HTML"
+                />
+
+                <P className=" text-center text-yellow-800 transition duration-500">HTML</P>
+              </Div>
+              <Div className="flex flex-col items-center">
+                <CSSLogo className="skill-logo h-16 w-24 md:h-28 md:w-24 bg-transparent p-1" />
+                <P className=" text-center text-blue-700 transition duration-500 w-16">CSS</P>
               </Div>
             </Div>
           </Div>

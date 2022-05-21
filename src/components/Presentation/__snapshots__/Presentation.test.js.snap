@@ -92,12 +92,12 @@ exports[`Testing Snapshot of the WhoIAm component 1`] = `
   className="flex justify-center bg-gray-300 dark:bg-gray-900 p-3 md:p-10 w-full transition duration-500 bg-opacity-70 dark:bg-opacity-70"
 >
   <div
-    className="flex flex-col items-center md:flex-row justify-center md:w-11/12 lg:w-9/12 "
+    className="flex flex-col items-center sm:flex-row justify-center sm:w-11/12 lg:w-9/12 "
   >
     <img
       alt="profile"
-      className=" w-10/12 h-10/12 md:h-96 lg:w-80 border-4 border-black dark:border-gray-300 rounded-xl transition duration-500 "
-      src="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1625155266/CV%20Pics/kxcpai1mniycdxszmgbq.jpg"
+      className=" h-96 sm:h-80 md:h-96 lg:w-80 border-4 border-black dark:border-gray-300 rounded-xl transition duration-500 "
+      src="https://res.cloudinary.com/dbn5gpgi5/image/upload/q_auto/v1653152856/CV%20Pics/idyfixrp3nzidjjezeuc.jpg"
     />
     <div
       className="p-10 md:p-12 md:pr-0 md:pt-8 w-full lg:w-3/4"

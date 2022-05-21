@@ -237,14 +237,14 @@ exports[`Testing Snapshot of the Header component 1`] = `
           href="/cv/skills_strenghts"
           onClick={[Function]}
         >
-          Skills & Strenghts
+          Skills
         </a>
         <a
           className="mobile-link"
           href="/cv/experience"
           onClick={[Function]}
         >
-          Working Experience
+          Experience
         </a>
         <a
           className="mobile-link"
@@ -496,14 +496,14 @@ exports[`Testing Snapshot of the Header component 1`] = `
             href="/cv/skills_strenghts"
             onClick={[Function]}
           >
-            Skills & Strenghts
+            Skills
           </a>
           <a
             className="link"
             href="/cv/experience"
             onClick={[Function]}
           >
-            Working Experience
+            Experience
           </a>
           <a
             className="link"

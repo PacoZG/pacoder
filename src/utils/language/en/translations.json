@@ -15,12 +15,12 @@
   },
   "Header": {
     "presentation": "Presentation",
-    "skills": "Skills & Strenghts",
-    "experience": "Working Experience",
+    "skills": "Skills",
+    "experience": "Experience",
     "contact": "Contact"
   },
   "Footer": {
-    "developed-by": "Developed by:",
+    "developed-by": "DEVELOPED BY",
     "share-cv": "SHARE MY WEBSITE"
   },
   "Presentation": {
