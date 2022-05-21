@@ -11,7 +11,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
       className="hidden lg:flex flex-col space-y-9"
     >
       <div
-        className="flex items-center justify-center gap-24"
+        className="flex items-center justify-evenly gap-24"
       >
         <div
           className="flex flex-col items-center "
@@ -46,7 +46,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
         >
           <img
             alt="React"
-            className="skill-logo bg-white p-3 "
+            className="skill-logo bg-white p-2 "
             src="https://img.icons8.com/color/96/000000/redux.png"
           />
           <p
@@ -71,13 +71,13 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
         </div>
       </div>
       <div
-        className="flex items-center justify-center gap-24"
+        className="flex items-center justify-evenly gap-24"
       >
         <div
           className="flex flex-col items-center "
         >
           <svg
-            className=" skill-logo w-20 rounded-none  "
+            className=" skill-logo w-24 rounded-none  "
           >
             typescript.svg
           </svg>
@@ -92,7 +92,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
         >
           <img
             alt="React"
-            className="skill-logo bg-gray-300 p-2 "
+            className="skill-logo bg-gray-300 p-2  "
             src="https://img.icons8.com/color/96/000000/mongodb.png"
           />
           <p
@@ -131,14 +131,14 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
         </div>
       </div>
       <div
-        className="flex items-center justify-center gap-24"
+        className="flex items-center justify-evenly gap-24"
       >
         <div
           className="flex flex-col items-center"
         >
           <img
             alt="tailwind-logo"
-            className="skill-logo mb-4 h-20 w-36"
+            className="skill-logo mb-4 h-20 w-28"
             src="tailwind-css.png"
           />
           <p
@@ -151,7 +151,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
           className="flex flex-col items-center"
         >
           <svg
-            className="skill-logo h-16 sm:h-20 md:h-24"
+            className="skill-logo h-24 "
           >
             cypress.svg
           </svg>
@@ -172,7 +172,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
           <p
             className=" text-center text-yellow-400 transition duration-500"
           >
-            AWS Junior Developer Use
+            Junior
           </p>
         </div>
         <div
@@ -186,7 +186,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
           <p
             className=" text-center text-blue-700 transition duration-500"
           >
-            DevOps with Docker
+            Docker
           </p>
         </div>
       </div>
@@ -290,14 +290,14 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
           </div>
         </div>
         <div
-          className="flex items-center justify-evenly space-x-5 sm:space-x-11 md:space-x-14"
+          className="flex items-center justify-evenly space-x-9 sm:space-x-16 md:space-x-24"
         >
           <div
             className="flex flex-col items-center"
           >
             <img
               alt="React"
-              className="skill-logo bg-green-400 p-2  "
+              className="skill-logo bg-green-400 p-2 md:h-28 "
               src="https://img.icons8.com/color/96/000000/nodejs.png"
             />
             <p
@@ -311,7 +311,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
           >
             <img
               alt="tailwind-logo"
-              className="skill-logo h-16 w-20 mb-4 pt-3"
+              className="skill-logo h-20 w-24 mb-4 pt-3 md:h-20 md:w-24"
               src="tailwind-css.png"
             />
             <p
@@ -324,7 +324,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
             className="flex flex-col items-center"
           >
             <svg
-              className="skill-logo h-20 w-20"
+              className="skill-logo h-20 w-20 md:h-24 md:w-24"
             >
               cypress.svg
             </svg>
@@ -336,13 +336,13 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
           </div>
         </div>
         <div
-          className="flex items-center justify-evenly space-x-5 sm:space-x-11 md:space-x-14"
+          className="flex items-center justify-evenly space-x-9 sm:space-x-16 md:space-x-24"
         >
           <div
             className="flex flex-col items-center"
           >
             <svg
-              className="skill-logo w-16 rounded-none"
+              className="skill-logo w-20 my-2 rounded-none md:h-24 md:w-24"
             >
               typescript.svg
             </svg>
@@ -356,14 +356,28 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
             className="flex flex-col items-center"
           >
             <svg
-              className="skill-logo p-2 my-2 h-16 w-16 bg-white"
+              className="skill-logo p-3 my-2 h-20 w-20 md:h-24 md:w-24 bg-white"
             >
               aws-logo.svg
             </svg>
             <p
-              className=" text-yellow-400 transition duration-500"
+              className=" text-center text-yellow-400 transition duration-500"
             >
-              Junior Dev Use
+              Junior
+            </p>
+          </div>
+          <div
+            className="flex flex-col items-center"
+          >
+            <svg
+              className="skill-logo p-2 my-2 h-20 w-20 md:h-24 md:w-24 bg-gray-50 bg-opacity-10"
+            >
+              docker.svg
+            </svg>
+            <p
+              className=" text-center text-blue-700 transition duration-500 w-16"
+            >
+              Docker
             </p>
           </div>
         </div>
