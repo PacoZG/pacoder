@@ -180,7 +180,7 @@ const Skills = () => {
 
               <Div className="flex flex-col items-center">
                 <Img
-                  className="skill-logo h-20 w-28 "
+                  className="skill-logo h-20 w-28 md:h-28 "
                   src="https://img.icons8.com/color/344/html-5--v1.png"
                   alt="HTML"
                 />
@@ -188,7 +188,7 @@ const Skills = () => {
                 <P className=" text-center text-yellow-800 transition duration-500">HTML</P>
               </Div>
               <Div className="flex flex-col items-center">
-                <CSSLogo className="skill-logo h-16 w-24 md:h-28 md:w-24 bg-transparent p-1" />
+                <CSSLogo className="skill-logo h-16 w-24 md:h-32 md:w-24 bg-transparent p-1" />
                 <P className=" text-center text-blue-700 transition duration-500 w-16">CSS</P>
               </Div>
             </Div>
