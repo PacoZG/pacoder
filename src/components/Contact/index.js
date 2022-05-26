@@ -25,9 +25,9 @@ const Contact = () => {
   } = ContactModel()
 
   return (
-    <Div className="page-layout lg:pt-40 transform duration-75">
+    <Div className="page-layout transform duration-75 ">
       <Form onSubmit={handleSendEmail}>
-        <Div className={'flex flex-col p-5 md:p-28 gap-5'}>
+        <Div className="flex flex-col items-center justify-center p-5 md:p-20 gap-5 bg-gray-500 dark:bg-gray-900 transition duration-500 bg-opacity-70 dark:bg-opacity-70 rounded-xl">
           <Input className={'email-input'} placeholder={t('contact.name')} {...fullName.params} required name="name" />
           <Input
             className={'email-input'}
@@ -59,8 +59,8 @@ const Contact = () => {
             disabled={disabled}
             className={
               disabled
-                ? 'transition duration-700 inline-flex justify-center py-2 px-4 border-0 shadow-sm font-extralight rounded-md bg-black opacity-20 text-lg text-red-400'
-                : 'transition duration-700 inline-flex justify-center py-2 px-4 border shadow-sm font-semibold rounded-md bg-black opacity-75 text-lg text-white hover:bg-gray-700 focus-within:outline-none'
+                ? 'transition duration-700 inline-flex justify-center py-2 px-4 w-40 border-0 shadow-sm font-extralight rounded-md bg-black opacity-20 text-lg text-red-400'
+                : 'transition duration-700 inline-flex justify-center py-2 px-4 w-40 border shadow-sm font-semibold rounded-md bg-black opacity-75 text-lg text-white hover:bg-gray-700 focus-within:outline-none'
             }
             type="submit"
           >

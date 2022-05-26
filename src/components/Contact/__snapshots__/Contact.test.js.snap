@@ -2,13 +2,13 @@
 
 exports[`Testing Snapshot of the Contact component 1`] = `
 <div
-  className="page-layout lg:pt-40 transform duration-75"
+  className="page-layout transform duration-75 "
 >
   <form
     onSubmit={[Function]}
   >
     <div
-      className="flex flex-col p-5 md:p-28 gap-5"
+      className="flex flex-col items-center justify-center p-5 md:p-20 gap-5 bg-gray-500 dark:bg-gray-900 transition duration-500 bg-opacity-70 dark:bg-opacity-70 rounded-xl"
     >
       <input
         className="email-input"
@@ -48,7 +48,7 @@ exports[`Testing Snapshot of the Contact component 1`] = `
         value=""
       />
       <button
-        className="transition duration-700 inline-flex justify-center py-2 px-4 border-0 shadow-sm font-extralight rounded-md bg-black opacity-20 text-lg text-red-400"
+        className="transition duration-700 inline-flex justify-center py-2 px-4 w-40 border-0 shadow-sm font-extralight rounded-md bg-black opacity-20 text-lg text-red-400"
         disabled={true}
         type="submit"
       >

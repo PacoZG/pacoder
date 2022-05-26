@@ -8,7 +8,7 @@
   }
 
   .page-layout {
-    @apply min-h-screen p-2 md:p-4 lg:p-8 pt-28 md:pt-24 lg:pt-24 dark:bg-opacity-80 transform duration-500;
+    @apply min-h-screen p-4 md:p-4 lg:p-8 pt-28 md:pt-24 lg:pt-24 dark:bg-opacity-80 transform duration-500;
   }
 
   .skill-logo {
@@ -32,12 +32,12 @@
   }
 
   .email-input {
-    @apply bg-opacity-10 bg-white rounded-md h-20 p-5 text-gray-300 text-lg md:text-2xl block border border-transparent focus:outline-none focus:ring-1 focus:ring-gray-200 focus:border-transparent w-full shadow-sm border-gray-100 placeholder-gray-200
+    @apply bg-opacity-10 bg-white rounded-md h-20 w-full sm:w-3/4 lg:w-3/4 xl:w-4/6 2xl:w-1/2 p-5 text-gray-300 text-lg md:text-2xl block border border-transparent focus:outline-none focus:ring-1 focus:ring-gray-200 focus:border-transparent shadow-sm border-gray-100 placeholder-gray-200;
   }
   
   /* mobile view */
   .link-menu {
-    @apply absolute flex flex-row items-center top-14 left-0 h-9 w-full pl-1.5 cursor-pointer ;
+    @apply absolute flex flex-row items-center top-14 left-0 h-9 w-full pl-1.5 cursor-pointer;
   }
 
   .mobile-link-group {
