@@ -16,7 +16,7 @@ const Header = () => {
 
   return (
     <Div className="fixed z-10 w-screen bg-transparent transition duration-500">
-      <Div className="header-style relative lg:hidden flex flex-row items-center justify-center mx-3 m-2">
+      <Div className="header-style relative md:hidden flex flex-row items-center justify-center mx-3 m-2">
         <Div className="flex justify-center w-full">
           <Toggle />
         </Div>
@@ -62,7 +62,7 @@ const Header = () => {
           </Div>
         </Div>
       </Div>
-      <Div className="hidden lg:block">
+      <Div className="hidden md:block">
         <Div className="header-style flex flex-row items-center justify-evenly p-1 shadow-2xl  mr-14 ml-10 m-2">
           <Toggle />
           <Div className="flex items-center space-x-1 md:space-x-6 p-2">

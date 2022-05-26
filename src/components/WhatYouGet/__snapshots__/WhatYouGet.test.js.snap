@@ -2,23 +2,23 @@
 
 exports[`Testing header Snapshot of the Skills component 1`] = `
 <div
-  className="flex flex-col items-center lg:gap-8 justify-center p-8 md:p-16 bg-gray-300 dark:bg-gray-900 transition duration-500 bg-opacity-70 dark:bg-opacity-70"
+  className="flex flex-col items-center lg:gap-8 justify-center p-8 md:p-16 bg-gray-500 dark:bg-gray-900 transition duration-500 bg-opacity-70 dark:bg-opacity-70"
 >
   <div
-    className="flex flex-col justify-center  border-double border-b-8 border-gray-700 dark:border-gray-500  pb-12 lg:w-10/12"
+    className="flex flex-col justify-center  border-double border-b-8 border-gray-700 dark:border-gray-500 pt-0 p-12 lg:w-full"
   >
     <div
-      className="hidden lg:flex flex-col space-y-9"
+      className="hidden md:flex flex-col space-y-9"
     >
       <div
-        className="flex items-center justify-evenly gap-24"
+        className="flex items-center justify-evenly gap-16"
       >
         <div
           className="flex flex-col items-center "
         >
           <img
             alt="JS"
-            className="skill-logo bg-yellow-200 p-2 "
+            className="skill-logo "
             src="https://img.icons8.com/nolan/96/javascript.png"
           />
           <p
@@ -32,7 +32,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
         >
           <img
             alt="React"
-            className="skill-logo bg-gray-600 p-2  "
+            className="skill-logo h-20 w-20 mb-3"
             src="https://img.icons8.com/officel/80/000000/react.png"
           />
           <p
@@ -59,12 +59,12 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
           className="flex flex-col items-center"
         >
           <svg
-            className="skill-logo h-28 w-40 "
+            className="skill-logo mb-3"
           >
             redux.svg
           </svg>
           <p
-            className="text-black dark:text-purple-400 transition duration-500"
+            className="text-black dark:text-purple-400 transition duration-500 -mt-4"
           >
             Redux
           </p>
@@ -74,7 +74,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
         >
           <img
             alt="React"
-            className="skill-logo bg-white p-2 "
+            className="skill-logo"
             src="https://img.icons8.com/nolan/96/react-native.png"
           />
           <p
@@ -85,13 +85,13 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
         </div>
       </div>
       <div
-        className="flex items-center justify-evenly gap-24"
+        className="flex items-center justify-evenly gap-16"
       >
         <div
           className="flex flex-col items-center "
         >
           <svg
-            className=" skill-logo h-24 w-24 rounded-none  "
+            className=" skill-logo rounded-sm h-16 w-16 m-2 "
           >
             typescript.svg
           </svg>
@@ -106,7 +106,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
         >
           <img
             alt="HTML"
-            className="skill-logo h-36 w-32 "
+            className="skill-logo  mb-2"
             src="https://img.icons8.com/color/344/html-5--v1.png"
           />
           <p
@@ -119,7 +119,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
           className="flex flex-col items-center"
         >
           <svg
-            className="skill-logo h-36 w-24 "
+            className="skill-logo  mb-3"
           >
             css.svg
           </svg>
@@ -134,7 +134,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
         >
           <img
             alt="React"
-            className="skill-logo  p-2  "
+            className="skill-logo"
             src="https://img.icons8.com/color/96/000000/mongodb.png"
           />
           <p
@@ -148,7 +148,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
         >
           <img
             alt="React"
-            className="skill-logo bg-green-400 p-2  "
+            className="skill-logo  bg-green-400 p-3 "
             src="https://img.icons8.com/color/96/000000/nodejs.png"
           />
           <p
@@ -159,10 +159,10 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
         </div>
       </div>
       <div
-        className="flex items-center justify-evenly gap-24"
+        className="flex items-center justify-evenly gap-16"
       >
         <svg
-          className="skill-logo bg-gray-600 dark:bg-transparent p-2 h-36 w-32 sm:w-36"
+          className="skill-logo h-36"
         >
           java.svg
         </svg>
@@ -171,7 +171,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
         >
           <img
             alt="tailwind-logo"
-            className="skill-logo mb-4 h-20 w-28"
+            className="skill-logo h-16 mb-5"
             src="tailwind-css.png"
           />
           <p
@@ -184,7 +184,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
           className="flex flex-col items-center"
         >
           <svg
-            className="skill-logo h-24 "
+            className="skill-logo h-20 "
           >
             cypress.svg
           </svg>
@@ -198,7 +198,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
           className="flex flex-col items-center"
         >
           <svg
-            className="skill-logo p-3 w-24 h-24 bg-white"
+            className="skill-logo  p-3 bg-white"
           >
             aws-logo.svg
           </svg>
@@ -212,7 +212,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
           className="flex flex-col items-center"
         >
           <svg
-            className="skill-logo p-3 w-24 h-24 bg-gray-50 bg-opacity-10"
+            className="skill-logo  p-3 bg-gray-50 bg-opacity-10"
           >
             docker.svg
           </svg>
@@ -225,20 +225,20 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
       </div>
     </div>
     <div
-      className="lg:hidden block"
+      className="md:hidden block"
     >
       <div
         className="flex flex-col items-center space-y-4 sm:space-y-8 md:space-y-12"
       >
         <div
-          className="flex items-center justify-evenly space-x-9 sm:space-x-16 md:space-x-20"
+          className="flex items-center justify-evenly space-x-12"
         >
           <div
             className="flex flex-col items-center "
           >
             <img
               alt="JS"
-              className="skill-logo bg-yellow-200 p-2 "
+              className="skill-logo p-2 "
               src="https://img.icons8.com/nolan/96/javascript.png"
             />
             <p
@@ -252,7 +252,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
           >
             <img
               alt="React"
-              className="skill-logo bg-gray-600 p-2 "
+              className="skill-logo p-2 "
               src="https://img.icons8.com/officel/80/000000/react.png"
             />
             <p
@@ -265,19 +265,19 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
             className="flex flex-col items-center"
           >
             <svg
-              className="skill-logo h-20 w-16 "
+              className="skill-logo "
             >
               redux.svg
             </svg>
             <p
-              className="text-sm text-black dark:text-purple-800 transition duration-500"
+              className="text-sm text-black dark:text-purple-700 transition duration-500"
             >
               Redux
             </p>
           </div>
         </div>
         <div
-          className="flex items-center justify-evenly space-x-9 sm:space-x-16 md:space-x-20"
+          className="flex items-center justify-evenly space-x-12"
         >
           <div
             className="flex flex-col items-center"
@@ -288,7 +288,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
               src="https://img.icons8.com/nolan/96/react-native.png"
             />
             <p
-              className="text-sm text-black dark:text-pink-800 transition duration-500"
+              className="text-sm text-black text-center dark:text-pink-800 transition duration-500"
             >
               React-Native
             </p>
@@ -323,14 +323,14 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
           </div>
         </div>
         <div
-          className="flex items-center justify-evenly space-x-9 sm:space-x-16 md:space-x-24"
+          className="flex items-center justify-evenly space-x-12"
         >
           <div
             className="flex flex-col items-center"
           >
             <img
               alt="React"
-              className="skill-logo bg-green-400 p-2 md:h-28 "
+              className="skill-logo bg-green-400 p-2 md:h-24 "
               src="https://img.icons8.com/color/96/000000/nodejs.png"
             />
             <p
@@ -344,7 +344,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
           >
             <img
               alt="tailwind-logo"
-              className="skill-logo h-20 w-24 mb-4 pt-3 md:h-20 md:w-24"
+              className="skill-logo h-12  mb-2"
               src="tailwind-css.png"
             />
             <p
@@ -357,7 +357,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
             className="flex flex-col items-center"
           >
             <svg
-              className="skill-logo h-20 w-20 md:h-24 md:w-24"
+              className="skill-logo"
             >
               cypress.svg
             </svg>
@@ -369,13 +369,13 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
           </div>
         </div>
         <div
-          className="flex items-center justify-evenly space-x-9 sm:space-x-16 md:space-x-24"
+          className="flex items-center justify-evenly space-x-12"
         >
           <div
             className="flex flex-col items-center"
           >
             <svg
-              className="skill-logo w-20 my-2 rounded-none md:h-24 md:w-24"
+              className="skill-logo h-14 w-14 my-2 rounded-sm "
             >
               typescript.svg
             </svg>
@@ -389,7 +389,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
             className="flex flex-col items-center"
           >
             <svg
-              className="skill-logo p-3 my-2 h-20 w-20 md:h-24 md:w-24 bg-white"
+              className="skill-logo p-3 my-2 bg-white"
             >
               aws-logo.svg
             </svg>
@@ -403,7 +403,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
             className="flex flex-col items-center"
           >
             <svg
-              className="skill-logo p-2 my-2 h-20 w-20 md:h-24 md:w-24 bg-gray-50 bg-opacity-10"
+              className="skill-logo p-2 my-2 bg-gray-50 bg-opacity-10"
             >
               docker.svg
             </svg>
@@ -415,10 +415,10 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
           </div>
         </div>
         <div
-          className="flex items-center justify-evenly space-x-9 sm:space-x-16 md:space-x-24"
+          className="flex items-center justify-evenly space-x-12"
         >
           <svg
-            className="skill-logo bg-gray-600 dark:bg-transparent h-28 w-24 md:h-28 md:w-24 lg:w-32"
+            className="skill-logo h-28 "
           >
             java.svg
           </svg>
@@ -427,7 +427,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
           >
             <img
               alt="HTML"
-              className="skill-logo h-20 w-28 md:h-28 "
+              className="skill-logo "
               src="https://img.icons8.com/color/344/html-5--v1.png"
             />
             <p
@@ -440,7 +440,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
             className="flex flex-col items-center"
           >
             <svg
-              className="skill-logo h-16 w-24 md:h-32 md:w-24 bg-transparent p-1"
+              className="skill-logo bg-transparent p-1"
             >
               css.svg
             </svg>

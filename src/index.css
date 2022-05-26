@@ -8,11 +8,11 @@
   }
 
   .page-layout {
-    @apply min-h-screen p-2 md:p-4 lg:p-8 pt-28 md:pt-28 lg:pt-24 dark:bg-opacity-80 transform duration-500;
+    @apply min-h-screen p-2 md:p-4 lg:p-8 pt-28 md:pt-24 lg:pt-24 dark:bg-opacity-80 transform duration-500;
   }
 
   .skill-logo {
-    @apply transition transform hover:-translate-y-1 hover:scale-110 duration-700 ease-in-out h-20 sm:h-24 md:h-28 rounded-full;
+    @apply transition transform hover:-translate-y-1 hover:scale-110 duration-700 ease-in-out h-16 w-16 sm:h-20 sm:w-20 md:h-24 md:w-24 rounded-full;
   }
 
   .spinner {

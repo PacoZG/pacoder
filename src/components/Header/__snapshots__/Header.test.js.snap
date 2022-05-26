@@ -5,7 +5,7 @@ exports[`Testing Snapshot of the Header component 1`] = `
   className="fixed z-10 w-screen bg-transparent transition duration-500"
 >
   <div
-    className="header-style relative lg:hidden flex flex-row items-center justify-center mx-3 m-2"
+    className="header-style relative md:hidden flex flex-row items-center justify-center mx-3 m-2"
   >
     <div
       className="flex justify-center w-full"
@@ -257,7 +257,7 @@ exports[`Testing Snapshot of the Header component 1`] = `
     </div>
   </div>
   <div
-    className="hidden lg:block"
+    className="hidden md:block"
   >
     <div
       className="header-style flex flex-row items-center justify-evenly p-1 shadow-2xl  mr-14 ml-10 m-2"
