@@ -519,7 +519,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
 
 exports[`Testing header Snapshot of the Strenghts component 1`] = `
 <div
-  className="bg-gray-300 dark:bg-gray-900 flex flex-col items-center p-4 md:py-10 lg:py-20 transition duration-500 rounded-b-xl bg-opacity-70 dark:bg-opacity-70"
+  className="bg-gray-500 dark:bg-gray-900 flex flex-col items-center p-4 md:py-10 lg:py-20 transition duration-500 rounded-b-xl bg-opacity-70 dark:bg-opacity-70"
 >
   <div
     className="w-full sm:w-11/12 lg:w-2/3 text-center"
