@@ -12,17 +12,8 @@ import { ContactModel } from './ContactModel'
 
 const Contact = () => {
   const { t } = useTranslation()
-  const {
-    handleSendEmail,
-    handleVerifyCaptcha,
-    disabled,
-    showModal,
-    fullName,
-    email,
-    message,
-    siteKey,
-    // siteKeyTest,
-  } = ContactModel()
+  const { handleSendEmail, handleVerifyCaptcha, disabled, showModal, fullName, email, message, siteKey } =
+    ContactModel()
 
   return (
     <Div className="page-layout transform duration-75 ">
