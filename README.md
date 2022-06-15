@@ -3,7 +3,7 @@
 ## I'm a developer, father, !!
 <!-- - 👯🤣 -->
 - 🔭 I just launched my first personal website: [know who I am!][website]!
-- 🌱 I’m currently learning MobX, AWS, Docker and TDD.
+- 🌱 I’m currently learning MobX, AWS, DevOps with Docker, DevOps with Kubernetes and TDD.
 - 🥅 2022 Goals: Grow into a skillful developer and be more productive.
 
 ### Connect with me:
