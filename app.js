@@ -11,26 +11,26 @@ const middleware = require('./utils/middleware')
 
 const variablesRouter = require('./controllers/variables')
 
-const url = config.MONGODB_URI
-console.log('Connected to ', { url })
+// const url = config.MONGODB_URI
+// console.log('Connected to ', { url })
 
-mongoose
-  .connect(url, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false,
-    useCreateIndex: true,
-  })
-  .then(() => {
-    if (process.env.NODE_ENV === 'dev') {
-      logger.info('Connected to MongoDB Dev_DB')
-    } else {
-      logger.info('Connected to MongoDB')
-    }
-  })
-  .catch(error => {
-    logger.error('error connecting to MongoDB: ', error.message)
-  })
+// mongoose
+//   .connect(url, {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true,
+//     useFindAndModify: false,
+//     useCreateIndex: true,
+//   })
+//   .then(() => {
+//     if (process.env.NODE_ENV === 'dev') {
+//       logger.info('Connected to MongoDB Dev_DB')
+//     } else {
+//       logger.info('Connected to MongoDB')
+//     }
+//   })
+//   .catch(error => {
+//     logger.error('error connecting to MongoDB: ', error.message)
+// })
 
 app.use(cors())
 app.use(express.urlencoded({ limit: '50mb', extended: false }))
