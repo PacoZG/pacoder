@@ -8,8 +8,9 @@ export const ContactModel = () => {
   const fullName = useField('text')
   const email = useField('email')
   const message = useField('text')
-  const siteKey = '6Ld6fKYeAAAAAG4F6BreaLvyHeUL-tVtib6oU1Ej'
-  const siteKeyTest = '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'
+  const siteKey = process.env.REACT_APP_SITE_KEY
+  // const siteKey = '6Ld6fKYeAAAAAG4F6BreaLvyHeUL-tVtib6oU1Ej'
+  console.log({ siteKey })
 
   const handleVerifyCaptcha = () => {
     setDisabled(!disabled)
@@ -48,6 +49,5 @@ export const ContactModel = () => {
     email,
     message,
     siteKey,
-    siteKeyTest,
   }
 }
