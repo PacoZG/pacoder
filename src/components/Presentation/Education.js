@@ -1,5 +1,6 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
+import './education-style.css'
 import A from '../private/A'
 import Div from '../private/Div'
 import H from '../private/H'
@@ -39,6 +40,7 @@ const Education = () => {
         <H className=" md:text-xl text-gray-900 pb-1 font-bold border-b-2 border-gray-300">{t('education.line6')}</H>
         <P className="text-gray-300  pt-3">{t('education.line5')}</P>
         <A
+          tool-tip-msg={t('education.tool-tip-msg')}
           className="text-gray-300  pt-1 underline hover:no-underline transition duration-500"
           href="https://www.aalto.fi/en/school-of-electrical-engineering"
           target="blank"
@@ -50,6 +52,7 @@ const Education = () => {
         <H className=" md:text-xl text-gray-900 pb-1 font-bold border-b-2 border-gray-300">{t('education.line3')}</H>
         <P className="text-gray-300 pt-3">{t('education.line2')}</P>
         <A
+          tool-tip-msg={t('education.tool-tip-msg')}
           className="text-gray-300 pt-1 underline hover:no-underline transition duration-500"
           href="http://www.upct.es"
           target="blank"

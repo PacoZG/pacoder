@@ -63,6 +63,7 @@ exports[`Testing Snapshot of the Education component 1`] = `
       className="text-gray-300  pt-1 underline hover:no-underline transition duration-500"
       href="https://www.aalto.fi/en/school-of-electrical-engineering"
       target="blank"
+      tool-tip-msg="Click here to visit the school's website"
     >
       @Aalto University – School of Electrical Engineering
     </a>
@@ -84,6 +85,7 @@ exports[`Testing Snapshot of the Education component 1`] = `
       className="text-gray-300 pt-1 underline hover:no-underline transition duration-500"
       href="http://www.upct.es"
       target="blank"
+      tool-tip-msg="Click here to visit the school's website"
     >
       @Universidad Politecnica de Cartagena - Technical School of Telecommunications Engineering
     </a>

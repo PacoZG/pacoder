@@ -48,6 +48,7 @@
     "line4_3": " and discover the result of my test"
   },
   "education": {
+    "tool-tip-msg":"Click here to visit the school's website",
     "line12": "DevOps with Docker  -  ",
     "line11": "Course Material",
     "line10": "Introductory course to Docker and docker-compose lectured on-line in MOOC.fi and developed by the University of Helsinki in partnership with Eficode",

@@ -49,6 +49,7 @@
     "line4_3": " y descubre el resultado de mi prueba"
   },
   "education": {
+    "tool-tip-msg": "Haga clic para visitar el sitio web de la escuela",
     "line12": "DevOps con Docker (en línea) -  ",
     "line11": "Material del curso",
     "line10": "Curso de introducción a Docker y docker-compose dictado en línea en MOOC.fi y desarrollado por la Universidad de Helsinki en asociación con Eficode",
