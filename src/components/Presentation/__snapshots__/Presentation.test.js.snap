@@ -59,11 +59,13 @@ exports[`Testing Snapshot of the Education component 1`] = `
     >
       Master Courses as an Erasmus Exchange Student 2014-2015
     </p>
-    <p
-      className="text-gray-300  pt-1"
+    <a
+      className="text-gray-300  pt-1 underline hover:no-underline transition duration-500"
+      href="https://www.aalto.fi/en/school-of-electrical-engineering"
+      target="blank"
     >
       @Aalto University – School of Electrical Engineering
-    </p>
+    </a>
   </div>
   <div
     className="flex flex-col justify-center bg-gray-500 text-gray-900 border-2 border-gray-300 rounded-lg p-4 w-full sm:w-11/12 lg:w-2/3 md:h-36"
@@ -78,11 +80,13 @@ exports[`Testing Snapshot of the Education component 1`] = `
     >
       I reached the 4th academic year with 78% of the studies completed
     </p>
-    <p
-      className="text-gray-300 pt-1"
+    <a
+      className="text-gray-300 pt-1 underline hover:no-underline transition duration-500"
+      href="http://www.upct.es"
+      target="blank"
     >
       @Universidad Politecnica de Cartagena - Technical School of Telecommunications Engineering
-    </p>
+    </a>
   </div>
 </div>
 `;
