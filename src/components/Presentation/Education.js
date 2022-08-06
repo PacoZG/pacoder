@@ -38,12 +38,24 @@ const Education = () => {
       <Div className="flex flex-col justify-center bg-gray-500 border-2 border-gray-300 rounded-lg p-4 mb-2 w-full sm:w-11/12 lg:w-2/3 md:h-36 text-justify">
         <H className=" md:text-xl text-gray-900 pb-1 font-bold border-b-2 border-gray-300">{t('education.line6')}</H>
         <P className="text-gray-300  pt-3">{t('education.line5')}</P>
-        <P className="text-gray-300  pt-1">{t('education.line4')}</P>
+        <A
+          className="text-gray-300  pt-1 underline hover:no-underline transition duration-500"
+          href="https://www.aalto.fi/en/school-of-electrical-engineering"
+          target="blank"
+        >
+          {t('education.line4')}
+        </A>
       </Div>
       <Div className="flex flex-col justify-center bg-gray-500 text-gray-900 border-2 border-gray-300 rounded-lg p-4 w-full sm:w-11/12 lg:w-2/3 md:h-36">
         <H className=" md:text-xl text-gray-900 pb-1 font-bold border-b-2 border-gray-300">{t('education.line3')}</H>
         <P className="text-gray-300 pt-3">{t('education.line2')}</P>
-        <P className="text-gray-300 pt-1">{t('education.line1')}</P>
+        <A
+          className="text-gray-300 pt-1 underline hover:no-underline transition duration-500"
+          href="http://www.upct.es"
+          target="blank"
+        >
+          {t('education.line1')}
+        </A>
       </Div>
     </Div>
   )

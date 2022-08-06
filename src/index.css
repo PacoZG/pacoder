@@ -16,11 +16,11 @@
   }
 
   .spinner {
-    @apply absolute top-0 left-0 w-2 h-full bg-red-900 transform -skew-x-20 transition hover:-rotate-180 hover:scale-125;
+    @apply absolute top-0 left-0 w-4 h-full bg-red-900 transform -skew-x-20 transition hover:-rotate-180 hover:scale-125;
   }
 
   .sticky-header {
-    @apply text-gray-300 text-4xl text-center p-3 bg-blue-1000 border-t-2 border-b-2 border-black dark:border-gray-300 transition duration-500;
+    @apply text-gray-300 text-2xl text-center p-3 bg-gray-800 border-t-2 border-b-2 border-black dark:border-gray-300 transition duration-500;
   }
 
   .mobile-lang-text-style {

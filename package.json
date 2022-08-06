@@ -20,7 +20,7 @@
   "proxy": "http://localhost:3001",
   "scripts": {
     "install-dep": "./npm-scripts/install-dependencies.sh",
-    "start": "PORT=3000 react-scripts start",
+    "start": "react-scripts start",
     "production": "node index.js",
     "dev-server": "cross-env NODE_ENV=dev nodemon index.js",
     "build": "react-scripts build",

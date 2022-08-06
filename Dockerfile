@@ -28,6 +28,7 @@ COPY --from=build-stage /app/build/ /app/build
 
 RUN npm install -g serve
 
+EXPOSE 3000
 
 # start app
 CMD [ "serve", "-s", "/app/build", "-l", "3000" ]
