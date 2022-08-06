@@ -12,9 +12,8 @@ import { ContactModel } from './ContactModel'
 
 const Contact = () => {
   const { t } = useTranslation()
-  const { handleSendEmail, handleVerifyCaptcha, disabled, showModal, fullName, email, message, siteKey } =
+  const { handleSendEmail, handleVerifyCaptcha, disabled, showModal, fullName, email, message, siteKey, theme } =
     ContactModel()
-
   return (
     <Div className="page-layout transform duration-75 ">
       <Form onSubmit={handleSendEmail}>
@@ -58,7 +57,12 @@ const Contact = () => {
             {t('contact.send')}
           </Button>
           <Div className={'flex flex-col gap-3 md:flex-row'}>
-            <ReCAPTCHA sitekey={siteKey} onChange={handleVerifyCaptcha} />
+            <ReCAPTCHA
+              className="scale-60 sm:scale-80 lg:scale-100"
+              sitekey={siteKey}
+              onChange={handleVerifyCaptcha}
+              theme={theme}
+            />
             <P
               className={
                 showModal

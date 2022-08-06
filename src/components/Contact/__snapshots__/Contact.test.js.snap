@@ -57,7 +57,9 @@ exports[`Testing Snapshot of the Contact component 1`] = `
       <div
         className="flex flex-col gap-3 md:flex-row"
       >
-        <div />
+        <div
+          className="scale-60 sm:scale-80 lg:scale-100"
+        />
         <p
           className="hidden "
         >
