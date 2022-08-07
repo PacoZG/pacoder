@@ -1,11 +1,11 @@
 
-a[tool-tip-msg] {
+a[education-tool-tip-msg] {
   position: relative;
   text-decoration: underline;
 }
 
-a[tool-tip-msg]::before {
-    content: attr(tool-tip-msg);
+a[education-tool-tip-msg]::before {
+    content: attr(education-tool-tip-msg);
     position: absolute;
     width: max-content;
     color: darkgrey;
@@ -19,7 +19,7 @@ a[tool-tip-msg]::before {
 }
 
 @media (min-width: 1040px) {
-  a[tool-tip-msg]::before {
+  a[education-tool-tip-msg]::before {
     font-size: 12px;
     opacity: 0.7;
     left: -20px;
@@ -27,7 +27,7 @@ a[tool-tip-msg]::before {
     transition-duration: 250ms;
   }
 
-  a[tool-tip-msg]:hover::before {
+  a[education-tool-tip-msg]:hover::before {
     transform: scale(1);
     left: 40px;
     bottom: -60%;

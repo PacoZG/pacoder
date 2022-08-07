@@ -29,9 +29,10 @@ exports[`Testing Snapshot of the Experience component 1`] = `
             >
               <a
                 alt="company"
+                classname=""
+                experience-tool-tip-msg="Click here to visit the company's website"
                 href="https://houston-inc.com/"
                 target="blank"
-                tool-tip-msg="Click here to visit the company's website"
               >
                 Houston Inc
               </a>
@@ -72,9 +73,10 @@ exports[`Testing Snapshot of the Experience component 1`] = `
             >
               <a
                 alt="company"
+                classname=""
+                experience-tool-tip-msg="Click here to visit the company's website"
                 href="https://www.hotelkamp.com/en/"
                 target="blank"
-                tool-tip-msg="Click here to visit the company's website"
               >
                 Hotel Kämp
               </a>
