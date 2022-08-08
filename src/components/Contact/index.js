@@ -27,6 +27,13 @@ const Contact = () => {
             required
             name="email"
           />
+          <TextArea
+            className={'email-input h-52'}
+            placeholder={t('contact.message')}
+            {...message.params}
+            required
+            name="message"
+          />
           <Label className="text-gray-300">
             {message.params.value.length > 49 ? (
               <span className="text-lg text-gray-300 pl-2 transform duration-150">{`${t('contact.characters')}${
@@ -38,13 +45,6 @@ const Contact = () => {
               }/50 min`}</span>
             )}
           </Label>
-          <TextArea
-            className={'email-input h-52'}
-            placeholder={t('contact.message')}
-            {...message.params}
-            required
-            name="message"
-          />
           <Button
             disabled={disabled}
             className={

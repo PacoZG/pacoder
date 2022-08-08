@@ -19,13 +19,7 @@ const WorkingCompany = ({ experience, link }) => {
           <H className="text-2xl">
             {link && (
               <Div className="relative">
-                <A
-                  classname=""
-                  experience-tool-tip-msg={t('experience.tool-tip-msg')}
-                  alt="company"
-                  href={link}
-                  target="blank"
-                >
+                <A experience-tool-tip-msg={t('experience.tool-tip-msg')} alt="company" href={link} target="blank">
                   {experience.company}
                 </A>
               </Div>
