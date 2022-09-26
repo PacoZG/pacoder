@@ -1,6 +1,5 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { BrowserRouter } from 'react-router-dom'
 import { I18nextProvider } from 'react-i18next'
 import i18n from '../utils/language/i18nextForTest'
 import App from '.'

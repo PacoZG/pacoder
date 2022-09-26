@@ -106,7 +106,7 @@ const Strenghts = () => {
               {t('strengths.line4_1')}
               <A
                 className="text-gray-300 underline transition duration-200 hover:text-indigo-600"
-                href="https://high5test.com/test/result-your-friend/MTUwMTU5Mg==/"
+                href="https://test.high5test.com/test/7d00f98d-6f29-4022-8d7f-33b23b454cd6"
                 target="blank"
               >
                 {t('strengths.line4_2')}
