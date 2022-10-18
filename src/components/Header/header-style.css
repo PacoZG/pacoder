@@ -22,7 +22,7 @@
 
 
 .header-style {
-  @apply bg-gray-600 bg-opacity-80 dark:bg-gray-900 dark:bg-opacity-80 transform duration-500 rounded-3xl shadow-2xl border border-gray-100 ;
+  @apply bg-gray-600 bg-opacity-80 dark:bg-gray-900 dark:bg-opacity-80 transform duration-500 rounded-3xl shadow-2xl border border-gray-700 ;
 }
 
 .web-link-menu {

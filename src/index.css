@@ -15,12 +15,8 @@
     @apply transition transform hover:-translate-y-1 hover:scale-110 duration-700 ease-in-out h-16 w-16 sm:h-20 sm:w-20 md:h-24 md:w-24 rounded-full;
   }
 
-  .spinner {
-    @apply absolute top-0 left-0 w-4 h-full bg-red-900 transform -skew-x-20 transition hover:-rotate-180 hover:scale-125;
-  }
-
   .sticky-header {
-    @apply text-gray-300 text-2xl text-center p-3 bg-gray-800 border-t-2 border-b-2 border-black dark:border-gray-300 transition duration-500;
+    @apply text-gray-300 text-2xl text-center p-3 bg-blue-500 dark:bg-blue-900 transition duration-500;
   }
 
   .mobile-lang-text-style {
@@ -41,10 +37,10 @@
   }
 
   .mobile-link-group {
-    @apply flex items-center xs:pl-3 xs:justify-start gap-1 md:gap-6 w-full;
+    @apply flex items-center justify-center xs:pl-3 xs:justify-start gap-1 md:gap-6 w-full;
   }
   
   .mobile-link {
-    @apply text-gray-300 text-center text-sm xs:text-xs sm:text-base italic w-1/4 transform transition duration-300 tracking-wide md:tracking-widest;
+    @apply text-gray-300 text-center text-sm xs:text-xs sm:text-base italic w-1/4 transform transition duration-500 tracking-wide md:tracking-widest;
   }
 }
