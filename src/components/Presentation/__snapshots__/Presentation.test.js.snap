@@ -120,7 +120,7 @@ exports[`Testing Snapshot of the WhoIAm component 1`] = `
   >
     <img
       alt="profile"
-      className=" h-96 sm:h-80 md:h-96 lg:w-80 border-4 border-black dark:border-gray-300 rounded-xl transition duration-500 "
+      className=" h-96 sm:h-80 md:h-96 lg:w-80 border-0 rounded-lg transition duration-500 "
       src="https://res.cloudinary.com/dbn5gpgi5/image/upload/q_auto/v1653152856/CV%20Pics/idyfixrp3nzidjjezeuc.jpg"
     />
     <div

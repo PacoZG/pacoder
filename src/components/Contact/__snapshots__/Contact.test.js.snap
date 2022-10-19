@@ -2,35 +2,39 @@
 
 exports[`Testing Snapshot of the Contact component 1`] = `
 <div
-  className="page-layout transform duration-75 "
+  className="transform duration-500 pt-2 p-8 sm:p-4 pb-0 w-full sm:w-4/5 md:w-3/4 "
 >
   <form
     onSubmit={[Function]}
   >
     <div
-      className="flex flex-col items-center justify-center p-5 md:p-20 gap-5 bg-gray-500 dark:bg-gray-900 transition duration-500 bg-opacity-70 dark:bg-opacity-70 rounded-xl"
+      className="flex flex-col items-center justify-center gap-3 transition duration-500  bg-opacity-70 dark:bg-opacity-70 rounded-xl"
     >
-      <input
-        className="email-input"
-        name="name"
-        onChange={[Function]}
-        placeholder="Full Name"
-        required={true}
-        type="text"
-        value=""
-      />
-      <input
-        className="email-input"
-        name="email"
-        onChange={[Function]}
-        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$"
-        placeholder="Email"
-        required={true}
-        type="email"
-        value=""
-      />
+      <div
+        className="relative flex flex-col sm:flex-row justify-between items-center gap-3 w-full"
+      >
+        <input
+          className="bg-opacity-10 bg-white rounded-md h-10 sm:h-12 w-full p-2 text-gray-800 dark:text-gray-400 text-md md:text-lg block border border-opacity-10 focus:outline-none focus:ring-1 focus:ring-gray-200 focus:border-transparent shadow-sm border-gray-100 placeholder-gray-700 dark:placeholder-gray-400 placeholder-opacity-50 dark:placeholder-opacity-50 dark:duration-500 transition duration-500 "
+          name="name"
+          onChange={[Function]}
+          placeholder="Full Name"
+          required={true}
+          type="text"
+          value=""
+        />
+        <input
+          className="bg-opacity-10 bg-white rounded-md h-10 sm:h-12 w-full p-2 text-gray-800 dark:text-gray-400 text-md md:text-lg block border border-opacity-10 focus:outline-none focus:ring-1 focus:ring-gray-200 focus:border-transparent shadow-sm border-gray-100 placeholder-gray-700 dark:placeholder-gray-400 placeholder-opacity-50 dark:placeholder-opacity-50 dark:duration-500 transition duration-500 "
+          name="email"
+          onChange={[Function]}
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$"
+          placeholder="Email"
+          required={true}
+          type="email"
+          value=""
+        />
+      </div>
       <textarea
-        className="email-input h-52"
+        className="bg-opacity-10 bg-white rounded-md h-32 w-full p-2 text-gray-800 dark:text-gray-400 text-md md:text-lg block border border-opacity-10 focus:outline-none focus:ring-1 focus:ring-gray-200 focus:border-transparent shadow-sm border-gray-100 placeholder-gray-700 dark:placeholder-gray-400 placeholder-opacity-50 dark:placeholder-opacity-50 dark:duration-500 transition duration-500 "
         name="message"
         onChange={[Function]}
         placeholder="Message"
@@ -38,34 +42,50 @@ exports[`Testing Snapshot of the Contact component 1`] = `
         type="text"
         value=""
       />
-      <label
-        className="text-gray-300"
+      <p
+        className="hidden "
       >
-        <span
-          className="text-lg text-red-400 pl-2 transform duration-150"
-        >
-          Characters  0/50 min
-        </span>
-      </label>
-      <button
-        className="transition duration-700 inline-flex justify-center py-2 px-4 w-40 border-0 shadow-sm font-extralight rounded-md bg-black opacity-20 text-lg text-red-400"
-        disabled={true}
-        type="submit"
-      >
-        Send
-      </button>
+        Message sent!, I'll get back to you as soon as possible.
+Thank you for contacting!
+      </p>
+    </div>
+    <div
+      className="flex flex-col md:flex-row items-center"
+    >
       <div
-        className="flex flex-col gap-3 md:flex-row"
+        className="flex flex-col sm:flex-row items-center justify-center w-full"
       >
         <div
-          className="scale-60 sm:scale-80 lg:scale-100"
-        />
-        <p
-          className="hidden "
+          className="w-full xxs:w-28 xs:w-32 flex justify-center sm:justify-between pt-2 xs:pt-0"
         >
-          Message sent!, I'll get back to you as soon as possible.
-Thank you for contacting!
-        </p>
+          <label
+            className="text-gray-300 text-center"
+          >
+            <span
+              className="text-md lg:text-base sm:w-60 text-red-700 dark:text-red-300 transform duration-500 "
+            >
+              Characters  0/50 min
+            </span>
+          </label>
+        </div>
+        <div
+          className="flex justify-center sm:block w-56"
+        >
+          <div
+            className="scale-65 sm:scale-55"
+          />
+        </div>
+      </div>
+      <div
+        className="flex flex-col items-center "
+      >
+        <button
+          className="transition duration-500  inline-flex justify-center py-2 px-4 w-48 shadow-sm font-extralight rounded-md bg-black opacity-20 text-lg text-gray-300"
+          disabled={true}
+          type="submit"
+        >
+          Send
+        </button>
       </div>
     </div>
   </form>
