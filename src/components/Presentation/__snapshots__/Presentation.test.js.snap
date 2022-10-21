@@ -139,7 +139,7 @@ exports[`Testing Snapshot of the WhoIAm component 1`] = `
       <p
         className="text-black dark:text-gray-300 text-right text-xl transition duration-500"
       >
-        Junior Full Stack Developer
+        Full Stack Developer
       </p>
        
       <br />
