@@ -24,7 +24,7 @@ const WhoIAm = () => {
             </Span>
           </H>
           <P className="text-black dark:text-gray-300 text-right text-xl transition duration-500">
-            Junior Full Stack Developer
+            Full Stack Developer
           </P>{' '}
           <br />
           <P className="text-lg text-black dark:text-gray-300 text-right transition duration-500">

@@ -2,6 +2,7 @@
   background-image: url("https://res.cloudinary.com/dbn5gpgi5/image/upload/c_scale,h_720,w_140/v1640678894/fcecx1i2xc2d9vumxyjj.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 100vh;
 }
 
 @media (min-width: 768px) {

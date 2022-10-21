@@ -8,7 +8,7 @@
   }
 
   .page-layout {
-    @apply min-h-screen p-4 md:p-4 lg:p-8 pt-28 md:pt-24 lg:pt-24 dark:bg-opacity-80 transform duration-500;
+    @apply h-auto p-2 md:pb-6 pt-28 md:pt-24 dark:bg-opacity-80 transform duration-500;
   }
 
   .skill-logo {
