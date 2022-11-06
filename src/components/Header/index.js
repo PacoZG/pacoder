@@ -45,10 +45,6 @@ const Header = () => {
         </Div>
 
         <Div className="header-style link-menu">
-          <Div className="flex items-center h-12 w-9 ">
-            <MenuIcon className=" text-gray-200 border-r border-gray-300 p-1 h-6 w-6" />
-          </Div>
-
           <Div className="mobile-link-group">
             <Link className="mobile-link" to="/cv/presentation">
               {t('Header.presentation')}

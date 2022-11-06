@@ -37,10 +37,10 @@
   }
 
   .mobile-link-group {
-    @apply flex items-center justify-center xs:pl-3 xs:justify-start gap-1 md:gap-6 w-full;
+    @apply flex items-center justify-center xs:pl-3 xs:justify-center gap-2 md:gap-6 w-full;
   }
   
   .mobile-link {
-    @apply text-gray-300 text-center text-sm xs:text-xs sm:text-base italic w-1/4 transform transition duration-500 tracking-wide md:tracking-widest;
+    @apply text-gray-300 text-center text-base sm:text-lg italic w-1/4 transform transition duration-500 tracking-wide md:tracking-widest;
   }
 }
