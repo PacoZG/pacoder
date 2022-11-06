@@ -12,7 +12,8 @@
     "message-sent": "Mensaje enviado!, Me pondré en contacto contigo lo antes posible.\n¡Gracias por contactar!",
     "send": "Enviar",
     "reached-length": " caracteres",
-    "min-characters": "Caracteres "
+    "min-characters": "Caracteres ",
+    "invalid-email": "Formato de correo inválido"
   },
   "Header": {
     "presentation": "Presentación",

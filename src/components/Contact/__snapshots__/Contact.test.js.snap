@@ -8,7 +8,7 @@ exports[`Testing Snapshot of the Contact component 1`] = `
     onSubmit={[Function]}
   >
     <div
-      className="flex flex-col items-center justify-center gap-3 transition duration-500  bg-opacity-70 dark:bg-opacity-70 rounded-xl"
+      className="flex flex-col items-center justify-center gap-6 transition duration-500  bg-opacity-70 dark:bg-opacity-70 rounded-xl"
     >
       <div
         className="relative flex flex-col sm:flex-row justify-between items-center gap-3 w-full"
@@ -22,19 +22,25 @@ exports[`Testing Snapshot of the Contact component 1`] = `
           type="text"
           value=""
         />
-        <input
-          className="bg-opacity-10 bg-white rounded-md h-10 sm:h-12 w-full p-2 text-gray-800 dark:text-gray-400 text-md md:text-lg block border border-opacity-10 focus:outline-none focus:ring-1 focus:ring-gray-200 focus:border-transparent shadow-sm border-gray-100 placeholder-gray-700 dark:placeholder-gray-400 placeholder-opacity-50 dark:placeholder-opacity-50 dark:duration-500 transition duration-500 "
-          name="email"
-          onChange={[Function]}
-          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$"
-          placeholder="Email"
-          required={true}
-          type="email"
-          value=""
-        />
+        <div
+          className="relative flex flex-col w-full"
+        >
+          <input
+            className="bg-opacity-10 bg-white rounded-md h-10 sm:h-12  p-2 text-gray-800 dark:text-gray-400 text-md md:text-lg block border border-opacity-10 focus:outline-none focus:ring-1 focus:ring-gray-200 focus:border-transparent shadow-sm border-gray-100 placeholder-gray-700 dark:placeholder-gray-400 placeholder-opacity-50 dark:placeholder-opacity-50 dark:duration-500 transition duration-500 "
+            name="email"
+            onChange={[Function]}
+            placeholder="Email"
+            required={true}
+            type="email"
+            value=""
+          />
+          <label
+            className="absolute -bottom-5 left-2 text-sm text-red-900 dark:text-red-300"
+          />
+        </div>
       </div>
       <textarea
-        className="bg-opacity-10 bg-white rounded-md h-32 w-full p-2 text-gray-800 dark:text-gray-400 text-md md:text-lg block border border-opacity-10 focus:outline-none focus:ring-1 focus:ring-gray-200 focus:border-transparent shadow-sm border-gray-100 placeholder-gray-700 dark:placeholder-gray-400 placeholder-opacity-50 dark:placeholder-opacity-50 dark:duration-500 transition duration-500 "
+        className="bg-opacity-10 bg-white rounded-md h-24 w-full p-2 text-gray-800 dark:text-gray-400 text-md md:text-lg block border border-opacity-10 focus:outline-none focus:ring-1 focus:ring-gray-200 focus:border-transparent shadow-sm border-gray-100 placeholder-gray-700 dark:placeholder-gray-400 placeholder-opacity-50 dark:placeholder-opacity-50 dark:duration-500 transition duration-500 "
         name="message"
         onChange={[Function]}
         placeholder="Message"
@@ -62,7 +68,7 @@ Thank you for contacting!
             className="text-gray-300 text-center"
           >
             <span
-              className="text-md lg:text-base sm:w-60 text-red-700 dark:text-red-300 transform duration-500 "
+              className="text-md lg:text-base sm:w-60 text-red-900 dark:text-red-300 transform duration-500 "
             >
               Characters  0/50 min
             </span>

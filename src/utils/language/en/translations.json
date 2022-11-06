@@ -11,7 +11,8 @@
     "message": "Message",
     "message-sent": "Message sent!, I'll get back to you as soon as possible.\nThank you for contacting!",
     "send": "Send",
-    "characters": "Characters "
+    "characters": "Characters ",
+    "invalid-email": "Invalid email format"
   },
   "Header": {
     "presentation": "Presentation",

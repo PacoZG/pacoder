@@ -12,12 +12,23 @@ import { ContactModel } from './ContactModel'
 
 const Contact = () => {
   const { t } = useTranslation()
-  const { handleSendEmail, handleVerifyCaptcha, disabled, showModal, fullName, email, message, siteKey, theme } =
-    ContactModel()
+  const {
+    handleSendEmail,
+    handleVerifyCaptcha,
+    emailInputValidation,
+    disabled,
+    showModal,
+    fullName,
+    email,
+    message,
+    siteKey,
+    theme,
+  } = ContactModel()
+
   return (
     <Div className="transform duration-500 pt-2 p-8 sm:p-4 pb-0 w-full sm:w-4/5 md:w-3/4 ">
       <Form onSubmit={handleSendEmail}>
-        <Div className="flex flex-col items-center justify-center gap-3 transition duration-500  bg-opacity-70 dark:bg-opacity-70 rounded-xl">
+        <Div className="flex flex-col items-center justify-center gap-6 transition duration-500  bg-opacity-70 dark:bg-opacity-70 rounded-xl">
           <Div className="relative flex flex-col sm:flex-row justify-between items-center gap-3 w-full">
             <Input
               className={
@@ -28,22 +39,27 @@ const Contact = () => {
               required
               name="name"
             />
-
-            <Input
-              className={
-                'bg-opacity-10 bg-white rounded-md h-10 sm:h-12 w-full p-2 text-gray-800 dark:text-gray-400 text-md md:text-lg block border border-opacity-10 focus:outline-none focus:ring-1 focus:ring-gray-200 focus:border-transparent shadow-sm border-gray-100 placeholder-gray-700 dark:placeholder-gray-400 placeholder-opacity-50 dark:placeholder-opacity-50 dark:duration-500 transition duration-500 '
-              }
-              placeholder="Email"
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$"
-              {...email.params}
-              required
-              name="email"
-            />
+            <Div className="relative flex flex-col w-full">
+              <Input
+                className={
+                  'bg-opacity-10 bg-white rounded-md h-10 sm:h-12  p-2 text-gray-800 dark:text-gray-400 text-md md:text-lg block border border-opacity-10 focus:outline-none focus:ring-1 focus:ring-gray-200 focus:border-transparent shadow-sm border-gray-100 placeholder-gray-700 dark:placeholder-gray-400 placeholder-opacity-50 dark:placeholder-opacity-50 dark:duration-500 transition duration-500 '
+                }
+                placeholder="Email"
+                {...email.params}
+                required
+                name="email"
+              />
+              {emailInputValidation() ? null : (
+                <Label className="absolute -bottom-5 left-2 text-sm text-red-900 dark:text-red-300">
+                  {email.params.value.length > 11 && t('contact.invalid-email')}
+                </Label>
+              )}
+            </Div>
           </Div>
 
           <TextArea
             className={
-              'bg-opacity-10 bg-white rounded-md h-32 w-full p-2 text-gray-800 dark:text-gray-400 text-md md:text-lg block border border-opacity-10 focus:outline-none focus:ring-1 focus:ring-gray-200 focus:border-transparent shadow-sm border-gray-100 placeholder-gray-700 dark:placeholder-gray-400 placeholder-opacity-50 dark:placeholder-opacity-50 dark:duration-500 transition duration-500 '
+              'bg-opacity-10 bg-white rounded-md h-24 w-full p-2 text-gray-800 dark:text-gray-400 text-md md:text-lg block border border-opacity-10 focus:outline-none focus:ring-1 focus:ring-gray-200 focus:border-transparent shadow-sm border-gray-100 placeholder-gray-700 dark:placeholder-gray-400 placeholder-opacity-50 dark:placeholder-opacity-50 dark:duration-500 transition duration-500 '
             }
             placeholder={t('contact.message')}
             {...message.params}
@@ -75,7 +91,7 @@ const Contact = () => {
                       'contact.characters'
                     )}${message.params.value.length}/500 max`}</span>
                   ) : (
-                    <span className="text-md lg:text-base sm:w-60 text-red-700 dark:text-red-300 transform duration-500 ">{`${t(
+                    <span className="text-md lg:text-base sm:w-60 text-red-900 dark:text-red-300 transform duration-500 ">{`${t(
                       'contact.characters'
                     )} ${message.params.value.length}/50 min`}</span>
                   )}
