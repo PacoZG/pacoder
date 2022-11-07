@@ -1,12 +1,12 @@
 const express = require('express')
 const cors = require('cors')
 require('express-async-errors')
-const mongoose = require('mongoose')
+// const mongoose = require('mongoose')
 const app = express()
 const path = require('path')
 
-const config = require('./utils/config')
-const logger = require('./utils/logger')
+// const config = require('./utils/config')
+// const logger = require('./utils/logger')
 const middleware = require('./utils/middleware')
 
 // const url = config.MONGODB_URI
