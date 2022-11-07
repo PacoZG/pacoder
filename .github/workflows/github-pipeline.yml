@@ -36,16 +36,16 @@ jobs:
           WITH_V: true
           DEFAULT_BUMP: '#patch'
 
-      - name: Deployment to Heroku
-        uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
-        if: ${{ github.event_name == 'push' && !contains(join(github.event.commits.*.message, ', '), '#skip') }}
-        with:
-          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: 'pacoderzavala' # Must be unique in Heroku
-          heroku_email: 'sirpaquillo1@yahoo.com.mx'
-          dontuseforce: false
-          procfile: 'web: npm run production'
-          healthcheck: 'https://pacoderzavala.herokuapp.com/health'
-          checkstring: 'ok'
-          delay: 5
-          rollbackonhealthcheckfailed: true
+      # - name: Deployment to Heroku
+      #   uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
+      #   if: ${{ github.event_name == 'push' && !contains(join(github.event.commits.*.message, ', '), '#skip') }}
+      #   with:
+      #     heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+      #     heroku_app_name: 'pacoderzavala' # Must be unique in Heroku
+      #     heroku_email: 'sirpaquillo1@yahoo.com.mx'
+      #     dontuseforce: false
+      #     procfile: 'web: npm run production'
+      #     healthcheck: 'https://pacoderzavala.herokuapp.com/health'
+      #     checkstring: 'ok'
+      #     delay: 5
+      #     rollbackonhealthcheckfailed: true
