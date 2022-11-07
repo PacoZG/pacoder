@@ -9,8 +9,6 @@ const config = require('./utils/config')
 const logger = require('./utils/logger')
 const middleware = require('./utils/middleware')
 
-const variablesRouter = require('./controllers/variables')
-
 // const url = config.MONGODB_URI
 // console.log('Connected to ', { url })
 
@@ -40,8 +38,6 @@ app.use(express.static(path.join(__dirname, 'build')))
 
 app.use(middleware.tokenExtractor)
 app.use(middleware.requestLogger)
-
-app.use('/api/variables', variablesRouter)
 
 app.get('/health', (req, res) => {
   res.send('ok')
