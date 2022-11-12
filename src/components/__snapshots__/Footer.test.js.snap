@@ -71,17 +71,13 @@ Thank you for contacting!
               className="flex flex-col sm:flex-row items-center justify-center w-full"
             >
               <div
-                className="w-full xxs:w-28 xs:w-32 flex justify-center sm:justify-between pt-2 xs:pt-0"
+                className="flex justify-center sm:justify-between pt-2 w-full"
               >
-                <label
-                  className="text-gray-300 text-center"
+                <p
+                  className="text-md text-center text-green-800 dark:text-green-300 transform duration-500"
                 >
-                  <span
-                    className="text-md lg:text-base sm:w-60 text-red-900 dark:text-red-300 transform duration-500 "
-                  >
-                    Characters  0/50 min
-                  </span>
-                </label>
+                  Thanks / Kiitos / Gracias
+                </p>
               </div>
               <div
                 className="flex justify-center sm:block w-56"
@@ -318,17 +314,13 @@ Thank you for contacting!
               className="flex flex-col sm:flex-row items-center justify-center w-full"
             >
               <div
-                className="w-full xxs:w-28 xs:w-32 flex justify-center sm:justify-between pt-2 xs:pt-0"
+                className="flex justify-center sm:justify-between pt-2 w-full"
               >
-                <label
-                  className="text-gray-300 text-center"
+                <p
+                  className="text-md text-center text-green-800 dark:text-green-300 transform duration-500"
                 >
-                  <span
-                    className="text-md lg:text-base sm:w-60 text-red-900 dark:text-red-300 transform duration-500 "
-                  >
-                    Characters  0/50 min
-                  </span>
-                </label>
+                  Thanks / Kiitos / Gracias
+                </p>
               </div>
               <div
                 className="flex justify-center sm:block w-56"
