@@ -42,7 +42,7 @@ const Contact = () => {
             <Div className="relative flex flex-col w-full">
               <Input
                 className={
-                  'bg-opacity-10 bg-white rounded-md h-10 sm:h-12  p-2 text-gray-800 dark:text-gray-400 text-md md:text-lg block border border-opacity-10 focus:outline-none focus:ring-1 focus:ring-gray-200 focus:border-transparent shadow-sm border-gray-100 placeholder-gray-700 dark:placeholder-gray-400 placeholder-opacity-50 dark:placeholder-opacity-50 dark:duration-500 transition duration-500 '
+                  'bg-opacity-10 bg-white rounded-md h-10 sm:h-12 p-2 text-gray-800 dark:text-gray-400 text-md md:text-lg block border border-opacity-10 focus:outline-none focus:ring-1 focus:ring-gray-200 focus:border-transparent shadow-sm border-gray-100 placeholder-gray-700 dark:placeholder-gray-400 placeholder-opacity-50 dark:placeholder-opacity-50 dark:duration-500 transition duration-500 '
                 }
                 placeholder="Email"
                 {...email.params}
@@ -69,7 +69,7 @@ const Contact = () => {
           <P
             className={
               showModal
-                ? 'absolute transition duration-500  inline-flex justify-center items-center p-2 shadow-sm rounded-md bg-black bg-opacity-90 text-center text-xxl text-white hover:bg-gray-700 focus-within:outline-none w-10/12 h-32 top-28 sm:top-20'
+                ? 'absolute transition duration-500 inline-flex justify-center items-center p-2 shadow-sm rounded-md bg-black bg-opacity-90 text-center text-xxl text-white hover:bg-gray-700 focus-within:outline-none w-11/12 md:w-full h-28 top-28 sm:top-20'
                 : 'hidden '
             }
           >
@@ -81,7 +81,7 @@ const Contact = () => {
           <Div className="flex flex-col sm:flex-row items-center justify-center w-full">
             <Div className="flex justify-center sm:justify-between pt-2 w-full">
               {showModal ? (
-                <P className="text-md text-center text-green-800 dark:text-green-300 transform duration-500">
+                <P className="text-md text-center text-black dark:text-green-500 transform duration-500">
                   {'Thanks / Kiitos / Gracias'}
                 </P>
               ) : (
@@ -114,8 +114,8 @@ const Contact = () => {
               disabled={disabled}
               className={
                 disabled
-                  ? 'transition duration-500  inline-flex justify-center py-2 px-4 w-48 shadow-sm font-extralight rounded-md bg-black opacity-20 text-lg text-gray-300'
-                  : 'transition duration-500  inline-flex justify-center py-2 px-4 w-48 shadow-sm font-semibold rounded-md bg-blue-1000 hover:bg-opacity-75  opacity-75 text-lg text-green-600 focus-within:outline-none'
+                  ? 'transition duration-500 inline-flex justify-center py-2 px-4 w-48 shadow-sm font-extralight rounded-md bg-black opacity-20 text-lg text-gray-300'
+                  : 'transition duration-500 inline-flex justify-center py-2 px-4 w-48 shadow-sm font-semibold rounded-md bg-blue-1000 hover:bg-opacity-75 opacity-75 text-lg text-green-600 focus-within:outline-none'
               }
               type="submit"
             >

@@ -9,7 +9,7 @@
   "contact": {
     "name": "Nombre completo",
     "message": "Mensaje",
-    "message-sent": "Mensaje enviado!, Me pondré en contacto contigo lo antes posible.\n¡Gracias por contactar!",
+    "message-sent": "Mensaje enviado!, Me pondré en contacto contigo lo antes posible.",
     "send": "Enviar",
     "reached-length": " caracteres",
     "min-characters": "Caracteres ",

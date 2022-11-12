@@ -35,7 +35,7 @@ exports[`Testing Snapshot of the Footer component 1`] = `
                 className="relative flex flex-col w-full"
               >
                 <input
-                  className="bg-opacity-10 bg-white rounded-md h-10 sm:h-12  p-2 text-gray-800 dark:text-gray-400 text-md md:text-lg block border border-opacity-10 focus:outline-none focus:ring-1 focus:ring-gray-200 focus:border-transparent shadow-sm border-gray-100 placeholder-gray-700 dark:placeholder-gray-400 placeholder-opacity-50 dark:placeholder-opacity-50 dark:duration-500 transition duration-500 "
+                  className="bg-opacity-10 bg-white rounded-md h-10 sm:h-12 p-2 text-gray-800 dark:text-gray-400 text-md md:text-lg block border border-opacity-10 focus:outline-none focus:ring-1 focus:ring-gray-200 focus:border-transparent shadow-sm border-gray-100 placeholder-gray-700 dark:placeholder-gray-400 placeholder-opacity-50 dark:placeholder-opacity-50 dark:duration-500 transition duration-500 "
                   name="email"
                   onChange={[Function]}
                   placeholder="Email"
@@ -61,7 +61,6 @@ exports[`Testing Snapshot of the Footer component 1`] = `
               className="hidden "
             >
               Message sent!, I'll get back to you as soon as possible.
-Thank you for contacting!
             </p>
           </div>
           <div
@@ -95,7 +94,7 @@ Thank you for contacting!
               className="flex flex-col items-center "
             >
               <button
-                className="transition duration-500  inline-flex justify-center py-2 px-4 w-48 shadow-sm font-extralight rounded-md bg-black opacity-20 text-lg text-gray-300"
+                className="transition duration-500 inline-flex justify-center py-2 px-4 w-48 shadow-sm font-extralight rounded-md bg-black opacity-20 text-lg text-gray-300"
                 disabled={true}
                 type="submit"
               >
@@ -282,7 +281,7 @@ Thank you for contacting!
                 className="relative flex flex-col w-full"
               >
                 <input
-                  className="bg-opacity-10 bg-white rounded-md h-10 sm:h-12  p-2 text-gray-800 dark:text-gray-400 text-md md:text-lg block border border-opacity-10 focus:outline-none focus:ring-1 focus:ring-gray-200 focus:border-transparent shadow-sm border-gray-100 placeholder-gray-700 dark:placeholder-gray-400 placeholder-opacity-50 dark:placeholder-opacity-50 dark:duration-500 transition duration-500 "
+                  className="bg-opacity-10 bg-white rounded-md h-10 sm:h-12 p-2 text-gray-800 dark:text-gray-400 text-md md:text-lg block border border-opacity-10 focus:outline-none focus:ring-1 focus:ring-gray-200 focus:border-transparent shadow-sm border-gray-100 placeholder-gray-700 dark:placeholder-gray-400 placeholder-opacity-50 dark:placeholder-opacity-50 dark:duration-500 transition duration-500 "
                   name="email"
                   onChange={[Function]}
                   placeholder="Email"
@@ -308,7 +307,6 @@ Thank you for contacting!
               className="hidden "
             >
               Message sent!, I'll get back to you as soon as possible.
-Thank you for contacting!
             </p>
           </div>
           <div
@@ -342,7 +340,7 @@ Thank you for contacting!
               className="flex flex-col items-center "
             >
               <button
-                className="transition duration-500  inline-flex justify-center py-2 px-4 w-48 shadow-sm font-extralight rounded-md bg-black opacity-20 text-lg text-gray-300"
+                className="transition duration-500 inline-flex justify-center py-2 px-4 w-48 shadow-sm font-extralight rounded-md bg-black opacity-20 text-lg text-gray-300"
                 disabled={true}
                 type="submit"
               >
