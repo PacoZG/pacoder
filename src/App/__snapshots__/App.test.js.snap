@@ -515,11 +515,15 @@ Thank you for contacting!
                 <div
                   className="flex justify-center sm:justify-between pt-2 w-full"
                 >
-                  <p
-                    className="text-md text-center text-green-800 dark:text-green-300 transform duration-500"
+                  <label
+                    className="text-gray-300 text-center"
                   >
-                    Thanks / Kiitos / Gracias
-                  </p>
+                    <span
+                      className="text-md lg:text-base sm:w-60 text-red-900 dark:text-red-300 transform duration-500 "
+                    >
+                      Characters  0/50 min
+                    </span>
+                  </label>
                 </div>
                 <div
                   className="flex justify-center sm:block w-56"
@@ -758,11 +762,16 @@ Thank you for contacting!
                 <div
                   className="flex justify-center sm:justify-between pt-2 w-full"
                 >
-                  <p
                     className="text-md text-center text-green-800 dark:text-green-300 transform duration-500"
+                  <label
+                    className="text-gray-300 text-center"
                   >
-                    Thanks / Kiitos / Gracias
-                  </p>
+                    <span
+                      className="text-md lg:text-base sm:w-60 text-red-900 dark:text-red-300 transform duration-500 "
+                    >
+                      Characters  0/50 min
+                    </span>
+                  </label>
                 </div>
                 <div
                   className="flex justify-center sm:block w-56"
