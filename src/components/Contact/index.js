@@ -80,7 +80,7 @@ const Contact = () => {
         <Div className="flex flex-col md:flex-row items-center">
           <Div className="flex flex-col sm:flex-row items-center justify-center w-full">
             <Div className="flex justify-center sm:justify-between pt-2 w-full">
-              {!showModal ? (
+              {showModal ? (
                 <P className="text-md text-center text-green-800 dark:text-green-300 transform duration-500">
                   {'Thanks / Kiitos / Gracias'}
                 </P>
