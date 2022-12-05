@@ -40,7 +40,7 @@ app.use(middleware.tokenExtractor)
 app.use(middleware.requestLogger)
 
 app.get('/health', (req, res) => {
-  res.send('ok')
+  res.send('<body><div><h1>ok</h1><b></b></div></body>')
 })
 
 app.get('/*', function (req, res) {
