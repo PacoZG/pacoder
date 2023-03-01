@@ -46,7 +46,7 @@ exports[`Testing Snapshot of the Experience component 1`] = `
         <div
           className="text-gray-900 pb-1 font-bold"
         >
-          Junior Consultant
+          Consultant
         </div>
       </div>
       <p
