@@ -31,7 +31,7 @@ const Header = () => {
           </A>
 
           <A
-            href="https://wa.me/358449888032?text=I%20will%20like%20to%20contact%20you%20to%20arrange%20an%20interview"
+            href="https://wa.me/358449888032?text=I%20will%20love%20to%20contact%20you%20for%20a%20possible%20interview."
             target="blank"
           >
             <WhatsappIcon size={31} borderRadius={10} />
@@ -75,7 +75,7 @@ const Header = () => {
             </A>
 
             <A
-              href="https://wa.me/358449888032?text=I%20will%20like%20to%20contact%20you%20to%20arrange%20an%20interview"
+              href="https://wa.me/358449888032?text=I%20will%20love%20to%20contact%20you%20for%20a%20possible%20interview."
               target="blank"
             >
               <WhatsappIcon size={46} borderRadius={10} />

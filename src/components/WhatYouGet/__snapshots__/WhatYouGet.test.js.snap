@@ -11,7 +11,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
       className="hidden md:flex flex-col space-y-9"
     >
       <div
-        className="flex items-center justify-evenly gap-16"
+        className="flex items-center justify-evenly gap-10"
       >
         <div
           className="flex flex-col items-center "
@@ -22,7 +22,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
             src="https://img.icons8.com/nolan/96/javascript.png"
           />
           <p
-            className="text-black dark:text-yellow-500 transition duration-500"
+            className="text-gray-200 dark:text-yellow-500 transition duration-500"
           >
             Javascript
           </p>
@@ -36,7 +36,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
             src="https://img.icons8.com/officel/80/000000/react.png"
           />
           <p
-            className="text-black dark:text-blue-300 transition duration-500"
+            className="text-gray-200 dark:text-blue-300 transition duration-500"
           >
             React
           </p>
@@ -50,7 +50,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
             src="https://img.icons8.com/color/48/000000/graphql.png"
           />
           <p
-            className="text-black dark:text-pink-500 transition duration-500"
+            className="text-gray-200 dark:text-pink-500 transition duration-500"
           >
             GraphQL
           </p>
@@ -64,7 +64,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
             redux.svg
           </svg>
           <p
-            className="text-black dark:text-purple-400 transition duration-500 -mt-4"
+            className="text-gray-200 dark:text-purple-400 transition duration-500 -mt-4"
           >
             Redux
           </p>
@@ -78,29 +78,29 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
             src="https://img.icons8.com/nolan/96/react-native.png"
           />
           <p
-            className="text-black dark:text-pink-700 transition duration-500"
+            className="text-gray-200 dark:text-pink-700 transition duration-500"
           >
             React-Native
           </p>
         </div>
-      </div>
-      <div
-        className="flex items-center justify-evenly gap-16"
-      >
         <div
           className="flex flex-col items-center "
         >
           <svg
-            className=" skill-logo rounded-sm h-16 w-16 m-2 "
+            className=" skill-logo rounded-sm h-16 w-16 mb-0 mt-5"
           >
             typescript.svg
           </svg>
           <p
-            className="text-black dark:text-yellow-500 transition duration-500 mt-3"
+            className="text-gray-200 dark:text-yellow-500 transition duration-500 mt-3"
           >
             Typescript
           </p>
         </div>
+      </div>
+      <div
+        className="flex items-center justify-evenly gap-20"
+      >
         <div
           className="flex flex-col items-center"
         >
@@ -110,7 +110,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
             src="https://img.icons8.com/color/344/html-5--v1.png"
           />
           <p
-            className="text-black dark:text-purple-400 transition duration-500"
+            className="text-gray-200 dark:text-purple-400 transition duration-500"
           >
             HTML
           </p>
@@ -124,7 +124,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
             css.svg
           </svg>
           <p
-            className="text-black dark:text-purple-400 transition duration-500"
+            className="text-gray-200 dark:text-purple-400 transition duration-500"
           >
             CSS
           </p>
@@ -138,7 +138,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
             src="https://img.icons8.com/color/96/000000/mongodb.png"
           />
           <p
-            className="text-black dark:text-green-400 transition duration-500"
+            className="text-gray-200 dark:text-green-400 transition duration-500"
           >
             MongoDB
           </p>
@@ -148,14 +148,18 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
         >
           <img
             alt="React"
-            className="skill-logo  bg-green-400 p-3 "
+            className="skill-logo bg-green-400 p-3 "
             src="https://img.icons8.com/color/96/000000/nodejs.png"
           />
-          <p
-            className="text-black dark:text-green-400 transition duration-500"
+        </div>
+        <div
+          className="flex flex-col items-center"
+        >
+          <svg
+            className="skill-logo h-32 w-16 -mb-3 -mt-3"
           >
-            Node
-          </p>
+            sql.svg
+          </svg>
         </div>
       </div>
       <div
@@ -171,11 +175,11 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
         >
           <img
             alt="tailwind-logo"
-            className="skill-logo h-16 mb-5"
+            className="skill-logo h-16 mb-3"
             src="tailwind-css.png"
           />
           <p
-            className="text-black dark:text-blue-300 transition duration-500"
+            className="text-gray-200 dark:text-blue-300 transition duration-500"
           >
             Tailwindcss
           </p>
@@ -189,9 +193,23 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
             cypress.svg
           </svg>
           <p
-            className="text-black dark:text-gray-50 transition duration-500"
+            className="text-gray-200 dark:text-gray-50 transition duration-500"
           >
             Cypress.io
+          </p>
+        </div>
+        <div
+          className="flex flex-col items-center"
+        >
+          <svg
+            className="skill-logo  p-3 bg-transparent bg-opacity-10"
+          >
+            docker.svg
+          </svg>
+          <p
+            className=" text-center text-gray-200 dark:text-blue-700 transition duration-500"
+          >
+            Docker
           </p>
         </div>
         <div
@@ -202,25 +220,6 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
           >
             aws-logo.svg
           </svg>
-          <p
-            className=" text-center text-yellow-800 dark:text-yellow-500 transition duration-500"
-          >
-            Junior
-          </p>
-        </div>
-        <div
-          className="flex flex-col items-center"
-        >
-          <svg
-            className="skill-logo  p-3 bg-gray-50 bg-opacity-10"
-          >
-            docker.svg
-          </svg>
-          <p
-            className=" text-center text-blue-700 transition duration-500"
-          >
-            Docker
-          </p>
         </div>
       </div>
     </div>
@@ -242,7 +241,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
               src="https://img.icons8.com/nolan/96/javascript.png"
             />
             <p
-              className="text-sm text-black dark:text-yellow-500 transition duration-500"
+              className="text-sm text-gray-200 dark:text-yellow-500 transition duration-500"
             >
               Javascript
             </p>
@@ -256,7 +255,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
               src="https://img.icons8.com/officel/80/000000/react.png"
             />
             <p
-              className="text-sm text-black dark:text-blue-300 transition duration-500"
+              className="text-sm text-gray-200 dark:text-blue-300 transition duration-500"
             >
               React
             </p>
@@ -270,7 +269,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
               redux.svg
             </svg>
             <p
-              className="text-sm text-black dark:text-purple-700 transition duration-500"
+              className="text-sm text-gray-200 dark:text-purple-700 transition duration-500"
             >
               Redux
             </p>
@@ -288,7 +287,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
               src="https://img.icons8.com/nolan/96/react-native.png"
             />
             <p
-              className="text-sm text-black text-center dark:text-pink-800 transition duration-500"
+              className="text-sm text-gray-200 text-center dark:text-pink-800 transition duration-500"
             >
               React-Native
             </p>
@@ -302,7 +301,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
               src="https://img.icons8.com/color/96/000000/mongodb.png"
             />
             <p
-              className="text-sm text-black dark:text-green-400 transition duration-500"
+              className="text-sm text-gray-200 dark:text-green-400 transition duration-500"
             >
               MongoDB
             </p>
@@ -316,7 +315,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
               src="https://img.icons8.com/color/48/000000/graphql.png"
             />
             <p
-              className="text-sm text-black dark:text-pink-500 transition duration-500"
+              className="text-sm text-gray-200 dark:text-pink-500 transition duration-500"
             >
               GraphQL
             </p>
@@ -330,14 +329,9 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
           >
             <img
               alt="React"
-              className="skill-logo bg-green-400 p-2 md:h-24 "
+              className="skill-logo text-gray-200 bg-green-400 p-2 md:h-24 "
               src="https://img.icons8.com/color/96/000000/nodejs.png"
             />
-            <p
-              className="text-sm text-black dark:text-green-400 transition duration-500"
-            >
-              Node
-            </p>
           </div>
           <div
             className="flex flex-col items-center"
@@ -348,7 +342,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
               src="tailwind-css.png"
             />
             <p
-              className="text-sm text-black dark:text-blue-300 transition duration-500"
+              className="text-sm text-gray-200 dark:text-blue-300 transition duration-500"
             >
               Tailwindcss
             </p>
@@ -362,7 +356,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
               cypress.svg
             </svg>
             <p
-              className="text-sm text-black dark:text-gray-300 transition duration-500"
+              className="text-sm text-gray-200 dark:text-gray-300 transition duration-500"
             >
               Cypress.io
             </p>
@@ -380,9 +374,23 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
               typescript.svg
             </svg>
             <p
-              className="text-sm text-black dark:text-green-400 transition duration-500"
+              className="text-sm text-gray-200 dark:text-green-400 transition duration-500"
             >
               Typescript
+            </p>
+          </div>
+          <div
+            className="flex flex-col items-center"
+          >
+            <svg
+              className="skill-logo p-3 my-2 bg-opacity-10"
+            >
+              docker.svg
+            </svg>
+            <p
+              className=" text-center text-gray-200 dark:text-blue-700 transition duration-500 w-16"
+            >
+              Docker
             </p>
           </div>
           <div
@@ -393,25 +401,6 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
             >
               aws-logo.svg
             </svg>
-            <p
-              className=" text-center text-yellow-400 transition duration-500"
-            >
-              Junior
-            </p>
-          </div>
-          <div
-            className="flex flex-col items-center"
-          >
-            <svg
-              className="skill-logo p-3 my-2 bg-gray-50 bg-opacity-10"
-            >
-              docker.svg
-            </svg>
-            <p
-              className=" text-center text-blue-700 transition duration-500 w-16"
-            >
-              Docker
-            </p>
           </div>
         </div>
         <div
@@ -431,7 +420,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
               src="https://img.icons8.com/color/344/html-5--v1.png"
             />
             <p
-              className=" text-center text-yellow-800 transition duration-500"
+              className=" text-center text-gray-200 dark:text-yellow-800 transition duration-500"
             >
               HTML
             </p>
@@ -445,10 +434,23 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
               css.svg
             </svg>
             <p
-              className=" text-center text-blue-700 transition duration-500 w-16"
+              className=" text-center text-gray-200 dark:text-blue-700 transition duration-500 w-16"
             >
               CSS
             </p>
+          </div>
+        </div>
+        <div
+          className="flex items-center justify-evenly space-x-12"
+        >
+          <div
+            className="flex flex-col items-center "
+          >
+            <svg
+              className="skill-logo h-24 w-12 -mb-3 -mt-3"
+            >
+              sql.svg
+            </svg>
           </div>
         </div>
       </div>
@@ -465,7 +467,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="w-5 h-5 text-black dark:text-gray-300 "
+          className="w-5 h-5 text-gray-200 dark:text-gray-300 "
           fill="currentColor"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
@@ -475,7 +477,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
           />
         </svg>
         <p
-          className="md:px-5 text-black dark:text-gray-300 text-xs sm:text-sm uppercase transition duration-500"
+          className="md:px-5 text-gray-200 dark:text-gray-300 text-xs sm:text-sm uppercase transition duration-500"
         >
           Ability to multitask
         </p>
@@ -485,7 +487,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="w-5 h-5 text-black dark:text-gray-300 "
+          className="w-5 h-5 text-gray-200 dark:text-gray-300 "
           fill="currentColor"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
@@ -495,7 +497,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
           />
         </svg>
         <p
-          className="md:px-5 text-black dark:text-gray-300 text-xs sm:text-sm uppercase transition duration-500"
+          className="md:px-5 text-gray-200 dark:text-gray-300 text-xs sm:text-sm uppercase transition duration-500"
         >
           Engaged, persistent and focused
         </p>
@@ -509,7 +511,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="w-5 h-5 text-black dark:text-gray-300 "
+          className="w-5 h-5 text-gray-200 dark:text-gray-300 "
           fill="currentColor"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
@@ -521,7 +523,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
           />
         </svg>
         <p
-          className="md:px-5 text-black dark:text-gray-300 text-xs sm:text-sm uppercase transition duration-500"
+          className="md:px-5 text-gray-200 dark:text-gray-300 text-xs sm:text-sm uppercase transition duration-500"
         >
           Mother tongue: Spanish
         </p>
@@ -531,7 +533,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="w-5 h-5 text-black dark:text-gray-300 "
+          className="w-5 h-5 text-gray-200 dark:text-gray-300 "
           fill="currentColor"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
@@ -543,7 +545,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
           />
         </svg>
         <p
-          className="md:px-5 text-black dark:text-gray-300 text-xs sm:text-sm uppercase transition duration-500"
+          className="md:px-5 text-gray-200 dark:text-gray-300 text-xs sm:text-sm uppercase transition duration-500"
         >
           Proficiency in English
         </p>
