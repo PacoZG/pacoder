@@ -70,7 +70,7 @@ const Header = () => {
               <LinkedinIcon size={46} round={false} borderRadius={10} />
             </A>
 
-            <A href="https://github.com/PacoZG">
+            <A href="https://github.com/PacoZG" target="blank">
               <GitHub className="bg-gray-300  h-11 w-11 rounded-full" />
             </A>
 

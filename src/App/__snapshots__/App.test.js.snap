@@ -344,6 +344,7 @@ exports[`Testing header Snapshot of the Main App component 1`] = `
           </a>
           <a
             href="https://github.com/PacoZG"
+            target="blank"
           >
             <svg
               className="bg-gray-300  h-11 w-11 rounded-full"

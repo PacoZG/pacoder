@@ -1,51 +1,51 @@
-name: pacoderzavala
+# name: pacoderzavala
 
-on:
-  push:
-    branches:
-      - master
-  pull_request:
-    branches: [ master ]
-    types: [ opened, synchronize ]
-  release:
-    types: [published]
+# on:
+#   push:
+#     branches:
+#       - master
+#   pull_request:
+#     branches: [ master ]
+#     types: [ opened, synchronize ]
+#   release:
+#     types: [published]
 
-jobs:
-  Pacoder_Zavala_app:
-    runs-on: ubuntu-20.04
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: '16.x'
+# jobs:
+#   Pacoder_Zavala_app:
+#     runs-on: ubuntu-20.04
+#     steps:
+#       - uses: actions/checkout@v2
+#       - uses: actions/setup-node@v2
+#         with:
+#           node-version: '16.x'
 
-      - name: Installing dependencies
-        run: npm install
-      - name: Prettify code
-        run: npm run check-code-style
-      - name: Building for production
-        run: npm run build
-      - name: Running Unit tests
-        run: npm run test
+#       - name: Installing dependencies
+#         run: npm install
+#       - name: Prettify code
+#         run: npm run check-code-style
+#       - name: Building for production
+#         run: npm run build
+#       - name: Running Unit tests
+#         run: npm run test
 
-      - name: Bump version and push tag
-        uses: anothrNick/github-tag-action@1.33.0
-        if: ${{ github.event_name == 'push' && !contains(join(github.event.commits.*.message, ', '), '#skip') }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          WITH_V: true
-          DEFAULT_BUMP: '#patch'
+#       - name: Bump version and push tag
+#         uses: anothrNick/github-tag-action@1.33.0
+#         if: ${{ github.event_name == 'push' && !contains(join(github.event.commits.*.message, ', '), '#skip') }}
+#         env:
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#           WITH_V: true
+#           DEFAULT_BUMP: '#patch'
 
-      - name: Deployment to Heroku
-        uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
-        if: ${{ github.event_name == 'push' && !contains(join(github.event.commits.*.message, ', '), '#skip') }}
-        with:
-          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: 'pacoderzavala' # Must be unique in Heroku
-          heroku_email: 'sirpaquillo1@yahoo.com.mx'
-          dontuseforce: false
-          procfile: 'web: npm run production'
-          healthcheck: 'https://pacoderzavala.herokuapp.com/health'
-          checkstring: 'ok'
-          delay: 5
-          rollbackonhealthcheckfailed: true
+#       - name: Deployment to Heroku
+#         uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
+#         if: ${{ github.event_name == 'push' && !contains(join(github.event.commits.*.message, ', '), '#skip') }}
+#         with:
+#           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+#           heroku_app_name: 'pacoderzavala' # Must be unique in Heroku
+#           heroku_email: 'sirpaquillo1@yahoo.com.mx'
+#           dontuseforce: false
+#           procfile: 'web: npm run production'
+#           healthcheck: 'https://pacoderzavala.herokuapp.com/health'
+#           checkstring: 'ok'
+#           delay: 5
+#           rollbackonhealthcheckfailed: true
