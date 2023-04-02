@@ -6,6 +6,7 @@ import localdb from '../../utils/localdb'
 export const ContactModel = () => {
   const [disabled, setDisabled] = useState(true)
   const [showModal, setShowModal] = useState(false)
+  const [sending, setSending] = useState(false)
   const fullName = useField('text')
   const email = useField('email')
   const message = useField('text')
@@ -18,11 +19,13 @@ export const ContactModel = () => {
 
   const handleSendEmail = event => {
     event.preventDefault()
+    setSending(true)
     if (emailInputValidation() && fullName.params.value.length >= 4 && message.params.value.length >= 50) {
       emailjs.sendForm('service_3y9qqi9', 'template_rruy7ci', event.target, 'ayNQSJVuw3mKwJnpn').then(
         result => {
           console.log(result.text)
           setShowModal(true)
+          setSending(false)
         },
         error => {
           console.log(error.text)
@@ -33,7 +36,8 @@ export const ContactModel = () => {
       message.reset()
       setTimeout(() => {
         setShowModal(false)
-      }, 15000)
+        setDisabled(!disabled)
+      }, 7000)
     }
   }
 
@@ -52,6 +56,7 @@ export const ContactModel = () => {
     handleVerifyCaptcha,
     disabled,
     showModal,
+    sending,
     fullName,
     email,
     message,

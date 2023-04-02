@@ -2,6 +2,8 @@
 build
 coverage
 
+.env*
+
 # Ignore all HTML files:
 *.html
 *.json

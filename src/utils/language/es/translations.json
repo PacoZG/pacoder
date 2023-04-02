@@ -9,10 +9,11 @@
   "contact": {
     "name": "Nombre completo",
     "message": "Mensaje",
-    "message-sent": "Mensaje enviado!, Me pondré en contacto contigo lo antes posible.",
+    "message-sent": "Me pondré en contacto contigo lo antes posible.",
     "send": "Enviar",
-    "reached-length": " caracteres",
-    "min-characters": "Caracteres ",
+    "sending": "Enviando...",
+    "sent": "Mensaje enviado",
+    "characters": "Caracteres ",
     "invalid-email": "Formato de correo inválido"
   },
   "Header": {

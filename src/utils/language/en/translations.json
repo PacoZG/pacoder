@@ -9,8 +9,10 @@
   "contact": {
     "name": "Full Name",
     "message": "Message",
-    "message-sent": "Message sent!, I'll get back to you as soon as possible.",
+    "message-sent": "I'll get back to you as soon as possible.",
     "send": "Send",
+    "sending": "Sending...",
+    "sent": "Message sent",
     "characters": "Characters ",
     "invalid-email": "Invalid email format"
   },

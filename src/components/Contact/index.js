@@ -1,6 +1,7 @@
 import React from 'react'
 import ReCAPTCHA from 'react-google-recaptcha'
 import { useTranslation } from 'react-i18next'
+import { ReactComponent as Spinner } from '../../utils/assets/spinner.svg'
 import Button from '../private/Button'
 import Div from '../private/Div'
 import Form from '../private/Form'
@@ -18,6 +19,7 @@ const Contact = () => {
     emailInputValidation,
     disabled,
     showModal,
+    sending,
     fullName,
     email,
     message,
@@ -65,6 +67,7 @@ const Contact = () => {
             {...message.params}
             required
             name="message"
+            maxLength="500"
           />
           <P
             className={
@@ -91,9 +94,11 @@ const Contact = () => {
                       'contact.characters'
                     )}${message.params.value.length}/500 max`}</span>
                   ) : (
-                    <span className="text-md lg:text-base sm:w-60 text-red-900 dark:text-red-300 transform duration-500 ">{`${t(
-                      'contact.characters'
-                    )} ${message.params.value.length}/50 min`}</span>
+                    message.params.value.length > 1 && (
+                      <span className="text-md lg:text-base sm:w-60 text-gray-300 dark:text-red-300 transform duration-500 ">{`${t(
+                        'contact.characters'
+                      )} ${message.params.value.length}/50 min`}</span>
+                    )
                   )}
                 </Label>
               )}
@@ -110,17 +115,33 @@ const Contact = () => {
           </Div>
 
           <Div className="flex flex-col items-center ">
-            <Button
-              disabled={disabled}
-              className={
-                disabled
-                  ? 'transition duration-500 inline-flex justify-center py-2 px-4 w-48 shadow-sm font-extralight rounded-md bg-black opacity-20 text-lg text-gray-300'
-                  : 'transition duration-500 inline-flex justify-center py-2 px-4 w-48 shadow-sm font-semibold rounded-md bg-blue-1000 hover:bg-opacity-75 opacity-75 text-lg text-green-600 focus-within:outline-none'
-              }
-              type="submit"
-            >
-              {t('contact.send')}
-            </Button>
+            {!showModal ? (
+              <Button
+                disabled={disabled}
+                className={
+                  disabled
+                    ? 'transition duration-500 inline-flex justify-center py-2 px-10 w-48 shadow-sm font-extralight rounded-md bg-black opacity-20 text-lg text-gray-300'
+                    : 'transition duration-500 inline-flex justify-center py-2 px-10 w-48 shadow-sm font-semibold rounded-md bg-blue-1000 hover:bg-opacity-75 opacity-75 text-lg text-green-600 focus-within:outline-none'
+                }
+                type="submit"
+              >
+                {!sending ? (
+                  t('contact.send')
+                ) : (
+                  <Div className="flex flex-row items-center gap-3">
+                    <Spinner />
+                    <Label>{t('contact.sending')}</Label>
+                  </Div>
+                )}
+              </Button>
+            ) : (
+              <Button
+                disabled={disabled}
+                className="transition duration-500 inline-flex justify-center py-2 px-4 w-48 shadow-sm font-semibold rounded-md bg-blue-1000 hover:bg-opacity-75 opacity-75 text-lg text-green-600 focus-within:outline-none"
+              >
+                {t('contact.sent')}
+              </Button>
+            )}
           </Div>
         </Div>
       </Form>
