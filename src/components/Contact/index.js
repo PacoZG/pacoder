@@ -68,6 +68,7 @@ const Contact = () => {
             required
             name="message"
             maxLength="500"
+            minLength="50"
           />
           <P
             className={
