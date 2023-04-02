@@ -13,6 +13,13 @@ export const ContactModel = () => {
   const siteKey = process.env.REACT_APP_SITE_KEY
   const theme = localdb.getTheme()
 
+  const buttonIsDisabled = () => {
+    if (!disabled && message.params.value.length > 49) {
+      return false
+    }
+    return true
+  }
+
   const handleVerifyCaptcha = () => {
     setDisabled(!disabled)
   }
@@ -36,7 +43,6 @@ export const ContactModel = () => {
       message.reset()
       setTimeout(() => {
         setShowModal(false)
-        setDisabled(!disabled)
       }, 7000)
     }
   }
@@ -54,6 +60,7 @@ export const ContactModel = () => {
     handleSendEmail,
     emailInputValidation,
     handleVerifyCaptcha,
+    buttonIsDisabled,
     disabled,
     showModal,
     sending,

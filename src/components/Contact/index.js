@@ -17,6 +17,7 @@ const Contact = () => {
     handleSendEmail,
     handleVerifyCaptcha,
     emailInputValidation,
+    buttonIsDisabled,
     disabled,
     showModal,
     sending,
@@ -118,11 +119,11 @@ const Contact = () => {
           <Div className="flex flex-col items-center ">
             {!showModal ? (
               <Button
-                disabled={disabled}
+                disabled={buttonIsDisabled()}
                 className={
-                  disabled
-                    ? 'transition duration-500 inline-flex justify-center py-2 px-10 w-48 shadow-sm font-extralight rounded-md bg-black opacity-20 text-lg text-gray-300'
-                    : 'transition duration-500 inline-flex justify-center py-2 px-10 w-48 shadow-sm font-semibold rounded-md bg-blue-1000 hover:bg-opacity-75 opacity-75 text-lg text-green-600 focus-within:outline-none'
+                  !buttonIsDisabled() || sending === true
+                    ? 'transition duration-500 inline-flex justify-center py-2 px-10 w-48 shadow-sm font-semibold rounded-md bg-blue-1000 hover:bg-opacity-75 opacity-75 text-lg text-green-600 focus-within:outline-none'
+                    : 'transition duration-500 inline-flex justify-center py-2 px-10 w-48 shadow-sm font-extralight rounded-md bg-black opacity-20 text-lg text-gray-300'
                 }
                 type="submit"
               >
@@ -136,12 +137,9 @@ const Contact = () => {
                 )}
               </Button>
             ) : (
-              <Button
-                disabled={disabled}
-                className="transition duration-500 inline-flex justify-center py-2 px-4 w-48 shadow-sm font-semibold rounded-md bg-blue-1000 hover:bg-opacity-75 opacity-75 text-lg text-green-600 focus-within:outline-none"
-              >
+              <Div className="transition duration-500 inline-flex justify-center py-2 px-4 w-48 shadow-sm font-semibold rounded-md bg-blue-1000 hover:bg-opacity-75 opacity-75 text-lg text-green-600 focus-within:outline-none">
                 {t('contact.sent')}
-              </Button>
+              </Div>
             )}
           </Div>
         </Div>
