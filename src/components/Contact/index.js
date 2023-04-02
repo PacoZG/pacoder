@@ -129,7 +129,7 @@ const Contact = () => {
                   t('contact.send')
                 ) : (
                   <Div className="flex flex-row items-center gap-3">
-                    <Spinner />
+                    <Spinner className="animate-spin h-5 w-5 text-current" />
                     <Label>{t('contact.sending')}</Label>
                   </Div>
                 )}
