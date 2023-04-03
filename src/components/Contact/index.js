@@ -28,7 +28,7 @@ const Contact = () => {
   } = ContactModel()
 
   return (
-    <Div className="transform duration-500 pt-2 p-8 sm:p-4 pb-0 w-full sm:w-4/5 md:w-11/12 ">
+    <Div className="transform duration-500 pt-2 p-8 sm:p-4 pb-0 w-full sm:w-4/5 lg:w-8/12 ">
       <Form onSubmit={handleSendEmail}>
         <Div className="flex flex-col items-center justify-center gap-6 transition duration-500  bg-opacity-70 dark:bg-opacity-70 rounded-xl">
           <Div className="relative flex flex-col sm:flex-row justify-between items-center gap-3 w-full">
