@@ -13,7 +13,7 @@ const Footer = () => {
     <Div className="relative flex justify-center inset-x-0 bottom-0 bg-blue-500 dark:bg-blue-900 border-0 transition duration-500 w-full">
       <Div className="flex justify-center w-full">
         {/* Web view */}
-        <Div className="hidden sm:flex flex-row items-start justify-center sm-gap-8 md:gap-12 lg:gap-16 w-full sm:w-11/12 lg:w-9/12 ">
+        <Div className="hidden sm:flex flex-row items-start justify-center sm-gap-8 md:gap-10 lg:gap-14 w-full sm:w-11/12 lg:w-10/12 ">
           <Contact />
 
           <Div className="flex flex-col items-center gap-6 pt-10">

@@ -18,7 +18,6 @@ const Contact = () => {
     handleVerifyCaptcha,
     emailInputValidation,
     buttonIsDisabled,
-    disabled,
     showModal,
     sending,
     fullName,
@@ -29,7 +28,7 @@ const Contact = () => {
   } = ContactModel()
 
   return (
-    <Div className="transform duration-500 pt-2 p-8 sm:p-4 pb-0 w-full sm:w-4/5 md:w-3/4 ">
+    <Div className="transform duration-500 pt-2 p-8 sm:p-4 pb-0 w-full sm:w-4/5 md:w-11/12 ">
       <Form onSubmit={handleSendEmail}>
         <Div className="flex flex-col items-center justify-center gap-6 transition duration-500  bg-opacity-70 dark:bg-opacity-70 rounded-xl">
           <Div className="relative flex flex-col sm:flex-row justify-between items-center gap-3 w-full">
@@ -82,65 +81,65 @@ const Contact = () => {
           </P>
         </Div>
 
-        <Div className="flex flex-col md:flex-row items-center">
-          <Div className="flex flex-col sm:flex-row items-center justify-center w-full">
-            <Div className="flex justify-center sm:justify-between pt-2 w-full">
-              {showModal ? (
-                <P className="text-md text-center text-black dark:text-green-500 transform duration-500">
-                  {'Thanks / Kiitos / Gracias'}
-                </P>
-              ) : (
-                <Label className="text-gray-300 text-center">
-                  {message.params.value.length > 49 ? (
-                    <span className="text-md lg:text-base sm:w-60 text-green-800 dark:text-green-300 transform duration-500 ">{`${t(
+        <Div className="flex flex-col ml:flex-row ml:items-center justify-evenly ml:justify-between">
+          <Div className="flex justify-end pt-1">
+            {showModal ? (
+              <P className="text-sm ml:text-md lg:text-base text-center text-black dark:text-green-500 transform duration-500">
+                {'Thanks / Kiitos / Gracias'}
+              </P>
+            ) : (
+              <Label className="text-gray-300 text-center">
+                {message.params.value.length > 49 ? (
+                  <span className="text-sm ml:text-md lg:text-base sm:w-60 text-green-800 dark:text-green-300 transform duration-500 ">{`${t(
+                    'contact.characters'
+                  )}${message.params.value.length}/500 max`}</span>
+                ) : (
+                  message.params.value.length > 1 && (
+                    <span className="text-sm ml:text-md lg:text-base sm:w-60 text-gray-300 dark:text-red-300 transform duration-500 ">{`${t(
                       'contact.characters'
-                    )}${message.params.value.length}/500 max`}</span>
-                  ) : (
-                    message.params.value.length > 1 && (
-                      <span className="text-md lg:text-base sm:w-60 text-gray-300 dark:text-red-300 transform duration-500 ">{`${t(
-                        'contact.characters'
-                      )} ${message.params.value.length}/50 min`}</span>
-                    )
-                  )}
-                </Label>
-              )}
-            </Div>
+                    )} ${message.params.value.length}/50 min`}</span>
+                  )
+                )}
+              </Label>
+            )}
+          </Div>
 
-            <Div className="flex justify-center sm:block w-56">
+          <Div className="flex flex-col xs:flex-row xs:gap-1 sm:gap-5 ml:gap-1 items-center justify-center ml:justify-end">
+            <Div className="flex justify-center w-36 xs:w-44 m-0">
               <ReCAPTCHA
-                className="scale-65 sm:scale-55"
+                className=" scale-60 xs:scale-55"
                 sitekey={siteKey}
                 onChange={handleVerifyCaptcha}
                 theme={theme}
               />
             </Div>
-          </Div>
 
-          <Div className="flex flex-col items-center ">
-            {!showModal ? (
-              <Button
-                disabled={buttonIsDisabled()}
-                className={
-                  !buttonIsDisabled() || sending === true
-                    ? 'transition duration-500 inline-flex justify-center py-2 px-10 w-48 shadow-sm font-semibold rounded-md bg-blue-1000 hover:bg-opacity-75 opacity-75 text-lg text-green-600 focus-within:outline-none'
-                    : 'transition duration-500 inline-flex justify-center py-2 px-10 w-48 shadow-sm font-extralight rounded-md bg-black opacity-20 text-lg text-gray-300'
-                }
-                type="submit"
-              >
-                {!sending ? (
-                  t('contact.send')
-                ) : (
-                  <Div className="flex flex-row items-center gap-3">
-                    <Spinner className="animate-spin h-5 w-5 text-current" />
-                    <Label>{t('contact.sending')}</Label>
-                  </Div>
-                )}
-              </Button>
-            ) : (
-              <Div className="transition duration-500 inline-flex justify-center py-2 px-4 w-48 shadow-sm font-semibold rounded-md bg-blue-1000 hover:bg-opacity-75 opacity-75 text-lg text-green-600 focus-within:outline-none">
-                {t('contact.sent')}
-              </Div>
-            )}
+            <Div className="flex flex-col items-center ">
+              {!showModal ? (
+                <Button
+                  disabled={buttonIsDisabled()}
+                  className={
+                    !buttonIsDisabled() || sending === true
+                      ? 'transition duration-500 inline-flex justify-center py-2 px-10 w-48 xs:py-2 xs:px-9 xs:w-44 shadow-sm font-semibold rounded-md bg-blue-1000 hover:bg-opacity-75 opacity-75 text-lg text-green-600 focus-within:outline-none'
+                      : 'transition duration-500 inline-flex justify-center py-2 px-10 w-48 xs:py-2 xs:px-9 xs:w-44 shadow-sm font-extralight rounded-md bg-black opacity-20 text-lg text-gray-300'
+                  }
+                  type="submit"
+                >
+                  {!sending ? (
+                    t('contact.send')
+                  ) : (
+                    <Div className="flex flex-row items-center gap-3">
+                      <Spinner className="animate-spin h-5 w-5 text-current" />
+                      <Label>{t('contact.sending')}</Label>
+                    </Div>
+                  )}
+                </Button>
+              ) : (
+                <Div className="transition duration-500 inline-flex justify-center py-2 px-4 w-48 shadow-sm font-semibold rounded-md bg-blue-1000 hover:bg-opacity-75 opacity-75 text-lg text-green-600 focus-within:outline-none">
+                  {t('contact.sent')}
+                </Div>
+              )}
+            </Div>
           </Div>
         </Div>
       </Form>
