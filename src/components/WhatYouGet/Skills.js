@@ -10,9 +10,11 @@ import { ReactComponent as ReduxLogo } from '../../utils/assets/redux.svg'
 import { ReactComponent as SQLLogo } from '../../utils/assets/sql.svg'
 import Tailwind from '../../utils/assets/tailwind-css.png'
 import { ReactComponent as Typescript } from '../../utils/assets/typescript.svg'
+import A from '../private/A'
 import Div from '../private/Div'
 import Img from '../private/Img'
 import P from '../private/P'
+import './skill-style.css'
 
 const Skills = () => {
   const { t } = useTranslation()
@@ -21,44 +23,75 @@ const Skills = () => {
       <Div className="flex flex-col justify-center  border-double border-b-2 border-gray-700 dark:border-gray-500 pt-0 p-2 lg:w-full transition duration-500">
         <Div className="hidden md:flex flex-col space-y-9">
           <Div className="flex items-center justify-evenly gap-10">
-            <Div className="flex flex-col items-center ">
+            <A
+              skill-tool-tip-msg="Click to see certificate"
+              className="flex flex-col items-center"
+              href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
+              target="blank"
+            >
               <Img className="skill-logo " src="https://img.icons8.com/nolan/96/javascript.png" alt="JS" />
 
               <P className="text-gray-200 dark:text-yellow-500 transition duration-500">Javascript</P>
-            </Div>
+            </A>
 
-            <Div className="flex flex-col items-center">
+            <A
+              skill-tool-tip-msg="Click to see certificate"
+              className="flex flex-col items-center"
+              href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
+              target="blank"
+            >
               <Img
-                className="skill-logo h-20 w-20 mb-3"
+                className="skill-logo h-20 w-20 mb-3 -z-20"
                 src="https://img.icons8.com/officel/80/000000/react.png"
                 alt="React"
               />
 
               <P className="text-gray-200 dark:text-blue-300 transition duration-500">React</P>
-            </Div>
+            </A>
 
-            <Div className="flex flex-col items-center">
-              <Img className="skill-logo " src="https://img.icons8.com/color/48/000000/graphql.png" alt="React" />
+            <A
+              skill-tool-tip-msg="Click to see certificate"
+              className="flex flex-col items-center"
+              href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
+              target="blank"
+            >
+              <ReduxLogo className="skill-logo mb-3" />
+
+              <P className="text-gray-200 dark:text-purple-400 transition duration-500 -mt-4">Redux</P>
+            </A>
+
+            <A
+              skill-tool-tip-msg="Click to see certificate"
+              className="flex flex-col items-center"
+              href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117640/ak5pcxrhwyigv9z0nqql.png"
+              target="blank"
+            >
+              <Img className="skill-logo -z-20 " src="https://img.icons8.com/color/48/000000/graphql.png" alt="React" />
 
               <P className="text-gray-200 dark:text-pink-500 transition duration-500">GraphQL</P>
-            </Div>
+            </A>
 
-            <Div className="flex flex-col items-center">
-              <ReduxLogo className="skill-logo mb-3" />
-              <P className="text-gray-200 dark:text-purple-400 transition duration-500 -mt-4">Redux</P>
-            </Div>
-
-            <Div className="flex flex-col items-center">
+            <A
+              skill-tool-tip-msg="Click to see certificate"
+              className="flex flex-col items-center"
+              href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117641/ffbedqhkfwmbaitpjrwx.png"
+              target="blank"
+            >
               <Img className="skill-logo" src="https://img.icons8.com/nolan/96/react-native.png" alt="React" />
 
               <P className="text-gray-200 dark:text-pink-700 transition duration-500">React-Native</P>
-            </Div>
+            </A>
 
-            <Div className="flex flex-col items-center ">
+            <A
+              skill-tool-tip-msg="Click to see certificate"
+              className="flex flex-col items-center"
+              href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117644/eawik5gh4ahctjy39sby.png"
+              target="blank"
+            >
               <Typescript className=" skill-logo rounded-sm h-16 w-16 mb-0 mt-5" />
 
               <P className="text-gray-200 dark:text-yellow-500 transition duration-500 mt-3">Typescript</P>
-            </Div>
+            </A>
           </Div>
 
           <Div className="flex items-center justify-evenly gap-20">
@@ -74,26 +107,64 @@ const Skills = () => {
               <P className="text-gray-200 dark:text-purple-400 transition duration-500">CSS</P>
             </Div>
 
-            <Div className="flex flex-col items-center">
-              <Img className="skill-logo" src="https://img.icons8.com/color/96/000000/mongodb.png" alt="React" />
-              <P className="text-gray-200 dark:text-green-400 transition duration-500">MongoDB</P>
-            </Div>
+            <A
+              skill-tool-tip-msg="Click to see certificate"
+              className="flex flex-col items-center"
+              href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
+              target="blank"
+            >
+              <Img className="skill-logo -z-20" src="https://img.icons8.com/color/96/000000/mongodb.png" alt="React" />
 
-            <Div className="flex flex-col items-center">
+              <P className="text-gray-200 dark:text-green-400 transition duration-500">MongoDB</P>
+            </A>
+
+            <A
+              skill-tool-tip-msg="Click to see certificate"
+              className="flex flex-col items-center"
+              href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
+              target="blank"
+            >
               <Img
-                className="skill-logo bg-green-400 p-3 "
+                className="skill-logo bg-green-400 p-3 -z-20"
                 src="https://img.icons8.com/color/96/000000/nodejs.png"
                 alt="React"
               />
-            </Div>
+            </A>
 
-            <Div className="flex flex-col items-center">
-              <SQLLogo className="skill-logo h-32 w-16 -mb-3 -mt-3" />
-            </Div>
+            <A
+              skill-tool-tip-msg="Click to see certificate"
+              className="flex flex-col items-center"
+              href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117640/zomoudnr2mriz6zvdetq.png"
+              target="blank"
+            >
+              <SQLLogo className="skill-logo h-32 w-16 -mb-3 -mt-3 -z-20" />
+            </A>
           </Div>
 
           <Div className="flex items-center justify-evenly gap-16">
-            <JavaLogo className="skill-logo h-36" />
+            <Div className="flex flex-col items-center">
+              <JavaLogo className="skill-logo h-36" />
+
+              <Div className="flex gap-2 ">
+                <A
+                  skill-tool-tip-msg="Java Programming I"
+                  className="text-gray-300 underline transition duration-200 hover:text-indigo-600"
+                  href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681118753/rtibuwlmtzmdtr35u2gw.png"
+                  target="blank"
+                >
+                  Cert I
+                </A>
+
+                <A
+                  skill-tool-tip-msg="Java Programming II"
+                  className="text-gray-300 underline transition duration-200 hover:text-indigo-600"
+                  href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681118770/v7jfhsjvhla0pyw1p1dr.png"
+                  target="blank"
+                >
+                  Cert II
+                </A>
+              </Div>
+            </Div>
 
             <Div className="flex flex-col items-center">
               <Img className="skill-logo h-16 mb-3" src={Tailwind} alt="tailwind-logo" />
@@ -101,17 +172,27 @@ const Skills = () => {
               <P className="text-gray-200 dark:text-blue-300 transition duration-500">Tailwindcss</P>
             </Div>
 
-            <Div className="flex flex-col items-center">
-              <Cypress className="skill-logo h-20 " />
+            <A
+              skill-tool-tip-msg="Click to see certificate"
+              className="flex flex-col items-center"
+              href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
+              target="blank"
+            >
+              <Cypress className="skill-logo h-20 -z-20 " />
 
               <P className="text-gray-200 dark:text-gray-50 transition duration-500">Cypress.io</P>
-            </Div>
+            </A>
 
-            <Div className="flex flex-col items-center">
+            <A
+              skill-tool-tip-msg="Click to see certificate"
+              className="flex flex-col items-center"
+              href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117643/q26fq714x9njo4pxskps.png"
+              target="blank"
+            >
               <DockerLogo className="skill-logo  p-3 bg-transparent bg-opacity-10" />
 
               <P className=" text-center text-gray-200 dark:text-blue-700 transition duration-500">Docker</P>
-            </Div>
+            </A>
 
             <Div className="flex flex-col items-center">
               <AWSLogo className="skill-logo  p-3 bg-white" />
@@ -122,54 +203,83 @@ const Skills = () => {
         <Div className="md:hidden block">
           <Div className="flex flex-col items-center space-y-3 sm:space-y-8 md:space-y-12">
             <Div className="flex items-center justify-evenly space-x-12">
-              <Div className="flex flex-col items-center ">
+              <A
+                className="flex flex-col items-center"
+                href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
+                target="blank"
+              >
                 <Img className="skill-logo p-2 " src="https://img.icons8.com/nolan/96/javascript.png" alt="JS" />
 
                 <P className="text-sm text-gray-200 dark:text-yellow-500 transition duration-500">Javascript</P>
-              </Div>
+              </A>
 
-              <Div className="flex flex-col items-center">
+              <A
+                className="flex flex-col items-center"
+                href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
+                target="blank"
+              >
                 <Img className="skill-logo p-2 " src="https://img.icons8.com/officel/80/000000/react.png" alt="React" />
 
                 <P className="text-sm text-gray-200 dark:text-blue-300 transition duration-500">React</P>
-              </Div>
+              </A>
 
-              <Div className="flex flex-col items-center">
+              <A
+                className="flex flex-col items-center"
+                href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
+                target="blank"
+              >
                 <ReduxLogo className="skill-logo " />
+
                 <P className="text-sm text-gray-200 dark:text-purple-700 transition duration-500">Redux</P>
-              </Div>
+              </A>
             </Div>
 
             <Div className="flex items-center justify-evenly space-x-12">
-              <Div className="flex flex-col items-center">
+              <A
+                className="flex flex-col items-center"
+                href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117641/ffbedqhkfwmbaitpjrwx.png"
+                target="blank"
+              >
                 <Img className="skill-logo  " src="https://img.icons8.com/nolan/96/react-native.png" alt="React" />
 
                 <P className="text-sm text-gray-200 text-center dark:text-pink-800 transition duration-500">
                   React-Native
                 </P>
-              </Div>
+              </A>
 
-              <Div className="flex flex-col items-center">
+              <A
+                className="flex flex-col items-center"
+                href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
+                target="blank"
+              >
                 <Img className="skill-logo " src="https://img.icons8.com/color/96/000000/mongodb.png" alt="React" />
 
                 <P className="text-sm text-gray-200 dark:text-green-400 transition duration-500">MongoDB</P>
-              </Div>
+              </A>
 
-              <Div className="flex flex-col items-center">
+              <A
+                className="flex flex-col items-center"
+                href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117640/ak5pcxrhwyigv9z0nqql.png"
+                target="blank"
+              >
                 <Img className="skill-logo " src="https://img.icons8.com/color/48/000000/graphql.png" alt="React" />
 
                 <P className="text-sm text-gray-200 dark:text-pink-500 transition duration-500">GraphQL</P>
-              </Div>
+              </A>
             </Div>
 
             <Div className="flex items-center justify-evenly space-x-12">
-              <Div className="flex flex-col items-center">
+              <A
+                className="flex flex-col items-center"
+                href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
+                target="blank"
+              >
                 <Img
                   className="skill-logo text-gray-200 bg-green-400 p-2 md:h-24 "
                   src="https://img.icons8.com/color/96/000000/nodejs.png"
                   alt="React"
                 />
-              </Div>
+              </A>
 
               <Div className="flex flex-col items-center">
                 <Img className="skill-logo h-12  mb-2" alt="tailwind-logo" src={Tailwind} />
@@ -177,25 +287,37 @@ const Skills = () => {
                 <P className="text-sm text-gray-200 dark:text-blue-300 transition duration-500">Tailwindcss</P>
               </Div>
 
-              <Div className="flex flex-col items-center">
+              <A
+                className="flex flex-col items-center"
+                href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
+                target="blank"
+              >
                 <Cypress className="skill-logo" />
 
                 <P className="text-sm text-gray-200 dark:text-gray-300 transition duration-500">Cypress.io</P>
-              </Div>
+              </A>
             </Div>
 
             <Div className="flex items-center justify-evenly space-x-12">
-              <Div className="flex flex-col items-center">
+              <A
+                className="flex flex-col items-center"
+                href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117644/eawik5gh4ahctjy39sby.png"
+                target="blank"
+              >
                 <Typescript className="skill-logo h-14 w-14 my-2 rounded-sm " />
 
                 <P className="text-sm text-gray-200 dark:text-green-400 transition duration-500">Typescript</P>
-              </Div>
+              </A>
 
-              <Div className="flex flex-col items-center">
-                <DockerLogo className="skill-logo p-3 my-2 bg-opacity-10" />
+              <A
+                className="flex flex-col items-center"
+                href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117643/q26fq714x9njo4pxskps.png"
+                target="blank"
+              >
+                <DockerLogo className="skill-logo my-2 bg-opacity-10" />
 
                 <P className=" text-center text-gray-200 dark:text-blue-700 transition duration-500 w-16">Docker</P>
-              </Div>
+              </A>
 
               <Div className="flex flex-col items-center">
                 <AWSLogo className="skill-logo p-3 my-2 bg-white" />
@@ -203,7 +325,13 @@ const Skills = () => {
             </Div>
 
             <Div className="flex items-center justify-evenly space-x-12">
-              <JavaLogo className="skill-logo h-28 " />
+              <A
+                className="flex flex-col items-center"
+                href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117640/zomoudnr2mriz6zvdetq.png"
+                target="blank"
+              >
+                <SQLLogo className="skill-logo h-24 w-12 -mb-3 -mt-3" />
+              </A>
 
               <Div className="flex flex-col items-center">
                 <Img className="skill-logo " src="https://img.icons8.com/color/344/html-5--v1.png" alt="HTML" />
@@ -219,12 +347,36 @@ const Skills = () => {
             </Div>
 
             <Div className="flex items-center justify-evenly space-x-12">
-              <Div className="flex flex-col items-center ">
-                <SQLLogo className="skill-logo h-24 w-12 -mb-3 -mt-3" />
+              <Div className="flex flex-col items-center">
+                <JavaLogo className="skill-logo h-28" />
+
+                <Div className="flex gap-3 ">
+                  <A
+                    skill-tool-tip-msg="Java Programming I"
+                    className="text-gray-300 underline transition duration-200 hover:text-indigo-600"
+                    href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681118753/rtibuwlmtzmdtr35u2gw.png"
+                    target="blank"
+                  >
+                    Cert I
+                  </A>
+
+                  <A
+                    skill-tool-tip-msg="Java Programming II"
+                    className="text-gray-300 underline transition duration-200 hover:text-indigo-600"
+                    href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681118770/v7jfhsjvhla0pyw1p1dr.png"
+                    target="blank"
+                  >
+                    Cert II
+                  </A>
+                </Div>
               </Div>
             </Div>
           </Div>
         </Div>
+
+        <P className="text-center pt-4 text-gray-200 dark:text-gray-300 text-xs sm:text-sm uppercase transition duration-500">
+          Click in the logo to see the related certificate
+        </P>
       </Div>
 
       <Div className="flex flex-col md:flex-row justify-center md:w-full gap-2 sm:gap-4 md:gap-16 xl:gap-10 pt-5">
