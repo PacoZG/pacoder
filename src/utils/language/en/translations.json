@@ -35,7 +35,9 @@
     "multitask": "Ability to multitask",
     "engaged": "Engaged, persistent and focused",
     "lang1": "Mother tongue: Spanish",
-    "lang2": "Proficiency in English"
+    "lang2": "Proficiency in English",
+    "info-click": "Click in the logo to see the related certificate",
+    "click-for-certificate": "Click here to see certificate"
   },
   "strengths":{
     "strength1": "Committed and Perseverant",

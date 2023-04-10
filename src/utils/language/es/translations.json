@@ -35,7 +35,10 @@
     "multitask": "Habilitdad multitarea",
     "engaged": "Comprometido, persistente y enfocado",
     "lang1": "Lengua materna: español",
-    "lang2": "Gran nivel de dominio del inglés"
+    "lang2": "Gran nivel de dominio del inglés",
+    "info-click": "Haga clic en el logotipo para ver el certificado relacionado",
+    "click-for-certificate": "Haga clic aquí para ver el certificado"
+
   },
   "strengths":{
     "strength1": "Comprometido y perseverante",

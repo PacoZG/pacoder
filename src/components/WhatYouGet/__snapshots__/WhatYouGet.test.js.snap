@@ -13,8 +13,11 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
       <div
         className="flex items-center justify-evenly gap-10"
       >
-        <div
-          className="flex flex-col items-center "
+        <a
+          className="flex flex-col items-center"
+          href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
+          skill-tool-tip-msg="Click here to see certificate"
+          target="blank"
         >
           <img
             alt="JS"
@@ -26,13 +29,16 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
           >
             Javascript
           </p>
-        </div>
-        <div
+        </a>
+        <a
           className="flex flex-col items-center"
+          href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
+          skill-tool-tip-msg="Click here to see certificate"
+          target="blank"
         >
           <img
             alt="React"
-            className="skill-logo h-20 w-20 mb-3"
+            className="skill-logo h-20 w-20 mb-3 -z-20"
             src="https://img.icons8.com/officel/80/000000/react.png"
           />
           <p
@@ -40,23 +46,12 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
           >
             React
           </p>
-        </div>
-        <div
+        </a>
+        <a
           className="flex flex-col items-center"
-        >
-          <img
-            alt="React"
-            className="skill-logo "
-            src="https://img.icons8.com/color/48/000000/graphql.png"
-          />
-          <p
-            className="text-gray-200 dark:text-pink-500 transition duration-500"
-          >
-            GraphQL
-          </p>
-        </div>
-        <div
-          className="flex flex-col items-center"
+          href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
+          skill-tool-tip-msg="Click here to see certificate"
+          target="blank"
         >
           <svg
             className="skill-logo mb-3"
@@ -68,9 +63,29 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
           >
             Redux
           </p>
-        </div>
-        <div
+        </a>
+        <a
           className="flex flex-col items-center"
+          href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117640/ak5pcxrhwyigv9z0nqql.png"
+          skill-tool-tip-msg="Click here to see certificate"
+          target="blank"
+        >
+          <img
+            alt="React"
+            className="skill-logo -z-20 "
+            src="https://img.icons8.com/color/48/000000/graphql.png"
+          />
+          <p
+            className="text-gray-200 dark:text-pink-500 transition duration-500"
+          >
+            GraphQL
+          </p>
+        </a>
+        <a
+          className="flex flex-col items-center"
+          href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117641/ffbedqhkfwmbaitpjrwx.png"
+          skill-tool-tip-msg="Click here to see certificate"
+          target="blank"
         >
           <img
             alt="React"
@@ -82,9 +97,12 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
           >
             React-Native
           </p>
-        </div>
-        <div
-          className="flex flex-col items-center "
+        </a>
+        <a
+          className="flex flex-col items-center"
+          href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117644/eawik5gh4ahctjy39sby.png"
+          skill-tool-tip-msg="Click here to see certificate"
+          target="blank"
         >
           <svg
             className=" skill-logo rounded-sm h-16 w-16 mb-0 mt-5"
@@ -96,7 +114,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
           >
             Typescript
           </p>
-        </div>
+        </a>
       </div>
       <div
         className="flex items-center justify-evenly gap-20"
@@ -129,12 +147,15 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
             CSS
           </p>
         </div>
-        <div
+        <a
           className="flex flex-col items-center"
+          href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
+          skill-tool-tip-msg="Click here to see certificate"
+          target="blank"
         >
           <img
             alt="React"
-            className="skill-logo"
+            className="skill-logo -z-20"
             src="https://img.icons8.com/color/96/000000/mongodb.png"
           />
           <p
@@ -142,34 +163,64 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
           >
             MongoDB
           </p>
-        </div>
-        <div
+        </a>
+        <a
           className="flex flex-col items-center"
+          href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
+          skill-tool-tip-msg="Click here to see certificate"
+          target="blank"
         >
           <img
             alt="React"
-            className="skill-logo bg-green-400 p-3 "
+            className="skill-logo bg-green-400 p-3 -z-20"
             src="https://img.icons8.com/color/96/000000/nodejs.png"
           />
-        </div>
-        <div
+        </a>
+        <a
           className="flex flex-col items-center"
+          href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117640/zomoudnr2mriz6zvdetq.png"
+          skill-tool-tip-msg="Click here to see certificate"
+          target="blank"
         >
           <svg
-            className="skill-logo h-32 w-16 -mb-3 -mt-3"
+            className="skill-logo h-32 w-16 -mb-3 -mt-3 -z-20"
           >
             sql.svg
           </svg>
-        </div>
+        </a>
       </div>
       <div
         className="flex items-center justify-evenly gap-16"
       >
-        <svg
-          className="skill-logo h-36"
+        <div
+          className="flex flex-col items-center"
         >
-          java.svg
-        </svg>
+          <svg
+            className="skill-logo h-36"
+          >
+            java.svg
+          </svg>
+          <div
+            className="flex gap-2 "
+          >
+            <a
+              className="text-gray-300 underline transition duration-200 hover:text-indigo-600"
+              href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681118753/rtibuwlmtzmdtr35u2gw.png"
+              skill-tool-tip-msg="Java Programming I"
+              target="blank"
+            >
+              Cert I
+            </a>
+            <a
+              className="text-gray-300 underline transition duration-200 hover:text-indigo-600"
+              href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681118770/v7jfhsjvhla0pyw1p1dr.png"
+              skill-tool-tip-msg="Java Programming II"
+              target="blank"
+            >
+              Cert II
+            </a>
+          </div>
+        </div>
         <div
           className="flex flex-col items-center"
         >
@@ -184,11 +235,14 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
             Tailwindcss
           </p>
         </div>
-        <div
+        <a
           className="flex flex-col items-center"
+          href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
+          skill-tool-tip-msg="Click here to see certificate"
+          target="blank"
         >
           <svg
-            className="skill-logo h-20 "
+            className="skill-logo h-20 -z-20 "
           >
             cypress.svg
           </svg>
@@ -197,9 +251,12 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
           >
             Cypress.io
           </p>
-        </div>
-        <div
+        </a>
+        <a
           className="flex flex-col items-center"
+          href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117643/q26fq714x9njo4pxskps.png"
+          skill-tool-tip-msg="Click here to see certificate"
+          target="blank"
         >
           <svg
             className="skill-logo  p-3 bg-transparent bg-opacity-10"
@@ -211,7 +268,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
           >
             Docker
           </p>
-        </div>
+        </a>
         <div
           className="flex flex-col items-center"
         >
@@ -232,8 +289,10 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
         <div
           className="flex items-center justify-evenly space-x-12"
         >
-          <div
-            className="flex flex-col items-center "
+          <a
+            className="flex flex-col items-center"
+            href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
+            target="blank"
           >
             <img
               alt="JS"
@@ -245,9 +304,11 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
             >
               Javascript
             </p>
-          </div>
-          <div
+          </a>
+          <a
             className="flex flex-col items-center"
+            href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
+            target="blank"
           >
             <img
               alt="React"
@@ -259,9 +320,11 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
             >
               React
             </p>
-          </div>
-          <div
+          </a>
+          <a
             className="flex flex-col items-center"
+            href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
+            target="blank"
           >
             <svg
               className="skill-logo "
@@ -273,13 +336,15 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
             >
               Redux
             </p>
-          </div>
+          </a>
         </div>
         <div
           className="flex items-center justify-evenly space-x-12"
         >
-          <div
+          <a
             className="flex flex-col items-center"
+            href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117641/ffbedqhkfwmbaitpjrwx.png"
+            target="blank"
           >
             <img
               alt="React"
@@ -291,9 +356,11 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
             >
               React-Native
             </p>
-          </div>
-          <div
+          </a>
+          <a
             className="flex flex-col items-center"
+            href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
+            target="blank"
           >
             <img
               alt="React"
@@ -305,9 +372,11 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
             >
               MongoDB
             </p>
-          </div>
-          <div
+          </a>
+          <a
             className="flex flex-col items-center"
+            href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117640/ak5pcxrhwyigv9z0nqql.png"
+            target="blank"
           >
             <img
               alt="React"
@@ -319,20 +388,22 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
             >
               GraphQL
             </p>
-          </div>
+          </a>
         </div>
         <div
           className="flex items-center justify-evenly space-x-12"
         >
-          <div
+          <a
             className="flex flex-col items-center"
+            href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
+            target="blank"
           >
             <img
               alt="React"
               className="skill-logo text-gray-200 bg-green-400 p-2 md:h-24 "
               src="https://img.icons8.com/color/96/000000/nodejs.png"
             />
-          </div>
+          </a>
           <div
             className="flex flex-col items-center"
           >
@@ -347,8 +418,10 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
               Tailwindcss
             </p>
           </div>
-          <div
+          <a
             className="flex flex-col items-center"
+            href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
+            target="blank"
           >
             <svg
               className="skill-logo"
@@ -360,13 +433,15 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
             >
               Cypress.io
             </p>
-          </div>
+          </a>
         </div>
         <div
           className="flex items-center justify-evenly space-x-12"
         >
-          <div
+          <a
             className="flex flex-col items-center"
+            href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117644/eawik5gh4ahctjy39sby.png"
+            target="blank"
           >
             <svg
               className="skill-logo h-14 w-14 my-2 rounded-sm "
@@ -378,12 +453,14 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
             >
               Typescript
             </p>
-          </div>
-          <div
+          </a>
+          <a
             className="flex flex-col items-center"
+            href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117643/q26fq714x9njo4pxskps.png"
+            target="blank"
           >
             <svg
-              className="skill-logo p-3 my-2 bg-opacity-10"
+              className="skill-logo my-2 bg-opacity-10"
             >
               docker.svg
             </svg>
@@ -392,7 +469,7 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
             >
               Docker
             </p>
-          </div>
+          </a>
           <div
             className="flex flex-col items-center"
           >
@@ -406,11 +483,17 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
         <div
           className="flex items-center justify-evenly space-x-12"
         >
-          <svg
-            className="skill-logo h-28 "
+          <a
+            className="flex flex-col items-center"
+            href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117640/zomoudnr2mriz6zvdetq.png"
+            target="blank"
           >
-            java.svg
-          </svg>
+            <svg
+              className="skill-logo h-24 w-12 -mb-3 -mt-3"
+            >
+              sql.svg
+            </svg>
+          </a>
           <div
             className="flex flex-col items-center"
           >
@@ -444,17 +527,42 @@ exports[`Testing header Snapshot of the Skills component 1`] = `
           className="flex items-center justify-evenly space-x-12"
         >
           <div
-            className="flex flex-col items-center "
+            className="flex flex-col items-center"
           >
             <svg
-              className="skill-logo h-24 w-12 -mb-3 -mt-3"
+              className="skill-logo h-28"
             >
-              sql.svg
+              java.svg
             </svg>
+            <div
+              className="flex gap-3 "
+            >
+              <a
+                className="text-gray-300 underline transition duration-200 hover:text-indigo-600"
+                href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681118753/rtibuwlmtzmdtr35u2gw.png"
+                skill-tool-tip-msg="Java Programming I"
+                target="blank"
+              >
+                Cert I
+              </a>
+              <a
+                className="text-gray-300 underline transition duration-200 hover:text-indigo-600"
+                href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681118770/v7jfhsjvhla0pyw1p1dr.png"
+                skill-tool-tip-msg="Java Programming II"
+                target="blank"
+              >
+                Cert II
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <p
+      className="text-center pt-4 text-gray-200 dark:text-gray-300 text-xs sm:text-sm uppercase transition duration-500"
+    >
+      Click in the logo to see the related certificate
+    </p>
   </div>
   <div
     className="flex flex-col md:flex-row justify-center md:w-full gap-2 sm:gap-4 md:gap-16 xl:gap-10 pt-5"

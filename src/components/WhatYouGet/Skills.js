@@ -24,7 +24,7 @@ const Skills = () => {
         <Div className="hidden md:flex flex-col space-y-9">
           <Div className="flex items-center justify-evenly gap-10">
             <A
-              skill-tool-tip-msg="Click to see certificate"
+              skill-tool-tip-msg={t('skills.click-for-certificate')}
               className="flex flex-col items-center"
               href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
               target="blank"
@@ -35,7 +35,7 @@ const Skills = () => {
             </A>
 
             <A
-              skill-tool-tip-msg="Click to see certificate"
+              skill-tool-tip-msg={t('skills.click-for-certificate')}
               className="flex flex-col items-center"
               href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
               target="blank"
@@ -50,7 +50,7 @@ const Skills = () => {
             </A>
 
             <A
-              skill-tool-tip-msg="Click to see certificate"
+              skill-tool-tip-msg={t('skills.click-for-certificate')}
               className="flex flex-col items-center"
               href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
               target="blank"
@@ -61,7 +61,7 @@ const Skills = () => {
             </A>
 
             <A
-              skill-tool-tip-msg="Click to see certificate"
+              skill-tool-tip-msg={t('skills.click-for-certificate')}
               className="flex flex-col items-center"
               href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117640/ak5pcxrhwyigv9z0nqql.png"
               target="blank"
@@ -72,7 +72,7 @@ const Skills = () => {
             </A>
 
             <A
-              skill-tool-tip-msg="Click to see certificate"
+              skill-tool-tip-msg={t('skills.click-for-certificate')}
               className="flex flex-col items-center"
               href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117641/ffbedqhkfwmbaitpjrwx.png"
               target="blank"
@@ -83,7 +83,7 @@ const Skills = () => {
             </A>
 
             <A
-              skill-tool-tip-msg="Click to see certificate"
+              skill-tool-tip-msg={t('skills.click-for-certificate')}
               className="flex flex-col items-center"
               href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117644/eawik5gh4ahctjy39sby.png"
               target="blank"
@@ -108,7 +108,7 @@ const Skills = () => {
             </Div>
 
             <A
-              skill-tool-tip-msg="Click to see certificate"
+              skill-tool-tip-msg={t('skills.click-for-certificate')}
               className="flex flex-col items-center"
               href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
               target="blank"
@@ -119,7 +119,7 @@ const Skills = () => {
             </A>
 
             <A
-              skill-tool-tip-msg="Click to see certificate"
+              skill-tool-tip-msg={t('skills.click-for-certificate')}
               className="flex flex-col items-center"
               href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
               target="blank"
@@ -132,7 +132,7 @@ const Skills = () => {
             </A>
 
             <A
-              skill-tool-tip-msg="Click to see certificate"
+              skill-tool-tip-msg={t('skills.click-for-certificate')}
               className="flex flex-col items-center"
               href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117640/zomoudnr2mriz6zvdetq.png"
               target="blank"
@@ -173,7 +173,7 @@ const Skills = () => {
             </Div>
 
             <A
-              skill-tool-tip-msg="Click to see certificate"
+              skill-tool-tip-msg={t('skills.click-for-certificate')}
               className="flex flex-col items-center"
               href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
               target="blank"
@@ -184,7 +184,7 @@ const Skills = () => {
             </A>
 
             <A
-              skill-tool-tip-msg="Click to see certificate"
+              skill-tool-tip-msg={t('skills.click-for-certificate')}
               className="flex flex-col items-center"
               href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117643/q26fq714x9njo4pxskps.png"
               target="blank"
@@ -375,7 +375,7 @@ const Skills = () => {
         </Div>
 
         <P className="text-center pt-4 text-gray-200 dark:text-gray-300 text-xs sm:text-sm uppercase transition duration-500">
-          Click in the logo to see the related certificate
+          {t('skills.info-click')}
         </P>
       </Div>
 
