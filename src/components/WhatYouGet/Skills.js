@@ -197,6 +197,20 @@ const Skills = () => {
             <Div className="flex flex-col items-center">
               <AWSLogo className="skill-logo  p-3 bg-white" />
             </Div>
+
+            <A
+              skill-tool-tip-msg={t('skills.click-for-certificate')}
+              className="flex flex-col items-center mt-4"
+              href="https://datadog.docebosaas.com/share/v1/gamification/assigned_badge/942dde0a-211f-4e54-b9ea-fe148117eec0/shared?lang=en&t=1689281055089"
+              target="blank"
+            >
+              <Img
+                className="skill-logo p-1 bg-transparent bg-opacity-10 -z-10 "
+                src="https://cdn5.dcbstatic.com/files/d/a/datadog_docebosaas_com/assets/badges/original/6149e0bf43bb02e0d6e207efd297a00ce5ac4443.png"
+              />
+
+              <P className=" text-center text-gray-200 dark:text-green-500 transition duration-500">Datadog</P>
+            </A>
           </Div>
         </Div>
 
@@ -370,6 +384,20 @@ const Skills = () => {
                   </A>
                 </Div>
               </Div>
+
+              <A
+                skill-tool-tip-msg={t('skills.click-for-certificate')}
+                className="flex flex-col items-center mt-4"
+                href="https://datadog.docebosaas.com/share/v1/gamification/assigned_badge/942dde0a-211f-4e54-b9ea-fe148117eec0/shared?lang=en&t=1689281055089"
+                target="blank"
+              >
+                <Img
+                  className="skill-logo bg-transparent bg-opacity-10"
+                  src="https://cdn5.dcbstatic.com/files/d/a/datadog_docebosaas_com/assets/badges/original/6149e0bf43bb02e0d6e207efd297a00ce5ac4443.png"
+                />
+
+                <P className=" text-center text-gray-200 dark:text-green-500 transition duration-500">Datadog</P>
+              </A>
             </Div>
           </Div>
         </Div>
