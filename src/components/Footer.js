@@ -1,4 +1,4 @@
-import { AtSymbolIcon } from '@heroicons/react/solid'
+import { AtSymbolIcon } from '@heroicons/react/20/solid'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { FacebookIcon, FacebookShareButton, LinkedinIcon, LinkedinShareButton } from 'react-share'

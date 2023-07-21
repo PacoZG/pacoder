@@ -32,7 +32,7 @@
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@headlessui/react": "^1.7.15",
-    "@heroicons/react": "^1.0.5",
+    "@heroicons/react": "^2.0.18",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",

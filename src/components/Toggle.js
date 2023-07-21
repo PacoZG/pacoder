@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react'
 import moment from 'moment'
 import localdb from '../utils/localdb'
-import { MoonIcon, SunIcon } from '@heroicons/react/solid'
+import { MoonIcon, SunIcon } from '@heroicons/react/20/solid'
 import useDarkMode from '../hooks/useDarkMode'
 import Div from './private/Div'
 import Input from './private/Input'

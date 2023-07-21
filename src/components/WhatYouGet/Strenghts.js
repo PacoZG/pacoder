@@ -1,5 +1,5 @@
 import { Transition } from '@headlessui/react'
-import { ChevronRightIcon } from '@heroicons/react/outline'
+import { ChevronRightIcon } from '@heroicons/react/20/solid'
 import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import A from '../private/A'

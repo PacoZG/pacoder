@@ -1,4 +1,4 @@
-import { LightBulbIcon, PuzzleIcon, TranslateIcon } from '@heroicons/react/solid'
+import { LightBulbIcon, PuzzlePieceIcon, LanguageIcon } from '@heroicons/react/20/solid'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { ReactComponent as AWSLogo } from '../../utils/assets/aws-logo.svg'
@@ -410,7 +410,7 @@ const Skills = () => {
       <Div className="flex flex-col md:flex-row justify-center md:w-full gap-2 sm:gap-4 md:gap-16 xl:gap-10 pt-5">
         <Div className="flex flex-col xl:flex-row gap-2 sm:gap-4 md:gap-6 xl:gap-10  ">
           <Div className="flex items-center gap-4 md:gap-0">
-            <PuzzleIcon className="w-5 h-5 text-gray-200 dark:text-gray-300 " />
+            <PuzzlePieceIcon className="w-5 h-5 text-gray-200 dark:text-gray-300 " />
 
             <P className="md:px-5 text-gray-200 dark:text-gray-300 text-xs sm:text-sm uppercase transition duration-500">
               {t('skills.multitask')}
@@ -428,7 +428,7 @@ const Skills = () => {
 
         <Div className="flex flex-col xl:flex-row gap-2 sm:gap-4 md:gap-6 xl:gap-10  ">
           <Div className="flex items-center gap-4 md:gap-0">
-            <TranslateIcon className="w-5 h-5 text-gray-200 dark:text-gray-300 " />
+            <LanguageIcon className="w-5 h-5 text-gray-200 dark:text-gray-300 " />
 
             <P className="md:px-5 text-gray-200 dark:text-gray-300 text-xs sm:text-sm uppercase transition duration-500">
               {t('skills.lang1')}
@@ -436,7 +436,7 @@ const Skills = () => {
           </Div>
 
           <Div className="flex items-center gap-4 md:gap-0">
-            <TranslateIcon className="w-5 h-5 text-gray-200 dark:text-gray-300 " />
+            <LanguageIcon className="w-5 h-5 text-gray-200 dark:text-gray-300 " />
 
             <P className="md:px-5 text-gray-200 dark:text-gray-300 text-xs sm:text-sm uppercase transition duration-500">
               {t('skills.lang2')}

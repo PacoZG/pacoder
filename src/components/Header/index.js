@@ -1,4 +1,4 @@
-import { MenuIcon, XIcon } from '@heroicons/react/solid'
+import { Bars4Icon, XMarkIcon } from '@heroicons/react/20/solid'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
@@ -88,9 +88,9 @@ const Header = () => {
 
           <Div className="header-style web-link-menu">
             <Div className="icon-container">
-              <MenuIcon className="menu-icon" />
+              <Bars4Icon className="menu-icon" />
 
-              <XIcon className="x-icon" />
+              <XMarkIcon className="x-icon" />
             </Div>
 
             <Div className="pc-link-group">
