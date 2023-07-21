@@ -30,6 +30,7 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@emailjs/browser": "^3.11.0",
     "@headlessui/react": "^1.7.15",
     "@heroicons/react": "^2.0.18",
@@ -53,7 +54,7 @@
     "mongoose": "^5.13.14",
     "mongoose-unique-validator": "^2.0.3",
     "nodemon": "^3.0.1",
-    "prettier": "^2.5.1",
+    "prettier": "^3.0.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
