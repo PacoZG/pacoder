@@ -245,9 +245,9 @@ const Skills = () => {
             <Img
               className="skill-logo object-contain"
               src="https://img.icons8.com/color/96/000000/kubernetes.png"
-              alt="Tailwind CSS Logo"
+              alt="Kubernetes Logo"
             />
-            <P className="skill-text dark:text-cyan-400">Tailwindcss</P>
+            <P className="skill-text dark:text-blue-500">Kubernetes</P>
           </Div>
 
           {/* AWS */}
