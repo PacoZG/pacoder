@@ -1,119 +1,70 @@
+/* header-style.css */
+
+/* Remove or redefine .icon-container as it's no longer used for desktop menu expansion */
+/* If you still want hover effects for the mobile menu icon, apply them directly to the Button in Header.js */
 .icon-container {
-  position: absolute;
-  top: 0%;
-  padding-top: 3px;
-  display: flex;
-  align-items: center;
-  color: rgba(209, 213, 219);
-  transition: ease-out;
-  transition-duration: 500ms;
-  height: 34px;
-  width: 34px;
-  border-left: 1px;
-  border-right-color: transparent;
-  cursor: pointer;
+  /* This rule is likely not needed anymore as Icons are now directly in the Button component */
+  /* If left, it applies to an unused div. Consider removing it or moving relevant styles */
 }
 
-.icon-container:hover {
-  padding: 5px 5px 5px 5px;
-  border-left-width: 1px;
-  border-right-color: rgba(209, 213, 219);
-}
-
-
+/* The .header-style class is no longer applied to the main fixed Div in Header.js,
+   but to inner Divs. I've updated the Header.js to apply colors directly to the main Div.
+   If you still use .header-style for internal rounded-3xl, shadow, etc. on other Divs, keep it.
+   For the header's background, we are now controlling it directly in Header.js. */
 .header-style {
-  @apply bg-gray-600 bg-opacity-80 dark:bg-gray-900 dark:bg-opacity-80 transform duration-500 rounded-3xl shadow-2xl border border-gray-700 ;
+  /* This class definition is kept if you intend to apply it to inner header Divs for consistent styling
+     like rounded corners, shadow etc. The main background is now on the top-level Div in Header.js */
+  @apply bg-gray-600 bg-opacity-80 dark:bg-gray-900 dark:bg-opacity-80 transform duration-500 rounded-3xl shadow-2xl border border-gray-700;
 }
 
-.web-link-menu {
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  top: 100px;
-  border-radius: 16px;
-  left: 0px;
-  height: 40px;
-  width: 40px;
-  padding-left: 7px;
+/* --- NEW / UPDATED STYLES FOR NAVIGATION LINKS AND MOBILE MENU ANIMATION --- */
+
+/* Mobile Navigation Link Styling */
+.mobile-nav-link {
+  @apply text-gray-800 dark:text-blue-200 text-lg font-medium py-2 px-4 w-full text-center transition duration-300 hover:bg-gray-200 dark:hover:bg-gray-800 rounded-md;
 }
 
-.web-link-menu:hover {
-  width: max-content;
-  height: max-content;
-  border-radius: 16px;
-  padding-right: 20px;
+/* Desktop Navigation Link Styling (formerly .link in the old structure) */
+.desktop-nav-link {
+  @apply text-gray-700 dark:text-blue-300 text-lg font-medium px-4 py-2 transition duration-300 hover:text-blue-700 dark:hover:text-blue-400 hover:underline;
 }
 
-.pc-link-group {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  align-items: left;
-  height: 24px;
-  width: 0px;
-  cursor: pointer;
-  transition: ease-out;
-  transition-duration: 500ms;
+/* Mobile Language Button Text Style (retaining original definitions from index.css for consistency) */
+.mobile-lang-text-style {
+  @apply text-gray-900 dark:text-blue-300 text-2xl font-bold transition transform duration-500 ease-in-out;
 }
 
-.web-link-menu:hover .pc-link-group {
-  gap: 8px;
-  width: fit-content;
-  height: fit-content;
-  padding: 20px 20px 20px 30px;
-  transform: scaleX(1);
+/* PC Language Button Text Style (retaining original definitions from index.css for consistency) */
+.pc-lang-text-style {
+  @apply text-gray-900 dark:text-blue-300 text-2xl font-bold transition transform hover:-translate-y-1 hover:scale-110 hover:text-blue-300 duration-500 ease-in-out;
 }
 
-.link {
-  font-size: 16px;
-  line-height: 20px;
-  color: rgba(209, 213, 219);
-  font-style: italic;
-  height: 20px;
-  width: max-content;
-  transform: scale(0);
-  translate: -50px;
-  cursor: pointer;
+/* Animation for mobile menu dropdown */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.link:hover {
-  text-decoration: underline;
+.animation-slide-down {
+  animation: slideDown 0.3s ease-out forwards;
 }
 
-.web-link-menu:hover .link {
-  transform: scale(1);
-  translate: 0px;
-  transition-duration: 500ms;
-}
+/* --- REMOVED / DEPRECATED STYLES FROM ORIGINAL HEADER-STYLE.CSS --- */
+/* These styles were for the old desktop hover menu or mobile absolute menu and are no longer needed with the refactored structure. */
 
-.menu-icon {
-  position: absolute;
-  transform: scale(1);
-  transition: ease-out;
-  transition-duration: 500ms;
-  height: 23px;
-  width: 23px;
-}
-
-.web-link-menu:hover .menu-icon {
-  transform: scale(0) rotate(720deg);
-  transition-duration: 150ms;
-  opacity: 0;
-}
-
-.x-icon {
-  position: absolute;
-  transform: scale(0) rotate(-720deg);
-  transition: ease-out;
-  transition-duration: 150ms;
-  height: 23px;
-  width: 23px;
-  
-}
-
-.web-link-menu:hover .x-icon {
-  transform: scale(1);
-  transition-duration: 500ms;
-}
+/* .web-link-menu { ... } */
+/* .web-link-menu:hover { ... } */
+/* .pc-link-group { ... } */
+/* .web-link-menu:hover .pc-link-group { ... } */
+/* .link { ... } */ /* Redefined as .desktop-nav-link */
+/* .link:hover { ... } */
+/* .menu-icon { ... } */ /* Now directly on the icon, no longer managed by .web-link-menu:hover */
+/* .web-link-menu:hover .menu-icon { ... } */
+/* .x-icon { ... } */ /* Now directly on the icon, no longer managed by .web-link-menu:hover */
+/* .web-link-menu:hover .x-icon { ... } */

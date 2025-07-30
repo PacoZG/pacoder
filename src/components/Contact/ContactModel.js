@@ -28,7 +28,7 @@ export const ContactModel = () => {
     event.preventDefault()
     setSending(true)
     if (emailInputValidation() && fullName.params.value.length >= 4 && message.params.value.length >= 50) {
-      emailjs.sendForm('service_3y9qqi9', 'template_rruy7ci', event.target, 'ayNQSJVuw3mKwJnpn').then(
+      emailjs.sendForm('service_6ked5rp', 'template_rruy7ci', event.target, 'ayNQSJVuw3mKwJnpn').then(
         result => {
           console.log(result.text)
           setShowModal(true)

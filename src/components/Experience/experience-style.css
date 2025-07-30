@@ -1,43 +1,79 @@
+/* experience-style.css */
 
+/* --- Tooltip Styling (consistent with education-tool-tip-msg and skill-tool-tip-msg) --- */
 a[experience-tool-tip-msg] {
   position: relative;
-  text-decoration: underline;
+  text-decoration: none; /* Remove default underline */
+  z-index: 40; /* Ensure tooltip is above other content */
 }
 
 a[experience-tool-tip-msg]::before {
     content: attr(experience-tool-tip-msg);
     position: absolute;
     width: max-content;
-    color: darkgrey;
-    background-color: black;
+    color: #e0e0e0; /* Lighter color for better contrast on dark background */
+    background-color: #333; /* Darker background for contrast */
     font-size: 10px;
-    padding: 0px 10px 0px 10px;
+    padding: 2px 10px; /* Slightly more vertical padding */
     border-radius: 5px;
-    opacity: 0.5;
+    opacity: 0.8; /* Slightly more opaque for readability */
     bottom: 0%;
-    left: 110px;
+    left: 110px; /* Default for mobile/smaller screens */
+    z-index: 10; /* Ensure tooltip is above other content */
+    white-space: nowrap; /* Prevent text wrapping */
 }
 
 @media (min-width: 768px) {
   a[experience-tool-tip-msg]::before {
     font-size: 12px;
-    opacity: 0.7;
-    left: -50%;
-    transform: scale(0);
-    transition-duration: 250ms;
+    opacity: 0.9;
+    /* Adjusted positioning for desktop hover */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%) scale(0); /* Start scaled down and centered */
+    bottom: calc(100% + 10px); /* Position above the element with some margin */
+    transition: transform 250ms ease-out, opacity 250ms ease-out;
   }
 
   a[experience-tool-tip-msg]:hover::before {
-    transform: scale(1);
-    left: 0px;
-    bottom: 90%;
-    transition: ease-out;
-    transition-duration: 250ms;
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+    transition: transform 250ms ease-out, opacity 250ms ease-out;
   }
 }
 
 @media (max-width: 768px) {
   a[experience-tool-tip-msg]::before {
-    visibility: hidden;
+    visibility: hidden; /* Hide tooltip on mobile if not desired */
   }
+}
+
+/* --- New Experience Card Styling (consistent with Education & Strengths) --- */
+.experience-card {
+  @apply flex flex-col justify-center bg-gray-100 dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-4 mb-4 w-full sm:w-11/12 xl:w-2/3;
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08); /* Subtle shadow for depth */
+}
+
+.experience-card:hover {
+  @apply border-blue-500 transform -translate-y-1 shadow-lg; /* FIX: Changed translateY(-3px) to -translate-y-1 */
+}
+
+.experience-card-link {
+  @apply text-blue-600 underline transition duration-200 hover:text-blue-500 dark:text-blue-400 dark:hover:text-blue-300 hover:no-underline;
+}
+
+.experience-card-title {
+  @apply text-2xl text-gray-800 dark:text-blue-300 font-bold; /* Adjusted text color for dark mode */
+}
+
+.experience-card-period {
+  @apply text-sm text-gray-600 dark:text-gray-400 mt-1; /* Adjusted text color for dark mode */
+}
+
+.experience-card-position {
+  @apply text-lg text-gray-700 dark:text-blue-200 font-semibold mt-2; /* Adjusted text color for dark mode */
+}
+
+.experience-card-responsibilities {
+  @apply text-gray-700 dark:text-gray-400 border-t-2 border-gray-300 dark:border-gray-600 p-3 mt-3 text-justify leading-relaxed; /* Adjusted colors and line spacing */
 }

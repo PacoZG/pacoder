@@ -9,7 +9,7 @@ import Input from '../private/Input'
 import Label from '../private/Label'
 import P from '../private/P'
 import TextArea from '../private/TextArea'
-import { ContactModel } from './ContactModel'
+import { ContactModel } from './ContactModel' // Assuming ContactModel is in the same directory
 
 const Contact = () => {
   const { t } = useTranslation()
@@ -28,14 +28,16 @@ const Contact = () => {
   } = ContactModel()
 
   return (
-    <Div className="transform duration-500 pt-2 p-8 sm:p-4 pb-0 w-full sm:w-4/5 lg:w-8/12 ">
+    // Outer container for the contact form, matching the width of other sections
+    // This Div is nested inside the Footer, so its background should be transparent
+    <Div className="transform duration-500 pt-2 p-8 sm:p-4 pb-0 w-full sm:w-3/5 lg:w-8/12">
       <Form onSubmit={handleSendEmail}>
-        <Div className="flex flex-col items-center justify-center gap-6 transition duration-500  bg-opacity-70 dark:bg-opacity-70 rounded-xl">
-          <Div className="relative flex flex-col sm:flex-row justify-between items-center gap-3 w-full">
+        {/* Form content wrapper - now acts as a distinct "card" */}
+        <Div className="flex flex-col items-center justify-center gap-6 p-3 sm:p-5 md:p-7 bg-gray-300 dark:bg-gray-800 rounded-xl shadow-lg transition duration-500">
+          {/* Name and Email Inputs */}
+          <Div className="relative flex flex-col sm:flex-row justify-between items-center gap-6 w-full">
             <Input
-              className={
-                'bg-opacity-10 bg-white rounded-md h-10 sm:h-12 w-full p-2 text-gray-800 dark:text-gray-400 text-md md:text-lg block border border-opacity-10 focus:outline-none focus:ring-1 focus:ring-gray-200 focus:border-transparent shadow-sm border-gray-100 placeholder-gray-700 dark:placeholder-gray-400 placeholder-opacity-50 dark:placeholder-opacity-50 dark:duration-500 transition duration-500 '
-              }
+              className="contact-input-style" // Replaced repetitive class with a custom class
               placeholder={t('contact.name')}
               {...fullName.params}
               required
@@ -43,26 +45,22 @@ const Contact = () => {
             />
             <Div className="relative flex flex-col w-full">
               <Input
-                className={
-                  'bg-opacity-10 bg-white rounded-md h-10 sm:h-12 p-2 text-gray-800 dark:text-gray-400 text-md md:text-lg block border border-opacity-10 focus:outline-none focus:ring-1 focus:ring-gray-200 focus:border-transparent shadow-sm border-gray-100 placeholder-gray-700 dark:placeholder-gray-400 placeholder-opacity-50 dark:placeholder-opacity-50 dark:duration-500 transition duration-500 '
-                }
+                className="contact-input-style" // Replaced repetitive class with a custom class
                 placeholder="Email"
                 {...email.params}
                 required
                 name="email"
               />
               {emailInputValidation() ? null : (
-                <Label className="absolute -bottom-5 left-2 text-sm text-red-900 dark:text-red-300">
-                  {email.params.value.length > 11 && t('contact.invalid-email')}
+                <Label className="absolute -bottom-6 left-2 text-sm text-red-700 dark:text-red-400 font-medium">
+                  {email.params.value.length > 0 && t('contact.invalid-email')}
                 </Label>
               )}
             </Div>
           </Div>
 
           <TextArea
-            className={
-              'bg-opacity-10 bg-white rounded-md h-24 w-full p-2 text-gray-800 dark:text-gray-400 text-md md:text-lg block border border-opacity-10 focus:outline-none focus:ring-1 focus:ring-gray-200 focus:border-transparent shadow-sm border-gray-100 placeholder-gray-700 dark:placeholder-gray-400 placeholder-opacity-50 dark:placeholder-opacity-50 dark:duration-500 transition duration-500 '
-            }
+            className="contact-input-style h-24 resize-y" // Replaced repetitive class, added resize-y
             placeholder={t('contact.message')}
             {...message.params}
             required
@@ -70,79 +68,84 @@ const Contact = () => {
             maxLength="500"
             minLength="50"
           />
-          <P
-            className={
-              showModal
-                ? 'absolute transition duration-500 inline-flex justify-center items-center p-2 shadow-sm rounded-md bg-black bg-opacity-90 text-center text-xxl text-white hover:bg-gray-700 focus-within:outline-none w-11/12 md:w-full h-28 top-28 sm:top-20'
-                : 'hidden '
-            }
-          >
-            {t('contact.message-sent')}
-          </P>
-        </Div>
 
-        <Div className="flex flex-col ml:flex-row ml:items-center justify-evenly ml:justify-between">
-          <Div className="flex justify-end pt-1">
-            {showModal ? (
-              <P className="text-sm ml:text-md lg:text-base text-center text-black dark:text-green-500 transform duration-500">
-                {'Thanks / Kiitos / Gracias'}
-              </P>
-            ) : (
-              <Label className="text-gray-300 text-center">
-                {message.params.value.length > 49 ? (
-                  <span className="text-sm ml:text-md lg:text-base sm:w-60 text-green-800 dark:text-green-300 transform duration-500 ">{`${t(
-                    'contact.characters'
-                  )}${message.params.value.length}/500 max`}</span>
-                ) : (
-                  message.params.value.length > 1 && (
-                    <span className="text-sm ml:text-md lg:text-base sm:w-60 text-gray-300 dark:text-red-300 transform duration-500 ">{`${t(
+          <Div className="flex flex-col ml:flex-row ml:items-center justify-evenly ml:justify-between w-full">
+            <Div className="flex justify-end pt-1 w-full ml:w-auto ml:justify-start">
+              {/* Adjusted alignment for character count */}
+              {showModal ? (
+                <P className="text-sm ml:text-md lg:text-base text-center text-green-700 dark:text-green-400 transform duration-500 font-semibold">
+                  {/* Adjusted color */}
+                  {'Thanks / Kiitos / Gracias'}
+                </P>
+              ) : (
+                <Label className="text-gray-600 dark:text-gray-400 text-sm ml:text-md lg:text-base text-center sm:text-left">
+                  {/* Adjusted color */}
+                  {message.params.value.length > 49 ? (
+                    <span className="text-green-700 dark:text-green-400 font-semibold">{`${t(
                       'contact.characters'
-                    )} ${message.params.value.length}/50 min`}</span>
-                  )
-                )}
-              </Label>
-            )}
-          </Div>
-
-          <Div className="flex flex-col xs:flex-row xs:gap-1 sm:gap-5 ml:gap-1 items-center justify-center ml:justify-end">
-            <Div className="flex justify-center w-36 xs:w-44 m-0">
-              <ReCAPTCHA
-                className=" scale-60 xs:scale-55"
-                sitekey={siteKey}
-                onChange={handleVerifyCaptcha}
-                theme={theme}
-              />
+                    )}${message.params.value.length}/500 max`}</span>
+                  ) : (
+                    message.params.value.length > 0 && ( // Show from first character
+                      <span className="text-red-700 dark:text-red-400 font-medium">{`${t(
+                        // Changed to red for min length
+                        'contact.characters'
+                      )} ${message.params.value.length}/50 min`}</span>
+                    )
+                  )}
+                </Label>
+              )}
             </Div>
 
-            <Div className="flex flex-col items-center ">
-              {!showModal ? (
-                <Button
-                  disabled={buttonIsDisabled()}
-                  className={
-                    !buttonIsDisabled() || sending === true
-                      ? 'transition duration-500 inline-flex justify-center py-2 px-10 w-48 xs:py-2 xs:px-9 xs:w-44 shadow-sm font-semibold rounded-md bg-blue-1000 hover:bg-opacity-75 opacity-75 text-lg text-green-600 focus-within:outline-none'
-                      : 'transition duration-500 inline-flex justify-center py-2 px-10 w-48 xs:py-2 xs:px-9 xs:w-44 shadow-sm font-extralight rounded-md bg-black opacity-20 text-lg text-gray-300'
-                  }
-                  type="submit"
-                >
-                  {!sending ? (
-                    t('contact.send')
-                  ) : (
-                    <Div className="flex flex-row items-center gap-3">
-                      <Spinner className="animate-spin h-5 w-5 text-current" />
-                      <Label>{t('contact.sending')}</Label>
-                    </Div>
-                  )}
-                </Button>
-              ) : (
-                <Div className="transition duration-500 inline-flex justify-center py-2 px-4 w-48 shadow-sm font-semibold rounded-md bg-blue-1000 hover:bg-opacity-75 opacity-75 text-lg text-green-600 focus-within:outline-none">
-                  {t('contact.sent')}
-                </Div>
-              )}
+            <Div className="flex flex-col xl:flex-row items-center justify-center ml:justify-end mt-4 md:mt-0">
+              <Div className="flex justify-center w-48 xs:w-full m-0">
+                <ReCAPTCHA
+                  className="scale-75 sm:scale-75 md:scale-80" // Adjusted scale for better visibility
+                  sitekey={siteKey}
+                  onChange={handleVerifyCaptcha}
+                  theme={theme}
+                />
+              </Div>
+
+              <Div className="flex flex-col items-center ">
+                {!showModal ? (
+                  <Button
+                    disabled={buttonIsDisabled()}
+                    className={
+                      !buttonIsDisabled() || sending === true
+                        ? 'contact-send-button-enabled'
+                        : 'contact-send-button-disabled'
+                    }
+                    type="submit"
+                  >
+                    {!sending ? (
+                      t('contact.send')
+                    ) : (
+                      <Div className="flex flex-row items-center gap-3">
+                        <Spinner className="animate-spin h-5 w-5 text-current" />
+                        <Label>{t('contact.sending')}</Label>
+                      </Div>
+                    )}
+                  </Button>
+                ) : (
+                  <Div className="contact-sent-message-display">
+                    {/* New class for sent message display */}
+                    {t('contact.sent')}
+                  </Div>
+                )}
+              </Div>
             </Div>
           </Div>
         </Div>
       </Form>
+
+      {showModal && (
+        <Div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 p-4">
+          <Div className="bg-white dark:bg-gray-700 rounded-lg p-8 shadow-2xl text-center max-w-sm w-full">
+            <P className="text-2xl font-bold text-green-700 dark:text-green-400 mb-4">{t('contact.sent')}!</P>
+            <P className="text-lg text-gray-800 dark:text-gray-200">{t('contact.message-sent')}</P>
+          </Div>
+        </Div>
+      )}
     </Div>
   )
 }

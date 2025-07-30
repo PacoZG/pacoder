@@ -1,5 +1,5 @@
-import { Bars4Icon, XMarkIcon } from '@heroicons/react/20/solid'
-import React from 'react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline' // Using 24/outline for better clarity and consistency
+import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import { LinkedinIcon, WhatsappIcon } from 'react-share'
@@ -9,104 +9,118 @@ import A from '../private/A'
 import Button from '../private/Button'
 import Div from '../private/Div'
 import Toggle from '../Toggle'
-import './header-style.css'
+import './header-style.css' // This will contain updated styles
 
 const Header = () => {
   const { t } = useTranslation()
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false) // State for mobile menu
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen)
+  }
 
   return (
-    <Div className="fixed z-10 w-screen bg-transparent transition duration-500">
-      <Div className="header-style relative md:hidden flex flex-row items-center justify-center mx-3 m-2">
-        <Div className="flex justify-center w-full">
+    <Div className="fixed z-50 w-screen bg-gray-100 dark:bg-gray-800 bg-opacity-90 dark:bg-opacity-90 backdrop-blur-sm transition duration-500 shadow-md">
+      <Div className="md:hidden flex items-center justify-between px-4 py-2">
+        <Link to="/cv/presentation" className="text-xl font-bold text-blue-700 dark:text-blue-400">
+          FRANCISCO ZAVALA
+        </Link>
+
+        <Div className="flex items-center gap-4">
           <Toggle />
-        </Div>
 
-        <Div className="flex items-center gap-4 p-2">
-          <A href="https://www.linkedin.com/in/francisco-zavala/" target="blank">
-            <LinkedinIcon size={31} borderRadius={10} />
-          </A>
-
-          <A href="https://github.com/PacoZG" target="blank">
-            <GitHub className="bg-gray-300 h-8 w-8 rounded-full" />
-          </A>
-
-          <A
-            href="https://wa.me/358449888032?text=I%20will%20love%20to%20contact%20you%20for%20a%20possible%20interview."
-            target="blank"
-          >
-            <WhatsappIcon size={31} borderRadius={10} />
-          </A>
-        </Div>
-
-        <Div className="flex justify-center w-full">
-          <Button className="mobile-lang-text-style" onClick={() => handleUsersLanguage()}>
+          <Button className="mobile-lang-text-style" onClick={handleUsersLanguage}>
             {usersLanguage === 'EN' ? 'ESP' : 'ENG'}
+          </Button>
+
+          <Button onClick={toggleMobileMenu} className="p-2">
+            {isMobileMenuOpen ? (
+              <XMarkIcon className="h-7 w-7 text-gray-800 dark:text-blue-200" /> // Adjusted icon color for dark mode
+            ) : (
+              <Bars3Icon className="h-7 w-7 text-gray-800 dark:text-blue-200" /> // Adjusted icon color for dark mode
+            )}
           </Button>
         </Div>
 
-        <Div className="header-style link-menu">
-          <Div className="mobile-link-group">
-            <Link className="mobile-link" to="/cv/presentation">
+        {/* Mobile Menu Content (conditionally rendered and animated) */}
+        {isMobileMenuOpen && (
+          <Div className="absolute top-full left-0 w-full bg-gray-100 dark:bg-gray-800 bg-opacity-95 dark:bg-opacity-95 shadow-lg flex flex-col items-center py-4 space-y-3 animation-slide-down">
+            <Link className="mobile-nav-link" to="/cv/presentation" onClick={toggleMobileMenu}>
               {t('Header.presentation')}
             </Link>
 
-            <Link className="mobile-link" to="/cv/skills_strenghts">
+            <Link className="mobile-nav-link" to="/cv/skills_strenghts" onClick={toggleMobileMenu}>
               {t('Header.skills')}
             </Link>
 
-            <Link className="mobile-link" to="/cv/experience">
+            <Link className="mobile-nav-link" to="/cv/experience" onClick={toggleMobileMenu}>
               {t('Header.experience')}
             </Link>
+
+            <Div className="flex items-center gap-4 pt-3 border-t border-gray-300 dark:border-gray-700 w-3/4 justify-center">
+              <A href="https://www.linkedin.com/in/francisco-zavala/" target="_blank" rel="noopener noreferrer">
+                <LinkedinIcon size={31} borderRadius={10} />
+              </A>
+
+              <A href="https://github.com/PacoZG" target="_blank" rel="noopener noreferrer">
+                <GitHub className="bg-gray-300 h-8 w-8 rounded-full dark:bg-gray-700" />
+              </A>
+
+              <A
+                href="https://wa.me/358449888032?text=I%20would%20love%20to%20contact%20you%20for%20a%20possible%20interview."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <WhatsappIcon size={31} borderRadius={10} />
+              </A>
+            </Div>
           </Div>
-        </Div>
+        )}
       </Div>
 
-      <Div className="hidden md:block">
-        <Div className="header-style flex flex-row items-center justify-evenly p-1 shadow-2xl  mr-14 ml-10 m-2">
+      <Div className="hidden md:flex items-center justify-between px-8 py-3">
+        <Div className="flex items-center gap-2">
+          <Link to="/cv/presentation" className="text-xl font-bold text-blue-700 dark:text-blue-400">
+            FRANCISCO ZAVALA
+          </Link>
+
           <Toggle />
+        </Div>
 
-          <Div className="flex items-center gap-8 lg:gap-16 p-2">
-            <A href="https://www.linkedin.com/in/francisco-zavala/" target="blank">
-              <LinkedinIcon size={46} round={false} borderRadius={10} />
-            </A>
+        <Div className="flex items-center gap-2 lg:gap-12">
+          <Link className="desktop-nav-link" to="/cv/presentation">
+            {t('Header.presentation')}
+          </Link>
 
-            <A href="https://github.com/PacoZG" target="blank">
-              <GitHub className="bg-gray-300  h-11 w-11 rounded-full" />
-            </A>
+          <Link className="desktop-nav-link" to="/cv/skills_strenghts">
+            {t('Header.skills')}
+          </Link>
 
-            <A
-              href="https://wa.me/358449888032?text=I%20will%20love%20to%20contact%20you%20for%20a%20possible%20interview."
-              target="blank"
-            >
-              <WhatsappIcon size={46} borderRadius={10} />
-            </A>
-          </Div>
+          <Link className="desktop-nav-link" to="/cv/experience">
+            {t('Header.experience')}
+          </Link>
+        </Div>
 
-          <Button className="pc-lang-text-style" onClick={() => handleUsersLanguage()}>
+        <Div className="flex items-center gap-4">
+          <A href="https://www.linkedin.com/in/francisco-zavala/" target="_blank" rel="noopener noreferrer">
+            <LinkedinIcon size={30} borderRadius={10} />
+          </A>
+
+          <A href="https://github.com/PacoZG" target="_blank" rel="noopener noreferrer">
+            <GitHub className="bg-gray-300 h-8 w-8 rounded-full dark:bg-gray-700" />
+          </A>
+
+          <A
+            href="https://wa.me/358449888032?text=I%20would%20love%20to%20contact%20you%20for%20a%20possible%20interview."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <WhatsappIcon size={30} borderRadius={10} />
+          </A>
+
+          <Button className="pc-lang-text-style" onClick={handleUsersLanguage}>
             {usersLanguage === 'EN' ? 'ESP' : 'ENG'}
           </Button>
-
-          <Div className="header-style web-link-menu">
-            <Div className="icon-container">
-              <Bars4Icon className="menu-icon" />
-
-              <XMarkIcon className="x-icon" />
-            </Div>
-
-            <Div className="pc-link-group">
-              <Link className="link" to="/cv/presentation">
-                {t('Header.presentation')}
-              </Link>
-
-              <Link className="link" to="/cv/skills_strenghts">
-                {t('Header.skills')}
-              </Link>
-
-              <Link className="link" to="/cv/experience">
-                {t('Header.experience')}
-              </Link>
-            </Div>
-          </Div>
         </Div>
       </Div>
     </Div>

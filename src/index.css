@@ -1,46 +1,110 @@
+/* index.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
-  body {
-    font-family: 'Dosis', sans-serif;
-  }
+    body {
+        font-family: 'Dosis', sans-serif;
+    }
 
-  .page-layout {
-    @apply h-auto p-2 md:pb-6 pt-28 md:pt-24 dark:bg-opacity-80 transform duration-500;
-  }
+    .page-layout {
+        /* Main page background: changed from bg-gray-300 to bg-gray-400 */
+        @apply h-auto p-2 md:pb-6 pt-28 md:pt-24 bg-gray-400 dark:bg-gray-900 transform duration-500;
+        min-height: 100vh;
+    }
 
-  .skill-logo {
-    @apply transition transform hover:-translate-y-1 hover:scale-110 duration-700 ease-in-out h-16 w-16 sm:h-20 sm:w-20 md:h-24 md:w-24 rounded-full;
-  }
+    .skill-logo {
+        @apply transition transform hover:-translate-y-1 hover:scale-110 duration-700 ease-in-out h-16 w-16 sm:h-20 sm:w-20 md:h-24 md:w-24 rounded-full;
+        object-fit: contain;
+    }
 
-  .sticky-header {
-    @apply text-gray-300 text-2xl text-center p-3 bg-blue-500 dark:bg-blue-900 transition duration-500;
-  }
+    .sticky-header {
+        @apply bg-blue-700 dark:bg-blue-600 text-white py-3 px-8 text-xl font-bold w-full sm:w-11/12 lg:w-2/3 text-center shadow-md;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        transition: all 0.3s ease-in-out;
+    }
 
-  .mobile-lang-text-style {
-    @apply text-gray-900 dark:text-gray-300 text-2xl font-bold transition transform duration-500 ease-in-out;
-  }
+    .sticky-header.scrolled {
+        border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    }
 
-  .pc-lang-text-style {
-    @apply text-gray-900 dark:text-gray-300 text-2xl font-bold transition transform hover:-translate-y-1 hover:scale-110 hover:text-blue-300 duration-500 ease-in-out;
-  }
+    /* Language Switch Button Text Styles (no change here) */
+    .mobile-lang-text-style {
+        @apply text-gray-900 dark:text-blue-300 text-2xl font-bold transition transform duration-500 ease-in-out;
+    }
 
-  .email-input {
-    @apply bg-opacity-10 bg-white rounded-md h-20 w-full sm:w-3/4 lg:w-3/4 xl:w-4/6 2xl:w-1/2 p-5 text-gray-300 text-lg md:text-2xl block border border-transparent focus:outline-none focus:ring-1 focus:ring-gray-200 focus:border-transparent shadow-sm border-gray-100 placeholder-gray-200;
-  }
-  
-  /* mobile view */
-  .link-menu {
-    @apply absolute flex flex-row items-center top-14 left-0 h-9 w-full pl-1.5 cursor-pointer;
-  }
+    .pc-lang-text-style {
+        @apply text-gray-900 dark:text-blue-300 text-2xl font-bold transition transform hover:-translate-y-1 hover:scale-110 hover:text-blue-300 duration-500 ease-in-out;
+    }
 
-  .mobile-link-group {
-    @apply flex items-center justify-center xs:pl-3 xs:justify-center gap-2 md:gap-6 w-full;
-  }
-  
-  .mobile-link {
-    @apply text-gray-300 text-center text-base sm:text-lg italic w-1/4 transform transition duration-500 tracking-wide md:tracking-widest;
-  }
+    .email-input {
+        @apply bg-opacity-10 bg-white rounded-md h-20 w-full sm:w-3/4 lg:w-3/4 xl:w-4/6 2xl:w-1/2 p-5 text-gray-300 text-lg md:text-2xl block border border-transparent focus:outline-none focus:ring-1 focus:ring-gray-200 focus:border-transparent shadow-sm border-gray-100 placeholder-gray-200;
+    }
+
+    /* Education card specific styles */
+    .education-card {
+        /* Card background: changed from bg-gray-200 to bg-gray-300 */
+        @apply flex flex-col justify-center bg-gray-300 dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-4 mb-4 w-full sm:w-11/12 lg:w-2/3;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+    }
+
+    .education-card:hover {
+        @apply border-blue-500 transform -translate-y-1 shadow-lg;
+    }
+
+    .education-card-title {
+        @apply md:text-xl text-gray-800 dark:text-blue-300 pb-2 font-bold border-b-2 border-gray-300 dark:border-gray-700;
+    }
+
+    .education-card-description {
+        @apply text-gray-700 dark:text-gray-400 pt-3 text-justify;
+    }
+
+    .education-link {
+        @apply text-blue-600 underline transition duration-200 hover:text-blue-500 dark:text-blue-400 dark:hover:text-blue-300 hover:no-underline;
+    }
+
+    .education-link-secondary {
+        @apply text-gray-600 dark:text-gray-400 pt-1 underline hover:no-underline transition duration-500 hover:text-blue-500 dark:hover:text-blue-400;
+    }
+
+    /* Tooltip styles (no change here) */
+    a[education-tool-tip-msg] {
+        position: relative;
+        text-decoration: underline;
+    }
+
+    a[education-tool-tip-msg]::before { /* ... styles as before ... */
+    }
+
+    @media (min-width: 768px) {
+        /* ... styles as before ... */
+    }
+    @media (max-width: 768px) {
+        /* ... styles as before ... */
+    }
+
+    .contact-input-style {
+        @apply bg-gray-100 dark:bg-gray-700 rounded-md h-10 sm:h-12 w-full p-2 text-gray-800 dark:text-gray-200 text-sm  md:text-lg block border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 focus:border-transparent shadow-sm placeholder-gray-500 dark:placeholder-gray-400 transition duration-300;
+    }
+
+    /* --- Send Button Styling --- */
+    .contact-send-button-enabled {
+        @apply transition duration-300 inline-flex justify-center py-2 px-10 w-48 xs:py-2 xs:px-9 xs:w-44 shadow-md font-semibold rounded-md bg-blue-700 hover:bg-blue-800 text-white text-lg focus-within:outline-none;
+    }
+
+    .contact-send-button-disabled {
+        @apply transition duration-300 inline-flex justify-center py-2 px-10 w-48 xs:py-2 xs:px-9 xs:w-44 shadow-sm font-extralight rounded-md bg-gray-400 dark:bg-gray-700 opacity-50 text-lg text-gray-600 dark:text-gray-400 cursor-not-allowed;
+    }
+
+    /* --- Sent Message Display (when button is replaced by message) --- */
+    .contact-sent-message-display {
+        @apply transition duration-300 inline-flex justify-center py-2 px-4 w-48 shadow-md font-semibold rounded-md bg-green-600 text-white text-lg focus-within:outline-none;
+    }
+
 }

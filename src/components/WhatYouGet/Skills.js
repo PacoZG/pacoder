@@ -1,4 +1,4 @@
-import { LightBulbIcon, PuzzlePieceIcon, LanguageIcon } from '@heroicons/react/20/solid'
+import { LightBulbIcon, PuzzlePieceIcon, LanguageIcon } from '@heroicons/react/24/outline'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { ReactComponent as AWSLogo } from '../../utils/assets/aws-logo.svg'
@@ -19,426 +19,279 @@ import './skill-style.css'
 const Skills = () => {
   const { t } = useTranslation()
   return (
-    <Div className="flex flex-col items-center lg:gap-8 justify-center py-3 px-0 sm:py-6 sm:px-2 bg-gray-500 dark:bg-gray-900 transition duration-500 bg-opacity-70 dark:bg-opacity-70">
-      <Div className="flex flex-col justify-center  border-double border-b-2 border-gray-700 dark:border-gray-500 pt-0 p-2 lg:w-full transition duration-500">
-        <Div className="hidden md:flex flex-col space-y-9">
-          <Div className="flex items-center justify-evenly gap-10">
-            <A
-              skill-tool-tip-msg={t('skills.click-for-certificate')}
-              className="flex flex-col items-center"
-              href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
-              target="blank"
-            >
-              <Img className="skill-logo " src="https://img.icons8.com/nolan/96/javascript.png" alt="JS" />
+    <Div className="bg-gray-400 dark:bg-gray-900 flex flex-col items-center p-4 md:py-10 lg:py-20 transition duration-500 rounded-b-xl bg-opacity-70 dark:bg-opacity-70">
+      <Div className="w-full sm:w-11/12 lg:w-2/3 flex flex-col items-center">
+        <Div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 gap-4 sm:gap-6 md:gap-8 lg:gap-10 py-5 w-full border-b-2 border-gray-300 dark:border-gray-700">
+          {/* Javascript */}
+          <A
+            skill-tool-tip-msg={t('skills.click-for-certificate')}
+            className="skill-card"
+            href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {/* Added object-contain for images within skill-logo */}
+            <Img
+              className="skill-logo object-contain"
+              src="https://img.icons8.com/nolan/96/javascript.png"
+              alt="Javascript Logo"
+            />
+            <P className="skill-text dark:text-yellow-400">Javascript</P>
+          </A>
 
-              <P className="text-gray-200 dark:text-yellow-500 transition duration-500">Javascript</P>
-            </A>
+          {/* React */}
+          <A
+            skill-tool-tip-msg={t('skills.click-for-certificate')}
+            className="skill-card"
+            href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {/* Added object-contain */}
+            <Img
+              className="skill-logo object-contain"
+              src="https://img.icons8.com/officel/80/000000/react.png"
+              alt="React Logo"
+            />
+            <P className="skill-text dark:text-blue-300">React</P>
+          </A>
 
-            <A
-              skill-tool-tip-msg={t('skills.click-for-certificate')}
-              className="flex flex-col items-center"
-              href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
-              target="blank"
-            >
-              <Img
-                className="skill-logo h-20 w-20 mb-3 -z-20"
-                src="https://img.icons8.com/officel/80/000000/react.png"
-                alt="React"
-              />
+          {/* Redux */}
+          <A
+            skill-tool-tip-msg={t('skills.click-for-certificate')}
+            className="skill-card"
+            href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {/* SVGs (ReactComponent) usually scale well with just skill-logo, no object-contain needed */}
+            <ReduxLogo className="skill-logo" />
+            <P className="skill-text dark:text-purple-400">Redux</P>
+          </A>
 
-              <P className="text-gray-200 dark:text-blue-300 transition duration-500">React</P>
-            </A>
+          {/* GraphQL */}
+          <A
+            skill-tool-tip-msg={t('skills.click-for-certificate')}
+            className="skill-card"
+            href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117640/ak5pcxrhwyigv9z0nqql.png"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {/* Added object-contain */}
+            <Img
+              className="skill-logo object-contain"
+              src="https://img.icons8.com/color/48/000000/graphql.png"
+              alt="GraphQL Logo"
+            />
+            <P className="skill-text dark:text-pink-500">GraphQL</P>
+          </A>
 
-            <A
-              skill-tool-tip-msg={t('skills.click-for-certificate')}
-              className="flex flex-col items-center"
-              href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
-              target="blank"
-            >
-              <ReduxLogo className="skill-logo mb-3" />
+          {/* React-Native */}
+          <A
+            skill-tool-tip-msg={t('skills.click-for-certificate')}
+            className="skill-card"
+            href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117641/ffbedqhkfwmbaitpjrwx.png"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {/* Added object-contain */}
+            <Img
+              className="skill-logo object-contain"
+              src="https://img.icons8.com/nolan/96/react-native.png"
+              alt="React-Native Logo"
+            />
+            <P className="skill-text dark:text-pink-700">React-Native</P>
+          </A>
 
-              <P className="text-gray-200 dark:text-purple-400 transition duration-500 -mt-4">Redux</P>
-            </A>
+          {/* Typescript */}
+          <A
+            skill-tool-tip-msg={t('skills.click-for-certificate')}
+            className="skill-card"
+            href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117644/eawik5gh4ahctjy39sby.png"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Typescript className="skill-logo" />
+            <P className="skill-text dark:text-blue-500">Typescript</P>
+          </A>
 
-            <A
-              skill-tool-tip-msg={t('skills.click-for-certificate')}
-              className="flex flex-col items-center"
-              href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117640/ak5pcxrhwyigv9z0nqql.png"
-              target="blank"
-            >
-              <Img className="skill-logo -z-20 " src="https://img.icons8.com/color/48/000000/graphql.png" alt="React" />
-
-              <P className="text-gray-200 dark:text-pink-500 transition duration-500">GraphQL</P>
-            </A>
-
-            <A
-              skill-tool-tip-msg={t('skills.click-for-certificate')}
-              className="flex flex-col items-center"
-              href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117641/ffbedqhkfwmbaitpjrwx.png"
-              target="blank"
-            >
-              <Img className="skill-logo" src="https://img.icons8.com/nolan/96/react-native.png" alt="React" />
-
-              <P className="text-gray-200 dark:text-pink-700 transition duration-500">React-Native</P>
-            </A>
-
-            <A
-              skill-tool-tip-msg={t('skills.click-for-certificate')}
-              className="flex flex-col items-center"
-              href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117644/eawik5gh4ahctjy39sby.png"
-              target="blank"
-            >
-              <Typescript className=" skill-logo rounded-sm h-16 w-16 mb-0 mt-5" />
-
-              <P className="text-gray-200 dark:text-yellow-500 transition duration-500 mt-3">Typescript</P>
-            </A>
+          {/* HTML */}
+          <Div className="skill-card">
+            {/* Added object-contain */}
+            <Img
+              className="skill-logo object-contain"
+              src="https://img.icons8.com/color/344/html-5--v1.png"
+              alt="HTML Logo"
+            />
+            <P className="skill-text dark:text-orange-500">HTML</P>
           </Div>
 
-          <Div className="flex items-center justify-evenly gap-20">
-            <Div className="flex flex-col items-center">
-              <Img className="skill-logo  mb-2" src="https://img.icons8.com/color/344/html-5--v1.png" alt="HTML" />
-
-              <P className="text-gray-200 dark:text-purple-400 transition duration-500">HTML</P>
-            </Div>
-
-            <Div className="flex flex-col items-center">
-              <CSSLogo className="skill-logo  mb-3" />
-
-              <P className="text-gray-200 dark:text-purple-400 transition duration-500">CSS</P>
-            </Div>
-
-            <A
-              skill-tool-tip-msg={t('skills.click-for-certificate')}
-              className="flex flex-col items-center"
-              href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
-              target="blank"
-            >
-              <Img className="skill-logo -z-20" src="https://img.icons8.com/color/96/000000/mongodb.png" alt="React" />
-
-              <P className="text-gray-200 dark:text-green-400 transition duration-500">MongoDB</P>
-            </A>
-
-            <A
-              skill-tool-tip-msg={t('skills.click-for-certificate')}
-              className="flex flex-col items-center"
-              href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
-              target="blank"
-            >
-              <Img
-                className="skill-logo bg-green-400 p-3 -z-20"
-                src="https://img.icons8.com/color/96/000000/nodejs.png"
-                alt="React"
-              />
-            </A>
-
-            <A
-              skill-tool-tip-msg={t('skills.click-for-certificate')}
-              className="flex flex-col items-center"
-              href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117640/zomoudnr2mriz6zvdetq.png"
-              target="blank"
-            >
-              <SQLLogo className="skill-logo h-32 w-16 -mb-3 -mt-3 -z-20" />
-            </A>
+          {/* CSS */}
+          <Div className="skill-card">
+            <CSSLogo className="skill-logo" />
+            <P className="skill-text dark:text-blue-600">CSS</P>
           </Div>
 
-          <Div className="flex items-center justify-evenly gap-16">
-            <Div className="flex flex-col items-center">
-              <JavaLogo className="skill-logo h-36" />
+          {/* MongoDB */}
+          <A
+            skill-tool-tip-msg={t('skills.click-for-certificate')}
+            className="skill-card"
+            href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {/* Added object-contain */}
+            <Img
+              className="skill-logo object-contain"
+              src="https://img.icons8.com/color/96/000000/mongodb.png"
+              alt="MongoDB Logo"
+            />
+            <P className="skill-text dark:text-green-400">MongoDB</P>
+          </A>
 
-              <Div className="flex gap-2 ">
-                <A
-                  skill-tool-tip-msg="Java Programming I"
-                  className="text-gray-300 underline transition duration-200 hover:text-indigo-600"
-                  href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681118753/rtibuwlmtzmdtr35u2gw.png"
-                  target="blank"
-                >
-                  Cert I
-                </A>
+          {/* Node.js */}
+          <A
+            skill-tool-tip-msg={t('skills.click-for-certificate')}
+            className="skill-card"
+            href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {/* Added object-contain, ensure padding/background are consistent */}
+            <Img
+              className="skill-logo bg-green-400 p-3 object-contain"
+              src="https://img.icons8.com/color/96/000000/nodejs.png"
+              alt="Node.js Logo"
+            />
+            <P className="skill-text dark:text-lime-500">Node.js</P>
+          </A>
 
-                <A
-                  skill-tool-tip-msg="Java Programming II"
-                  className="text-gray-300 underline transition duration-200 hover:text-indigo-600"
-                  href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681118770/v7jfhsjvhla0pyw1p1dr.png"
-                  target="blank"
-                >
-                  Cert II
-                </A>
-              </Div>
+          {/* SQL */}
+          <A
+            skill-tool-tip-msg={t('skills.click-for-certificate')}
+            className="skill-card"
+            href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117640/zomoudnr2mriz6zvdetq.png"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <SQLLogo className="skill-logo" />
+            <P className="skill-text dark:text-blue-400">SQL</P>
+          </A>
+
+          {/* Java */}
+          <Div className="skill-card">
+            <JavaLogo className="skill-logo" />
+            <Div className="flex gap-2 text-xs sm:text-sm pt-1">
+              <A
+                skill-tool-tip-msg="Java Programming I"
+                className="skill-cert-link"
+                href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681118753/rtibuwlmtzmdtr35u2gw.png"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Cert I
+              </A>
+              <A
+                skill-tool-tip-msg="Java Programming II"
+                className="skill-cert-link"
+                href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681118770/v7jfhsjvhla0pyw1p1dr.png"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Cert II
+              </A>
             </Div>
-
-            <Div className="flex flex-col items-center">
-              <Img className="skill-logo h-16 mb-3" src={Tailwind} alt="tailwind-logo" />
-
-              <P className="text-gray-200 dark:text-blue-300 transition duration-500">Tailwindcss</P>
-            </Div>
-
-            <A
-              skill-tool-tip-msg={t('skills.click-for-certificate')}
-              className="flex flex-col items-center"
-              href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
-              target="blank"
-            >
-              <Cypress className="skill-logo h-20 -z-20 " />
-
-              <P className="text-gray-200 dark:text-gray-50 transition duration-500">Cypress.io</P>
-            </A>
-
-            <A
-              skill-tool-tip-msg={t('skills.click-for-certificate')}
-              className="flex flex-col items-center"
-              href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117643/q26fq714x9njo4pxskps.png"
-              target="blank"
-            >
-              <DockerLogo className="skill-logo  p-3 bg-transparent bg-opacity-10" />
-
-              <P className=" text-center text-gray-200 dark:text-blue-700 transition duration-500">Docker</P>
-            </A>
-
-            <Div className="flex flex-col items-center">
-              <AWSLogo className="skill-logo  p-3 bg-white" />
-            </Div>
-
-            <A
-              skill-tool-tip-msg={t('skills.click-for-certificate')}
-              className="flex flex-col items-center mt-4"
-              href="https://datadog.docebosaas.com/share/v1/gamification/assigned_badge/942dde0a-211f-4e54-b9ea-fe148117eec0/shared?lang=en&t=1689281055089"
-              target="blank"
-            >
-              <Img
-                className="skill-logo p-1 bg-transparent bg-opacity-10 -z-10 "
-                src="https://cdn5.dcbstatic.com/files/d/a/datadog_docebosaas_com/assets/badges/original/6149e0bf43bb02e0d6e207efd297a00ce5ac4443.png"
-              />
-
-              <P className=" text-center text-gray-200 dark:text-green-500 transition duration-500">Datadog</P>
-            </A>
           </Div>
+
+          {/* Tailwind CSS */}
+          <Div className="skill-card">
+            {/* Added object-contain */}
+            <Img className="skill-logo object-contain" src={Tailwind} alt="Tailwind CSS Logo" />
+            <P className="skill-text dark:text-cyan-400">Tailwindcss</P>
+          </Div>
+
+          {/* Cypress.io */}
+          <A
+            skill-tool-tip-msg={t('skills.click-for-certificate')}
+            className="skill-card"
+            href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Cypress className="skill-logo" />
+            <P className="skill-text dark:text-gray-200">Cypress.io</P>
+          </A>
+
+          {/* Docker */}
+          <A
+            skill-tool-tip-msg={t('skills.click-for-certificate')}
+            className="skill-card"
+            href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117643/q26fq714x9njo4pxskps.png"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <DockerLogo className="skill-logo bg-transparent" />
+            <P className="skill-text dark:text-blue-500">Docker</P>
+          </A>
+
+          {/* AWS */}
+          <Div className="skill-card">
+            <AWSLogo className="skill-logo bg-white dark:bg-gray-700 rounded-full p-2" />
+            <P className="skill-text dark:text-orange-400">AWS</P>
+          </Div>
+
+          {/* Datadog */}
+          <A
+            skill-tool-tip-msg={t('skills.click-for-certificate')}
+            className="skill-card"
+            href="https://datadog.docebosaas.com/share/v1/gamification/assigned_badge/942dde0a-211f-4e54-b9ea-fe148117eec0/shared?lang=en&t=1689281055089"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {/* Added object-contain */}
+            <Img
+              className="skill-logo object-contain"
+              src="https://cdn5.dcbstatic.com/files/d/a/datadog_docebosaas_com/assets/badges/original/6149e0bf43bb02e0d6e207efd297a00ce5ac4443.png"
+              alt="Datadog Logo"
+            />
+            <P className="skill-text dark:text-green-500">Datadog</P>
+          </A>
         </Div>
 
-        <Div className="md:hidden block">
-          <Div className="flex flex-col items-center space-y-3 sm:space-y-8 md:space-y-12">
-            <Div className="flex items-center justify-evenly space-x-12">
-              <A
-                className="flex flex-col items-center"
-                href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
-                target="blank"
-              >
-                <Img className="skill-logo p-2 " src="https://img.icons8.com/nolan/96/javascript.png" alt="JS" />
-
-                <P className="text-sm text-gray-200 dark:text-yellow-500 transition duration-500">Javascript</P>
-              </A>
-
-              <A
-                className="flex flex-col items-center"
-                href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
-                target="blank"
-              >
-                <Img className="skill-logo p-2 " src="https://img.icons8.com/officel/80/000000/react.png" alt="React" />
-
-                <P className="text-sm text-gray-200 dark:text-blue-300 transition duration-500">React</P>
-              </A>
-
-              <A
-                className="flex flex-col items-center"
-                href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
-                target="blank"
-              >
-                <ReduxLogo className="skill-logo " />
-
-                <P className="text-sm text-gray-200 dark:text-purple-700 transition duration-500">Redux</P>
-              </A>
-            </Div>
-
-            <Div className="flex items-center justify-evenly space-x-12">
-              <A
-                className="flex flex-col items-center"
-                href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117641/ffbedqhkfwmbaitpjrwx.png"
-                target="blank"
-              >
-                <Img className="skill-logo  " src="https://img.icons8.com/nolan/96/react-native.png" alt="React" />
-
-                <P className="text-sm text-gray-200 text-center dark:text-pink-800 transition duration-500">
-                  React-Native
-                </P>
-              </A>
-
-              <A
-                className="flex flex-col items-center"
-                href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
-                target="blank"
-              >
-                <Img className="skill-logo " src="https://img.icons8.com/color/96/000000/mongodb.png" alt="React" />
-
-                <P className="text-sm text-gray-200 dark:text-green-400 transition duration-500">MongoDB</P>
-              </A>
-
-              <A
-                className="flex flex-col items-center"
-                href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117640/ak5pcxrhwyigv9z0nqql.png"
-                target="blank"
-              >
-                <Img className="skill-logo " src="https://img.icons8.com/color/48/000000/graphql.png" alt="React" />
-
-                <P className="text-sm text-gray-200 dark:text-pink-500 transition duration-500">GraphQL</P>
-              </A>
-            </Div>
-
-            <Div className="flex items-center justify-evenly space-x-12">
-              <A
-                className="flex flex-col items-center"
-                href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
-                target="blank"
-              >
-                <Img
-                  className="skill-logo text-gray-200 bg-green-400 p-2 md:h-24 "
-                  src="https://img.icons8.com/color/96/000000/nodejs.png"
-                  alt="React"
-                />
-              </A>
-
-              <Div className="flex flex-col items-center">
-                <Img className="skill-logo h-12  mb-2" alt="tailwind-logo" src={Tailwind} />
-
-                <P className="text-sm text-gray-200 dark:text-blue-300 transition duration-500">Tailwindcss</P>
-              </Div>
-
-              <A
-                className="flex flex-col items-center"
-                href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
-                target="blank"
-              >
-                <Cypress className="skill-logo" />
-
-                <P className="text-sm text-gray-200 dark:text-gray-300 transition duration-500">Cypress.io</P>
-              </A>
-            </Div>
-
-            <Div className="flex items-center justify-evenly space-x-12">
-              <A
-                className="flex flex-col items-center"
-                href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117644/eawik5gh4ahctjy39sby.png"
-                target="blank"
-              >
-                <Typescript className="skill-logo h-14 w-14 my-2 rounded-sm " />
-
-                <P className="text-sm text-gray-200 dark:text-green-400 transition duration-500">Typescript</P>
-              </A>
-
-              <A
-                className="flex flex-col items-center"
-                href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117643/q26fq714x9njo4pxskps.png"
-                target="blank"
-              >
-                <DockerLogo className="skill-logo my-2 bg-opacity-10" />
-
-                <P className=" text-center text-gray-200 dark:text-blue-700 transition duration-500 w-16">Docker</P>
-              </A>
-
-              <Div className="flex flex-col items-center">
-                <AWSLogo className="skill-logo p-3 my-2 bg-white" />
-              </Div>
-            </Div>
-
-            <Div className="flex items-center justify-evenly space-x-12">
-              <A
-                className="flex flex-col items-center"
-                href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117640/zomoudnr2mriz6zvdetq.png"
-                target="blank"
-              >
-                <SQLLogo className="skill-logo h-24 w-12 -mb-3 -mt-3" />
-              </A>
-
-              <Div className="flex flex-col items-center">
-                <Img className="skill-logo " src="https://img.icons8.com/color/344/html-5--v1.png" alt="HTML" />
-
-                <P className=" text-center text-gray-200 dark:text-yellow-800 transition duration-500">HTML</P>
-              </Div>
-
-              <Div className="flex flex-col items-center">
-                <CSSLogo className="skill-logo bg-transparent p-1" />
-
-                <P className=" text-center text-gray-200 dark:text-blue-700 transition duration-500 w-16">CSS</P>
-              </Div>
-            </Div>
-
-            <Div className="flex items-center justify-evenly space-x-12">
-              <Div className="flex flex-col items-center">
-                <JavaLogo className="skill-logo h-28" />
-
-                <Div className="flex gap-3 ">
-                  <A
-                    skill-tool-tip-msg="Java Programming I"
-                    className="text-gray-300 underline transition duration-200 hover:text-indigo-600"
-                    href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681118753/rtibuwlmtzmdtr35u2gw.png"
-                    target="blank"
-                  >
-                    Cert I
-                  </A>
-
-                  <A
-                    skill-tool-tip-msg="Java Programming II"
-                    className="text-gray-300 underline transition duration-200 hover:text-indigo-600"
-                    href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681118770/v7jfhsjvhla0pyw1p1dr.png"
-                    target="blank"
-                  >
-                    Cert II
-                  </A>
-                </Div>
-              </Div>
-
-              <A
-                skill-tool-tip-msg={t('skills.click-for-certificate')}
-                className="flex flex-col items-center mt-4"
-                href="https://datadog.docebosaas.com/share/v1/gamification/assigned_badge/942dde0a-211f-4e54-b9ea-fe148117eec0/shared?lang=en&t=1689281055089"
-                target="blank"
-              >
-                <Img
-                  className="skill-logo bg-transparent bg-opacity-10"
-                  src="https://cdn5.dcbstatic.com/files/d/a/datadog_docebosaas_com/assets/badges/original/6149e0bf43bb02e0d6e207efd297a00ce5ac4443.png"
-                />
-
-                <P className=" text-center text-gray-200 dark:text-green-500 transition duration-500">Datadog</P>
-              </A>
-            </Div>
-          </Div>
-        </Div>
-
-        <P className="text-center pt-4 text-gray-200 dark:text-gray-300 text-xs sm:text-sm uppercase transition duration-500">
+        <P className="text-center pt-4 text-gray-700 dark:text-gray-400 text-xs sm:text-sm uppercase transition duration-500 w-full sm:w-11/12 lg:w-2/3">
           {t('skills.info-click')}
         </P>
       </Div>
 
-      <Div className="flex flex-col md:flex-row justify-center md:w-full gap-2 sm:gap-4 md:gap-16 xl:gap-10 pt-5">
-        <Div className="flex flex-col xl:flex-row gap-2 sm:gap-4 md:gap-6 xl:gap-10  ">
-          <Div className="flex items-center gap-4 md:gap-0">
-            <PuzzlePieceIcon className="w-5 h-5 text-gray-200 dark:text-gray-300 " />
-
-            <P className="md:px-5 text-gray-200 dark:text-gray-300 text-xs sm:text-sm uppercase transition duration-500">
+      {/* Strengths/Languages Section */}
+      <Div className="flex flex-col md:flex-row justify-center md:w-full gap-4 sm:gap-6 md:gap-10 xl:gap-12 pt-8 w-full sm:w-11/12 lg:w-2/3">
+        {/* Multitask & Engaged */}
+        <Div className="flex flex-col xl:flex-row gap-4 sm:gap-6 md:gap-8 xl:gap-10">
+          <Div className="flex items-center gap-4 py-2 px-4 rounded-lg bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm">
+            <PuzzlePieceIcon className="w-6 h-6 text-blue-600 dark:text-blue-300 " />
+            <P className="text-gray-700 dark:text-gray-300 text-sm sm:text-base uppercase transition duration-500">
               {t('skills.multitask')}
             </P>
           </Div>
-
-          <Div className="flex items-center gap-4 md:gap-0">
-            <LightBulbIcon className="w-5 h-5 text-gray-200 dark:text-gray-300 " />
-
-            <P className="md:px-5 text-gray-200 dark:text-gray-300 text-xs sm:text-sm uppercase transition duration-500">
+          <Div className="flex items-center gap-4 py-2 px-4 rounded-lg bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm">
+            <LightBulbIcon className="w-6 h-6 text-blue-600 dark:text-blue-300 " />
+            <P className="text-gray-700 dark:text-gray-300 text-sm sm:text-base uppercase transition duration-500">
               {t('skills.engaged')}
             </P>
           </Div>
         </Div>
 
-        <Div className="flex flex-col xl:flex-row gap-2 sm:gap-4 md:gap-6 xl:gap-10  ">
-          <Div className="flex items-center gap-4 md:gap-0">
-            <LanguageIcon className="w-5 h-5 text-gray-200 dark:text-gray-300 " />
-
-            <P className="md:px-5 text-gray-200 dark:text-gray-300 text-xs sm:text-sm uppercase transition duration-500">
+        {/* Languages */}
+        <Div className="flex flex-col xl:flex-row gap-4 sm:gap-6 md:gap-8 xl:gap-10">
+          <Div className="flex items-center gap-4 py-2 px-4 rounded-lg bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm">
+            <LanguageIcon className="w-6 h-6 text-blue-600 dark:text-blue-300 " />
+            <P className="text-gray-700 dark:text-gray-300 text-sm sm:text-base uppercase transition duration-500">
               {t('skills.lang1')}
             </P>
           </Div>
-
-          <Div className="flex items-center gap-4 md:gap-0">
-            <LanguageIcon className="w-5 h-5 text-gray-200 dark:text-gray-300 " />
-
-            <P className="md:px-5 text-gray-200 dark:text-gray-300 text-xs sm:text-sm uppercase transition duration-500">
+          <Div className="flex items-center gap-4 py-2 px-4 rounded-lg bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm">
+            <LanguageIcon className="w-6 h-6 text-blue-600 dark:text-blue-300 " />
+            <P className="text-gray-700 dark:text-gray-300 text-sm sm:text-base uppercase transition duration-500">
               {t('skills.lang2')}
             </P>
           </Div>

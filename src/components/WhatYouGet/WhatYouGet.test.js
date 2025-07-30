@@ -4,7 +4,7 @@ import { I18nextProvider } from 'react-i18next'
 import i18n from '../../utils/language/i18nextForTest'
 import renderer from 'react-test-renderer'
 import Skills from './Skills'
-import Strenghts from './Strenghts'
+import Strengths from './Strengths'
 
 describe('Testing header', () => {
   test('Snapshot of the Skills component', () => {
@@ -25,7 +25,7 @@ describe('Testing header', () => {
       .create(
         <BrowserRouter>
           <I18nextProvider i18n={i18n}>
-            <Strenghts />
+            <Strengths />
           </I18nextProvider>
         </BrowserRouter>
       )

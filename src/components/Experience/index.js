@@ -10,7 +10,9 @@ const Experience = () => {
   }, [])
   return (
     <Div className="page-layout">
-      <Div className="sticky-header rounded-t-xl">{t('stickers.experience')}</Div>
+      <Div className="flex justify-center w-full py-8">
+        <Div className="sticky-header rounded-t-xl">{t('stickers.experience')}</Div>
+      </Div>
       <WorkingExperience />
     </Div>
   )
