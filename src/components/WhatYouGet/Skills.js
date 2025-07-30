@@ -25,12 +25,11 @@ const Skills = () => {
           {/* Javascript */}
           <A
             skill-tool-tip-msg={t('skills.click-for-certificate')}
-            className="skill-card"
+            className="skill-card bg-gray-300 dark:bg-gray-800"
             href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
             target="_blank"
             rel="noopener noreferrer"
           >
-            {/* Added object-contain for images within skill-logo */}
             <Img
               className="skill-logo object-contain"
               src="https://img.icons8.com/nolan/96/javascript.png"
@@ -42,12 +41,11 @@ const Skills = () => {
           {/* React */}
           <A
             skill-tool-tip-msg={t('skills.click-for-certificate')}
-            className="skill-card"
+            className="skill-card bg-gray-300 dark:bg-gray-800"
             href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
             target="_blank"
             rel="noopener noreferrer"
           >
-            {/* Added object-contain */}
             <Img
               className="skill-logo object-contain"
               src="https://img.icons8.com/officel/80/000000/react.png"
@@ -59,12 +57,11 @@ const Skills = () => {
           {/* Redux */}
           <A
             skill-tool-tip-msg={t('skills.click-for-certificate')}
-            className="skill-card"
+            className="skill-card bg-gray-300 dark:bg-gray-800"
             href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
             target="_blank"
             rel="noopener noreferrer"
           >
-            {/* SVGs (ReactComponent) usually scale well with just skill-logo, no object-contain needed */}
             <ReduxLogo className="skill-logo" />
             <P className="skill-text dark:text-purple-400">Redux</P>
           </A>
@@ -72,12 +69,11 @@ const Skills = () => {
           {/* GraphQL */}
           <A
             skill-tool-tip-msg={t('skills.click-for-certificate')}
-            className="skill-card"
+            className="skill-card bg-gray-300 dark:bg-gray-800"
             href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117640/ak5pcxrhwyigv9z0nqql.png"
             target="_blank"
             rel="noopener noreferrer"
           >
-            {/* Added object-contain */}
             <Img
               className="skill-logo object-contain"
               src="https://img.icons8.com/color/48/000000/graphql.png"
@@ -89,12 +85,11 @@ const Skills = () => {
           {/* React-Native */}
           <A
             skill-tool-tip-msg={t('skills.click-for-certificate')}
-            className="skill-card"
+            className="skill-card bg-gray-300 dark:bg-gray-800"
             href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117641/ffbedqhkfwmbaitpjrwx.png"
             target="_blank"
             rel="noopener noreferrer"
           >
-            {/* Added object-contain */}
             <Img
               className="skill-logo object-contain"
               src="https://img.icons8.com/nolan/96/react-native.png"
@@ -106,7 +101,7 @@ const Skills = () => {
           {/* Typescript */}
           <A
             skill-tool-tip-msg={t('skills.click-for-certificate')}
-            className="skill-card"
+            className="skill-card bg-gray-300 dark:bg-gray-800"
             href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117644/eawik5gh4ahctjy39sby.png"
             target="_blank"
             rel="noopener noreferrer"
@@ -116,8 +111,7 @@ const Skills = () => {
           </A>
 
           {/* HTML */}
-          <Div className="skill-card">
-            {/* Added object-contain */}
+          <Div className="skill-card bg-gray-300 dark:bg-gray-800">
             <Img
               className="skill-logo object-contain"
               src="https://img.icons8.com/color/344/html-5--v1.png"
@@ -127,7 +121,7 @@ const Skills = () => {
           </Div>
 
           {/* CSS */}
-          <Div className="skill-card">
+          <Div className="skill-card bg-gray-300 dark:bg-gray-800">
             <CSSLogo className="skill-logo" />
             <P className="skill-text dark:text-blue-600">CSS</P>
           </Div>
@@ -135,12 +129,11 @@ const Skills = () => {
           {/* MongoDB */}
           <A
             skill-tool-tip-msg={t('skills.click-for-certificate')}
-            className="skill-card"
+            className="skill-card bg-gray-300 dark:bg-gray-800"
             href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
             target="_blank"
             rel="noopener noreferrer"
           >
-            {/* Added object-contain */}
             <Img
               className="skill-logo object-contain"
               src="https://img.icons8.com/color/96/000000/mongodb.png"
@@ -152,12 +145,11 @@ const Skills = () => {
           {/* Node.js */}
           <A
             skill-tool-tip-msg={t('skills.click-for-certificate')}
-            className="skill-card"
+            className="skill-card bg-gray-300 dark:bg-gray-800"
             href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
             target="_blank"
             rel="noopener noreferrer"
           >
-            {/* Added object-contain, ensure padding/background are consistent */}
             <Img
               className="skill-logo bg-green-400 p-3 object-contain"
               src="https://img.icons8.com/color/96/000000/nodejs.png"
@@ -169,7 +161,7 @@ const Skills = () => {
           {/* SQL */}
           <A
             skill-tool-tip-msg={t('skills.click-for-certificate')}
-            className="skill-card"
+            className="skill-card bg-gray-300 dark:bg-gray-800"
             href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117640/zomoudnr2mriz6zvdetq.png"
             target="_blank"
             rel="noopener noreferrer"
@@ -179,7 +171,7 @@ const Skills = () => {
           </A>
 
           {/* Java */}
-          <Div className="skill-card">
+          <Div className="skill-card bg-gray-300 dark:bg-gray-800">
             <JavaLogo className="skill-logo" />
             <Div className="flex gap-2 text-xs sm:text-sm pt-1">
               <A
@@ -204,8 +196,7 @@ const Skills = () => {
           </Div>
 
           {/* Tailwind CSS */}
-          <Div className="skill-card">
-            {/* Added object-contain */}
+          <Div className="skill-card bg-gray-300 dark:bg-gray-800">
             <Img className="skill-logo object-contain" src={Tailwind} alt="Tailwind CSS Logo" />
             <P className="skill-text dark:text-cyan-400">Tailwindcss</P>
           </Div>
@@ -213,7 +204,7 @@ const Skills = () => {
           {/* Cypress.io */}
           <A
             skill-tool-tip-msg={t('skills.click-for-certificate')}
-            className="skill-card"
+            className="skill-card bg-gray-300 dark:bg-gray-800"
             href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117638/ji8dwtahm9dom6kuzxbm.png"
             target="_blank"
             rel="noopener noreferrer"
@@ -225,7 +216,7 @@ const Skills = () => {
           {/* Docker */}
           <A
             skill-tool-tip-msg={t('skills.click-for-certificate')}
-            className="skill-card"
+            className="skill-card bg-gray-300 dark:bg-gray-800"
             href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117643/q26fq714x9njo4pxskps.png"
             target="_blank"
             rel="noopener noreferrer"
@@ -234,8 +225,33 @@ const Skills = () => {
             <P className="skill-text dark:text-blue-500">Docker</P>
           </A>
 
+          {/* Kubernetes */}
+          {/*<A*/}
+          {/*  skill-tool-tip-msg={t('skills.click-for-certificate')}*/}
+          {/*  className="skill-card bg-gray-300 dark:bg-gray-800"*/}
+          {/*  href=""*/}
+          {/*  target="_blank"*/}
+          {/*  rel="noopener noreferrer"*/}
+          {/*>*/}
+          {/*  <Img*/}
+          {/*    className="skill-logo object-contain"*/}
+          {/*    src="https://img.icons8.com/color/96/000000/kubernetes.png"*/}
+          {/*    alt="Kubernetes Logo"*/}
+          {/*  />*/}
+          {/*  <P className="skill-text dark:text-blue-500">Kubernetes</P>*/}
+          {/*</A>*/}
+
+          <Div className="skill-card bg-gray-300 dark:bg-gray-800">
+            <Img
+              className="skill-logo object-contain"
+              src="https://img.icons8.com/color/96/000000/kubernetes.png"
+              alt="Tailwind CSS Logo"
+            />
+            <P className="skill-text dark:text-cyan-400">Tailwindcss</P>
+          </Div>
+
           {/* AWS */}
-          <Div className="skill-card">
+          <Div className="skill-card bg-gray-300 dark:bg-gray-800">
             <AWSLogo className="skill-logo bg-white dark:bg-gray-700 rounded-full p-2" />
             <P className="skill-text dark:text-orange-400">AWS</P>
           </Div>
@@ -243,12 +259,11 @@ const Skills = () => {
           {/* Datadog */}
           <A
             skill-tool-tip-msg={t('skills.click-for-certificate')}
-            className="skill-card"
+            className="skill-card bg-gray-300 dark:bg-gray-800"
             href="https://datadog.docebosaas.com/share/v1/gamification/assigned_badge/942dde0a-211f-4e54-b9ea-fe148117eec0/shared?lang=en&t=1689281055089"
             target="_blank"
             rel="noopener noreferrer"
           >
-            {/* Added object-contain */}
             <Img
               className="skill-logo object-contain"
               src="https://cdn5.dcbstatic.com/files/d/a/datadog_docebosaas_com/assets/badges/original/6149e0bf43bb02e0d6e207efd297a00ce5ac4443.png"
@@ -267,13 +282,13 @@ const Skills = () => {
       <Div className="flex flex-col md:flex-row justify-center md:w-full gap-4 sm:gap-6 md:gap-10 xl:gap-12 pt-8 w-full sm:w-11/12 lg:w-2/3">
         {/* Multitask & Engaged */}
         <Div className="flex flex-col xl:flex-row gap-4 sm:gap-6 md:gap-8 xl:gap-10">
-          <Div className="flex items-center gap-4 py-2 px-4 rounded-lg bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm">
+          <Div className="flex items-center gap-4 py-2 px-4 rounded-lg bg-gray-300 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 shadow-sm">
             <PuzzlePieceIcon className="w-6 h-6 text-blue-600 dark:text-blue-300 " />
             <P className="text-gray-700 dark:text-gray-300 text-sm sm:text-base uppercase transition duration-500">
               {t('skills.multitask')}
             </P>
           </Div>
-          <Div className="flex items-center gap-4 py-2 px-4 rounded-lg bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm">
+          <Div className="flex items-center gap-4 py-2 px-4 rounded-lg bg-gray-300 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 shadow-sm">
             <LightBulbIcon className="w-6 h-6 text-blue-600 dark:text-blue-300 " />
             <P className="text-gray-700 dark:text-gray-300 text-sm sm:text-base uppercase transition duration-500">
               {t('skills.engaged')}
@@ -283,13 +298,13 @@ const Skills = () => {
 
         {/* Languages */}
         <Div className="flex flex-col xl:flex-row gap-4 sm:gap-6 md:gap-8 xl:gap-10">
-          <Div className="flex items-center gap-4 py-2 px-4 rounded-lg bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm">
+          <Div className="flex items-center gap-4 py-2 px-4 rounded-lg bg-gray-300 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 shadow-sm">
             <LanguageIcon className="w-6 h-6 text-blue-600 dark:text-blue-300 " />
             <P className="text-gray-700 dark:text-gray-300 text-sm sm:text-base uppercase transition duration-500">
               {t('skills.lang1')}
             </P>
           </Div>
-          <Div className="flex items-center gap-4 py-2 px-4 rounded-lg bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm">
+          <Div className="flex items-center gap-4 py-2 px-4 rounded-lg bg-gray-300 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 shadow-sm">
             <LanguageIcon className="w-6 h-6 text-blue-600 dark:text-blue-300 " />
             <P className="text-gray-700 dark:text-gray-300 text-sm sm:text-base uppercase transition duration-500">
               {t('skills.lang2')}
