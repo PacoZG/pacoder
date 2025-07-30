@@ -1,13 +1,13 @@
 {
   "stickers": {
-    "who": "QUIEN SOY",
+    "who": "QUIÉN SOY",
     "skills": "MIS HABILIDADES",
-    "strengths": "MIS PUNTOS FUERTES",
+    "strengths": "MIS FORTALEZAS",
     "education": "EDUCACIÓN",
     "experience": "EXPERIENCIA LABORAL"
   },
   "contact": {
-    "name": "Nombre completo",
+    "name": "Nombre Completo",
     "message": "Mensaje",
     "message-sent": "Me pondré en contacto contigo lo antes posible.",
     "send": "Enviar",
@@ -24,67 +24,66 @@
   },
   "Footer": {
     "developed-by": "DESARROLLADO POR",
-    "share-cv": "COMPARTE MI SITIO WEB"
+    "share-cv": "COMPARTIR MI SITIO WEB"
   },
   "Presentation": {
-    "line0": "¡HOLA! YO SOY ",
-    "line1": "Soy mexicano, vivo en Finlandia desde septiembre de 2014",
-    "line2": "Comencé mis estudios de Ingeniería de la Comunicación en España. En el año 2014 me trasladé a Finlandia para estudiar unos másteres en la Universidad Aalto como estudiante Erasmus."
+    "line0": "¡Hola! SOY ",
+    "line1": "Soy un desarrollador Full Stack mexicano radicado en Finlandia desde septiembre de 2014.",
+    "line2": "Comencé mis estudios de Ingeniería de Comunicaciones en España y me mudé a Finlandia en 2014 como estudiante Erasmus en la Universidad Aalto."
   },
   "skills": {
-    "multitask": "Habilitdad multitarea",
+    "multitask": "Capacidad multitarea",
     "engaged": "Comprometido, persistente y enfocado",
-    "lang1": "Lengua materna: español",
-    "lang2": "Gran nivel de dominio del inglés",
-    "info-click": "Haga clic en el logotipo para ver el certificado relacionado",
-    "click-for-certificate": "Haga clic aquí para ver el certificado"
-
+    "lang1": "Lengua materna: Español",
+    "lang2": "Dominio del inglés",
+    "info-click": "Haz clic en el logo para ver el certificado",
+    "click-for-certificate": "Ver Certificado"
   },
-  "strengths":{
-    "strength1": "Comprometido y perseverante",
-    "line1_1": "Fortalezas que sin duda fueron la clave que me impulso terminar el ",
+  "strengths": {
+    "strength1": "Comprometido y Perseverante",
+    "line1_1": "Estas fortalezas fueron cruciales para completar con éxito el ",
     "line1_2": "Curso Full Stack",
-    "line1_3": "que me dio las habilidades necesarias para hacer la transición a la carrera en el desarrollo web/software. Durante este proceso me han asignado proyectos que eran extremadamente desafiantes, con tecnologías que eran un completo misterio y exigían paciencia, dedicación y mucho trabajo duro. Gracias a mi compromiso he logrado tener éxito en dichas circunstancias y entregar grandes resultados para mí, para la empresa y lo más importante, para el cliente.",
-    "strength2": "Servicio orientado al cliente",
-    "line2": "Estoy seguro de que puedo utilizar mi amplia experiencia en el campo para comunicarme fácilmente con los clientes de una manera más empática y accesible..",
-    "strength3": "Experiencia en la enseñanza",
-    "line3": "Como profesor de batería, aprendí a colocarme en la perspectiva de mi alumno, encontrando formas de introducir nuevos conceptos y técnicas. Una habilidad que puedo usar en esta industria para presentarles a nuestros clientes los servicios y explicar su funcionalidad de una manera muy comprensible.",
-    "line4_1": "Has clic ",
+    "line1_3": ", lo que me proporcionó las habilidades para una carrera en el desarrollo web/software. A lo largo de este desafiante programa, obtuve resultados sólidos de manera consistente, incluso al enfrentarme a tecnologías completamente nuevas, demostrando paciencia, dedicación y una gran ética de trabajo.",
+    "strength2": "Orientado al Servicio al Cliente",
+    "line2": "Aprovechando una amplia experiencia previa, destaco en la comunicación empática y accesible, asegurando una clara comprensión de las necesidades del cliente.",
+    "strength3": "Experiencia Docente",
+    "line3": "Mi experiencia como profesor de batería desarrolló mi capacidad para explicar conceptos y técnicas complejas de forma sencilla. Esta habilidad es invaluable para articular claramente servicios y funcionalidades a los clientes en la industria tecnológica.",
+    "line4_1": "Descubre mis resultados de la prueba ",
     "line4_2": "aquí",
-    "line4_3": " y descubre el resultado de mi prueba"
+    "line4_3": "."
   },
   "education": {
-    "tool-tip-msg": "Haga clic para visitar el sitio web de la escuela",
-    "line12": "DevOps con Kubernetes (en línea)",
-    "line11": "Curso de introducción a Kubernets con K3s y GKE dictado en línea en MOOC.fi y desarrollado por la Universidad de Helsinki en asociación con Unity",
-    "line10": "DevOps con Docker (en línea)",
-    "line9": "Curso de introducción a Docker y docker-compose dictado en línea en MOOC.fi y desarrollado por la Universidad de Helsinki en asociación con Eficode",
-    "line8": "Curso Full Stack (en línea)",
-    "line7": "Curso impartido en línea en MOOC.fi y desarrollado por la Universidad de Helsinki en cooperación con socios y afiliados del curso que incluyen Houston Inc, Terveystalo, Elisa, K-ryhmä, Unity Technologies y Konecranes. Completado entre AGOSTO 2020 - JULIO 2021, escrito e impartido por profesores de la Universidad de Helsinki. El curso es una introducción al desarrollo web moderno con servicios web JavaScript, React, RESTful y GraphQL implementados con Node.js y también tiene partes sobre TypeScript, React Native e integración continua.",
-    "line6": "Ingeniería en comunicación",
-    "line5": "Cursos de maestría como estudiante de intercambio Erasmus 2014-2015",
-    "line4": "@Aalto University - Escuela de Ingeniería Eléctrica",
-    "line3": "Licenciatura en Ingeniería de Telecomunicación",
-    "line2": "Llegué al 4to año académico con el 78% de los estudios completados",
-    "line1": "@Universidad Politecnica de Cartagena - Escuela Técnica Superior de Ingenieria de Telecomunicación"
+    "tool-tip-msg": "Visitar el sitio web de la escuela",
+    "line12": "DevOps con Kubernetes (MOOC.fi)",
+    "line11": "Curso introductorio que abarca Kubernetes (K3s, GKE) y CI/CD para implementar y gestionar aplicaciones, desarrollado por la Universidad de Helsinki en colaboración con Unity.",
+    "line10": "DevOps con Docker (MOOC.fi)",
+    "line9": "Curso introductorio sobre la contenerización utilizando Docker y Docker Compose para una implementación eficiente de aplicaciones, desarrollado por la Universidad de Helsinki en colaboración con Eficode.",
+    "line8": "Curso Full Stack Open (MOOC.fi)",
+    "line7": "Programa integral (AGO 2020 - JUL 2021) de la Universidad de Helsinki, que cubre el desarrollo web moderno: JavaScript, React, Node.js (RESTful/GraphQL), TypeScript, React Native e Integración Continua. En cooperación con Houston Inc, Terveystalo, Elisa, K-ryhmä, Unity Technologies y Konecranes.",
+    "line6": "Cursos de Maestría en Ingeniería de Comunicaciones",
+    "line5": "Estudiante de Intercambio Erasmus, 2014-2015",
+    "line4": "@Universidad Aalto – Escuela de Ingeniería Eléctrica",
+    "line3": "Licenciatura en Ingeniería de Telecomunicaciones",
+    "line2": "Completado el 78% de los estudios (4º año académico).",
+    "line1": "@Universidad Politécnica de Cartagena - Escuela Técnica Superior de Ingeniería de Telecomunicación"
   },
   "experience": {
-    "company4": "Houston Inc",
-    "period4": "SEPTIEMBRE 2021 - ACTUALMENTE",
-    "position4": "Programador - Consultor",
-    "responsabilities4": "Soporte para escalar, depurar y mantener la funcionalidad del código según las necesidades de nuestros clientes. De lo cual he tenido la oportunidad de aprender a usar y desarrollar tecnologías como recursos en AWS, DevOps con Docker y Kubernetes, GCloud, Auth0 y muchas más que son utilizadas constantemente en la integración de aplicaciones de los clientes.",
+    "company4": "Houston Inc.",
+    "period4": "SEPTIEMBRE 2021 - ACTUALIDAD",
+    "position4": "Consultor - Desarrollador Full Stack/DevOps",
+    "responsabilities4": "Apoyé a clientes en el mantenimiento y actualización de aplicaciones/sitios web, asegurando una funcionalidad óptima y la satisfacción del cliente.\nAdquirí experiencia práctica y desarrollé habilidades en múltiples tecnologías, incluyendo AWS (Lambda, DynamoDB, Route53, CloudFormation, CloudWatch, CloudFront), Docker, Kubernetes (GKE), Google Cloud, Auth0, Datadog, Helm, Istio y Terraform.\nContribuí a diversos proyectos de clientes, específicamente para Eltel Networks (entorno de gestión de recursos), Veikkaus Oy (soluciones de red, proxy y fiabilidad) y Spinverse (entorno de motor de búsqueda de financiación).\nUtilicé un robusto stack tecnológico que incluye React, Node.js, JavaScript, TypeScript, MobX, Express, PostgreSQL, MySQL, Git, Bitbucket, GitLab, REST, Eslint, Prettier, SCSS y Java.",
     "company3": "Hotel Kämp",
     "period3": "SEPTIEMBRE 2015 - AGOSTO 2020",
-    "position3": "Camarero de servicio a la habitación y restaurant",
-    "responsabilities3": "Responsable de los deberes y mantenimiento del departamento de servicio de habitaciones junto con los deseos y necesidades de los huéspedes en el restaurante y las habitaciones de los huéspedes.",
-    "company2": "Numerosos restaurantes y hoteles",
+    "position3": "Camarero",
+    "responsabilities3": "Proporcioné un servicio completo de desayuno, almuerzo, cena y habitaciones, asegurando constantemente experiencias positivas para los huéspedes.\nGestioné diversas necesidades y preferencias de los huéspedes en un entorno de hostelería de alto nivel.",
+    "company2": "Varios Restaurantes y Hoteles",
+    "position2": "Camarero, Recepcionista y Personal de Cocina",
     "period2": "ENERO 2007 - AGOSTO 2020",
-    "position2": "Camarero, Recepción y Personal de cocina",
-    "responsabilities2": "Supervisor de camarero, cocinero, lavaplatos. Experiencia que me ayuda a escuchar y comprender realmente las necesidades del cliente.",
-    "company1": "Numerosos bares, restaurantes, conciertos y tiendas musicales",
+    "responsabilities2": "Desempeñé diversos roles, incluyendo supervisor de camareros, cocinero y lavaplatos.\nDesarrollé sólidas habilidades de comunicación y servicio al cliente a través de la interacción directa y la comprensión de las necesidades del cliente.",
+    "company1": "Varios Bares, Restaurantes, Conciertos y Tiendas de Música",
     "period1": "ENERO 1998 - AGOSTO 2011",
-    "position1": "Baterista profesional/Profesor de batería",
-    "responsabilities1": "Trabajé como baterista y líder de grupo en numerosas bandas y enseñé batería como un trabajo secundario.",
-    "tool-tip-msg":"Haga clic para visitar el sitio web de la empresa"
+    "position1": "Baterista Profesional / Profesor de Batería",
+    "responsabilities1": "Trabajé como baterista profesional, liderando y actuando en varias bandas.\nEnseñé batería a tiempo parcial, desarrollando habilidades para simplificar conceptos complejos y adaptar métodos de enseñanza a estilos de aprendizaje individuales.",
+    "tool-tip-msg": "Visitar el sitio web de la empresa"
   }
 }
