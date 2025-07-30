@@ -1,65 +1,65 @@
-# 👋 Hi, I'm Paco — aka [Sirpacoder][website]  
+# 👋 Hi, I'm Paco — aka [Sirpacoder][website]
 
-### 🧑‍💻 Full-Stack Developer | DevOps-Oriented Engineer | Father | Lifelong Learner  
-
----
-
-🔹 I'm a developer with a background in Communications Engineering, now fully immersed in **web development** and **DevOps**.  
-🔹 I’m originally from Spain 🇪🇸, currently living in Finland 🇫🇮 since 2014.  
-🔹 I recently launched my personal website — [pacoderzavala.com][website] — check it out to learn more about me and my work!  
+### 💻 Full-Stack Developer | DevOps-Oriented Engineer | Father | Problem-Solver
 
 ---
 
-## 🛠️ Current Focus
+🎯 I’m a developer with a background in **Communications Engineering**, passionate about crafting web apps and managing cloud-native infrastructure.
 
-- 🔧 Mastering DevOps tools: **Kubernetes**, **Docker**, **Terraform**, **GitOps (ArgoCD)**  
-- ☁️ Working with **AWS** and infrastructure-as-code principles  
-- 🧠 Learning **MobX**, refining **TDD**, and building cloud-native solutions  
-- 📈 2025 Goal: Grow as a well-rounded engineer who bridges the gap between development and operations  
+🌍 Based in Finland 🇫🇮 | Originally from Spain 🇪🇸  
+🌐 Check out my portfolio → [pacoderzavala.com][website]
 
 ---
 
-## 🚀 Tech Stack
+## 🔧 Current Focus
 
-### 💻 Languages & Frameworks
-![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=javascript)
-![TypeScript](https://img.shields.io/badge/-TypeScript-black?style=flat-square&logo=typescript)
-![React](https://img.shields.io/badge/-React-black?style=flat-square&logo=react)
-![Node.js](https://img.shields.io/badge/-Node.js-black?style=flat-square&logo=node.js)
-![GraphQL](https://img.shields.io/badge/-GraphQL-black?style=flat-square&logo=graphql)
-![HTML5](https://img.shields.io/badge/-HTML5-black?style=flat-square&logo=html5)
-![CSS3](https://img.shields.io/badge/-CSS3-black?style=flat-square&logo=css3)
+- 🚢 DevOps practices with **Kubernetes**, **Docker**, **Terraform**, and **GitOps**  
+- ☁️ Hands-on with both **AWS** and **Google Cloud Platform (GCP)**  
+- 🧠 Learning **MobX**, refining **TDD**, and embracing scalable architecture  
+- 🧭 2025 Goal: Grow as a cloud-native, DevOps-first engineer
 
-### ⚙️ DevOps & Infra
-![Kubernetes](https://img.shields.io/badge/-Kubernetes-black?style=flat-square&logo=kubernetes)
-![Docker](https://img.shields.io/badge/-Docker-black?style=flat-square&logo=docker)
-![Terraform](https://img.shields.io/badge/-Terraform-black?style=flat-square&logo=terraform)
-![GitHub Actions](https://img.shields.io/badge/-GitHub%20Actions-black?style=flat-square&logo=github-actions)
-![AWS](https://img.shields.io/badge/-AWS-black?style=flat-square&logo=amazonaws)
-![Ubuntu](https://img.shields.io/badge/-Ubuntu-black?style=flat-square&logo=ubuntu)
+---
+
+## 🛠️ Tech Stack
+
+### 🧩 Languages & Frameworks
+
+<img src="https://img.shields.io/badge/JavaScript-black?style=flat&logo=javascript" />
+<img src="https://img.shields.io/badge/TypeScript-black?style=flat&logo=typescript" />
+<img src="https://img.shields.io/badge/React-black?style=flat&logo=react" />
+<img src="https://img.shields.io/badge/Node.js-black?style=flat&logo=node.js" />
+<img src="https://img.shields.io/badge/GraphQL-black?style=flat&logo=graphql" />
+
+### ⚙️ DevOps & Cloud
+
+<img src="https://img.shields.io/badge/Kubernetes-black?style=flat&logo=kubernetes" />
+<img src="https://img.shields.io/badge/Docker-black?style=flat&logo=docker" />
+<img src="https://img.shields.io/badge/Terraform-black?style=flat&logo=terraform" />
+<img src="https://img.shields.io/badge/GitHub_Actions-black?style=flat&logo=github-actions" />
+<img src="https://img.shields.io/badge/AWS-black?style=flat&logo=amazonaws" />
+<img src="https://img.shields.io/badge/GCP-black?style=flat&logo=googlecloud" />
+<img src="https://img.shields.io/badge/Ubuntu-black?style=flat&logo=ubuntu" />
+
+---
+
+## 📦 Tooling & Practices
+
+- 🎨 Styling: **Tailwind CSS**, and raw CSS when needed  
+- 🔄 Code formatting: **Prettier** (`npm run fix-code-style`)  
+- 🌐 Routing: **React Router v5**  
+- 🌍 Translations: **i18next** (see [Jane’s Total Wellness](https://github.com/PacoZG/janestotalwellness))  
+- 🔗 Sharing: **react-share**
 
 ---
 
 ## 🌐 Connect with Me
 
-[![LinkedIn][linkedin-icon]][linkedin]  
-[![Instagram][instagram-icon]][instagram]  
-📬 Email me via [my website][website]
-
----
-
-## 🧪 Tooling & Practices
-
-- 💅 UI with **Tailwind CSS** and scoped CSS when needed  
-- 🧹 Formatting via **Prettier**  
-- 🌍 Routing handled with **React Router v5**  
-- 🌐 Internationalization with **i18next**  
-- 📤 Social media sharing via **react-share**  
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)][linkedin]  
+[![Instagram](https://img.shields.io/badge/-Instagram-E4405F?style=flat&logo=instagram&logoColor=white)][instagram]  
+📫 Or reach out at [pacoderzavala.com][website]
 
 ---
 
 [website]: https://pacoderzavala.com
 [linkedin]: https://www.linkedin.com/in/francisco-zavala/
 [instagram]: https://www.instagram.com/sirpacoder
-[linkedin-icon]: https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg
-[instagram-icon]: https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg
