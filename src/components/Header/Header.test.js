@@ -7,7 +7,7 @@ import i18n from '../../utils/language/i18nextForTest'
 
 describe('Testing', () => {
   test('Snapshot of the Header component', () => {
-    const rederedHeader = renderer
+    const renderedHeader = renderer
       .create(
         <BrowserRouter>
           <I18nextProvider i18n={i18n}>
@@ -16,6 +16,6 @@ describe('Testing', () => {
         </BrowserRouter>
       )
       .toJSON()
-    expect(rederedHeader).toMatchSnapshot()
+    expect(renderedHeader).toMatchSnapshot()
   })
 })

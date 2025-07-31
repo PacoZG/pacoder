@@ -1,4 +1,3 @@
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline' // Using 24/outline for better clarity and consistency
 import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
@@ -9,11 +8,13 @@ import A from '../private/A'
 import Button from '../private/Button'
 import Div from '../private/Div'
 import Toggle from '../Toggle'
-import './header-style.css' // This will contain updated styles
+import './header-style.css'
+import { Home } from 'lucide-react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/16/solid'
 
 const Header = () => {
   const { t } = useTranslation()
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false) // State for mobile menu
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen)
@@ -21,9 +22,11 @@ const Header = () => {
 
   return (
     <Div className="fixed z-50 w-screen bg-gray-100 dark:bg-gray-800 bg-opacity-90 dark:bg-opacity-90 backdrop-blur-sm transition duration-500 shadow-md">
+      {/* Mobile Header */}
       <Div className="md:hidden flex items-center justify-between px-4 py-2">
-        <Link to="/cv/presentation" className="text-xl font-bold text-blue-700 dark:text-blue-400">
-          FRANCISCO ZAVALA
+        {/* Home Icon instead of Name */}
+        <Link to="/" className="p-2 text-blue-700 dark:text-blue-400">
+          <Home className="h-7 w-7" />
         </Link>
 
         <Div className="flex items-center gap-4">
@@ -35,9 +38,9 @@ const Header = () => {
 
           <Button onClick={toggleMobileMenu} className="p-2">
             {isMobileMenuOpen ? (
-              <XMarkIcon className="h-7 w-7 text-gray-800 dark:text-blue-200" /> // Adjusted icon color for dark mode
+              <XMarkIcon className="h-7 w-7 text-gray-800 dark:text-blue-200" />
             ) : (
-              <Bars3Icon className="h-7 w-7 text-gray-800 dark:text-blue-200" /> // Adjusted icon color for dark mode
+              <Bars3Icon className="h-7 w-7 text-gray-800 dark:text-blue-200" />
             )}
           </Button>
         </Div>
@@ -78,12 +81,13 @@ const Header = () => {
         )}
       </Div>
 
+      {/* Desktop Header */}
       <Div className="hidden md:flex items-center justify-between px-8 py-3">
         <Div className="flex items-center gap-2">
-          <Link to="/cv/presentation" className="text-xl font-bold text-blue-700 dark:text-blue-400">
-            FRANCISCO ZAVALA
+          {/* Home Icon instead of Name */}
+          <Link to="/" className="p-2 text-blue-700 dark:text-blue-400">
+            <Home className="h-8 w-8" />
           </Link>
-
           <Toggle />
         </Div>
 
@@ -107,7 +111,7 @@ const Header = () => {
           </A>
 
           <A href="https://github.com/PacoZG" target="_blank" rel="noopener noreferrer">
-            <GitHub className="bg-gray-300 h-8 w-8 rounded-full dark:bg-gray-700" />
+            <GitHub className="bg-gray-300 h-8 w-8 rounded-full" />
           </A>
 
           <A

@@ -19,9 +19,9 @@ import './skill-style.css'
 const Skills = () => {
   const { t } = useTranslation()
   return (
-    <Div className="bg-gray-400 dark:bg-gray-900 flex flex-col items-center p-4 md:py-10 lg:py-20 transition duration-500 rounded-b-xl bg-opacity-70 dark:bg-opacity-70">
-      <Div className="w-full sm:w-11/12 lg:w-2/3 flex flex-col items-center">
-        <Div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 gap-4 sm:gap-6 md:gap-8 lg:gap-10 py-5 w-full border-b-2 border-gray-300 dark:border-gray-700">
+    <Div className="flex flex-col items-center p-4 md:py-10 lg:py-20">
+      <Div className="bg-gray-600 dark:bg-gray-900 flex flex-col items-center w-full sm:w-11/12 lg:w-2/3 transition duration-500 rounded-xl bg-opacity-70 dark:bg-opacity-70 p-4">
+        <Div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-6 gap-1 sm:gap-2 md:gap-4 lg:gap-6 py-5 w-full border-b-2 border-gray-300 dark:border-gray-700">
           {/* Javascript */}
           <A
             skill-tool-tip-msg={t('skills.click-for-certificate')}
@@ -98,7 +98,7 @@ const Skills = () => {
             <P className="skill-text dark:text-pink-700">React-Native</P>
           </A>
 
-          {/* Typescript */}
+          {/* Typescript - CHANGED SOURCE */}
           <A
             skill-tool-tip-msg={t('skills.click-for-certificate')}
             className="skill-card bg-gray-300 dark:bg-gray-800"
@@ -106,7 +106,11 @@ const Skills = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Typescript className="skill-logo" />
+            <Img
+              className="skill-logo object-contain"
+              src="https://img.icons8.com/color/48/typescript.png"
+              alt="TypeScript Logo"
+            />
             <P className="skill-text dark:text-blue-500">Typescript</P>
           </A>
 
@@ -162,7 +166,7 @@ const Skills = () => {
           <A
             skill-tool-tip-msg={t('skills.click-for-certificate')}
             className="skill-card bg-gray-300 dark:bg-gray-800"
-            href="https://res.cloudinary.com/dbn5gpgi5/image/upload/v1681117640/zomoudnr2mriz6zvdetq.png"
+            href="https://res-cloudinary-com/dbn5gpgi5/image/upload/v1681117640/zomoudnr2mriz6zvdetq.png"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -240,19 +244,18 @@ const Skills = () => {
           {/*  />*/}
           {/*  <P className="skill-text dark:text-blue-500">Kubernetes</P>*/}
           {/*</A>*/}
-
           <Div className="skill-card bg-gray-300 dark:bg-gray-800">
             <Img
-              className="skill-logo object-contain"
+              className="skill-logo"
               src="https://img.icons8.com/color/96/000000/kubernetes.png"
               alt="Kubernetes Logo"
             />
             <P className="skill-text dark:text-blue-500">Kubernetes</P>
           </Div>
 
-          {/* AWS */}
+          {/* AWS - CHANGED SOURCE */}
           <Div className="skill-card bg-gray-300 dark:bg-gray-800">
-            <AWSLogo className="skill-logo bg-white dark:bg-gray-700 rounded-full p-2" />
+            <Img className="skill-logo" src="https://img.icons8.com/color/48/amazon-web-services.png" alt="AWS Logo" />
             <P className="skill-text dark:text-orange-400">AWS</P>
           </Div>
 
@@ -265,7 +268,7 @@ const Skills = () => {
             rel="noopener noreferrer"
           >
             <Img
-              className="skill-logo object-contain"
+              className="skill-logo"
               src="https://cdn5.dcbstatic.com/files/d/a/datadog_docebosaas_com/assets/badges/original/6149e0bf43bb02e0d6e207efd297a00ce5ac4443.png"
               alt="Datadog Logo"
             />
