@@ -85,5 +85,55 @@
     "position1": "Baterista Profesional / Profesor de Batería",
     "responsabilities1": "Trabajé como baterista profesional, liderando y actuando en varias bandas.\nEnseñé batería a tiempo parcial, desarrollando habilidades para simplificar conceptos complejos y adaptar métodos de enseñanza a estilos de aprendizaje individuales.",
     "tool-tip-msg": "Visitar el sitio web de la empresa"
+  },
+  "freelance": {
+    "hero": {
+      "headline": "Desarrollo Freelance Full Stack",
+      "subheadline": "Tu visión, mi código. Desde sitios web simples hasta infraestructura robusta.",
+      "button": "Empezar un Proyecto"
+    },
+    "services": {
+      "headline": "Mis Servicios",
+      "simple_sites": {
+        "title": "Sitios Web Simples y One-Pagers",
+        "description": "Lanza rápidamente tu presencia en línea con un sitio web profesional y responsive de una sola página o una landing page dinámica adaptada a tus necesidades."
+      },
+      "full_stack_apps": {
+        "title": "Aplicaciones Full Stack Personalizadas",
+        "description": "Construcción de aplicaciones web robustas, escalables y seguras con backends personalizados, bases de datos e infraestructura en la nube integrada."
+      },
+      "devops": {
+        "title": "Soluciones DevOps y en la Nube",
+        "description": "Diseño y gestión de infraestructuras en la nube resilientes. Experiencia en Docker, Kubernetes y plataformas como GCP y AWS para una implementación sin interrupciones."
+      },
+      "maintenance": {
+        "title": "Mantenimiento y Optimización",
+        "description": "Proporciono soporte continuo, corrección de errores y ajuste de rendimiento para que tus aplicaciones existentes funcionen de manera fluida y eficiente."
+      }
+    },
+    "process": {
+      "headline": "Mi Proceso",
+      "discovery": {
+        "title": "Descubrimiento y Planificación",
+        "description": "Comenzamos con una conversación para entender tus objetivos, visión y requisitos técnicos. Esto nos lleva a una hoja de ruta clara del proyecto."
+      },
+      "development": {
+        "title": "Desarrollo e Iteración",
+        "description": "A través del desarrollo ágil, construyo tu proyecto, proporcionando actualizaciones periódicas e incorporando tus comentarios para asegurar que cumpla tus expectativas."
+      },
+      "deployment": {
+        "title": "Despliegue y Lanzamiento",
+        "description": "Gestiono el despliegue sin problemas de tu aplicación en la nube, asegurando que sea segura, escalable y esté lista para los usuarios."
+      },
+      "support": {
+        "title": "Soporte y Mantenimiento",
+        "description": "Después del lanzamiento, estoy disponible para soporte y mantenimiento continuo para garantizar que tu aplicación siga siendo una solución fiable y de alto rendimiento."
+      }
+    },
+    "cta": {
+      "headline": "¿Listo para dar vida a tu idea?",
+      "subheadline": "Hablemos de tu proyecto y convirtamos tu visión en realidad.",
+      "button": "Ponte en Contacto"
+    }
   }
 }

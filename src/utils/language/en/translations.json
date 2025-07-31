@@ -81,9 +81,59 @@
     "period2": "JANUARY 2007 - AUGUST 2020",
     "responsabilities2": "Performed varied roles including waiter supervisor, cook, and dishwasher.\nDeveloped strong communication and customer service skills through direct interaction and understanding of customer needs.",
     "company1": "Various Bars, Restaurants, Concerts & Music Shops",
-    "period1": "JANUARY 1998 - AUGUST 2011",
+    "period1": "ENERO 1998 - AGOSTO 2011",
     "position1": "Professional Drummer / Drum Teacher",
     "responsabilities1": "Worked as a professional drummer, leading and performing in several bands.\nTaught drums part-time, developing skills in simplifying complex concepts and adapting teaching methods to individual learning styles.",
     "tool-tip-msg": "Visit company's website"
+  },
+  "freelance": {
+    "hero": {
+      "headline": "Freelance Full Stack Development",
+      "subheadline": "Your vision, my code. From simple websites to robust infrastructure.",
+      "button": "Start a Project"
+    },
+    "services": {
+      "headline": "My Services",
+      "simple_sites": {
+        "title": "Simple Websites & One-Pagers",
+        "description": "Quickly launch your online presence with a professional, responsive single-page website or a dynamic landing page tailored to your needs."
+      },
+      "full_stack_apps": {
+        "title": "Custom Full Stack Applications",
+        "description": "Building robust, scalable, and secure web applications with custom backends, databases, and integrated cloud infrastructure."
+      },
+      "devops": {
+        "title": "DevOps & Cloud Solutions",
+        "description": "Designing and managing resilient cloud infrastructure. Expertise in Docker, Kubernetes, and platforms like GCP and AWS for seamless deployment."
+      },
+      "maintenance": {
+        "title": "Maintenance & Optimization",
+        "description": "Providing ongoing support, bug fixes, and performance tuning to keep your existing applications running smoothly and efficiently."
+      }
+    },
+    "process": {
+      "headline": "My Process",
+      "discovery": {
+        "title": "Discovery & Planning",
+        "description": "We start with a conversation to understand your goals, vision, and technical requirements. This leads to a clear project roadmap."
+      },
+      "development": {
+        "title": "Development & Iteration",
+        "description": "Through agile development, I build your project, providing regular updates and incorporating your feedback to ensure it meets your expectations."
+      },
+      "deployment": {
+        "title": "Deployment & Launch",
+        "description": "I handle the seamless deployment of your application to the cloud, ensuring it is secure, scalable, and ready for users."
+      },
+      "support": {
+        "title": "Support & Maintenance",
+        "description": "Post-launch, I am available for ongoing support and maintenance to ensure your application remains a reliable and high-performing solution."
+      }
+    },
+    "cta": {
+      "headline": "Ready to bring your idea to life?",
+      "subheadline": "Let's discuss your project and turn your vision into reality.",
+      "button": "Get in Touch"
+    }
   }
 }
