@@ -7,6 +7,7 @@
 🎯 I’m a developer with a background in **Communications Engineering**, passionate about crafting web apps and managing cloud-native infrastructure.
 
 🌍 Based in Finland 🇫🇮 | Live in Spain 🇪🇸 for 10 years | Originally from Mexico 🇲🇽
+
 🌐 Check out my portfolio → [pacoderzavala.com][website]
 
 ---
@@ -14,8 +15,8 @@
 ## 🔧 Current Focus
 
 - 🚢 DevOps practices with **Kubernetes**, **Docker**, **Terraform**, and **GitOps**  
-- ☁️ Hands-on with both **AWS** and **Google Cloud Platform (GCP)**  
-- 🧠 Learning **MobX**, refining **TDD**, and embracing scalable architecture  
+- ☁️ Hands-on with **Google Cloud Platform (GCP)** but also very familiarised with **AWS**  
+- 🧠 Refining **TDD**, and embracing scalable architecture  
 - 🧭 2025 Goal: Grow as a cloud-native, DevOps-first engineer
 
 ---
@@ -29,6 +30,7 @@
 <img src="https://img.shields.io/badge/React-black?style=flat&logo=react" />
 <img src="https://img.shields.io/badge/Node.js-black?style=flat&logo=node.js" />
 <img src="https://img.shields.io/badge/GraphQL-black?style=flat&logo=graphql" />
+<img src="https://img.shields.io/badge/SQL-black?style=flat&logo=sql" />
 
 ### ⚙️ DevOps & Cloud
 
@@ -46,8 +48,8 @@
 
 - 🎨 Styling: **Tailwind CSS**, and raw CSS when needed  
 - 🔄 Code formatting: **Prettier** (`npm run fix-code-style`)  
-- 🌐 Routing: **React Router v5**  
-- 🌍 Translations: **i18next** (see [Jane’s Total Wellness](https://github.com/PacoZG/janestotalwellness))  
+- 🌐 Routing: **React Router v7**  
+- 🌍 Translations: **i18next**   
 - 🔗 Sharing: **react-share**
 
 ---
