@@ -19,7 +19,7 @@ animate() {
 
 if [ ! -d "./node_modules" ]; then
   animate "Installing dependencies"
-  npm install --legacy-peer-deps
+  npm install
   printf "Dependencies installed \033[1;32mok\033[0m!\n"
 
 else
@@ -38,7 +38,7 @@ else
     taskDone
 
     animate "Reinstalling dependencies"
-    npm install --legacy-peer-deps
+    npm install
     taskDone
 
     printf "Dependencies have been reinstalled \033[1;32mok\033[0m!\n"
