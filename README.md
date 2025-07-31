@@ -6,7 +6,7 @@
 
 🎯 I’m a developer with a background in **Communications Engineering**, passionate about crafting web apps and managing cloud-native infrastructure.
 
-🌍 Based in Finland 🇫🇮 | Originally from Spain 🇪🇸  
+🌍 Based in Finland 🇫🇮 | Live in Spain 🇪🇸 for 10 years | Originally from Mexico 🇲🇽
 🌐 Check out my portfolio → [pacoderzavala.com][website]
 
 ---
